@@ -1,23 +1,27 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { useStore } from '../store/useStore';
 import VOCAB from '../data/vocab';
 import FlashCard from '../components/ui/FlashCard';
 
 export default function Vocab() {
-  const { state, markSeen, markMastered } = useStore();
-  const [mode, setMode] = useState('flashcard'); // flashcard, quiz
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [isFlipped, setIsFlipped] = useState(false);
-  const [quizState, setQuizState] = useState(null); // { question, options, answer, selected }
-
-  const progress = state.progress.vocab || { seen: [], mastered: [] };
+  const { state, markSeen, markMastered, saveCurrentIndex } = useStore();
+  const progress = state.progress.vocab || { seen: [], mastered: [], currentIndex: 0 };
   
+  const [mode, setMode] = useState('flashcard');
+  const [currentIndex, setCurrentIndex] = useState(progress.currentIndex || 0);
+  const [isFlipped, setIsFlipped] = useState(false);
+  const [quizState, setQuizState] = useState(null);
+
+  useEffect(() => {
+    saveCurrentIndex('vocab', currentIndex);
+  }, [currentIndex, saveCurrentIndex]);
+
   // Flashcard Logic
   const handleNext = () => {
     setIsFlipped(false);
     setTimeout(() => {
       setCurrentIndex((i) => (i + 1) % VOCAB.length);
-    }, 150); // wait for flip animation to start before changing content
+    }, 150);
   };
 
   const handleKnow = () => {

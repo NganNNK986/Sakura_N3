@@ -93,8 +93,21 @@ export function StoreProvider({ children }) {
     setState(prev => ({ ...prev, profile }));
   }, [setState]);
 
+  const saveCurrentIndex = useCallback((module, index) => {
+    setState(prev => {
+      const mod = prev.progress[module] || { seen: [], mastered: [] };
+      return {
+        ...prev,
+        progress: {
+          ...prev.progress,
+          [module]: { ...mod, currentIndex: index },
+        },
+      };
+    });
+  }, [setState]);
+
   return (
-    <StoreContext.Provider value={{ state, setState, addXP, markSeen, markMastered, saveTestResult, updateStreak, setProfile }}>
+    <StoreContext.Provider value={{ state, setState, addXP, markSeen, markMastered, saveTestResult, updateStreak, setProfile, saveCurrentIndex }}>
       {children}
     </StoreContext.Provider>
   );

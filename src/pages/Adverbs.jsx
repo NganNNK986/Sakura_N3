@@ -1,14 +1,18 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useStore } from '../store/useStore';
 import ADVERBS from '../data/adverbs';
 import FlashCard from '../components/ui/FlashCard';
 
 export default function Adverbs() {
-  const { state, markSeen, markMastered } = useStore();
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const { state, markSeen, markMastered, saveCurrentIndex } = useStore();
+  const progress = state.progress.adverbs || { seen: [], mastered: [], currentIndex: 0 };
+  
+  const [currentIndex, setCurrentIndex] = useState(progress.currentIndex || 0);
   const [isFlipped, setIsFlipped] = useState(false);
 
-  const progress = state.progress.adverbs || { seen: [], mastered: [] };
+  useEffect(() => {
+    saveCurrentIndex('adverbs', currentIndex);
+  }, [currentIndex, saveCurrentIndex]);
 
   const handleNext = () => {
     setIsFlipped(false);
