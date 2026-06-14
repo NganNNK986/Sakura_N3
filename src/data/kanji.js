@@ -6,8 +6,8 @@ export const KANJI = [
     "kun": "",
     "meaning": "Trú",
     "examples": [
-      "駐車 (ちゅうしゃ) = Trú (Từ ghép)",
-      "駐車場 (ちゅうしゃじょう) = Trú (Từ ghép)"
+      "駐車 (ちゅうしゃ) = Bãi đậu xe",
+      "駐車場 (ちゅうしゃじょう) = Bãi đậu xe"
     ],
     "category": "Tuần 1 Ngày 1",
     "strokes": 0
@@ -110,8 +110,8 @@ export const KANJI = [
     "kun": "よこ",
     "meaning": "Hoành",
     "examples": [
-      "横断 (おうだん) = Hoành (Từ ghép)",
-      "横断歩道 (おうだんほどう) = Hoành (Từ ghép)"
+      "横断 (おうだん) = Đi qua",
+      "横断歩道 (おうだんほどう) = Vạch qua đường dành cho người đi bộ"
     ],
     "category": "Tuần 1 Ngày 2",
     "strokes": 0
@@ -123,10 +123,10 @@ export const KANJI = [
     "kun": "おす・おさえる",
     "meaning": "Áp",
     "examples": [
-      "押す (おす) = Áp (Từ ghép)",
-      "押し入れ (おしいれ) = Áp (Từ ghép)",
-      "押さえる (おさえる) = Áp (Từ ghép)",
-      "押しボタン式 (おしぼたんしき) = Áp (Từ ghép)"
+      "押す (おす) = Xô",
+      "押し入れ (おしいれ) = Buồng nhỏ",
+      "押さえる (おさえる) = Giữ chặt",
+      "押しボタン式 (おしぼたんしき) = Loại nút nhấn"
     ],
     "category": "Tuần 1 Ngày 2",
     "strokes": 0
@@ -138,9 +138,9 @@ export const KANJI = [
     "kun": "",
     "meaning": "Thức",
     "examples": [
-      "押しボタン式 (おしぼたんしき) = Thức (Từ ghép)",
-      "数式 (すうしき) = Thức (Từ ghép)",
-      "入学式 (にゅうがくしき) = Thức (Từ ghép)"
+      "押しボタン式 (おしぼたんしき) = Loại nút nhấn",
+      "数式 (すうしき) = Công thức",
+      "入学式 (にゅうがくしき) = Lễ nhập học"
     ],
     "category": "Tuần 1 Ngày 2",
     "strokes": 0
@@ -165,8 +165,8 @@ export const KANJI = [
     "kun": "",
     "meaning": "Hiệu",
     "examples": [
-      "信号 (しんごう) = Hiệu (Từ ghép)",
-      "〜号車 (ごうしゃ) = Hiệu (Từ ghép)"
+      "信号 (しんごう) = Tín hiệu",
+      "〜号車 (ごうしゃ) = ~số xe"
     ],
     "category": "Tuần 1 Ngày 2",
     "strokes": 0
@@ -241,8 +241,8 @@ export const KANJI = [
     "kun": "",
     "meaning": "Giai",
     "examples": [
-      "〜階 (かい) = Giai (Từ ghép)",
-      "階段 (かいだん) = Giai (Từ ghép)"
+      "〜階 (かい) = ~sàn",
+      "階段 (かいだん) = Cầu thang"
     ],
     "category": "Tuần 1 Ngày 3",
     "strokes": 0
@@ -266,8 +266,8 @@ export const KANJI = [
     "kun": "はこ",
     "meaning": "Tương",
     "examples": [
-      "箱 (はこ) = Tương (Từ ghép)",
-      "ごみ箱 (ごみばこ) = Tương (Từ ghép)"
+      "箱 (はこ) = Hộp",
+      "ごみ箱 (ごみばこ) = Thùng rác"
     ],
     "category": "Tuần 1 Ngày 3",
     "strokes": 0
@@ -279,8 +279,8 @@ export const KANJI = [
     "kun": "あぶない",
     "meaning": "Nguy",
     "examples": [
-      "危険(な) (きけん) = Nguy (Từ ghép)",
-      "危ない (あぶない) = Nguy (Từ ghép)"
+      "危険(な) (きけん) = Nguy hiểm",
+      "危ない (あぶない) = Nguy hiểm"
     ],
     "category": "Tuần 1 Ngày 3",
     "strokes": 0
@@ -292,7 +292,7 @@ export const KANJI = [
     "kun": "",
     "meaning": "Hiểm",
     "examples": [
-      "危険(な) (きけん) = Hiểm (Từ ghép)"
+      "危険(な) (きけん) = Nguy hiểm"
     ],
     "category": "Tuần 1 Ngày 3",
     "strokes": 0
@@ -304,7 +304,7 @@ export const KANJI = [
     "kun": "すてる",
     "meaning": "Xả",
     "examples": [
-      "捨てる (すてる) = Xả (Từ ghép)"
+      "捨てる (すてる) = Vứt bỏ"
     ],
     "category": "Tuần 1 Ngày 3",
     "strokes": 0
@@ -316,8 +316,8 @@ export const KANJI = [
     "kun": "",
     "meaning": "Tuyến",
     "examples": [
-      "線 (せん) = Tuyến (Từ ghép)",
-      "〜番線 (ばんせん) = Tuyến (Từ ghép)"
+      "線 (せん) = Đường kẻ",
+      "〜番線 (ばんせん) = ~Dòng nền tảng"
     ],
     "category": "Tuần 1 Ngày 4",
     "strokes": 0
@@ -355,9 +355,9 @@ export const KANJI = [
     "kun": "",
     "meaning": "Các",
     "examples": [
-      "各駅 (かくえき) = Các (Từ ghép)",
-      "各自 (かくじ) = Các (Từ ghép)",
-      "各国 (かっこく) = Các (Từ ghép)"
+      "各駅 (かくえき) = Mỗi trạm",
+      "各自 (かくじ) = Mỗi người",
+      "各国 (かっこく) = Mỗi quốc gia"
     ],
     "category": "Tuần 1 Ngày 4",
     "strokes": 0
@@ -381,7 +381,7 @@ export const KANJI = [
     "kun": "",
     "meaning": "Khoái",
     "examples": [
-      "快速 (かいそく) = Khoái (Từ ghép)"
+      "快速 (かいそく) = Nhanh"
     ],
     "category": "Tuần 1 Ngày 4",
     "strokes": 0
@@ -393,10 +393,10 @@ export const KANJI = [
     "kun": "はやい",
     "meaning": "Tốc",
     "examples": [
-      "快速 (かいそく) = Tốc (Từ ghép)",
-      "高速道路 (こうそくどうろ) = Tốc (Từ ghép)",
-      "速い (はやい) = Tốc (Từ ghép)",
-      "速度 (そくど) = Tốc (Từ ghép)"
+      "快速 (かいそく) = Nhanh",
+      "高速道路 (こうそくどうろ) = Đường cao tốc",
+      "速い (はやい) = Nhanh",
+      "速度 (そくど) = Tốc độ"
     ],
     "category": "Tuần 1 Ngày 4",
     "strokes": 0
@@ -421,9 +421,9 @@ export const KANJI = [
     "kun": "",
     "meaning": "Thiết",
     "examples": [
-      "地下鉄 (ちかてつ) = Thiết (Từ ghép)",
-      "鉄 (てつ) = Thiết (Từ ghép)",
-      "鉄道 (てつどう) = Thiết (Từ ghép)"
+      "地下鉄 (ちかてつ) = Tàu điện ngầm",
+      "鉄 (てつ) = Sắt",
+      "鉄道 (てつどう) = Đường sắt"
     ],
     "category": "Tuần 1 Ngày 4",
     "strokes": 0
@@ -435,9 +435,9 @@ export const KANJI = [
     "kun": "ゆび",
     "meaning": "Chỉ",
     "examples": [
-      "指定 (してい) = Chỉ (Từ ghép)",
-      "指定席 (していせき) = Chỉ (Từ ghép)",
-      "指輪 (ゆびわ) = Chỉ (Từ ghép)"
+      "指定 (してい) = Sự chỉ định",
+      "指定席 (していせき) = Chỗ ngồi đã đặt trước",
+      "指輪 (ゆびわ) = Nhẫn"
     ],
     "category": "Tuần 1 Ngày 5",
     "strokes": 0
@@ -502,9 +502,9 @@ export const KANJI = [
     "kun": "まど",
     "meaning": "Song",
     "examples": [
-      "窓 (まど) = Song (Từ ghép)",
-      "窓口 (まどぐち) = Song (Từ ghép)",
-      "窓側 (まどがわ) = Song (Từ ghép)"
+      "窓 (まど) = Cửa sổ",
+      "窓口 (まどぐち) = Cửa sổ",
+      "窓側 (まどがわ) = Bên cửa sổ"
     ],
     "category": "Tuần 1 Ngày 5",
     "strokes": 0
@@ -516,9 +516,9 @@ export const KANJI = [
     "kun": "かわ",
     "meaning": "Trắc",
     "examples": [
-      "両側 (りょうがわ) = Trắc (Từ ghép)",
-      "窓側 (まどがわ) = Trắc (Từ ghép)",
-      "右側 (みぎがわ) = Trắc (Từ ghép)"
+      "両側 (りょうがわ) = Cả hai bên",
+      "窓側 (まどがわ) = Bên cửa sổ",
+      "右側 (みぎがわ) = Bên phải"
     ],
     "category": "Tuần 1 Ngày 5",
     "strokes": 0
@@ -567,10 +567,10 @@ export const KANJI = [
     "kun": "",
     "meaning": "Khoán",
     "examples": [
-      "整理券 (せいりけん) = Khoán (Từ ghép)",
-      "駐車券 (ちゅうしゃけん) = Khoán (Từ ghép)",
-      "回数券 (かいすうけん) = Khoán (Từ ghép)",
-      "乗車券 (じょうしゃけん) = Khoán (Từ ghép)"
+      "整理券 (せいりけん) = Vé đánh số",
+      "駐車券 (ちゅうしゃけん) = Vé đậu xe",
+      "回数券 (かいすうけん) = Phiếu giảm giá",
+      "乗車券 (じょうしゃけん) = Vé"
     ],
     "category": "Tuần 1 Ngày 6",
     "strokes": 0
@@ -595,9 +595,9 @@ export const KANJI = [
     "kun": "",
     "meaning": "Lưỡng",
     "examples": [
-      "両親 (りょうしん) = Lưỡng (Từ ghép)",
-      "〜両 (りょう) = Lưỡng (Từ ghép)",
-      "両替 (りょうがえ) = Lưỡng (Từ ghép)"
+      "両親 (りょうしん) = Cha mẹ",
+      "〜両 (りょう) = ~Ryo",
+      "両替 (りょうがえ) = Đổi tiền"
     ],
     "category": "Tuần 1 Ngày 6",
     "strokes": 0
@@ -622,9 +622,9 @@ export const KANJI = [
     "kun": "やさしい",
     "meaning": "Ưu",
     "examples": [
-      "優先席 (ゆうせんせき) = Ưu (Từ ghép)",
-      "優しい (やさしい) = Ưu (Từ ghép)",
-      "女優 (じょゆう) = Ưu (Từ ghép)"
+      "優先席 (ゆうせんせき) = Ghế ưu tiên",
+      "優しい (やさしい) = Loại",
+      "女優 (じょゆう) = Nữ diễn viên"
     ],
     "category": "Tuần 1 Ngày 6",
     "strokes": 0
@@ -636,9 +636,9 @@ export const KANJI = [
     "kun": "すわる",
     "meaning": "Tọa",
     "examples": [
-      "座席 (ざせき) = Tọa (Từ ghép)",
-      "座る (すわる) = Tọa (Từ ghép)",
-      "正座 (せいざ) = Tọa (Từ ghép)"
+      "座席 (ざせき) = Ghế",
+      "座る (すわる) = Ngồi",
+      "正座 (せいざ) = Seiza"
     ],
     "category": "Tuần 1 Ngày 6",
     "strokes": 0
@@ -663,9 +663,9 @@ export const KANJI = [
     "kun": "",
     "meaning": "Vị",
     "examples": [
-      "未定 (みてい) = Vị (Từ ghép)",
-      "未来 (みらい) = Vị (Từ ghép)",
-      "〜未満 (みまん) = Vị (Từ ghép)"
+      "未定 (みてい) = Được quyết định",
+      "未来 (みらい) = Tương lai",
+      "〜未満 (みまん) = ~nhỏ hơn"
     ],
     "category": "Tuần 1 Ngày 7",
     "strokes": 0
@@ -690,7 +690,7 @@ export const KANJI = [
     "kun": "わかい",
     "meaning": "Nhược",
     "examples": [
-      "若い (わかい) = Nhược (Từ ghép)"
+      "若い (わかい) = Trẻ"
     ],
     "category": "Tuần 1 Ngày 7",
     "strokes": 0
@@ -702,10 +702,10 @@ export const KANJI = [
     "kun": "",
     "meaning": "Vãn",
     "examples": [
-      "晩 (ばん) = Vãn (Từ ghép)",
-      "晩ご飯 (ばんごはん) = Vãn (Từ ghép)",
-      "今晩 (こんばん) = Vãn (Từ ghép)",
-      "毎晩 (まいばん) = Vãn (Từ ghép)"
+      "晩 (ばん) = Đêm",
+      "晩ご飯 (ばんごはん) = Bữa tối",
+      "今晩 (こんばん) = Tối nay",
+      "毎晩 (まいばん) = Mỗi đêm"
     ],
     "category": "Tuần 1 Ngày 7",
     "strokes": 0
@@ -717,8 +717,8 @@ export const KANJI = [
     "kun": "しま",
     "meaning": "Đảo",
     "examples": [
-      "〇〇島 (とう) = Đảo (Từ ghép)",
-      "島 (しま) = Đảo (Từ ghép)"
+      "〇〇島 (とう) = 〇〇 Đảo",
+      "島 (しま) = Hòn đảo"
     ],
     "category": "Tuần 1 Ngày 7",
     "strokes": 0
@@ -730,8 +730,8 @@ export const KANJI = [
     "kun": "さら",
     "meaning": "Mãnh",
     "examples": [
-      "皿 (さら) = Mãnh (Từ ghép)",
-      "灰皿 (はいざら) = Mãnh (Từ ghép)"
+      "皿 (さら) = Món ăn",
+      "灰皿 (はいざら) = Cái gạt tàn"
     ],
     "category": "Tuần 1 Ngày 7",
     "strokes": 0
@@ -909,8 +909,8 @@ export const KANJI = [
     "kun": "",
     "meaning": "Khách",
     "examples": [
-      "客 (きゃく) = Khách (Từ ghép)",
-      "お客様 (おきゃくさま) = Khách (Từ ghép)"
+      "客 (きゃく) = Khách hàng",
+      "お客様 (おきゃくさま) = Khách hàng"
     ],
     "category": "Tuần 2 Ngày 2",
     "strokes": 0
@@ -961,7 +961,7 @@ export const KANJI = [
     "kun": "ねがう",
     "meaning": "Nguyện",
     "examples": [
-      "願う (ねがう) = Nguyện (Từ ghép)"
+      "願う (ねがう) = Ước"
     ],
     "category": "Tuần 2 Ngày 2",
     "strokes": 0
@@ -999,9 +999,9 @@ export const KANJI = [
     "kun": "みなと",
     "meaning": "Cảng",
     "examples": [
-      "空港 (くうこう) = Cảng (Từ ghép)",
-      "〇〇港 (こう) = Cảng (Từ ghép)",
-      "港 (みなと) = Cảng (Từ ghép)"
+      "空港 (くうこう) = Sân bay",
+      "〇〇港 (こう) = 〇〇 Cảng",
+      "港 (みなと) = Hải cảng"
     ],
     "category": "Tuần 2 Ngày 3",
     "strokes": 0
@@ -1025,9 +1025,9 @@ export const KANJI = [
     "kun": "うつくしい",
     "meaning": "Mỹ",
     "examples": [
-      "美術館 (びじゅつ) = Mỹ (Từ ghép)",
-      "美人 (びじん) = Mỹ (Từ ghép)",
-      "美しい (うつくしい) = Mỹ (Từ ghép)"
+      "美術館 (びじゅつ) = Bảo tàng nghệ thuật",
+      "美人 (びじん) = Người phụ nữ xinh đẹp",
+      "美しい (うつくしい) = Xinh đẹp"
     ],
     "category": "Tuần 2 Ngày 3",
     "strokes": 0
@@ -1052,9 +1052,9 @@ export const KANJI = [
     "kun": "かみ",
     "meaning": "Thần",
     "examples": [
-      "神社 (じんじゃ) = Thần (Từ ghép)",
-      "神経質(な) (しんけいしつ) = Thần (Từ ghép)",
-      "神様 (かみさま) = Thần (Từ ghép)"
+      "神社 (じんじゃ) = Điện thờ",
+      "神経質(な) (しんけいしつ) = Lo lắng",
+      "神様 (かみさま) = Chúa"
     ],
     "category": "Tuần 2 Ngày 3",
     "strokes": 0
@@ -1091,8 +1091,8 @@ export const KANJI = [
     "kun": "",
     "meaning": "Bưu",
     "examples": [
-      "郵便 (ゆうびん) = Bưu (Từ ghép)",
-      "郵便局 (ゆうびんきょく) = Bưu (Từ ghép)"
+      "郵便 (ゆうびん) = Thư",
+      "郵便局 (ゆうびんきょく) = Bưu điện"
     ],
     "category": "Tuần 2 Ngày 4",
     "strokes": 0
@@ -1104,8 +1104,8 @@ export const KANJI = [
     "kun": "",
     "meaning": "Cục",
     "examples": [
-      "郵便局 (ゆうびんきょく) = Cục (Từ ghép)",
-      "薬局 (やっきょく) = Cục (Từ ghép)"
+      "郵便局 (ゆうびんきょく) = Bưu điện",
+      "薬局 (やっきょく) = Hiệu thuốc"
     ],
     "category": "Tuần 2 Ngày 4",
     "strokes": 0
@@ -1143,9 +1143,9 @@ export const KANJI = [
     "kun": "",
     "meaning": "Điểm",
     "examples": [
-      "交差点 (こうさてん) = Điểm (Từ ghép)",
-      "点数 (てんすう) = Điểm (Từ ghép)",
-      "〜点 (てん) = Điểm (Từ ghép)"
+      "交差点 (こうさてん) = Ngã tư",
+      "点数 (てんすう) = Điểm",
+      "〜点 (てん) = ~điểm"
     ],
     "category": "Tuần 2 Ngày 4",
     "strokes": 0
@@ -1157,8 +1157,8 @@ export const KANJI = [
     "kun": "はし",
     "meaning": "Kiều",
     "examples": [
-      "歩道橋 (ほどうきょう) = Kiều (Từ ghép)",
-      "橋 (はし) = Kiều (Từ ghép)"
+      "歩道橋 (ほどうきょう) = Cầu đi bộ",
+      "橋 (はし) = Cầu"
     ],
     "category": "Tuần 2 Ngày 4",
     "strokes": 0
@@ -1170,7 +1170,7 @@ export const KANJI = [
     "kun": "",
     "meaning": "Công",
     "examples": [
-      "公園 (こうえん) = Công (Từ ghép)"
+      "公園 (こうえん) = Công viên"
     ],
     "category": "Tuần 2 Ngày 4",
     "strokes": 0
@@ -1182,10 +1182,10 @@ export const KANJI = [
     "kun": "うける",
     "meaning": "Thụ",
     "examples": [
-      "受信 (じゅしん) = Thụ (Từ ghép)",
-      "受験 (じゅけん) = Thụ (Từ ghép)",
-      "受ける (うける) = Thụ (Từ ghép)",
-      "受付 (うけつけ) = Thụ (Từ ghép)"
+      "受信 (じゅしん) = Thu nhận",
+      "受験 (じゅけん) = Bài kiểm tra",
+      "受ける (うける) = Nhận được",
+      "受付 (うけつけ) = Thu nhận"
     ],
     "category": "Tuần 2 Ngày 5",
     "strokes": 0
@@ -1211,13 +1211,13 @@ export const KANJI = [
     "kun": "",
     "meaning": "Khoa",
     "examples": [
-      "科学 (かがく) = Khoa (Từ ghép)",
-      "外科 (げか) = Khoa (Từ ghép)",
-      "内科 (ないか) = Khoa (Từ ghép)",
-      "教科書 (きょうかしょ) = Khoa (Từ ghép)",
-      "耳鼻科 (じびか) = Khoa (Từ ghép)",
-      "産婦人科 (さんふじんか) = Khoa (Từ ghép)",
-      "整形外科 (せいけいげか) = Khoa (Từ ghép)"
+      "科学 (かがく) = Khoa học",
+      "外科 (げか) = Ca phẫu thuật",
+      "内科 (ないか) = Nội khoa",
+      "教科書 (きょうかしょ) = Sách giáo khoa",
+      "耳鼻科 (じびか) = Khoa Tai Mũi Họng",
+      "産婦人科 (さんふじんか) = Sản phụ khoa",
+      "整形外科 (せいけいげか) = Phẫu thuật chỉnh hình"
     ],
     "category": "Tuần 2 Ngày 5",
     "strokes": 0
@@ -1229,8 +1229,8 @@ export const KANJI = [
     "kun": "はな",
     "meaning": "Tỵ",
     "examples": [
-      "耳鼻科 (じびか) = Tỵ (Từ ghép)",
-      "鼻 (はな) = Tỵ (Từ ghép)"
+      "耳鼻科 (じびか) = Khoa Tai Mũi Họng",
+      "鼻 (はな) = Mũi"
     ],
     "category": "Tuần 2 Ngày 5",
     "strokes": 0
@@ -1242,9 +1242,9 @@ export const KANJI = [
     "kun": "",
     "meaning": "Phụ",
     "examples": [
-      "婦人 (ふじん) = Phụ (Từ ghép)",
-      "産婦人科 (さんふじんか) = Phụ (Từ ghép)",
-      "主婦 (しゅふ) = Phụ (Từ ghép)"
+      "婦人 (ふじん) = Quý bà",
+      "産婦人科 (さんふじんか) = Sản phụ khoa",
+      "主婦 (しゅふ) = Bà nội trợ"
     ],
     "category": "Tuần 2 Ngày 5",
     "strokes": 0
@@ -1256,10 +1256,10 @@ export const KANJI = [
     "kun": "かたち",
     "meaning": "Hình",
     "examples": [
-      "形式 (けいしき) = Hình (Từ ghép)",
-      "図形 (ずけい) = Hình (Từ ghép)",
-      "整形外科 (せいけいげか) = Hình (Từ ghép)",
-      "人形 (にんぎょう) = Hình (Từ ghép)"
+      "形式 (けいしき) = Định dạng",
+      "図形 (ずけい) = Hình dạng",
+      "整形外科 (せいけいげか) = Phẫu thuật chỉnh hình",
+      "人形 (にんぎょう) = BÚP BÊ"
     ],
     "category": "Tuần 2 Ngày 5",
     "strokes": 0
@@ -1271,7 +1271,7 @@ export const KANJI = [
     "kun": "ほね",
     "meaning": "Cốt",
     "examples": [
-      "骨折 (こっせつ) = Cốt (Từ ghép)"
+      "骨折 (こっせつ) = Gãy xương"
     ],
     "category": "Tuần 2 Ngày 5",
     "strokes": 0
@@ -1296,7 +1296,7 @@ export const KANJI = [
     "kun": "こまる",
     "meaning": "Khốn",
     "examples": [
-      "困る (こまる) = Khốn (Từ ghép)"
+      "困る (こまる) = Gặp rắc rối"
     ],
     "category": "Tuần 2 Ngày 6",
     "strokes": 0
@@ -1334,8 +1334,8 @@ export const KANJI = [
     "kun": "すくう",
     "meaning": "Cứu",
     "examples": [
-      "救急車 (きゅうきゅうしゃ) = Cứu (Từ ghép)",
-      "救う (すくう) = Cứu (Từ ghép)"
+      "救急車 (きゅうきゅうしゃ) = Xe cứu thương",
+      "救う (すくう) = Cứu"
     ],
     "category": "Tuần 2 Ngày 6",
     "strokes": 0
@@ -1399,8 +1399,8 @@ export const KANJI = [
     "kun": "",
     "meaning": "Hoàng",
     "examples": [
-      "黄色 (きいろ) = Hoàng (Từ ghép)",
-      "黄色い (きいろい) = Hoàng (Từ ghép)"
+      "黄色 (きいろ) = Màu vàng",
+      "黄色い (きいろい) = Màu vàng"
     ],
     "category": "Tuần 2 Ngày 7",
     "strokes": 0
@@ -1412,8 +1412,8 @@ export const KANJI = [
     "kun": "",
     "meaning": "Hội",
     "examples": [
-      "絵画 (かいが) = Hội (Từ ghép)",
-      "絵本 (えほん) = Hội (Từ ghép)"
+      "絵画 (かいが) = Bức vẽ",
+      "絵本 (えほん) = Sách tranh"
     ],
     "category": "Tuần 2 Ngày 7",
     "strokes": 0
@@ -1449,8 +1449,8 @@ export const KANJI = [
     "kun": "",
     "meaning": "Thụ",
     "examples": [
-      "授業 (じゅぎょう) = Thụ (Từ ghép)",
-      "教授 (きょうじゅ) = Thụ (Từ ghép)"
+      "授業 (じゅぎょう) = Lớp học",
+      "教授 (きょうじゅ) = Giáo sư"
     ],
     "category": "Tuần 2 Ngày 7",
     "strokes": 0
@@ -1462,8 +1462,8 @@ export const KANJI = [
     "kun": "わたる・わたす",
     "meaning": "Độ",
     "examples": [
-      "渡る (わたる) = Độ (Từ ghép)",
-      "渡す (わたす) = Độ (Từ ghép)"
+      "渡る (わたる) = Đi qua",
+      "渡す (わたす) = Bàn giao"
     ],
     "category": "Tuần 2 Ngày 7",
     "strokes": 0
@@ -1475,7 +1475,7 @@ export const KANJI = [
     "kun": "むかし",
     "meaning": "Tích",
     "examples": [
-      "昔 (むかし) = Tích (Từ ghép)"
+      "昔 (むかし) = Từ lâu rồi"
     ],
     "category": "Tuần 2 Ngày 7",
     "strokes": 0
@@ -1514,7 +1514,7 @@ export const KANJI = [
     "kun": "",
     "meaning": "Tàng",
     "examples": [
-      "冷蔵庫 (れいぞうこ) = Tàng (Từ ghép)"
+      "冷蔵庫 (れいぞうこ) = Tủ lạnh"
     ],
     "category": "Tuần 3 Ngày 1",
     "strokes": 0
@@ -1526,8 +1526,8 @@ export const KANJI = [
     "kun": "こおる",
     "meaning": "Đống",
     "examples": [
-      "冷凍庫 (れいとうこ) = Đống (Từ ghép)",
-      "凍る (こおる) = Đống (Từ ghép)"
+      "冷凍庫 (れいとうこ) = Tủ đông",
+      "凍る (こおる) = Đông cứng"
     ],
     "category": "Tuần 3 Ngày 1",
     "strokes": 0
@@ -1539,10 +1539,10 @@ export const KANJI = [
     "kun": "",
     "meaning": "Khố",
     "examples": [
-      "冷蔵庫 (れいぞうこ) = Khố (Từ ghép)",
-      "冷凍庫 (れいとうこ) = Khố (Từ ghép)",
-      "金庫 (きんこ) = Khố (Từ ghép)",
-      "車庫 (しゃこ) = Khố (Từ ghép)"
+      "冷蔵庫 (れいぞうこ) = Tủ lạnh",
+      "冷凍庫 (れいとうこ) = Tủ đông",
+      "金庫 (きんこ) = An toàn",
+      "車庫 (しゃこ) = Ga-ra "
     ],
     "category": "Tuần 3 Ngày 1",
     "strokes": 0
@@ -1554,7 +1554,7 @@ export const KANJI = [
     "kun": "めす",
     "meaning": "Triệu",
     "examples": [
-      "召し上がる (めしあがる) = Triệu (Từ ghép)"
+      "召し上がる (めしあがる) = Thưởng thức"
     ],
     "category": "Tuần 3 Ngày 1",
     "strokes": 0
@@ -1654,8 +1654,8 @@ export const KANJI = [
     "kun": "つくる",
     "meaning": "Tạo",
     "examples": [
-      "製造 (せいぞう) = Tạo (Từ ghép)",
-      "造る (つくる) = Tạo (Từ ghép)"
+      "製造 (せいぞう) = Chế tạo",
+      "造る (つくる) = Làm"
     ],
     "category": "Tuần 3 Ngày 2",
     "strokes": 0
@@ -1667,10 +1667,10 @@ export const KANJI = [
     "kun": "",
     "meaning": "Thưởng",
     "examples": [
-      "賞 (しょう) = Thưởng (Từ ghép)",
-      "賞味期限 (しょうみきげん) = Thưởng (Từ ghép)",
-      "賞金 (しょうきん) = Thưởng (Từ ghép)",
-      "賞品 (しょうひん) = Thưởng (Từ ghép)"
+      "賞 (しょう) = Phần thưởng",
+      "賞味期限 (しょうみきげん) = Ngày hết hạn",
+      "賞金 (しょうきん) = Tiền thưởng",
+      "賞品 (しょうひん) = Phần thưởng"
     ],
     "category": "Tuần 3 Ngày 2",
     "strokes": 0
@@ -1709,8 +1709,8 @@ export const KANJI = [
     "kun": "",
     "meaning": "Phán",
     "examples": [
-      "販売 (はんばい) = Phán (Từ ghép)",
-      "自動販売機 (じどうはんばいき) = Phán (Từ ghép)"
+      "販売 (はんばい) = Doanh thu",
+      "自動販売機 (じどうはんばいき) = Máy bán hàng tự động"
     ],
     "category": "Tuần 3 Ngày 3",
     "strokes": 0
@@ -1761,10 +1761,10 @@ export const KANJI = [
     "kun": "",
     "meaning": "Lượng",
     "examples": [
-      "量 (りょう) = Lượng (Từ ghép)",
-      "数量 (すうりょう) = Lượng (Từ ghép)",
-      "増量 (ぞうりょう) = Lượng (Từ ghép)",
-      "減量 (げんりょう) = Lượng (Từ ghép)"
+      "量 (りょう) = Số lượng",
+      "数量 (すうりょう) = Số lượng",
+      "増量 (ぞうりょう) = Tăng",
+      "減量 (げんりょう) = Giảm cân"
     ],
     "category": "Tuần 3 Ngày 3",
     "strokes": 0
@@ -1776,7 +1776,7 @@ export const KANJI = [
     "kun": "こおり",
     "meaning": "Băng",
     "examples": [
-      "氷 (こおり) = Băng (Từ ghép)"
+      "氷 (こおり) = Đá"
     ],
     "category": "Tuần 3 Ngày 3",
     "strokes": 0
@@ -1802,7 +1802,7 @@ export const KANJI = [
     "kun": "ゆ",
     "meaning": "Thang",
     "examples": [
-      "(お)湯 (ゆ) = Thang (Từ ghép)"
+      "(お)湯 (ゆ) = (nước nóng"
     ],
     "category": "Tuần 3 Ngày 3",
     "strokes": 0
@@ -1814,8 +1814,8 @@ export const KANJI = [
     "kun": "",
     "meaning": "Tài",
     "examples": [
-      "材料 (ざいりょう) = Tài (Từ ghép)",
-      "教材 (きょうざい) = Tài (Từ ghép)"
+      "材料 (ざいりょう) = Vật liệu",
+      "教材 (きょうざい) = Tài liệu giảng dạy"
     ],
     "category": "Tuần 3 Ngày 4",
     "strokes": 0
@@ -1827,8 +1827,8 @@ export const KANJI = [
     "kun": "たまご",
     "meaning": "Noãn",
     "examples": [
-      "卵 (たまご) = Noãn (Từ ghép)",
-      "卵焼き (たまごやき) = Noãn (Từ ghép)"
+      "卵 (たまご) = Trứng",
+      "卵焼き (たまごやき) = Tamagoyaki"
     ],
     "category": "Tuần 3 Ngày 4",
     "strokes": 0
@@ -1840,7 +1840,7 @@ export const KANJI = [
     "kun": "",
     "meaning": "Nhũ",
     "examples": [
-      "牛乳 (ぎゅうにゅう) = Nhũ (Từ ghép)"
+      "牛乳 (ぎゅうにゅう) = Sữa"
     ],
     "category": "Tuần 3 Ngày 4",
     "strokes": 0
@@ -1852,8 +1852,8 @@ export const KANJI = [
     "kun": "こな・こ",
     "meaning": "Phấn",
     "examples": [
-      "粉 (こな) = Phấn (Từ ghép)",
-      "小麦粉 (こむぎこ) = Phấn (Từ ghép)"
+      "粉 (こな) = Bột",
+      "小麦粉 (こむぎこ) = Bột mì"
     ],
     "category": "Tuần 3 Ngày 4",
     "strokes": 0
@@ -1865,11 +1865,11 @@ export const KANJI = [
     "kun": "ふくろ",
     "meaning": "Đại",
     "examples": [
-      "袋 (ふくろ) = Đại (Từ ghép)",
-      "紙袋 (かみぶくろ) = Đại (Từ ghép)",
-      "ごみ袋 (ごみぶくろ) = Đại (Từ ghép)",
-      "手袋 (てぶくろ) = Đại (Từ ghép)",
-      "足袋 (たび) = Đại (Từ ghép)"
+      "袋 (ふくろ) = Cái túi",
+      "紙袋 (かみぶくろ) = Túi giấy",
+      "ごみ袋 (ごみぶくろ) = Túi đựng rác",
+      "手袋 (てぶくろ) = Găng tay",
+      "足袋 (たび) = Điều cấm kỵ"
     ],
     "category": "Tuần 3 Ngày 4",
     "strokes": 0
@@ -1921,8 +1921,8 @@ export const KANJI = [
     "kun": "うら",
     "meaning": "Lý",
     "examples": [
-      "裏 (うら) = Lý (Từ ghép)",
-      "裏返す (うらがえす) = Lý (Từ ghép)"
+      "裏 (うら) = Mặt sau",
+      "裏返す (うらがえす) = Lật lại"
     ],
     "category": "Tuần 3 Ngày 4",
     "strokes": 0
@@ -1934,10 +1934,10 @@ export const KANJI = [
     "kun": "とめる",
     "meaning": "Lưu",
     "examples": [
-      "留学 (りゅうがく) = Lưu (Từ ghép)",
-      "留守番 (るすばん) = Lưu (Từ ghép)",
-      "保留 (ほりゅう) = Lưu (Từ ghép)",
-      "書留 (かきとめ) = Lưu (Từ ghép)"
+      "留学 (りゅうがく) = Du học",
+      "留守番 (るすばん) = Nhà ngồi",
+      "保留 (ほりゅう) = Tạm dừng",
+      "書留 (かきとめ) = Thư đã đăng ký"
     ],
     "category": "Tuần 3 Ngày 5",
     "strokes": 0
@@ -1985,10 +1985,10 @@ export const KANJI = [
     "kun": "",
     "meaning": "Bộ",
     "examples": [
-      "部分 (ぶぶん) = Bộ (Từ ghép)",
-      "学部 (がくぶ) = Bộ (Từ ghép)",
-      "部長 (ぶちょう) = Bộ (Từ ghép)",
-      "部屋 (へや) = Bộ (Từ ghép)"
+      "部分 (ぶぶん) = Phần",
+      "学部 (がくぶ) = Khoa",
+      "部長 (ぶちょう) = Giám đốc",
+      "部屋 (へや) = Phòng"
     ],
     "category": "Tuần 3 Ngày 5",
     "strokes": 0
@@ -2025,10 +2025,10 @@ export const KANJI = [
     "kun": "",
     "meaning": "Tái",
     "examples": [
-      "再入国 (さいにゅうこく) = Tái (Từ ghép)",
-      "再ダイヤル (さいだいやる) = Tái (Từ ghép)",
-      "再生 (さいせい) = Tái (Từ ghép)",
-      "再来週 (さらいしゅう) = Tái (Từ ghép)"
+      "再入国 (さいにゅうこく) = Nhập lại",
+      "再ダイヤル (さいだいやる) = Gọi lại",
+      "再生 (さいせい) = Sinh sản",
+      "再来週 (さらいしゅう) = Tuần tới"
     ],
     "category": "Tuần 3 Ngày 5",
     "strokes": 0
@@ -2104,9 +2104,9 @@ export const KANJI = [
     "kun": "",
     "meaning": "Liễu",
     "examples": [
-      "完了 (かんりょう) = Liễu (Từ ghép)",
-      "了解 (りょうかい) = Liễu (Từ ghép)",
-      "終了 (しゅうりょう) = Liễu (Từ ghép)"
+      "完了 (かんりょう) = Hoàn thành",
+      "了解 (りょうかい) = Hiểu rõ điều đó",
+      "終了 (しゅうりょう) = Kết thúc"
     ],
     "category": "Tuần 3 Ngày 6",
     "strokes": 0
@@ -2118,9 +2118,9 @@ export const KANJI = [
     "kun": "のぼる",
     "meaning": "Đăng",
     "examples": [
-      "登録 (とうろく) = Đăng (Từ ghép)",
-      "登山 (とざん) = Đăng (Từ ghép)",
-      "登る (のぼる) = Đăng (Từ ghép)"
+      "登録 (とうろく) = Sự đăng ký",
+      "登山 (とざん) = Leo núi",
+      "登る (のぼる) = Leo"
     ],
     "category": "Tuần 3 Ngày 6",
     "strokes": 0
@@ -2145,9 +2145,9 @@ export const KANJI = [
     "kun": "そだつ・そだてる",
     "meaning": "Dục",
     "examples": [
-      "教育 (きょういく) = Dục (Từ ghép)",
-      "育てる (そだてる) = Dục (Từ ghép)",
-      "育つ (そだつ) = Dục (Từ ghép)"
+      "教育 (きょういく) = Giáo dục",
+      "育てる (そだてる) = Nuôi dưỡng",
+      "育つ (そだつ) = Lớn lên"
     ],
     "category": "Tuần 3 Ngày 7",
     "strokes": 0
@@ -2185,9 +2185,9 @@ export const KANJI = [
     "kun": "",
     "meaning": "Sư",
     "examples": [
-      "教師 (きょうし) = Sư (Từ ghép)",
-      "医師 (いし) = Sư (Từ ghép)",
-      "看護師 (かんごし) = Sư (Từ ghép)"
+      "教師 (きょうし) = Giáo viên",
+      "医師 (いし) = Bác sĩ",
+      "看護師 (かんごし) = Y tá"
     ],
     "category": "Tuần 3 Ngày 7",
     "strokes": 0
@@ -2199,8 +2199,8 @@ export const KANJI = [
     "kun": "つま",
     "meaning": "Thê",
     "examples": [
-      "夫妻 (ふさい) = Thê (Từ ghép)",
-      "妻 (つま) = Thê (Từ ghép)"
+      "夫妻 (ふさい) = Vợ chồng",
+      "妻 (つま) = Vợ"
     ],
     "category": "Tuần 3 Ngày 7",
     "strokes": 0
@@ -2212,8 +2212,8 @@ export const KANJI = [
     "kun": "うま",
     "meaning": "Mã",
     "examples": [
-      "馬 (うま) = Mã (Từ ghép)",
-      "乗馬 (じょうば) = Mã (Từ ghép)"
+      "馬 (うま) = Ngựa",
+      "乗馬 (じょうば) = Cưỡi ngựa"
     ],
     "category": "Tuần 3 Ngày 7",
     "strokes": 0
@@ -2225,8 +2225,8 @@ export const KANJI = [
     "kun": "いし",
     "meaning": "Thạch",
     "examples": [
-      "石けん (せっけん) = Thạch (Từ ghép)",
-      "石油 (せきゆ) = Thạch (Từ ghép)"
+      "石けん (せっけん) = Xà phòng",
+      "石油 (せきゆ) = Dầu"
     ],
     "category": "Tuần 3 Ngày 7",
     "strokes": 0
@@ -2238,7 +2238,7 @@ export const KANJI = [
     "kun": "すな",
     "meaning": "Sa",
     "examples": [
-      "砂糖 (さとう) = Sa (Từ ghép)"
+      "砂糖 (さとう) = Đường"
     ],
     "category": "Tuần 4 Ngày 1",
     "strokes": 0
@@ -2250,8 +2250,8 @@ export const KANJI = [
     "kun": "しお",
     "meaning": "Diêm",
     "examples": [
-      "食塩 (しょくえん) = Diêm (Từ ghép)",
-      "塩 (しお) = Diêm (Từ ghép)"
+      "食塩 (しょくえん) = Muối",
+      "塩 (しお) = Muối"
     ],
     "category": "Tuần 4 Ngày 1",
     "strokes": 0
@@ -2263,10 +2263,10 @@ export const KANJI = [
     "kun": "あぶら",
     "meaning": "Du",
     "examples": [
-      "しょう油 (しょうゆ) = Du (Từ ghép)",
-      "石油 (せきゆ) = Du (Từ ghép)",
-      "灯油 (とうゆ) = Du (Từ ghép)",
-      "油 (あぶら) = Du (Từ ghép)"
+      "しょう油 (しょうゆ) = Nước tương",
+      "石油 (せきゆ) = Dầu",
+      "灯油 (とうゆ) = Dầu hỏa",
+      "油 (あぶら) = Dầu"
     ],
     "category": "Tuần 4 Ngày 1",
     "strokes": 0
@@ -2278,8 +2278,8 @@ export const KANJI = [
     "kun": "みどり",
     "meaning": "Lục",
     "examples": [
-      "緑茶 (りょくちゃ) = Lục (Từ ghép)",
-      "緑(色) (みどりいろ) = Lục (Từ ghép)"
+      "緑茶 (りょくちゃ) = Trà xanh ",
+      "緑(色) (みどりいろ) = Màu xanh lá)"
     ],
     "category": "Tuần 4 Ngày 1",
     "strokes": 0
@@ -2291,8 +2291,8 @@ export const KANJI = [
     "kun": "べに",
     "meaning": "Hồng",
     "examples": [
-      "紅茶 (こうちゃ) = Hồng (Từ ghép)",
-      "口紅 (くちべに) = Hồng (Từ ghép)"
+      "紅茶 (こうちゃ) = Trà đen",
+      "口紅 (くちべに) = Cây son"
     ],
     "category": "Tuần 4 Ngày 1",
     "strokes": 0
@@ -2304,8 +2304,8 @@ export const KANJI = [
     "kun": "",
     "meaning": "Sách",
     "examples": [
-      "〜冊 (さつ) = Sách (Từ ghép)",
-      "冊数 (さっすう) = Sách (Từ ghép)"
+      "〜冊 (さつ) = ~Sách",
+      "冊数 (さっすう) = Số lượng sách"
     ],
     "category": "Tuần 4 Ngày 1",
     "strokes": 0
@@ -2317,9 +2317,9 @@ export const KANJI = [
     "kun": "",
     "meaning": "Cá",
     "examples": [
-      "〜個 (こ) = Cá (Từ ghép)",
-      "個数 (こすう) = Cá (Từ ghép)",
-      "個人 (こじん) = Cá (Từ ghép)"
+      "〜個 (こ) = ~ miếng",
+      "個数 (こすう) = Số lượng mảnh",
+      "個人 (こじん) = Cá nhân"
     ],
     "category": "Tuần 4 Ngày 1",
     "strokes": 0
@@ -2331,8 +2331,8 @@ export const KANJI = [
     "kun": "",
     "meaning": "Mai",
     "examples": [
-      "〜枚 (まい) = Mai (Từ ghép)",
-      "枚数 (まいすう) = Mai (Từ ghép)"
+      "〜枚 (まい) = 〜tờ",
+      "枚数 (まいすう) = Số tờ"
     ],
     "category": "Tuần 4 Ngày 1",
     "strokes": 0
@@ -2433,8 +2433,8 @@ export const KANJI = [
     "kun": "はらう",
     "meaning": "Phất",
     "examples": [
-      "払う (はらう) = Phất (Từ ghép)",
-      "支払う (しはらう) = Phất (Từ ghép)"
+      "払う (はらう) = Chi trả",
+      "支払う (しはらう) = Chi trả"
     ],
     "category": "Tuần 4 Ngày 2",
     "strokes": 0
@@ -2446,7 +2446,7 @@ export const KANJI = [
     "kun": "こめ",
     "meaning": "Mễ",
     "examples": [
-      "米国 (べいこく) = Mễ (Từ ghép)"
+      "米国 (べいこく) = CHÚNG TA"
     ],
     "category": "Tuần 4 Ngày 3",
     "strokes": 0
@@ -2458,9 +2458,9 @@ export const KANJI = [
     "kun": "",
     "meaning": "Cấp",
     "examples": [
-      "高級 (こうきゅう) = Cấp (Từ ghép)",
-      "中級 (ちゅうきゅう) = Cấp (Từ ghép)",
-      "上級 (じょうきゅう) = Cấp (Từ ghép)"
+      "高級 (こうきゅう) = Sang trọng",
+      "中級 (ちゅうきゅう) = Trung cấp",
+      "上級 (じょうきゅう) = Trình độ cao"
     ],
     "category": "Tuần 4 Ngày 3",
     "strokes": 0
@@ -2598,8 +2598,8 @@ export const KANJI = [
     "kun": "",
     "meaning": "Tuế",
     "examples": [
-      "〜歳 (さい) = Tuế (Từ ghép)",
-      "二十歳 (にじゅうさい) = Tuế (Từ ghép)"
+      "〜歳 (さい) = ~tuổi",
+      "二十歳 (にじゅうさい) = Hai mươi tuổi"
     ],
     "category": "Tuần 4 Ngày 4",
     "strokes": 0
@@ -2636,7 +2636,7 @@ export const KANJI = [
     "kun": "",
     "meaning": "Lạc",
     "examples": [
-      "連絡 (れんらく) = Lạc (Từ ghép)"
+      "連絡 (れんらく) = Liên hệ"
     ],
     "category": "Tuần 4 Ngày 4",
     "strokes": 0
@@ -2711,10 +2711,10 @@ export const KANJI = [
     "kun": "に",
     "meaning": "Hà",
     "examples": [
-      "入荷 (にゅうか) = Hà (Từ ghép)",
-      "出荷 (しゅっか) = Hà (Từ ghép)",
-      "荷物 (にもつ) = Hà (Từ ghép)",
-      "手荷物 (てにもつ) = Hà (Từ ghép)"
+      "入荷 (にゅうか) = Đến",
+      "出荷 (しゅっか) = Vận chuyển",
+      "荷物 (にもつ) = Hành lý",
+      "手荷物 (てにもつ) = Hành lý"
     ],
     "category": "Tuần 4 Ngày 5",
     "strokes": 0
@@ -2740,8 +2740,8 @@ export const KANJI = [
     "kun": "",
     "meaning": "Ngạch",
     "examples": [
-      "金額 (きんがく) = Ngạch (Từ ghép)",
-      "半額 (はんがく) = Ngạch (Từ ghép)"
+      "金額 (きんがく) = Số lượng",
+      "半額 (はんがく) = Một nửa"
     ],
     "category": "Tuần 4 Ngày 5",
     "strokes": 0
@@ -2753,8 +2753,8 @@ export const KANJI = [
     "kun": "",
     "meaning": "Tại",
     "examples": [
-      "不在 (ふざい) = Tại (Từ ghép)",
-      "現在 (げんざい) = Tại (Từ ghép)"
+      "不在 (ふざい) = Sự vắng mặt",
+      "現在 (げんざい) = Hiện tại"
     ],
     "category": "Tuần 4 Ngày 6",
     "strokes": 0
@@ -2791,8 +2791,8 @@ export const KANJI = [
     "kun": "",
     "meaning": "Y",
     "examples": [
-      "衣類 (いるい) = Y (Từ ghép)",
-      "衣服 (いふく) = Y (Từ ghép)"
+      "衣類 (いるい) = Quần áo",
+      "衣服 (いふく) = Quần áo"
     ],
     "category": "Tuần 4 Ngày 6",
     "strokes": 0
@@ -2866,9 +2866,9 @@ export const KANJI = [
     "kun": "と",
     "meaning": "Hộ",
     "examples": [
-      "戸 (と) = Hộ (Từ ghép)",
-      "雨戸 (あまど) = Hộ (Từ ghép)",
-      "戸だな (とだな) = Hộ (Từ ghép)"
+      "戸 (と) = Cửa",
+      "雨戸 (あまど) = Cửa chớp",
+      "戸だな (とだな) = Đó là một cánh cửa"
     ],
     "category": "Tuần 4 Ngày 7",
     "strokes": 0
@@ -2880,8 +2880,8 @@ export const KANJI = [
     "kun": "みずうみ",
     "meaning": "Hồ",
     "examples": [
-      "びわ湖 (びわこ) = Hồ (Từ ghép)",
-      "湖 (みずうみ) = Hồ (Từ ghép)"
+      "びわ湖 (びわこ) = Hồ Biwa",
+      "湖 (みずうみ) = Hồ"
     ],
     "category": "Tuần 4 Ngày 7",
     "strokes": 0
@@ -2893,9 +2893,9 @@ export const KANJI = [
     "kun": "ふね・ふな",
     "meaning": "Thuyền",
     "examples": [
-      "風船 (ふうせん) = Thuyền (Từ ghép)",
-      "船長 (せんちょう) = Thuyền (Từ ghép)",
-      "船便 (ふなびん) = Thuyền (Từ ghép)"
+      "風船 (ふうせん) = Bóng bay",
+      "船長 (せんちょう) = Đội trưởng",
+      "船便 (ふなびん) = Thư đường biển"
     ],
     "category": "Tuần 4 Ngày 7",
     "strokes": 0
@@ -2907,9 +2907,9 @@ export const KANJI = [
     "kun": "かど",
     "meaning": "Giác",
     "examples": [
-      "角度 (かくど) = Giác (Từ ghép)",
-      "三角形 (さんかくけい) = Giác (Từ ghép)",
-      "四角形 (しかくけい) = Giác (Từ ghép)"
+      "角度 (かくど) = Góc",
+      "三角形 (さんかくけい) = Tam giác",
+      "四角形 (しかくけい) = Quảng trường"
     ],
     "category": "Tuần 4 Ngày 7",
     "strokes": 0
@@ -2921,8 +2921,8 @@ export const KANJI = [
     "kun": "おっと",
     "meaning": "Phu",
     "examples": [
-      "夫妻 (ふさい) = Phu (Từ ghép)",
-      "夫婦 (ふうふ) = Phu (Từ ghép)"
+      "夫妻 (ふさい) = Vợ chồng",
+      "夫婦 (ふうふ) = Cặp đôi"
     ],
     "category": "Tuần 4 Ngày 7",
     "strokes": 0
@@ -2961,7 +2961,7 @@ export const KANJI = [
     "kun": "うかがう",
     "meaning": "Tứ",
     "examples": [
-      "伺う (うかがう) = Tứ (Từ ghép)"
+      "伺う (うかがう) = Hỏi"
     ],
     "category": "Tuần 5 Ngày 1",
     "strokes": 0
@@ -3000,8 +3000,8 @@ export const KANJI = [
     "kun": "あせ",
     "meaning": "Hãn",
     "examples": [
-      "汗 (あせ) = Hãn (Từ ghép)",
-      "汗をかく (あせをかく) = Hãn (Từ ghép)"
+      "汗 (あせ) = Mồ hôi",
+      "汗をかく (あせをかく) = Mồ hôi"
     ],
     "category": "Tuần 5 Ngày 1",
     "strokes": 0
@@ -3013,8 +3013,8 @@ export const KANJI = [
     "kun": "",
     "meaning": "Niệm",
     "examples": [
-      "残念(な) (ざんねん) = Niệm (Từ ghép)",
-      "記念 (きねん) = Niệm (Từ ghép)"
+      "残念(な) (ざんねん) = Không may)",
+      "記念 (きねん) = Đài tưởng niệm"
     ],
     "category": "Tuần 5 Ngày 1",
     "strokes": 0
@@ -3026,8 +3026,8 @@ export const KANJI = [
     "kun": "なみだ",
     "meaning": "Lệ",
     "examples": [
-      "涙 (なみだ) = Lệ (Từ ghép)",
-      "涙を流す (なみだをながす) = Lệ (Từ ghép)"
+      "涙 (なみだ) = Nước mắt",
+      "涙を流す (なみだをながす) = Rơi nước mắt"
     ],
     "category": "Tuần 5 Ngày 1",
     "strokes": 0
@@ -3103,7 +3103,7 @@ export const KANJI = [
     "kun": "",
     "meaning": "Giản",
     "examples": [
-      "簡単(な) (かんたん) = Giản (Từ ghép)"
+      "簡単(な) (かんたん) = Dễ"
     ],
     "category": "Tuần 5 Ngày 2",
     "strokes": 0
@@ -3115,9 +3115,9 @@ export const KANJI = [
     "kun": "",
     "meaning": "Đơn",
     "examples": [
-      "簡単(な) (かんたん) = Đơn (Từ ghép)",
-      "単語 (たんご) = Đơn (Từ ghép)",
-      "単位 (たんい) = Đơn (Từ ghép)"
+      "簡単(な) (かんたん) = Dễ",
+      "単語 (たんご) = Từ",
+      "単位 (たんい) = Đơn vị"
     ],
     "category": "Tuần 5 Ngày 2",
     "strokes": 0
@@ -3155,7 +3155,7 @@ export const KANJI = [
     "kun": "",
     "meaning": "Luyện",
     "examples": [
-      "練習 (れんしゅう) = Luyện (Từ ghép)"
+      "練習 (れんしゅう) = Luyện tập"
     ],
     "category": "Tuần 5 Ngày 3",
     "strokes": 0
@@ -3233,9 +3233,9 @@ export const KANJI = [
     "kun": "",
     "meaning": "Phục",
     "examples": [
-      "復習 (ふくしゅう) = Phục (Từ ghép)",
-      "往復 (おうふく) = Phục (Từ ghép)",
-      "回復 (かいふく) = Phục (Từ ghép)"
+      "復習 (ふくしゅう) = Ôn tập",
+      "往復 (おうふく) = Chuyến đi khứ hồi",
+      "回復 (かいふく) = Sự hồi phục"
     ],
     "category": "Tuần 5 Ngày 3",
     "strokes": 0
@@ -3247,8 +3247,8 @@ export const KANJI = [
     "kun": "やめる",
     "meaning": "Từ",
     "examples": [
-      "辞書 (じしょ) = Từ (Từ ghép)",
-      "辞める (やめる) = Từ (Từ ghép)"
+      "辞書 (じしょ) = Từ điển",
+      "辞める (やめる) = Từ bỏ"
     ],
     "category": "Tuần 5 Ngày 3",
     "strokes": 0
@@ -3260,8 +3260,8 @@ export const KANJI = [
     "kun": "やど",
     "meaning": "Túc",
     "examples": [
-      "宿題 (しゅくだい) = Túc (Từ ghép)",
-      "下宿 (げしゅく) = Túc (Từ ghép)"
+      "宿題 (しゅくだい) = Bài tập về nhà",
+      "下宿 (げしゅく) = Nhà trọ"
     ],
     "category": "Tuần 5 Ngày 3",
     "strokes": 0
@@ -3273,9 +3273,9 @@ export const KANJI = [
     "kun": "",
     "meaning": "Tạc",
     "examples": [
-      "昨日 (さくじつ) = Tạc (Từ ghép)",
-      "昨夜 (さくや) = Tạc (Từ ghép)",
-      "昨年 (さくねん) = Tạc (Từ ghép)"
+      "昨日 (さくじつ) = Hôm qua",
+      "昨夜 (さくや) = Tối hôm qua",
+      "昨年 (さくねん) = Năm ngoái"
     ],
     "category": "Tuần 5 Ngày 4",
     "strokes": 0
@@ -3287,8 +3287,8 @@ export const KANJI = [
     "kun": "きみ",
     "meaning": "Quân",
     "examples": [
-      "〇〇君 (くん) = Quân (Từ ghép)",
-      "君 (きみ) = Quân (Từ ghép)"
+      "〇〇君 (くん) = 〇〇kun",
+      "君 (きみ) = Bạn"
     ],
     "category": "Tuần 5 Ngày 4",
     "strokes": 0
@@ -3313,9 +3313,9 @@ export const KANJI = [
     "kun": "",
     "meaning": "Hôn",
     "examples": [
-      "結婚 (けっこん) = Hôn (Từ ghép)",
-      "新婚旅行 (しんこんりょこう) = Hôn (Từ ghép)",
-      "婚約 (こんやく) = Hôn (Từ ghép)"
+      "結婚 (けっこん) = Kết hôn",
+      "新婚旅行 (しんこんりょこう) = Tuần trăng mật",
+      "婚約 (こんやく) = Hôn ước"
     ],
     "category": "Tuần 5 Ngày 4",
     "strokes": 0
@@ -3352,7 +3352,7 @@ export const KANJI = [
     "kun": "おく",
     "meaning": "Áo",
     "examples": [
-      "奥さん (おくさん) = Áo (Từ ghép)"
+      "奥さん (おくさん) = Vợ"
     ],
     "category": "Tuần 5 Ngày 4",
     "strokes": 0
@@ -3364,9 +3364,9 @@ export const KANJI = [
     "kun": "ねる",
     "meaning": "Tẩm",
     "examples": [
-      "寝る (ねる) = Tẩm (Từ ghép)",
-      "寝坊 (ねぼう) = Tẩm (Từ ghép)",
-      "昼寝 (ひるね) = Tẩm (Từ ghép)"
+      "寝る (ねる) = Ngủ",
+      "寝坊 (ねぼう) = Ngủ quên",
+      "昼寝 (ひるね) = Ngủ trưa"
     ],
     "category": "Tuần 5 Ngày 4",
     "strokes": 0
@@ -3378,9 +3378,9 @@ export const KANJI = [
     "kun": "いたい",
     "meaning": "Thống",
     "examples": [
-      "頭痛 (ずつう) = Thống (Từ ghép)",
-      "腹痛 (ふくつう) = Thống (Từ ghép)",
-      "痛い (いたい) = Thống (Từ ghép)"
+      "頭痛 (ずつう) = Đau đầu",
+      "腹痛 (ふくつう) = Đau bụng",
+      "痛い (いたい) = Nó đau"
     ],
     "category": "Tuần 5 Ngày 5",
     "strokes": 0
@@ -3405,8 +3405,8 @@ export const KANJI = [
     "kun": "むし",
     "meaning": "Trùng",
     "examples": [
-      "虫 (むし) = Trùng (Từ ghép)",
-      "虫歯 (むしば) = Trùng (Từ ghép)"
+      "虫 (むし) = Côn trùng",
+      "虫歯 (むしば) = Sâu răng"
     ],
     "category": "Tuần 5 Ngày 5",
     "strokes": 0
@@ -3418,10 +3418,10 @@ export const KANJI = [
     "kun": "は",
     "meaning": "Xỉ",
     "examples": [
-      "歯科 (しか) = Xỉ (Từ ghép)",
-      "歯医者 (はいしゃ) = Xỉ (Từ ghép)",
-      "虫歯 (むしば) = Xỉ (Từ ghép)",
-      "歯並び (はならぶ) = Xỉ (Từ ghép)"
+      "歯科 (しか) = Nha khoa",
+      "歯医者 (はいしゃ) = Nha sĩ",
+      "虫歯 (むしば) = Sâu răng",
+      "歯並び (はならぶ) = Hàng răng"
     ],
     "category": "Tuần 5 Ngày 5",
     "strokes": 0
@@ -3460,9 +3460,9 @@ export const KANJI = [
     "kun": "ならぶ・ならべる",
     "meaning": "Tịnh",
     "examples": [
-      "並ぶ (ならぶ) = Tịnh (Từ ghép)",
-      "並べる (ならべる) = Tịnh (Từ ghép)",
-      "歯並び (はならぶ) = Tịnh (Từ ghép)"
+      "並ぶ (ならぶ) = Xếp hàng",
+      "並べる (ならべる) = Xếp hàng",
+      "歯並び (はならぶ) = Hàng răng"
     ],
     "category": "Tuần 5 Ngày 5",
     "strokes": 0
@@ -3474,8 +3474,8 @@ export const KANJI = [
     "kun": "",
     "meaning": "Tha",
     "examples": [
-      "他の (たの) = Tha (Từ ghép)",
-      "この他 (このた) = Tha (Từ ghép)"
+      "他の (たの) = Khác",
+      "この他 (このた) = Người khác"
     ],
     "category": "Tuần 5 Ngày 5",
     "strokes": 0
@@ -3501,10 +3501,10 @@ export const KANJI = [
     "kun": "さけ・さか",
     "meaning": "Tửu",
     "examples": [
-      "日本酒 (にほんしゅ) = Tửu (Từ ghép)",
-      "料理酒 (りょうりしゅ) = Tửu (Từ ghép)",
-      "お酒 (おさけ) = Tửu (Từ ghép)",
-      "酒屋 (さかや) = Tửu (Từ ghép)"
+      "日本酒 (にほんしゅ) = Rượu sake nhật bản",
+      "料理酒 (りょうりしゅ) = Nấu ăn",
+      "お酒 (おさけ) = Rượu bia",
+      "酒屋 (さかや) = Cửa hàng rượu"
     ],
     "category": "Tuần 5 Ngày 6",
     "strokes": 0
@@ -3516,8 +3516,8 @@ export const KANJI = [
     "kun": "すう",
     "meaning": "Hấp",
     "examples": [
-      "呼吸 (こきゅう) = Hấp (Từ ghép)",
-      "吸う (すう) = Hấp (Từ ghép)"
+      "呼吸 (こきゅう) = Thở",
+      "吸う (すう) = Hít vào"
     ],
     "category": "Tuần 5 Ngày 6",
     "strokes": 0
@@ -3529,9 +3529,9 @@ export const KANJI = [
     "kun": "ほしい",
     "meaning": "Dục",
     "examples": [
-      "食欲 (しょくよく) = Dục (Từ ghép)",
-      "意欲 (いよく) = Dục (Từ ghép)",
-      "欲しい (ほしい) = Dục (Từ ghép)"
+      "食欲 (しょくよく) = Thèm ăn",
+      "意欲 (いよく) = Sự tự nguyện",
+      "欲しい (ほしい) = Muốn"
     ],
     "category": "Tuần 5 Ngày 6",
     "strokes": 0
@@ -3567,9 +3567,9 @@ export const KANJI = [
     "kun": "いき",
     "meaning": "Tức",
     "examples": [
-      "息 (いき) = Tức (Từ ghép)",
-      "息切れ (いきぎれ) = Tức (Từ ghép)",
-      "息子 (むすこ) = Tức (Từ ghép)"
+      "息 (いき) = Hơi thở",
+      "息切れ (いきぎれ) = Hụt hơi",
+      "息子 (むすこ) = Con trai"
     ],
     "category": "Tuần 5 Ngày 6",
     "strokes": 0
@@ -3593,7 +3593,7 @@ export const KANJI = [
     "kun": "あつい",
     "meaning": "Hậu",
     "examples": [
-      "厚い (あつい) = Hậu (Từ ghép)"
+      "厚い (あつい) = Dày"
     ],
     "category": "Tuần 5 Ngày 7",
     "strokes": 0
@@ -3605,7 +3605,7 @@ export const KANJI = [
     "kun": "なく",
     "meaning": "Khấp",
     "examples": [
-      "泣く (なく) = Khấp (Từ ghép)"
+      "泣く (なく) = Khóc"
     ],
     "category": "Tuần 5 Ngày 7",
     "strokes": 0
@@ -3642,9 +3642,9 @@ export const KANJI = [
     "kun": "とまる・とめる",
     "meaning": "Bạc",
     "examples": [
-      "宿泊 (しゅくはく) = Bạc (Từ ghép)",
-      "泊まる (とまる) = Bạc (Từ ghép)",
-      "泊める (とめる) = Bạc (Từ ghép)"
+      "宿泊 (しゅくはく) = Ở lại",
+      "泊まる (とまる) = Ở lại",
+      "泊める (とめる) = Ở lại qua đêm"
     ],
     "category": "Tuần 5 Ngày 7",
     "strokes": 0
@@ -3656,9 +3656,9 @@ export const KANJI = [
     "kun": "は",
     "meaning": "Diệp",
     "examples": [
-      "紅葉 (こうよう) = Diệp (Từ ghép)",
-      "葉 (は) = Diệp (Từ ghép)",
-      "言葉 (ことば) = Diệp (Từ ghép)"
+      "紅葉 (こうよう) = Lá mùa thu",
+      "葉 (は) = Lá cây",
+      "言葉 (ことば) = Từ"
     ],
     "category": "Tuần 5 Ngày 7",
     "strokes": 0
@@ -3683,7 +3683,7 @@ export const KANJI = [
     "kun": "はれる",
     "meaning": "Tình",
     "examples": [
-      "晴れる (はれる) = Tình (Từ ghép)"
+      "晴れる (はれる) = Trời nắng"
     ],
     "category": "Tuần 6 Ngày 1",
     "strokes": 0
@@ -3695,7 +3695,7 @@ export const KANJI = [
     "kun": "くも",
     "meaning": "Vân",
     "examples": [
-      "雲 (くも) = Vân (Từ ghép)"
+      "雲 (くも) = Đám mây"
     ],
     "category": "Tuần 6 Ngày 1",
     "strokes": 0
@@ -3707,7 +3707,7 @@ export const KANJI = [
     "kun": "ふく",
     "meaning": "Xuy",
     "examples": [
-      "吹く (ふく) = Xuy (Từ ghép)"
+      "吹く (ふく) = Thổi"
     ],
     "category": "Tuần 6 Ngày 1",
     "strokes": 0
@@ -3731,7 +3731,7 @@ export const KANJI = [
     "kun": "ゆき",
     "meaning": "Tuyết",
     "examples": [
-      "雪 (ゆき) = Tuyết (Từ ghép)"
+      "雪 (ゆき) = Tuyết"
     ],
     "category": "Tuần 6 Ngày 1",
     "strokes": 0
@@ -3743,8 +3743,8 @@ export const KANJI = [
     "kun": "",
     "meaning": "Chấn",
     "examples": [
-      "地震 (じしん) = Chấn (Từ ghép)",
-      "震度 (しんど) = Chấn (Từ ghép)"
+      "地震 (じしん) = Trận động đất",
+      "震度 (しんど) = Cường độ địa chấn"
     ],
     "category": "Tuần 6 Ngày 1",
     "strokes": 0
@@ -3756,9 +3756,9 @@ export const KANJI = [
     "kun": "なみ",
     "meaning": "Ba",
     "examples": [
-      "電波 (でんぱ) = Ba (Từ ghép)",
-      "波 (なみ) = Ba (Từ ghép)",
-      "津波 (つなみ) = Ba (Từ ghép)"
+      "電波 (でんぱ) = Sóng vô tuyến",
+      "波 (なみ) = Sóng",
+      "津波 (つなみ) = Sóng thần"
     ],
     "category": "Tuần 6 Ngày 1",
     "strokes": 0
@@ -3783,7 +3783,7 @@ export const KANJI = [
     "kun": "",
     "meaning": "Mộ",
     "examples": [
-      "募集 (ぼしゅう) = Mộ (Từ ghép)"
+      "募集 (ぼしゅう) = Tuyển dụng"
     ],
     "category": "Tuần 6 Ngày 2",
     "strokes": 0
@@ -3834,8 +3834,8 @@ export const KANJI = [
     "kun": "",
     "meaning": "Ban",
     "examples": [
-      "一般 (いっぱん) = Ban (Từ ghép)",
-      "一般に (いっぱんに) = Ban (Từ ghép)"
+      "一般 (いっぱん) = Tổng quan",
+      "一般に (いっぱんに) = Nói chung"
     ],
     "category": "Tuần 6 Ngày 2",
     "strokes": 0
@@ -3950,8 +3950,8 @@ export const KANJI = [
     "kun": "なげる",
     "meaning": "Đầu",
     "examples": [
-      "投手 (とうしゅ) = Đầu (Từ ghép)",
-      "投げる (なげる) = Đầu (Từ ghép)"
+      "投手 (とうしゅ) = Cái bình",
+      "投げる (なげる) = Ném"
     ],
     "category": "Tuần 6 Ngày 3",
     "strokes": 0
@@ -4028,7 +4028,7 @@ export const KANJI = [
     "kun": "",
     "meaning": "Mậu",
     "examples": [
-      "貿易 (ぼうえき) = Mậu (Từ ghép)"
+      "貿易 (ぼうえき) = Buôn bán"
     ],
     "category": "Tuần 6 Ngày 4",
     "strokes": 0
@@ -4040,8 +4040,8 @@ export const KANJI = [
     "kun": "やさしい",
     "meaning": "Dịch",
     "examples": [
-      "貿易 (ぼうえき) = Dịch (Từ ghép)",
-      "易しい (やさしい) = Dịch (Từ ghép)"
+      "貿易 (ぼうえき) = Buôn bán",
+      "易しい (やさしい) = Dễ"
     ],
     "category": "Tuần 6 Ngày 4",
     "strokes": 0
@@ -4053,9 +4053,9 @@ export const KANJI = [
     "kun": "",
     "meaning": "Thâu",
     "examples": [
-      "輸出 (ゆしゅつ) = Thâu (Từ ghép)",
-      "輸入 (ゆにゅう) = Thâu (Từ ghép)",
-      "輸送 (ゆそう) = Thâu (Từ ghép)"
+      "輸出 (ゆしゅつ) = Xuất khẩu",
+      "輸入 (ゆにゅう) = Nhập khẩu",
+      "輸送 (ゆそう) = Vận tải"
     ],
     "category": "Tuần 6 Ngày 4",
     "strokes": 0
@@ -4182,9 +4182,9 @@ export const KANJI = [
     "kun": "",
     "meaning": "Chính",
     "examples": [
-      "政治 (せいじ) = Chính (Từ ghép)",
-      "政治家 (せいじか) = Chính (Từ ghép)",
-      "政府 (せいふ) = Chính (Từ ghép)"
+      "政治 (せいじ) = Chính trị",
+      "政治家 (せいじか) = Chính trị gia",
+      "政府 (せいふ) = Chính phủ"
     ],
     "category": "Tuần 6 Ngày 6",
     "strokes": 0
@@ -4196,8 +4196,8 @@ export const KANJI = [
     "kun": "",
     "meaning": "Phủ",
     "examples": [
-      "政府 (せいふ) = Phủ (Từ ghép)",
-      "都道府県 (とどうふけん) = Phủ (Từ ghép)"
+      "政府 (せいふ) = Chính phủ",
+      "都道府県 (とどうふけん) = Tỉnh"
     ],
     "category": "Tuần 6 Ngày 6",
     "strokes": 0
@@ -4209,9 +4209,9 @@ export const KANJI = [
     "kun": "あらためる",
     "meaning": "Cải",
     "examples": [
-      "改正 (かいせい) = Cải (Từ ghép)",
-      "改札口 (かいさつぐち) = Cải (Từ ghép)",
-      "改める (あらためる) = Cải (Từ ghép)"
+      "改正 (かいせい) = Sửa đổi",
+      "改札口 (かいさつぐち) = Cổng soát vé",
+      "改める (あらためる) = Thay đổi"
     ],
     "category": "Tuần 6 Ngày 6",
     "strokes": 0
@@ -4223,8 +4223,8 @@ export const KANJI = [
     "kun": "",
     "meaning": "Phủ",
     "examples": [
-      "否定 (ひてい) = Phủ (Từ ghép)",
-      "否定的(な) (ひていてき) = Phủ (Từ ghép)"
+      "否定 (ひてい) = Phủ nhận",
+      "否定的(な) (ひていてき) = Tiêu cực"
     ],
     "category": "Tuần 6 Ngày 6",
     "strokes": 0
@@ -4302,8 +4302,8 @@ export const KANJI = [
     "kun": "いそがしい",
     "meaning": "Mang",
     "examples": [
-      "多忙(な) (たぼう) = Mang (Từ ghép)",
-      "忙しい (いそがしい) = Mang (Từ ghép)"
+      "多忙(な) (たぼう) = Bận",
+      "忙しい (いそがしい) = Bận"
     ],
     "category": "Tuần 6 Ngày 7",
     "strokes": 0
@@ -4315,9 +4315,9 @@ export const KANJI = [
     "kun": "わすれる",
     "meaning": "Vong",
     "examples": [
-      "忘年会 (ぼうねんかい) = Vong (Từ ghép)",
-      "忘れる (わすれる) = Vong (Từ ghép)",
-      "忘れ物 (わすれもの) = Vong (Từ ghép)"
+      "忘年会 (ぼうねんかい) = Tiệc cuối năm",
+      "忘れる (わすれる) = Quên",
+      "忘れ物 (わすれもの) = Đồ bị thất lạc"
     ],
     "category": "Tuần 6 Ngày 7",
     "strokes": 0
@@ -4329,8 +4329,8 @@ export const KANJI = [
     "kun": "まつり",
     "meaning": "Tế",
     "examples": [
-      "文化祭 (ぶんかさい) = Tế (Từ ghép)",
-      "(お)祭り (まつり) = Tế (Từ ghép)"
+      "文化祭 (ぶんかさい) = Lễ hội văn hóa",
+      "(お)祭り (まつり) = (O) Lễ hội"
     ],
     "category": "Tuần 6 Ngày 7",
     "strokes": 0
