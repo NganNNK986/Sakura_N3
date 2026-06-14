@@ -16,7 +16,7 @@ export default function Keigo() {
   return (
     <div className="page-container animate-fadeIn">
       <div className="mb-lg">
-        <h2>🎩 Kính Ngữ (Keigo)</h2>
+        <h2>Kính Ngữ (Keigo)</h2>
         <p className="text-muted mt-xs">{KEIGO.intro}</p>
       </div>
 
@@ -33,10 +33,10 @@ export default function Keigo() {
 
       <div className="tabs mb-md">
         <button className={`tab-btn ${activeTab === 'patterns' ? 'active' : ''}`} onClick={() => setActiveTab('patterns')}>
-          📚 Bảng Động Từ
+          Bảng Động Từ
         </button>
         <button className={`tab-btn ${activeTab === 'scenarios' ? 'active' : ''}`} onClick={() => setActiveTab('scenarios')}>
-          💬 Tình Huống
+          Tình Huống
         </button>
       </div>
 
@@ -66,7 +66,7 @@ export default function Keigo() {
                       className={`btn btn-sm ${isMastered(p.id) ? 'btn-success' : 'btn-secondary'}`}
                       onClick={() => handleMaster(p.id)}
                     >
-                      {isMastered(p.id) ? '✅' : 'Đánh dấu'}
+                      {isMastered(p.id) ? '✓' : 'Đánh dấu'}
                     </button>
                   </td>
                 </tr>
@@ -94,7 +94,7 @@ export default function Keigo() {
                   <div className="jp text-lg font-bold">{s.polite}</div>
                 </div>
               </div>
-              <div className="text-sm text-muted">💡 Giải thích: {s.explain}</div>
+              <div className="text-sm text-muted">Giải thích: {s.explain}</div>
             </div>
           ))}
         </div>

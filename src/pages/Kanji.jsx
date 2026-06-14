@@ -26,7 +26,7 @@ export default function Kanji() {
     <div className="page-container animate-fadeIn">
       <div className="flex items-center justify-between mb-lg flex-wrap gap-md">
         <div>
-          <h2>🖊️ Kanji N3</h2>
+          <h2>Kanji N3</h2>
           <p className="text-muted mt-xs">316 chữ Kanji thiết yếu</p>
         </div>
         <div className="flex gap-sm">
@@ -49,7 +49,7 @@ export default function Kanji() {
           <span className="text-sakura">{progress.mastered.length} / {KANJI.length} ({Math.round(progress.mastered.length/KANJI.length*100)}%)</span>
         </div>
         <div className="progress-bar-track">
-          <div className="progress-bar-fill" style={{ width: \`\${(progress.mastered.length/KANJI.length)*100}%\` }}></div>
+          <div className="progress-bar-fill" style={{ width: (progress.mastered.length/KANJI.length)*100 + '%' }}></div>
         </div>
       </div>
 
@@ -100,7 +100,7 @@ export default function Kanji() {
               className={`btn w-full justify-center ${isMastered(selectedKanji.id) ? 'btn-success' : 'btn-primary'}`}
               onClick={() => handleMaster(selectedKanji)}
             >
-              {isMastered(selectedKanji.id) ? '✅ Đã Thuộc' : '✔️ Đánh dấu Đã Thuộc (+5 XP)'}
+              {isMastered(selectedKanji.id) ? 'Đã Thuộc' : 'Đánh dấu Đã Thuộc (+5 XP)'}
             </button>
           </div>
         )}

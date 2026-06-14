@@ -25,9 +25,7 @@ export default function MockTest() {
   }, [started, timeLeft]);
 
   const handleStart = () => {
-    if (confirm('Bắt đầu làm bài thi? Thời gian: 100 phút. (Không bao gồm bài Nghe)')) {
-      setStarted(true);
-    }
+    setStarted(true);
   };
 
   const handleSelect = (qId, optIdx) => {
@@ -74,7 +72,7 @@ export default function MockTest() {
   if (!started) {
     return (
       <div className="page-container animate-fadeIn flex flex-col items-center justify-center text-center" style={{minHeight:'60vh'}}>
-        <div className="text-6xl mb-md">📝</div>
+        <div className="text-6xl mb-md"></div>
         <h2 className="mb-sm">Thi Thử JLPT N3</h2>
         <p className="text-muted mb-lg max-w-md mx-auto">
           Bài thi mô phỏng JLPT N3 thực tế. 
@@ -96,7 +94,7 @@ export default function MockTest() {
         </div>
 
         <button className="btn btn-primary btn-lg" onClick={handleStart}>
-          ▶️ BẮT ĐẦU THI
+          BẮT ĐẦU THI
         </button>
       </div>
     );
@@ -107,7 +105,7 @@ export default function MockTest() {
       <div className="mock-header flex items-center justify-between card card-body mb-lg sticky top-0" style={{zIndex:10, padding:'12px 24px'}}>
         <div className="font-bold">Thi Thử N3</div>
         <div className="timer font-mono text-xl font-bold" style={{color: timeLeft < 300 ? 'var(--error)' : 'var(--ink)'}}>
-          ⏱️ {formatTime(timeLeft)}
+          {formatTime(timeLeft)}
         </div>
         <button className="btn btn-secondary btn-sm" onClick={() => setShowConfirm(true)}>Nộp Bài</button>
       </div>

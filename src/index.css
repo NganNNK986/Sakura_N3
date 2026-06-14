@@ -270,6 +270,7 @@ input, select, textarea { font-family: var(--font-sans); }
   border: 1px solid rgba(255,255,255,0.8);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-sm);
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   transition: all var(--trans-base);
 }
@@ -358,6 +359,7 @@ input, select, textarea { font-family: var(--font-sans); }
   position: fixed;
   inset: 0;
   background: rgba(45, 27, 51, 0.5);
+  -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
   z-index: 200;
   display: flex;

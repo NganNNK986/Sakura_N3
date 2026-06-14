@@ -1,16 +1,16 @@
 import { useLocation, Link } from 'react-router-dom';
 
 const TITLES = {
-  '/': '🏠 Trang Chủ',
-  '/vocab': '📚 Từ Vựng N3',
-  '/kanji': '🖊️ Kanji N3',
-  '/grammar': '📖 Ngữ Pháp N3',
-  '/conjugation': '🔄 Chia Động Từ',
-  '/keigo': '🎩 Kính Ngữ',
-  '/adverbs': '✨ Phó Từ N3',
-  '/mocktest': '📝 Thi Thử N3',
+  '/': 'Trang Chủ',
+  '/vocab': 'Từ Vựng N3',
+  '/kanji': 'Kanji N3',
+  '/grammar': 'Ngữ Pháp N3',
+  '/conjugation': 'Chia Động Từ',
+  '/keigo': 'Kính Ngữ',
+  '/adverbs': 'Phó Từ N3',
+  '/mocktest': 'Thi Thử N3',
   '/results': '📊 Kết Quả',
-  '/profile': '👤 Hồ Sơ',
+  '/profile': 'Hồ Sơ',
 };
 
 export default function Header() {
@@ -21,7 +21,7 @@ export default function Header() {
     <header className="app-header hide-mobile">
       <h1 className="header-title">{title}</h1>
       <Link to="/mocktest" className="btn btn-primary btn-sm">
-        📝 Thi Thử Ngay
+        Thi Thử Ngay
       </Link>
       <style>{`
         .app-header {

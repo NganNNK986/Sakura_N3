@@ -19,7 +19,7 @@ export default function Conjugation() {
     <div className="page-container animate-fadeIn">
       <div className="flex items-center justify-between mb-lg">
         <div>
-          <h2>🔄 Chia Động Từ</h2>
+          <h2>Chia Động Từ</h2>
           <p className="text-muted mt-xs">Ôn tập các thể chia động từ quan trọng</p>
         </div>
       </div>
@@ -30,7 +30,7 @@ export default function Conjugation() {
           <span className="text-sakura">{progress.mastered.length} / {CONJUGATION.verbs.length} ({Math.round(progress.mastered.length/CONJUGATION.verbs.length*100)}%)</span>
         </div>
         <div className="progress-bar-track">
-          <div className="progress-bar-fill" style={{ width: \`\${(progress.mastered.length/CONJUGATION.verbs.length)*100}%\` }}></div>
+          <div className="progress-bar-fill" style={{ width: (progress.mastered.length/CONJUGATION.verbs.length)*100 + '%' }}></div>
         </div>
       </div>
 
@@ -47,7 +47,7 @@ export default function Conjugation() {
               <div className="text-xs bg-pale px-sm py-xs rounded-full inline-block mt-xs">{v.group}</div>
             </div>
             <div className="text-2xl">
-              {isMastered(v.id) ? '✅' : '➡️'}
+              {isMastered(v.id) ? 'Đã thuộc' : 'Chi tiết'}
             </div>
           </div>
         ))}
@@ -80,7 +80,7 @@ export default function Conjugation() {
               className={`btn w-full justify-center ${isMastered(selectedVerb.id) ? 'btn-success' : 'btn-primary'}`}
               onClick={() => handleMaster(selectedVerb)}
             >
-              {isMastered(selectedVerb.id) ? '✅ Đã Thuộc' : '✔️ Đánh dấu Đã Thuộc (+5 XP)'}
+              {isMastered(selectedVerb.id) ? 'Đã thuộc Đã Thuộc' : 'Đánh dấu Đã Thuộc (+5 XP)'}
             </button>
           </div>
         )}

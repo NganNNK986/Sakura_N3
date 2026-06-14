@@ -60,7 +60,7 @@ export default function Results() {
     <div className="page-container animate-slideUp">
       <div className="text-center mb-xl pt-lg">
         <div style={{fontSize: '5rem', marginBottom: '16px'}}>
-          {isPass ? '🎉' : '💪'}
+          {isPass ? 'Đậu' : 'Trượt'}
         </div>
         <h2 className="text-4xl mb-sm" style={{color: isPass ? 'var(--spring-green)' : 'var(--error)'}}>
           {isPass ? 'Chúc Mừng! Bạn Đã Đậu!' : 'Cố Gắng Lên Nào!'}
@@ -84,7 +84,7 @@ export default function Results() {
                     <span className="font-bold">{pct}%</span>
                   </div>
                   <div className="progress-bar-track" style={{height:'6px'}}>
-                    <div className="progress-bar-fill" style={{width: \`\${pct}%\`, background: pct >= 80 ? 'var(--spring-green)' : pct >= 50 ? 'var(--sakura-500)' : 'var(--error)'}}></div>
+                    <div className="progress-bar-fill" style={{width: pct + '%', background: pct >= 80 ? 'var(--spring-green)' : pct >= 50 ? 'var(--sakura-500)' : 'var(--error)'}}></div>
                   </div>
                 </div>
               );
@@ -93,12 +93,12 @@ export default function Results() {
         </div>
 
         <div className="card card-body">
-          <h3 className="mb-md">⚠️ Điểm Yếu Cần Khắc Phục</h3>
+          <h3 className="mb-md">Điểm Yếu Cần Khắc Phục</h3>
           {sortedWeaknesses.length > 0 ? (
             <ul className="weakness-list">
               {sortedWeaknesses.map((w, i) => (
                 <li key={i} className="weakness-item">
-                  <span className="text-error mr-sm">×</span> {w}
+                   {w}
                 </li>
               ))}
             </ul>
@@ -121,7 +121,7 @@ export default function Results() {
 
       <div className="text-center">
         <button className="btn btn-primary btn-lg" onClick={() => navigate('/dashboard')}>
-          🏠 Về Bảng Điều Khiển
+          Về Bảng Điều Khiển
         </button>
       </div>
 

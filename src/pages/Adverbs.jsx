@@ -36,7 +36,7 @@ export default function Adverbs() {
     <div className="page-container animate-fadeIn">
       <div className="flex items-center justify-between mb-lg">
         <div>
-          <h2>✨ Phó Từ (Fukushi)</h2>
+          <h2>Phó Từ (Fukushi)</h2>
           <p className="text-muted mt-xs">30 phó từ N3 thường gặp nhất</p>
         </div>
       </div>
@@ -47,7 +47,7 @@ export default function Adverbs() {
           <span className="text-sakura">{progress.mastered.length} / {ADVERBS.length} ({Math.round(progress.mastered.length/ADVERBS.length*100)}%)</span>
         </div>
         <div className="progress-bar-track">
-          <div className="progress-bar-fill" style={{ width: \`\${(progress.mastered.length/ADVERBS.length)*100}%\` }}></div>
+          <div className="progress-bar-fill" style={{ width: (progress.mastered.length/ADVERBS.length)*100 + '%' }}></div>
         </div>
       </div>
 

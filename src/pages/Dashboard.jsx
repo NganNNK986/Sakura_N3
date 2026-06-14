@@ -3,14 +3,15 @@ import { useStore } from '../store/useStore';
 import { VOCAB } from '../data/vocab';
 import { KANJI } from '../data/kanji';
 import { GRAMMAR } from '../data/grammar';
+import { BookOpen, PenTool, FileText, RefreshCw, Briefcase, Sparkles, FileEdit, Flame, Star, CheckCircle } from 'lucide-react';
 
 const MODULES = [
-  { to: '/vocab', icon: '📚', label: 'Từ Vựng', key: 'vocab', total: VOCAB.length, color: '#E8809C' },
-  { to: '/kanji', icon: '🖊️', label: 'Kanji', key: 'kanji', total: KANJI.length, color: '#87CEEB' },
-  { to: '/grammar', icon: '📖', label: 'Ngữ Pháp', key: 'grammar', total: GRAMMAR.length, color: '#7BC47F' },
-  { to: '/conjugation', icon: '🔄', label: 'Chia Động Từ', key: 'conjugation', total: 15, color: '#F0B429' },
-  { to: '/keigo', icon: '🎩', label: 'Kính Ngữ', key: 'keigo', total: 18, color: '#B57FD4' },
-  { to: '/adverbs', icon: '✨', label: 'Phó Từ', key: 'adverbs', total: 30, color: '#F4A261' },
+  { to: '/vocab', icon: <BookOpen size={24} />, label: 'Từ Vựng', key: 'vocab', total: VOCAB.length, color: '#E8809C' },
+  { to: '/kanji', icon: <PenTool size={24} />, label: 'Kanji', key: 'kanji', total: KANJI.length, color: '#87CEEB' },
+  { to: '/grammar', icon: <FileText size={24} />, label: 'Ngữ Pháp', key: 'grammar', total: GRAMMAR.length, color: '#7BC47F' },
+  { to: '/conjugation', icon: <RefreshCw size={24} />, label: 'Chia Động Từ', key: 'conjugation', total: 15, color: '#F0B429' },
+  { to: '/keigo', icon: <Briefcase size={24} />, label: 'Kính Ngữ', key: 'keigo', total: 18, color: '#B57FD4' },
+  { to: '/adverbs', icon: <Sparkles size={24} />, label: 'Phó Từ', key: 'adverbs', total: 30, color: '#F4A261' },
 ];
 
 function ProgressRing({ pct, color, size = 70 }) {
@@ -45,13 +46,13 @@ export default function Dashboard() {
           </h2>
           <p className="text-muted mt-sm">Hãy tiếp tục luyện tập để đạt N3 nhé!</p>
           <div className="hero-stats mt-md">
-            <div className="hero-stat"><span className="stat-val">🔥 {streak}</span><span className="stat-label">ngày liên tiếp</span></div>
-            <div className="hero-stat"><span className="stat-val">⭐ {xp}</span><span className="stat-label">điểm XP</span></div>
-            <div className="hero-stat"><span className="stat-val">✅ {totalMastered}</span><span className="stat-label">đã thành thạo</span></div>
+            <div className="hero-stat"><span className="stat-val flex items-center gap-xs"><Flame size={20} className="text-error" /> {streak}</span><span className="stat-label">ngày liên tiếp</span></div>
+            <div className="hero-stat"><span className="stat-val flex items-center gap-xs"><Star size={20} className="text-sakura-500" /> {xp}</span><span className="stat-label">điểm XP</span></div>
+            <div className="hero-stat"><span className="stat-val flex items-center gap-xs"><CheckCircle size={20} className="text-spring-green" /> {totalMastered}</span><span className="stat-label">đã thành thạo</span></div>
           </div>
         </div>
         <div className="hero-cta">
-          <Link to="/mocktest" className="btn btn-primary btn-lg">📝 Thi Thử N3</Link>
+          <Link to="/mocktest" className="btn btn-primary btn-lg flex items-center gap-sm justify-center"><FileEdit size={20} /> Thi Thử N3</Link>
           <p className="text-xs text-muted mt-sm text-center">100 phút · Không có Nghe</p>
         </div>
       </div>

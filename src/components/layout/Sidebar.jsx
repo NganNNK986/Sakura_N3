@@ -1,16 +1,18 @@
 import { NavLink, useLocation } from 'react-router-dom';
 import { useStore } from '../../store/useStore';
 
+import { Home, BookOpen, PenTool, FileText, RefreshCw, Briefcase, Sparkles, FileEdit, User, Flame, Star } from 'lucide-react';
+
 const NAV = [
-  { to: '/', icon: '🏠', label: 'Trang Chủ' },
-  { to: '/vocab', icon: '📚', label: 'Từ Vựng' },
-  { to: '/kanji', icon: '🖊️', label: 'Kanji' },
-  { to: '/grammar', icon: '📖', label: 'Ngữ Pháp' },
-  { to: '/conjugation', icon: '🔄', label: 'Chia Động Từ' },
-  { to: '/keigo', icon: '🎩', label: 'Kính Ngữ' },
-  { to: '/adverbs', icon: '✨', label: 'Phó Từ' },
-  { to: '/mocktest', icon: '📝', label: 'Thi Thử' },
-  { to: '/profile', icon: '👤', label: 'Hồ Sơ' },
+  { to: '/', icon: <Home size={18} />, label: 'Trang Chủ' },
+  { to: '/vocab', icon: <BookOpen size={18} />, label: 'Từ Vựng' },
+  { to: '/kanji', icon: <PenTool size={18} />, label: 'Kanji' },
+  { to: '/grammar', icon: <FileText size={18} />, label: 'Ngữ Pháp' },
+  { to: '/conjugation', icon: <RefreshCw size={18} />, label: 'Chia Động Từ' },
+  { to: '/keigo', icon: <Briefcase size={18} />, label: 'Kính Ngữ' },
+  { to: '/adverbs', icon: <Sparkles size={18} />, label: 'Phó Từ' },
+  { to: '/mocktest', icon: <FileEdit size={18} />, label: 'Thi Thử' },
+  { to: '/profile', icon: <User size={18} />, label: 'Hồ Sơ' },
 ];
 
 export default function Sidebar() {
@@ -31,8 +33,8 @@ export default function Sidebar() {
         </div>
 
         <div className="sidebar-stats">
-          <div className="stat-chip">🔥 {streak} ngày</div>
-          <div className="stat-chip">⭐ {xp} XP</div>
+          <div className="stat-chip flex items-center gap-xs justify-center"><Flame size={14} className="text-error" /> {streak} ngày</div>
+          <div className="stat-chip flex items-center gap-xs justify-center"><Star size={14} className="text-sakura-500" /> {xp} XP</div>
         </div>
 
         <nav className="sidebar-nav">

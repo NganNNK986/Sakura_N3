@@ -36,7 +36,7 @@ export default function Profile({ isSetup }) {
           </div>
         )}
 
-        {!isSetup && <h2 className="mb-lg">👤 Hồ Sơ Của Bạn</h2>}
+        {!isSetup && <h2 className="mb-lg">Hồ Sơ Của Bạn</h2>}
 
         <div className="card card-body mb-lg">
           <h3 className="mb-md">Chọn Avatar</h3>
@@ -56,25 +56,25 @@ export default function Profile({ isSetup }) {
             onKeyDown={e => e.key === 'Enter' && handleSave()}
           />
           <button className="btn btn-primary w-full" onClick={handleSave} disabled={!name.trim()}>
-            {saved ? '✅ Đã lưu!' : isSetup ? '🌸 Bắt Đầu Học!' : '💾 Lưu'}
+            {saved ? 'Đã lưu!' : isSetup ? 'Bắt Đầu Học!' : 'Lưu'}
           </button>
         </div>
 
         {!isSetup && state.profile && (
           <>
             <div className="card card-body mb-lg">
-              <h3 className="mb-md">📊 Thống Kê</h3>
+              <h3 className="mb-md">Thống Kê</h3>
               <div className="stats-grid">
-                <div className="stat-box"><div className="stat-num">🔥 {streak}</div><div className="stat-lbl">Ngày học liên tiếp</div></div>
-                <div className="stat-box"><div className="stat-num">⭐ {xp}</div><div className="stat-lbl">Tổng XP</div></div>
-                <div className="stat-box"><div className="stat-num">✅ {totalMastered}</div><div className="stat-lbl">Đã thành thạo</div></div>
-                <div className="stat-box"><div className="stat-num">📝 {testHistory.length}</div><div className="stat-lbl">Lần thi thử</div></div>
+                <div className="stat-box"><div className="stat-num">{streak}</div><div className="stat-lbl">Ngày học liên tiếp</div></div>
+                <div className="stat-box"><div className="stat-num">{xp}</div><div className="stat-lbl">Tổng XP</div></div>
+                <div className="stat-box"><div className="stat-num">{totalMastered}</div><div className="stat-lbl">Đã thành thạo</div></div>
+                <div className="stat-box"><div className="stat-num">{testHistory.length}</div><div className="stat-lbl">Lần thi thử</div></div>
               </div>
             </div>
 
             {testHistory.length > 0 && (
               <div className="card card-body mb-lg">
-                <h3 className="mb-md">📋 Lịch Sử Thi</h3>
+                <h3 className="mb-md">Lịch Sử Thi</h3>
                 {testHistory.map((t, i) => (
                   <div key={i} className="flex justify-between items-center mb-sm" style={{padding:'8px 0',borderBottom:'1px solid var(--pale)'}}>
                     <span className="text-sm text-muted">{new Date(t.date).toLocaleDateString('vi-VN')}</span>
@@ -90,7 +90,7 @@ export default function Profile({ isSetup }) {
             )}
 
             <button className="btn btn-secondary w-full" onClick={handleReset}>
-              🗑️ Xóa Toàn Bộ Dữ Liệu
+              Xóa Toàn Bộ Dữ Liệu
             </button>
           </>
         )}

@@ -19,7 +19,7 @@ export default function Grammar() {
     <div className="page-container animate-fadeIn">
       <div className="flex items-center justify-between mb-lg">
         <div>
-          <h2>📖 Ngữ Pháp N3</h2>
+          <h2>Ngữ Pháp N3</h2>
           <p className="text-muted mt-xs">89 mẫu câu ngữ pháp</p>
         </div>
       </div>
@@ -30,7 +30,7 @@ export default function Grammar() {
           <span className="text-sakura">{progress.mastered.length} / {GRAMMAR.length} ({Math.round(progress.mastered.length/GRAMMAR.length*100)}%)</span>
         </div>
         <div className="progress-bar-track">
-          <div className="progress-bar-fill" style={{ width: \`\${(progress.mastered.length/GRAMMAR.length)*100}%\` }}></div>
+          <div className="progress-bar-fill" style={{ width: (progress.mastered.length/GRAMMAR.length)*100 + '%' }}></div>
         </div>
       </div>
 
@@ -48,7 +48,7 @@ export default function Grammar() {
                 <div className="text-sm text-muted">{g.meaning}</div>
               </div>
               <div className="text-xl">
-                {isMastered(g.id) ? '✅' : '➡️'}
+                {isMastered(g.id) ? 'Đã thuộc' : 'Chi tiết'}
               </div>
             </div>
           </div>
@@ -64,12 +64,12 @@ export default function Grammar() {
             </div>
 
             <div className="bg-sakura-50 p-md rounded-md mb-md">
-              <div className="font-bold text-sakura mb-xs">📝 Cấu trúc:</div>
+              <div className="font-bold text-sakura mb-xs">Cấu trúc:</div>
               <div className="jp text-lg">{selectedGrammar.formation}</div>
             </div>
 
             <div className="mb-lg">
-              <div className="font-bold text-sakura mb-sm">💡 Ví dụ:</div>
+              <div className="font-bold text-sakura mb-sm">Ví dụ:</div>
               <ul className="pl-0 m-0" style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '12px' }}>
                 {selectedGrammar.examples.map((ex, i) => {
                   // Phân tách tiếng Nhật và nghĩa Việt. VD: 日本語を学ぶために、毎日練習します。(Để học tiếng Nhật, tôi luyện tập mỗi ngày.)
@@ -90,7 +90,7 @@ export default function Grammar() {
               className={`btn w-full justify-center ${isMastered(selectedGrammar.id) ? 'btn-success' : 'btn-primary'}`}
               onClick={() => handleMaster(selectedGrammar)}
             >
-              {isMastered(selectedGrammar.id) ? '✅ Đã Thuộc' : '✔️ Đánh dấu Đã Thuộc (+5 XP)'}
+              {isMastered(selectedGrammar.id) ? 'Đã thuộc Đã Thuộc' : 'Đánh dấu Đã Thuộc (+5 XP)'}
             </button>
           </div>
         )}

@@ -64,15 +64,15 @@ export default function Vocab() {
     <div className="page-container animate-fadeIn">
       <div className="flex items-center justify-between mb-lg">
         <div>
-          <h2>📚 Từ Vựng N3</h2>
+          <h2>Từ Vựng N3</h2>
           <p className="text-muted mt-xs">880 từ vựng cốt lõi</p>
         </div>
         <div className="flex gap-sm">
           <button className={`btn ${mode === 'flashcard' ? 'btn-primary' : 'btn-secondary'}`} onClick={() => setMode('flashcard')}>
-            🎴 Thẻ Ghi Nhớ
+            Thẻ Ghi Nhớ
           </button>
           <button className={`btn ${mode === 'quiz' ? 'btn-primary' : 'btn-secondary'}`} onClick={startQuiz}>
-            🎯 Trắc Nghiệm
+            Trắc Nghiệm
           </button>
         </div>
       </div>
@@ -83,7 +83,7 @@ export default function Vocab() {
           <span className="text-sakura">{progress.mastered.length} / {VOCAB.length} ({Math.round(progress.mastered.length/VOCAB.length*100)}%)</span>
         </div>
         <div className="progress-bar-track">
-          <div className="progress-bar-fill" style={{ width: \`\${(progress.mastered.length/VOCAB.length)*100}%\` }}></div>
+          <div className="progress-bar-fill" style={{ width: (progress.mastered.length/VOCAB.length)*100 + '%' }}></div>
         </div>
       </div>
 
@@ -144,7 +144,7 @@ export default function Vocab() {
           
           {quizState.selected && (
             <div className={`mt-lg text-center font-bold ${quizState.selected === quizState.answer ? 'text-green' : 'text-error'} animate-fadeIn`}>
-              {quizState.selected === quizState.answer ? '🎉 Chính xác! (+5 XP)' : '❌ Sai rồi, thử lại nhé!'}
+              {quizState.selected === quizState.answer ? 'Chính xác! (+5 XP)' : 'Sai rồi, thử lại nhé!'}
             </div>
           )}
         </div>
