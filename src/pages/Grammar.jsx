@@ -20,7 +20,7 @@ export default function Grammar() {
       <div className="flex items-center justify-between mb-lg">
         <div>
           <h2>Ngữ Pháp N3</h2>
-          <p className="text-muted mt-xs">89 mẫu câu ngữ pháp</p>
+          <p className="text-muted mt-xs">{GRAMMAR.length} mẫu câu ngữ pháp</p>
         </div>
       </div>
 
