@@ -111,8 +111,16 @@ export default function Vocab() {
             onKnow={handleKnow}
             onReview={handleReview}
           />
-          <div className="text-sm text-muted mt-lg text-center">
-            {currentIndex + 1} / {VOCAB.length}
+          <div className="flex items-center justify-between mt-lg w-full mx-auto" style={{maxWidth: '400px'}}>
+            <button className="btn btn-secondary" onClick={() => { setIsFlipped(false); setTimeout(() => setCurrentIndex(i => i > 0 ? i - 1 : VOCAB.length - 1), 150); }}>
+              &larr; Trước
+            </button>
+            <div className="text-sm font-medium text-muted">
+              {currentIndex + 1} / {VOCAB.length}
+            </div>
+            <button className="btn btn-secondary" onClick={() => { setIsFlipped(false); setTimeout(() => setCurrentIndex(i => (i + 1) % VOCAB.length), 150); }}>
+              Sau &rarr;
+            </button>
           </div>
         </div>
       )}
