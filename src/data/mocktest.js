@@ -1,0 +1,1348 @@
+export const MOCKTEST={
+  "totalTime": 100,
+  "sections": [
+    {
+      "id": "vocab",
+      "name": "語彙 (Từ Vựng)",
+      "time": 30,
+      "questions": [
+        {
+          "id": "q001",
+          "type": "meaning",
+          "question": "「安全」の意味はどれですか？",
+          "options": [
+            "nguy hiểm",
+            "an toàn",
+            "quan trọng",
+            "khó khăn"
+          ],
+          "answer": 1,
+          "tags": [
+            "vocab",
+            "daily"
+          ]
+        },
+        {
+          "id": "q002",
+          "type": "reading",
+          "question": "「環境」の読み方はどれですか？",
+          "options": [
+            "かんきょう",
+            "かんけい",
+            "かんたん",
+            "かんしん"
+          ],
+          "answer": 0,
+          "tags": [
+            "vocab",
+            "nature"
+          ]
+        },
+        {
+          "id": "q003",
+          "type": "meaning",
+          "question": "「努力」の意味はどれですか？",
+          "options": [
+            "nghỉ ngơi",
+            "thất bại",
+            "nỗ lực",
+            "lo lắng"
+          ],
+          "answer": 2,
+          "tags": [
+            "vocab",
+            "feeling"
+          ]
+        },
+        {
+          "id": "q004",
+          "type": "meaning",
+          "question": "「確認」の意味はどれですか？",
+          "options": [
+            "xác nhận",
+            "từ chối",
+            "đồng ý",
+            "hiểu"
+          ],
+          "answer": 0,
+          "tags": [
+            "vocab",
+            "work"
+          ]
+        },
+        {
+          "id": "q005",
+          "type": "reading",
+          "question": "「将来」の読み方はどれですか？",
+          "options": [
+            "しょうらい",
+            "しゅうらい",
+            "じょうらい",
+            "しょくらい"
+          ],
+          "answer": 0,
+          "tags": [
+            "vocab",
+            "time"
+          ]
+        },
+        {
+          "id": "q006",
+          "type": "usage",
+          "question": "（＿）が上がって、生活が苦しくなった。",
+          "options": [
+            "物価",
+            "物語",
+            "物質",
+            "物事"
+          ],
+          "answer": 0,
+          "tags": [
+            "vocab",
+            "society"
+          ]
+        },
+        {
+          "id": "q007",
+          "type": "meaning",
+          "question": "「合格」の意味はどれですか？",
+          "options": [
+            "thất bại",
+            "đậu",
+            "bắt đầu",
+            "kết thúc"
+          ],
+          "answer": 1,
+          "tags": [
+            "vocab",
+            "study"
+          ]
+        },
+        {
+          "id": "q008",
+          "type": "meaning",
+          "question": "「批判」の意味はどれですか？",
+          "options": [
+            "ca ngợi",
+            "phê bình",
+            "im lặng",
+            "hỏi"
+          ],
+          "answer": 1,
+          "tags": [
+            "vocab",
+            "society"
+          ]
+        },
+        {
+          "id": "q009",
+          "type": "reading",
+          "question": "「経験」の読み方はどれですか？",
+          "options": [
+            "けいけん",
+            "きょうけん",
+            "けいかん",
+            "ぎょうけん"
+          ],
+          "answer": 0,
+          "tags": [
+            "vocab",
+            "daily"
+          ]
+        },
+        {
+          "id": "q010",
+          "type": "usage",
+          "question": "彼女は（＿）な態度で話しかけてきた。",
+          "options": [
+            "積極的",
+            "消極的",
+            "非常識な",
+            "具体的"
+          ],
+          "answer": 0,
+          "tags": [
+            "vocab",
+            "feeling"
+          ]
+        },
+        {
+          "id": "q011",
+          "type": "meaning",
+          "question": "「習慣」の意味はどれですか？",
+          "options": [
+            "kỹ năng",
+            "thói quen",
+            "phong tục",
+            "quy tắc"
+          ],
+          "answer": 1,
+          "tags": [
+            "vocab",
+            "daily"
+          ]
+        },
+        {
+          "id": "q012",
+          "type": "reading",
+          "question": "「報告」の読み方はどれですか？",
+          "options": [
+            "ほうこく",
+            "ほうかく",
+            "ほこく",
+            "ほうがく"
+          ],
+          "answer": 0,
+          "tags": [
+            "vocab",
+            "work"
+          ]
+        },
+        {
+          "id": "q013",
+          "type": "meaning",
+          "question": "「解決」の意味はどれですか？",
+          "options": [
+            "gây ra",
+            "giải quyết",
+            "từ bỏ",
+            "tránh"
+          ],
+          "answer": 1,
+          "tags": [
+            "vocab",
+            "daily"
+          ]
+        },
+        {
+          "id": "q014",
+          "type": "usage",
+          "question": "この店は（＿）がいいから、いつも混んでいる。",
+          "options": [
+            "評判",
+            "批判",
+            "反応",
+            "意見"
+          ],
+          "answer": 0,
+          "tags": [
+            "vocab",
+            "daily"
+          ]
+        },
+        {
+          "id": "q015",
+          "type": "meaning",
+          "question": "「影響」の意味はどれですか？",
+          "options": [
+            "kết quả",
+            "ảnh hưởng",
+            "nguyên nhân",
+            "mục đích"
+          ],
+          "answer": 1,
+          "tags": [
+            "vocab",
+            "society"
+          ]
+        },
+        {
+          "id": "q016",
+          "type": "reading",
+          "question": "「複雑」の読み方はどれですか？",
+          "options": [
+            "ふくざつ",
+            "ぶくざつ",
+            "ふくさつ",
+            "ふっさつ"
+          ],
+          "answer": 0,
+          "tags": [
+            "vocab",
+            "state"
+          ]
+        },
+        {
+          "id": "q017",
+          "type": "meaning",
+          "question": "「予約」の意味はどれですか？",
+          "options": [
+            "hủy bỏ",
+            "đặt trước",
+            "thanh toán",
+            "xác nhận"
+          ],
+          "answer": 1,
+          "tags": [
+            "vocab",
+            "daily"
+          ]
+        },
+        {
+          "id": "q018",
+          "type": "usage",
+          "question": "仕事の（＿）はとても大切だ。",
+          "options": [
+            "効率",
+            "効果",
+            "効果的",
+            "有効"
+          ],
+          "answer": 0,
+          "tags": [
+            "vocab",
+            "work"
+          ]
+        },
+        {
+          "id": "q019",
+          "type": "meaning",
+          "question": "「感謝」の意味はどれですか？",
+          "options": [
+            "phàn nàn",
+            "xin lỗi",
+            "lòng biết ơn",
+            "chào hỏi"
+          ],
+          "answer": 2,
+          "tags": [
+            "vocab",
+            "feeling"
+          ]
+        },
+        {
+          "id": "q020",
+          "type": "reading",
+          "question": "「成功」の読み方はどれですか？",
+          "options": [
+            "せいこう",
+            "せいごう",
+            "せいこ",
+            "せっこう"
+          ],
+          "answer": 0,
+          "tags": [
+            "vocab",
+            "daily"
+          ]
+        },
+        {
+          "id": "q021",
+          "type": "usage",
+          "question": "毎日少しずつ（＿）することが大切です。",
+          "options": [
+            "成長",
+            "成功",
+            "成立",
+            "成熟"
+          ],
+          "answer": 0,
+          "tags": [
+            "vocab",
+            "daily"
+          ]
+        },
+        {
+          "id": "q022",
+          "type": "meaning",
+          "question": "「提案」の意味はどれですか？",
+          "options": [
+            "từ chối",
+            "đề xuất",
+            "đồng ý",
+            "hỏi ý kiến"
+          ],
+          "answer": 1,
+          "tags": [
+            "vocab",
+            "work"
+          ]
+        },
+        {
+          "id": "q023",
+          "type": "reading",
+          "question": "「状況」の読み方はどれですか？",
+          "options": [
+            "じょうきょう",
+            "じょうかん",
+            "じゅうきょう",
+            "しょうきょう"
+          ],
+          "answer": 0,
+          "tags": [
+            "vocab",
+            "daily"
+          ]
+        },
+        {
+          "id": "q024",
+          "type": "usage",
+          "question": "その計画には（＿）がある。",
+          "options": [
+            "問題点",
+            "問題",
+            "問い",
+            "疑問点"
+          ],
+          "answer": 0,
+          "tags": [
+            "vocab",
+            "work"
+          ]
+        },
+        {
+          "id": "q025",
+          "type": "meaning",
+          "question": "「交通」の意味はどれですか？",
+          "options": [
+            "giao tiếp",
+            "giao thông",
+            "giao dịch",
+            "trao đổi"
+          ],
+          "answer": 1,
+          "tags": [
+            "vocab",
+            "travel"
+          ]
+        },
+        {
+          "id": "q026",
+          "type": "reading",
+          "question": "「認める」の読み方はどれですか？",
+          "options": [
+            "みとめる",
+            "にとめる",
+            "さとめる",
+            "まとめる"
+          ],
+          "answer": 0,
+          "tags": [
+            "vocab",
+            "daily"
+          ]
+        },
+        {
+          "id": "q027",
+          "type": "meaning",
+          "question": "「責任」の意味はどれですか？",
+          "options": [
+            "quyền lợi",
+            "trách nhiệm",
+            "nghĩa vụ",
+            "bổn phận"
+          ],
+          "answer": 1,
+          "tags": [
+            "vocab",
+            "society"
+          ]
+        },
+        {
+          "id": "q028",
+          "type": "usage",
+          "question": "（＿）な問題ほど、慎重に考えなければならない。",
+          "options": [
+            "重要",
+            "大事",
+            "重大",
+            "重要な"
+          ],
+          "answer": 2,
+          "tags": [
+            "vocab",
+            "daily"
+          ]
+        },
+        {
+          "id": "q029",
+          "type": "meaning",
+          "question": "「改善」の意味はどれですか？",
+          "options": [
+            "xấu đi",
+            "cải thiện",
+            "giảm sút",
+            "tiến bộ"
+          ],
+          "answer": 1,
+          "tags": [
+            "vocab",
+            "work"
+          ]
+        },
+        {
+          "id": "q030",
+          "type": "reading",
+          "question": "「資料」の読み方はどれですか？",
+          "options": [
+            "しりょう",
+            "じりょう",
+            "しようりょう",
+            "しりょく"
+          ],
+          "answer": 0,
+          "tags": [
+            "vocab",
+            "study"
+          ]
+        },
+        {
+          "id": "q031",
+          "type": "meaning",
+          "question": "「期待」の意味はどれですか？",
+          "options": [
+            "lo sợ",
+            "kỳ vọng",
+            "nghi ngờ",
+            "chờ đợi"
+          ],
+          "answer": 1,
+          "tags": [
+            "vocab",
+            "feeling"
+          ]
+        },
+        {
+          "id": "q032",
+          "type": "usage",
+          "question": "彼の（＿）には感動した。",
+          "options": [
+            "努力",
+            "努める",
+            "努力家",
+            "勤勉"
+          ],
+          "answer": 0,
+          "tags": [
+            "vocab",
+            "feeling"
+          ]
+        },
+        {
+          "id": "q033",
+          "type": "meaning",
+          "question": "「失望」の意味はどれですか？",
+          "options": [
+            "hy vọng",
+            "thất vọng",
+            "lo lắng",
+            "ngạc nhiên"
+          ],
+          "answer": 1,
+          "tags": [
+            "vocab",
+            "feeling"
+          ]
+        },
+        {
+          "id": "q034",
+          "type": "reading",
+          "question": "「判断」の読み方はどれですか？",
+          "options": [
+            "はんだん",
+            "ばんだん",
+            "はんたん",
+            "ばんたん"
+          ],
+          "answer": 0,
+          "tags": [
+            "vocab",
+            "mind"
+          ]
+        },
+        {
+          "id": "q035",
+          "type": "usage",
+          "question": "社会の（＿）とともに、人々の意識も変わってきた。",
+          "options": [
+            "変化",
+            "変更",
+            "変換",
+            "変革"
+          ],
+          "answer": 0,
+          "tags": [
+            "vocab",
+            "society"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grammar",
+      "name": "文法・読解 (Ngữ Pháp & Đọc Hiểu)",
+      "time": 70,
+      "questions": [
+        {
+          "id": "q036",
+          "type": "grammar",
+          "question": "毎朝ジョギングする（＿）にしています。",
+          "options": [
+            "こと",
+            "よう",
+            "もの",
+            "はず"
+          ],
+          "answer": 1,
+          "tags": [
+            "grammar",
+            "effort"
+          ]
+        },
+        {
+          "id": "q037",
+          "type": "grammar",
+          "question": "彼女は日本語が話せる（＿）なった。",
+          "options": [
+            "ように",
+            "ことに",
+            "ものに",
+            "はずに"
+          ],
+          "answer": 0,
+          "tags": [
+            "grammar",
+            "change"
+          ]
+        },
+        {
+          "id": "q038",
+          "type": "grammar",
+          "question": "もっと勉強すれば（＿）のに。",
+          "options": [
+            "よかった",
+            "いい",
+            "よい",
+            "いかった"
+          ],
+          "answer": 0,
+          "tags": [
+            "grammar",
+            "regret"
+          ]
+        },
+        {
+          "id": "q039",
+          "type": "grammar",
+          "question": "雨が降っ（＿）試合は続けられた。",
+          "options": [
+            "ても",
+            "ても",
+            "でも",
+            "のに"
+          ],
+          "answer": 0,
+          "tags": [
+            "grammar",
+            "concession"
+          ]
+        },
+        {
+          "id": "q040",
+          "type": "grammar",
+          "question": "ここでタバコを吸っ（＿）いけません。",
+          "options": [
+            "ては",
+            "ても",
+            "てから",
+            "てさえ"
+          ],
+          "answer": 0,
+          "tags": [
+            "grammar",
+            "prohibition"
+          ]
+        },
+        {
+          "id": "q041",
+          "type": "grammar",
+          "question": "8時までに来（＿）なりません。",
+          "options": [
+            "なければ",
+            "ないと",
+            "なくても",
+            "ずとも"
+          ],
+          "answer": 0,
+          "tags": [
+            "grammar",
+            "obligation"
+          ]
+        },
+        {
+          "id": "q042",
+          "type": "grammar",
+          "question": "彼は来る（＿）だ。きっと来るよ。",
+          "options": [
+            "はず",
+            "わけ",
+            "もの",
+            "こと"
+          ],
+          "answer": 0,
+          "tags": [
+            "grammar",
+            "expectation"
+          ]
+        },
+        {
+          "id": "q043",
+          "type": "grammar",
+          "question": "明日雨が降る（＿）しれない。",
+          "options": [
+            "かも",
+            "でも",
+            "ことも",
+            "ようも"
+          ],
+          "answer": 0,
+          "tags": [
+            "grammar",
+            "possibility"
+          ]
+        },
+        {
+          "id": "q044",
+          "type": "grammar",
+          "question": "空が暗い。もうすぐ雨が降り（＿）だ。",
+          "options": [
+            "そう",
+            "らしい",
+            "ようだ",
+            "はずだ"
+          ],
+          "answer": 0,
+          "tags": [
+            "grammar",
+            "appearance"
+          ]
+        },
+        {
+          "id": "q045",
+          "type": "grammar",
+          "question": "音楽を聴き（＿）勉強しています。",
+          "options": [
+            "ながら",
+            "てから",
+            "たあとで",
+            "ために"
+          ],
+          "answer": 0,
+          "tags": [
+            "grammar",
+            "simultaneous"
+          ]
+        },
+        {
+          "id": "q046",
+          "type": "grammar",
+          "question": "食べ（＿）出かけます。",
+          "options": [
+            "てから",
+            "てあとで",
+            "ながら",
+            "ために"
+          ],
+          "answer": 0,
+          "tags": [
+            "grammar",
+            "sequence"
+          ]
+        },
+        {
+          "id": "q047",
+          "type": "grammar",
+          "question": "寝る（＿）に歯を磨いてください。",
+          "options": [
+            "前",
+            "後",
+            "間",
+            "時"
+          ],
+          "answer": 0,
+          "tags": [
+            "grammar",
+            "time"
+          ]
+        },
+        {
+          "id": "q048",
+          "type": "grammar",
+          "question": "春になっ（＿）花が咲く。",
+          "options": [
+            "たら",
+            "と",
+            "ば",
+            "なら"
+          ],
+          "answer": 1,
+          "tags": [
+            "grammar",
+            "conditional"
+          ]
+        },
+        {
+          "id": "q049",
+          "type": "grammar",
+          "question": "日本語が話せる（＿）があります。",
+          "options": [
+            "ことが",
+            "こと",
+            "ことの",
+            "ことも"
+          ],
+          "answer": 0,
+          "tags": [
+            "grammar",
+            "experience"
+          ]
+        },
+        {
+          "id": "q050",
+          "type": "grammar",
+          "question": "財布を忘れ（＿）しまった。",
+          "options": [
+            "て",
+            "た",
+            "で",
+            "に"
+          ],
+          "answer": 0,
+          "tags": [
+            "grammar",
+            "completion"
+          ]
+        },
+        {
+          "id": "q051",
+          "type": "grammar",
+          "question": "先生が丁寧に教え（＿）くれた。",
+          "options": [
+            "て",
+            "で",
+            "に",
+            "から"
+          ],
+          "answer": 0,
+          "tags": [
+            "grammar",
+            "giving"
+          ]
+        },
+        {
+          "id": "q052",
+          "type": "grammar",
+          "question": "日本の文化（＿）学んでいます。",
+          "options": [
+            "について",
+            "に関して",
+            "によって",
+            "として"
+          ],
+          "answer": 0,
+          "tags": [
+            "grammar",
+            "topic"
+          ]
+        },
+        {
+          "id": "q053",
+          "type": "grammar",
+          "question": "場合（＿）対応が異なります。",
+          "options": [
+            "によって",
+            "について",
+            "として",
+            "に対して"
+          ],
+          "answer": 0,
+          "tags": [
+            "grammar",
+            "means"
+          ]
+        },
+        {
+          "id": "q054",
+          "type": "grammar",
+          "question": "学生（＿）頑張ります。",
+          "options": [
+            "として",
+            "によって",
+            "について",
+            "に関して"
+          ],
+          "answer": 0,
+          "tags": [
+            "grammar",
+            "role"
+          ]
+        },
+        {
+          "id": "q055",
+          "type": "grammar",
+          "question": "努力（＿）すれば合格できる。",
+          "options": [
+            "さえ",
+            "だけ",
+            "しか",
+            "ほど"
+          ],
+          "answer": 0,
+          "tags": [
+            "grammar",
+            "conditional"
+          ]
+        },
+        {
+          "id": "q056",
+          "type": "grammar",
+          "question": "死ぬ（＿）疲れた。",
+          "options": [
+            "ほど",
+            "くらい",
+            "だけ",
+            "しか"
+          ],
+          "answer": 0,
+          "tags": [
+            "grammar",
+            "degree"
+          ]
+        },
+        {
+          "id": "q057",
+          "type": "grammar",
+          "question": "一つ（＿）ください。",
+          "options": [
+            "だけ",
+            "しか",
+            "ばかり",
+            "ほど"
+          ],
+          "answer": 0,
+          "tags": [
+            "grammar",
+            "limit"
+          ]
+        },
+        {
+          "id": "q058",
+          "type": "grammar",
+          "question": "百円（＿）ない。",
+          "options": [
+            "しか",
+            "だけ",
+            "ばかり",
+            "ほど"
+          ],
+          "answer": 0,
+          "tags": [
+            "grammar",
+            "limit"
+          ]
+        },
+        {
+          "id": "q059",
+          "type": "grammar",
+          "question": "英語（＿）でなく日本語も話せる。",
+          "options": [
+            "だけ",
+            "しか",
+            "ばかり",
+            "ほど"
+          ],
+          "answer": 0,
+          "tags": [
+            "grammar",
+            "addition"
+          ]
+        },
+        {
+          "id": "q060",
+          "type": "grammar",
+          "question": "毎日練習する（＿）にした。",
+          "options": [
+            "こと",
+            "よう",
+            "もの",
+            "はず"
+          ],
+          "answer": 0,
+          "tags": [
+            "grammar",
+            "decision"
+          ]
+        },
+        {
+          "id": "q061",
+          "type": "reading",
+          "question": "次の文章を読んで答えなさい。\n\n「最近、スマートフォンの使いすぎが問題になっている。特に若い世代では、一日に何時間もスマートフォンを使う人が多い。これは視力の低下や睡眠不足につながる可能性がある。」\n\nこの文章が言いたいことは何ですか？",
+          "options": [
+            "スマートフォンは便利だ",
+            "スマートフォンの使いすぎは健康に悪い影響を与える",
+            "若者はスマートフォンを使うべきではない",
+            "スマートフォンの機能は優れている"
+          ],
+          "answer": 1,
+          "tags": [
+            "reading",
+            "health"
+          ]
+        },
+        {
+          "id": "q062",
+          "type": "reading",
+          "question": "次の文章を読んで答えなさい。\n\n「環境問題は世界全体で取り組まなければならない課題だ。一つの国だけで解決できる問題ではなく、国際的な協力が必要だ。」\n\nこの文章の主旨は何ですか？",
+          "options": [
+            "環境問題は一つの国で解決できる",
+            "環境問題の解決には国際的な協力が必要だ",
+            "環境問題は重要ではない",
+            "各国が独自に対応すれば良い"
+          ],
+          "answer": 1,
+          "tags": [
+            "reading",
+            "society"
+          ]
+        },
+        {
+          "id": "q063",
+          "type": "reading",
+          "question": "次の文章を読んで答えなさい。\n\n「勉強で大切なのは、ただ暗記するだけでなく、内容を理解することだ。理解した上で繰り返し練習することで、本当の実力がつく。」\n\nこの文章から、良い勉強の方法はどれですか？",
+          "options": [
+            "とにかく暗記する",
+            "内容を理解してから練習する",
+            "たくさんの教科書を読む",
+            "先生の言葉を全部書く"
+          ],
+          "answer": 1,
+          "tags": [
+            "reading",
+            "study"
+          ]
+        },
+        {
+          "id": "q064",
+          "type": "grammar",
+          "question": "彼は怒っている（＿）だ。顔が真っ赤だから。",
+          "options": [
+            "ようだ",
+            "はずだ",
+            "わけだ",
+            "そうだ"
+          ],
+          "answer": 0,
+          "tags": [
+            "grammar",
+            "appearance"
+          ]
+        },
+        {
+          "id": "q065",
+          "type": "grammar",
+          "question": "そんな（＿）はない。きっと誤解だよ。",
+          "options": [
+            "はず",
+            "こと",
+            "わけ",
+            "もの"
+          ],
+          "answer": 0,
+          "tags": [
+            "grammar",
+            "negation"
+          ]
+        },
+        {
+          "id": "q066",
+          "type": "reading",
+          "question": "次の文章を読んで答えなさい。\n\n「ボランティア活動に参加することで、社会とのつながりを感じることができる。また、他の人を助けることで自分自身も成長できる。」\n\nボランティア活動の利点として述べられていないのはどれですか？",
+          "options": [
+            "社会とのつながりを感じる",
+            "他の人を助けられる",
+            "自分が成長できる",
+            "お金が稼げる"
+          ],
+          "answer": 3,
+          "tags": [
+            "reading",
+            "society"
+          ]
+        },
+        {
+          "id": "q067",
+          "type": "grammar",
+          "question": "来月転勤する（＿）になった。",
+          "options": [
+            "こと",
+            "よう",
+            "もの",
+            "はず"
+          ],
+          "answer": 0,
+          "tags": [
+            "grammar",
+            "decision"
+          ]
+        },
+        {
+          "id": "q068",
+          "type": "grammar",
+          "question": "嫌いな（＿）ではない。ただ苦手なだけだ。",
+          "options": [
+            "わけ",
+            "はず",
+            "こと",
+            "もの"
+          ],
+          "answer": 0,
+          "tags": [
+            "grammar",
+            "negation"
+          ]
+        },
+        {
+          "id": "q069",
+          "type": "reading",
+          "question": "次の案内を読んで答えなさい。\n\n「図書館の利用時間：月〜金 9:00〜20:00　土日 10:00〜17:00　休館日：毎週月曜日、祝日」\n\n月曜日に図書館に行きたい場合はどうしますか？",
+          "options": [
+            "9時に行けば利用できる",
+            "この日は利用できない",
+            "10時から利用できる",
+            "予約が必要だ"
+          ],
+          "answer": 1,
+          "tags": [
+            "reading",
+            "info"
+          ]
+        },
+        {
+          "id": "q070",
+          "type": "grammar",
+          "question": "先生に（＿）てもらった。",
+          "options": [
+            "見",
+            "見て",
+            "みて",
+            "見ら"
+          ],
+          "answer": 0,
+          "tags": [
+            "grammar",
+            "receiving"
+          ]
+        },
+        {
+          "id": "q071",
+          "type": "reading",
+          "question": "次の文章を読んで答えなさい。\n\n「日本では、正月になると家族が集まって特別な料理を食べる習慣がある。この時期には、初詣と呼ばれる神社や寺への参拝も行われる。」\n\n正月に行われることとして述べられているのはどれですか？",
+          "options": [
+            "花火大会",
+            "家族で食事をすること",
+            "お祭りに行くこと",
+            "海水浴に行くこと"
+          ],
+          "answer": 1,
+          "tags": [
+            "reading",
+            "culture"
+          ]
+        },
+        {
+          "id": "q072",
+          "type": "grammar",
+          "question": "日本の文化について（＿）たい。",
+          "options": [
+            "学び",
+            "学ぶ",
+            "学ん",
+            "学ば"
+          ],
+          "answer": 0,
+          "tags": [
+            "grammar",
+            "desire"
+          ]
+        },
+        {
+          "id": "q073",
+          "type": "reading",
+          "question": "次の文章を読んで答えなさい。\n\n「現代社会では、情報技術の発展により、世界中の人々がインターネットを通じて情報を共有できるようになった。しかし、偽の情報も広まりやすくなっており、情報の正確さを確認することが重要になっている。」\n\nこの文章で注意が必要だと言っているのは何ですか？",
+          "options": [
+            "インターネットを使いすぎること",
+            "偽の情報に注意すること",
+            "技術の発展が早すぎること",
+            "情報を共有しないこと"
+          ],
+          "answer": 1,
+          "tags": [
+            "reading",
+            "society"
+          ]
+        },
+        {
+          "id": "q074",
+          "type": "grammar",
+          "question": "このことを（＿）にしよう。秘密だよ。",
+          "options": [
+            "秘密",
+            "知らないこと",
+            "なかったこと",
+            "あったこと"
+          ],
+          "answer": 2,
+          "tags": [
+            "grammar",
+            "decision"
+          ]
+        },
+        {
+          "id": "q075",
+          "type": "grammar",
+          "question": "彼女は来る（＿）？今日来ると言っていたのに。",
+          "options": [
+            "かな",
+            "のかな",
+            "のか",
+            "だろうか"
+          ],
+          "answer": 3,
+          "tags": [
+            "grammar",
+            "conjecture"
+          ]
+        },
+        {
+          "id": "q076",
+          "type": "reading",
+          "question": "次のメールを読んで答えなさい。\n\n「田中様、先日はお世話になりました。ご報告が遅くなって申し訳ございません。プロジェクトの進捗状況についてご連絡いたします。」\n\nこのメールを書いた人は誰に対して書きましたか？",
+          "options": [
+            "部下",
+            "同僚",
+            "田中という上の立場の人",
+            "友人"
+          ],
+          "answer": 2,
+          "tags": [
+            "reading",
+            "keigo"
+          ]
+        },
+        {
+          "id": "q077",
+          "type": "grammar",
+          "question": "春になる（＿）、花が咲き始めた。",
+          "options": [
+            "と",
+            "たら",
+            "ば",
+            "なら"
+          ],
+          "answer": 0,
+          "tags": [
+            "grammar",
+            "conditional"
+          ]
+        },
+        {
+          "id": "q078",
+          "type": "reading",
+          "question": "次の文章を読んで答えなさい。\n\n「旅行の際には、その土地の文化や慣習を尊重することが大切だ。自分の国と違うからといって批判するのではなく、違いを楽しむ姿勢が必要だ。」\n\nこの文章が伝えたいことは何ですか？",
+          "options": [
+            "旅行する前に勉強が必要だ",
+            "外国の文化の違いを楽しむことが大切だ",
+            "外国の文化は日本より優れている",
+            "旅行はお金がかかる"
+          ],
+          "answer": 1,
+          "tags": [
+            "reading",
+            "culture"
+          ]
+        },
+        {
+          "id": "q079",
+          "type": "grammar",
+          "question": "努力すれ（＿）報われる。",
+          "options": [
+            "ば",
+            "たら",
+            "と",
+            "なら"
+          ],
+          "answer": 0,
+          "tags": [
+            "grammar",
+            "conditional"
+          ]
+        },
+        {
+          "id": "q080",
+          "type": "grammar",
+          "question": "時間さえあれ（＿）行けるのに。",
+          "options": [
+            "ば",
+            "たら",
+            "と",
+            "なら"
+          ],
+          "answer": 0,
+          "tags": [
+            "grammar",
+            "conditional"
+          ]
+        },
+        {
+          "id": "q081",
+          "type": "reading",
+          "question": "次の文章を読んで答えなさい。\n\n「近年、テレワーク（在宅勤務）が普及している。通勤時間が不要になり、仕事の効率が上がったという人もいるが、一方で職場の人とのコミュニケーションが減ったという課題もある。」\n\nテレワークの問題点として挙げられているのは何ですか？",
+          "options": [
+            "通勤時間が長くなること",
+            "仕事の効率が下がること",
+            "職場の人との交流が減ること",
+            "残業が増えること"
+          ],
+          "answer": 2,
+          "tags": [
+            "reading",
+            "work"
+          ]
+        },
+        {
+          "id": "q082",
+          "type": "grammar",
+          "question": "寝ている（＿）に地震があった。",
+          "options": [
+            "間",
+            "前",
+            "後",
+            "時"
+          ],
+          "answer": 0,
+          "tags": [
+            "grammar",
+            "time"
+          ]
+        },
+        {
+          "id": "q083",
+          "type": "reading",
+          "question": "次の案内を読んで答えなさい。\n\n「〈スポーツセンター〉\n利用料金：大人 500円、子供 250円\n営業時間：6:00〜22:00\n定休日：毎月第3月曜日」\n\n子供2人と大人1人で利用したいです。いくら払いますか？",
+          "options": [
+            "750円",
+            "1000円",
+            "1250円",
+            "1500円"
+          ],
+          "answer": 1,
+          "tags": [
+            "reading",
+            "info"
+          ]
+        }
+      ]
+    }
+  ]
+};
+export default MOCKTEST;
