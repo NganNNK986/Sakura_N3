@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import { useStore } from "../store/useStore";
-import { VOCAB } from "../data/vocab";
-import { KANJI } from "../data/kanji";
-import { GRAMMAR } from "../data/grammar";
+import VOCAB from "../data/vocab";
+import KANJI from "../data/kanji";
+import GRAMMAR from "../data/grammar";
 import {
   BookOpen,
   PenTool,
