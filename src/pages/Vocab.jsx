@@ -8,9 +8,20 @@ export default function Vocab() {
   const progress = state.progress.vocab || { seen: [], mastered: [], currentIndex: 0 };
   
   const [mode, setMode] = useState('flashcard');
+  const [activeTab, setActiveTab] = useState('soumatome');
   const [currentIndex, setCurrentIndex] = useState(progress.currentIndex || 0);
   const [isFlipped, setIsFlipped] = useState(false);
   const [quizState, setQuizState] = useState(null);
+
+  const activeVocabList = useMemo(() => {
+    if (activeTab === 'soumatome') return VOCAB.filter(w => !w.id.startsWith('v10'));
+    return VOCAB.filter(w => w.id.startsWith('v10'));
+  }, [activeTab]);
+
+  useEffect(() => {
+    setCurrentIndex(0);
+    setIsFlipped(false);
+  }, [activeTab]);
 
   useEffect(() => {
     saveCurrentIndex('vocab', currentIndex);
@@ -20,29 +31,33 @@ export default function Vocab() {
   const handleNext = () => {
     setIsFlipped(false);
     setTimeout(() => {
-      setCurrentIndex((i) => (i + 1) % VOCAB.length);
+      setCurrentIndex((i) => (i + 1) % activeVocabList.length);
     }, 150);
   };
 
   const handleKnow = () => {
-    const word = VOCAB[currentIndex];
-    markSeen('vocab', word.id);
-    markMastered('vocab', word.id);
+    const word = activeVocabList[currentIndex];
+    if(word) {
+      markSeen('vocab', word.id);
+      markMastered('vocab', word.id);
+    }
     handleNext();
   };
 
   const handleReview = () => {
-    const word = VOCAB[currentIndex];
-    markSeen('vocab', word.id);
+    const word = activeVocabList[currentIndex];
+    if(word) {
+      markSeen('vocab', word.id);
+    }
     handleNext();
   };
 
-  const currentWord = VOCAB[currentIndex];
+  const currentWord = activeVocabList[currentIndex];
 
   // Quiz Logic
   const generateQuiz = () => {
-    const word = VOCAB[Math.floor(Math.random() * VOCAB.length)];
-    const others = [...VOCAB].sort(() => 0.5 - Math.random()).filter(w => w.id !== word.id).slice(0, 3);
+    const word = activeVocabList[Math.floor(Math.random() * activeVocabList.length)];
+    const others = [...activeVocabList].sort(() => 0.5 - Math.random()).filter(w => w.id !== word.id).slice(0, 3);
     const options = [word, ...others].sort(() => 0.5 - Math.random());
     setQuizState({ question: word, options, answer: word.id, selected: null });
   };
@@ -69,7 +84,7 @@ export default function Vocab() {
       <div className="flex items-center justify-between mb-lg">
         <div>
           <h2>Từ Vựng N3</h2>
-          <p className="text-muted mt-xs">880 từ vựng cốt lõi</p>
+          <p className="text-muted mt-xs">Tổng hợp từ vựng ôn thi N3</p>
         </div>
         <div className="flex gap-sm">
           <button className={`btn ${mode === 'flashcard' ? 'btn-primary' : 'btn-secondary'}`} onClick={() => setMode('flashcard')}>
@@ -81,13 +96,28 @@ export default function Vocab() {
         </div>
       </div>
 
+      <div className="flex border-b border-border mb-lg">
+        <button 
+          className={`flex-1 p-sm font-bold border-b-2 transition-colors ${activeTab === 'soumatome' ? 'border-sakura text-sakura' : 'border-transparent text-muted hover:text-ink'}`}
+          onClick={() => setActiveTab('soumatome')}
+        >
+          880 Từ Vựng Soumatome
+        </button>
+        <button 
+          className={`flex-1 p-sm font-bold border-b-2 transition-colors ${activeTab === 'frequent' ? 'border-sakura text-sakura' : 'border-transparent text-muted hover:text-ink'}`}
+          onClick={() => setActiveTab('frequent')}
+        >
+          Từ Vựng Hay Thi JLPT
+        </button>
+      </div>
+
       <div className="card card-body mb-lg text-center">
         <div className="flex justify-between text-sm mb-sm font-medium">
-          <span className="text-muted">Tiến độ</span>
-          <span className="text-sakura">{progress.mastered.length} / {VOCAB.length} ({Math.round(progress.mastered.length/VOCAB.length*100)}%)</span>
+          <span className="text-muted">Tiến độ ({activeTab === 'soumatome' ? 'Soumatome' : 'JLPT N3'})</span>
+          <span className="text-sakura">{progress.mastered.filter(id => activeVocabList.some(w => w.id === id)).length} / {activeVocabList.length}</span>
         </div>
         <div className="progress-bar-track">
-          <div className="progress-bar-fill" style={{ width: (progress.mastered.length/VOCAB.length)*100 + '%' }}></div>
+          <div className="progress-bar-fill" style={{ width: (progress.mastered.filter(id => activeVocabList.some(w => w.id === id)).length/activeVocabList.length)*100 + '%' }}></div>
         </div>
       </div>
 
@@ -112,13 +142,13 @@ export default function Vocab() {
             onReview={handleReview}
           />
           <div className="flex items-center justify-between mt-lg w-full mx-auto" style={{maxWidth: '400px'}}>
-            <button className="btn btn-secondary" onClick={() => { setIsFlipped(false); setTimeout(() => setCurrentIndex(i => i > 0 ? i - 1 : VOCAB.length - 1), 150); }}>
+            <button className="btn btn-secondary" onClick={() => { setIsFlipped(false); setTimeout(() => setCurrentIndex(i => i > 0 ? i - 1 : activeVocabList.length - 1), 150); }}>
               &larr; Trước
             </button>
             <div className="text-sm font-medium text-muted">
-              {currentIndex + 1} / {VOCAB.length}
+              {currentIndex + 1} / {activeVocabList.length}
             </div>
-            <button className="btn btn-secondary" onClick={() => { setIsFlipped(false); setTimeout(() => setCurrentIndex(i => (i + 1) % VOCAB.length), 150); }}>
+            <button className="btn btn-secondary" onClick={() => { setIsFlipped(false); setTimeout(() => setCurrentIndex(i => (i + 1) % activeVocabList.length), 150); }}>
               Sau &rarr;
             </button>
           </div>
