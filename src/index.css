@@ -699,6 +699,32 @@ textarea {
 .text-3xl {
   font-size: 2rem;
 }
+.text-4xl {
+  font-size: 2.25rem;
+}
+.text-5xl {
+  font-size: 3rem;
+}
+.text-6xl {
+  font-size: 3.75rem;
+}
+.text-7xl {
+  font-size: 4.5rem;
+}
+
+.blur-reveal {
+  filter: blur(8px);
+  transition: filter var(--trans-base);
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.blur-reveal:hover,
+.blur-reveal:active {
+  filter: blur(0);
+  -webkit-user-select: auto;
+  user-select: auto;
+}
 .font-bold {
   font-weight: 700;
 }

@@ -17,13 +17,13 @@ export default function FlashCard({
         onClick={() => setIsFlipped(!isFlipped)}
       >
         <div className="flashcard-front flex items-center justify-center">
-          <div className="text-3xl font-bold jp">{front}</div>
+          <div className="text-6xl font-bold jp">{front}</div>
           <div className="click-hint text-xs text-muted mt-lg">
             Click để lật thẻ{" "}
           </div>
         </div>
         <div className="flashcard-back flex-col justify-between">
-          <div className="back-header">{backHeader}</div>
+          <div className="back-header blur-reveal">{backHeader}</div>
           <div className="back-body flex-1 flex items-center justify-center text-center">
             {backBody}
           </div>

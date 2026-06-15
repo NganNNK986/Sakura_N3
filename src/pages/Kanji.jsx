@@ -145,7 +145,7 @@ export default function Kanji() {
             <div className="text-6xl font-bold jp text-sakura my-md">
               {quizState.question.char}
             </div>
-            <div className="text-md text-ink-40 mt-xs">
+            <div className="text-md text-ink-40 mt-xs blur-reveal">
               {quizState.question.on
                 ? quizState.question.on
                 : quizState.question.kun}

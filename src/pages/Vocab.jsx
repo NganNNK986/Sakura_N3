@@ -19,8 +19,8 @@ export default function Vocab() {
 
   const activeVocabList = useMemo(() => {
     if (activeTab === "soumatome")
-      return VOCAB.filter((w) => !w.id.startsWith("v10"));
-    return VOCAB.filter((w) => w.id.startsWith("v10"));
+      return VOCAB.filter((w) => !w.id.startsWith("jlpt"));
+    return VOCAB.filter((w) => w.id.startsWith("jlpt"));
   }, [activeTab]);
 
   useEffect(() => {
@@ -233,10 +233,10 @@ export default function Vocab() {
             <div className="text-sm text-muted mb-sm">
               Nghĩa của từ này là gì?
             </div>
-            <div className="text-4xl font-bold jp text-sakura">
+            <div className="text-6xl font-bold jp text-sakura mt-sm mb-xs">
               {quizState.question.word}
             </div>
-            <div className="text-md text-ink-40 mt-xs">
+            <div className="text-md text-ink-40 mt-xs blur-reveal">
               {quizState.question.reading}
             </div>
           </div>

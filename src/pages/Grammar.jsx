@@ -122,7 +122,7 @@ export default function Grammar() {
             <div className="text-sm text-muted mb-sm">
               Ý nghĩa của cấu trúc ngữ pháp này là gì?
             </div>
-            <div className="text-4xl font-bold jp text-sakura my-md">
+            <div className="text-6xl font-bold jp text-sakura my-md">
               {quizState.question.pattern}
             </div>
           </div>
