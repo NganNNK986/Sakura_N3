@@ -1,102 +1,113 @@
 import { useState } from 'react';
-import { useStore } from '../store/useStore';
-import CONJUGATION from '../data/conjugation';
-import Modal from '../components/ui/Modal';
+import { CONJUGATION_RULES, IRREGULAR_VERBS } from '../data/conjugation';
 
 export default function Conjugation() {
-  const { state, markMastered } = useStore();
-  const [selectedVerb, setSelectedVerb] = useState(null);
-
-  const progress = state.progress.conjugation || { seen: [], mastered: [] };
-  const isMastered = (id) => progress.mastered.includes(id);
-
-  const handleMaster = (v) => {
-    markMastered('conjugation', v.id);
-    setSelectedVerb(null);
-  };
+  const [activeTab, setActiveTab] = useState('rules'); // 'rules' or 'irregular'
 
   return (
     <div className="page-container animate-fadeIn">
-      <div className="flex items-center justify-between mb-lg">
+      <div className="flex items-center justify-between mb-lg flex-wrap gap-md">
         <div>
           <h2>Chia Động Từ</h2>
-          <p className="text-muted mt-xs">Ôn tập các thể chia động từ quan trọng</p>
+          <p className="text-muted mt-xs">Sổ tay tra cứu quy tắc và ngoại lệ</p>
         </div>
-      </div>
-
-      <div className="card card-body mb-lg text-center">
-        <div className="flex justify-between text-sm mb-sm font-medium">
-          <span className="text-muted">Tiến độ</span>
-          <span className="text-sakura">{progress.mastered.length} / {CONJUGATION.verbs.length} ({Math.round(progress.mastered.length/CONJUGATION.verbs.length*100)}%)</span>
-        </div>
-        <div className="progress-bar-track">
-          <div className="progress-bar-fill" style={{ width: (progress.mastered.length/CONJUGATION.verbs.length)*100 + '%' }}></div>
-        </div>
-      </div>
-
-      <div className="grid-2col gap-md">
-        {CONJUGATION.verbs.map(v => (
-          <div 
-            key={v.id} 
-            className={`card card-body card-hover flex justify-between items-center cursor-pointer ${isMastered(v.id) ? 'bg-spring-light border-spring' : ''}`}
-            onClick={() => setSelectedVerb(v)}
+        <div className="flex gap-sm">
+          <button 
+            className={`btn ${activeTab === 'rules' ? 'btn-primary' : 'btn-secondary'}`} 
+            onClick={() => setActiveTab('rules')}
           >
-            <div>
-              <div className="text-2xl font-bold jp text-sakura mb-xs">{v.dict}</div>
-              <div className="text-sm text-muted">{v.meaning}</div>
-              <div className="text-xs bg-pale px-sm py-xs rounded-full inline-block mt-xs">{v.group}</div>
-            </div>
-            <div className="text-2xl">
-              {isMastered(v.id) ? 'Đã thuộc' : 'Chi tiết'}
-            </div>
-          </div>
-        ))}
+            Hướng Dẫn Chung
+          </button>
+          <button 
+            className={`btn ${activeTab === 'irregular' ? 'btn-primary' : 'btn-secondary'}`} 
+            onClick={() => setActiveTab('irregular')}
+          >
+            Động Từ Bất Quy Tắc
+          </button>
+        </div>
       </div>
 
-      <Modal isOpen={!!selectedVerb} onClose={() => setSelectedVerb(null)} title="Bảng Chia Động Từ">
-        {selectedVerb && (
-          <div>
-            <div className="text-center mb-lg">
-              <h3 className="text-4xl font-bold jp text-sakura">{selectedVerb.dict}</h3>
-              <div className="text-lg font-medium">{selectedVerb.meaning}</div>
-              <div className="text-sm text-muted mt-xs">{selectedVerb.group}</div>
-            </div>
+      {activeTab === 'rules' && (
+        <div className="rules-container animate-slideUp">
+          {CONJUGATION_RULES.map((rule, idx) => (
+            <div key={idx} className="card card-body mb-lg">
+              <h3 className="text-2xl font-bold text-sakura mb-xs">{rule.form}</h3>
+              <p className="text-muted mb-md">{rule.description}</p>
+              
+              <div className="grid-3col gap-md">
+                {/* Nhóm 1 */}
+                <div className="bg-sakura-50 p-md rounded-md">
+                  <div className="font-bold mb-sm badge badge-sakura">Nhóm 1 (Godan)</div>
+                  {Array.isArray(rule.group1) ? (
+                    <ul className="pl-md m-0 space-y-2">
+                      {rule.group1.map((g1, i) => (
+                        <li key={i}>
+                          <span className="font-medium">{g1.ending}</span> &rarr; <span className="jp font-bold text-ink">{g1.change}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <div className="jp font-medium">{rule.group1}</div>
+                  )}
+                </div>
 
-            <div className="conjugation-table mb-lg">
-              {CONJUGATION.forms.map((formName, i) => (
-                <div key={i} className="conj-row">
-                  <div className="conj-label">
-                    <div className="font-bold">{formName}</div>
-                    <div className="text-xs text-muted font-normal">{CONJUGATION.formDescriptions[i]}</div>
-                  </div>
-                  <div className="conj-value jp text-lg font-medium text-ink">
-                    {selectedVerb.forms[i]}
+                {/* Nhóm 2 */}
+                <div className="bg-blue-50 p-md rounded-md">
+                  <div className="font-bold mb-sm badge badge-blue">Nhóm 2 (Ichidan)</div>
+                  <div className="jp font-medium" style={{ whiteSpace: 'pre-line' }}>{rule.group2}</div>
+                </div>
+
+                {/* Nhóm 3 */}
+                <div className="bg-green-50 p-md rounded-md">
+                  <div className="font-bold mb-sm badge badge-green">Nhóm 3 (Bất quy tắc)</div>
+                  <div className="jp font-medium" style={{ whiteSpace: 'pre-line' }}>{rule.group3}</div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
+
+      {activeTab === 'irregular' && (
+        <div className="irregular-container animate-slideUp">
+          <div className="grid-2col gap-md">
+            {IRREGULAR_VERBS.map((verb, idx) => (
+              <div key={idx} className="card card-body card-hover flex-col gap-sm">
+                <div className="flex items-center gap-md mb-xs">
+                  <div className="text-4xl font-bold jp text-sakura">{verb.dict}</div>
+                  <div>
+                    <div className="text-lg jp font-medium">{verb.reading}</div>
+                    <div className="text-sm text-muted">{verb.meaning}</div>
                   </div>
                 </div>
-              ))}
-            </div>
-
-            <button 
-              className={`btn w-full justify-center ${isMastered(selectedVerb.id) ? 'btn-success' : 'btn-primary'}`}
-              onClick={() => handleMaster(selectedVerb)}
-            >
-              {isMastered(selectedVerb.id) ? 'Đã thuộc Đã Thuộc' : 'Đánh dấu Đã Thuộc (+5 XP)'}
-            </button>
+                <div className="bg-pale p-sm rounded-md">
+                  <table className="w-full text-left">
+                    <tbody>
+                      {verb.forms.map((form, i) => (
+                        <tr key={i} className="border-b border-white last:border-0">
+                          <td className="py-xs text-sm font-medium text-muted w-1/3">{form.label}</td>
+                          <td className="py-xs jp font-bold">{form.value}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            ))}
           </div>
-        )}
-      </Modal>
+        </div>
+      )}
 
       <style>{`
+        .grid-3col { display: grid; grid-template-columns: 1fr; }
+        @media(min-width: 768px) { .grid-3col { grid-template-columns: 1fr 1fr 1fr; } }
         .grid-2col { display: grid; grid-template-columns: 1fr; }
         @media(min-width: 768px) { .grid-2col { grid-template-columns: 1fr 1fr; } }
-        .bg-spring-light { background: var(--spring-green-light); }
-        .border-spring { border-color: var(--spring-green); }
-        .conjugation-table { border: 1px solid var(--pale); border-radius: var(--radius-md); overflow: hidden; }
-        .conj-row { display: flex; border-bottom: 1px solid var(--pale); }
-        .conj-row:last-child { border-bottom: none; }
-        .conj-row:nth-child(even) { background: var(--bg-body); }
-        .conj-label { flex: 1; padding: var(--space-sm) var(--space-md); border-right: 1px solid var(--pale); background: rgba(0,0,0,0.02); }
-        .conj-value { flex: 1; padding: var(--space-sm) var(--space-md); display: flex; align-items: center; }
+        .space-y-2 > * + * { margin-top: 0.5rem; }
+        .bg-blue-50 { background: #e0f2fe; }
+        .bg-green-50 { background: #dcfce7; }
+        .badge-blue { background: #bae6fd; color: #0369a1; }
+        .badge-green { background: #bbf7d0; color: #15803d; }
       `}</style>
     </div>
   );

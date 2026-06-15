@@ -1,299 +1,188 @@
-export const CONJUGATION={
-  "forms": [
-    "Từ Điển",
-    "Masu",
-    "Te",
-    "Ta",
-    "Nai",
-    "Nakatta",
-    "Potential",
-    "Passive",
-    "Causative",
-    "Volitional"
-  ],
-  "formDescriptions": [
-    "Dạng từ điển",
-    "Dạng lịch sự",
-    "Dạng て",
-    "Dạng quá khứ",
-    "Dạng phủ định",
-    "Phủ định quá khứ",
-    "Dạng khả năng",
-    "Dạng bị động",
-    "Dạng sai khiến",
-    "Dạng ý chí"
-  ],
-  "verbs": [
-    {
-      "id": "c001",
-      "dict": "食べる",
-      "group": "Nhóm 2 (Ichidan)",
-      "meaning": "ăn",
-      "forms": [
-        "食べる",
-        "食べます",
-        "食べて",
-        "食べた",
-        "食べない",
-        "食べなかった",
-        "食べられる",
-        "食べられる",
-        "食べさせる",
-        "食べよう"
-      ]
-    },
-    {
-      "id": "c002",
-      "dict": "飲む",
-      "group": "Nhóm 1 (Godan)",
-      "meaning": "uống",
-      "forms": [
-        "飲む",
-        "飲みます",
-        "飲んで",
-        "飲んだ",
-        "飲まない",
-        "飲まなかった",
-        "飲める",
-        "飲まれる",
-        "飲ませる",
-        "飲もう"
-      ]
-    },
-    {
-      "id": "c003",
-      "dict": "書く",
-      "group": "Nhóm 1 (Godan)",
-      "meaning": "viết",
-      "forms": [
-        "書く",
-        "書きます",
-        "書いて",
-        "書いた",
-        "書かない",
-        "書かなかった",
-        "書ける",
-        "書かれる",
-        "書かせる",
-        "書こう"
-      ]
-    },
-    {
-      "id": "c004",
-      "dict": "話す",
-      "group": "Nhóm 1 (Godan)",
-      "meaning": "nói",
-      "forms": [
-        "話す",
-        "話します",
-        "話して",
-        "話した",
-        "話さない",
-        "話さなかった",
-        "話せる",
-        "話される",
-        "話させる",
-        "話そう"
-      ]
-    },
-    {
-      "id": "c005",
-      "dict": "読む",
-      "group": "Nhóm 1 (Godan)",
-      "meaning": "đọc",
-      "forms": [
-        "読む",
-        "読みます",
-        "読んで",
-        "読んだ",
-        "読まない",
-        "読まなかった",
-        "読める",
-        "読まれる",
-        "読ませる",
-        "読もう"
-      ]
-    },
-    {
-      "id": "c006",
-      "dict": "見る",
-      "group": "Nhóm 2 (Ichidan)",
-      "meaning": "nhìn, xem",
-      "forms": [
-        "見る",
-        "見ます",
-        "見て",
-        "見た",
-        "見ない",
-        "見なかった",
-        "見られる",
-        "見られる",
-        "見させる",
-        "見よう"
-      ]
-    },
-    {
-      "id": "c007",
-      "dict": "来る",
-      "group": "Bất quy tắc (Irregular)",
-      "meaning": "đến",
-      "forms": [
-        "来る",
-        "来ます",
-        "来て",
-        "来た",
-        "来ない",
-        "来なかった",
-        "来られる",
-        "来られる",
-        "来させる",
-        "来よう"
-      ]
-    },
-    {
-      "id": "c008",
-      "dict": "する",
-      "group": "Bất quy tắc (Irregular)",
-      "meaning": "làm",
-      "forms": [
-        "する",
-        "します",
-        "して",
-        "した",
-        "しない",
-        "しなかった",
-        "できる",
-        "される",
-        "させる",
-        "しよう"
-      ]
-    },
-    {
-      "id": "c009",
-      "dict": "行く",
-      "group": "Nhóm 1 (Godan)",
-      "meaning": "đi",
-      "forms": [
-        "行く",
-        "行きます",
-        "行って",
-        "行った",
-        "行かない",
-        "行かなかった",
-        "行ける",
-        "行かれる",
-        "行かせる",
-        "行こう"
-      ]
-    },
-    {
-      "id": "c010",
-      "dict": "起きる",
-      "group": "Nhóm 2 (Ichidan)",
-      "meaning": "thức dậy",
-      "forms": [
-        "起きる",
-        "起きます",
-        "起きて",
-        "起きた",
-        "起きない",
-        "起きなかった",
-        "起きられる",
-        "起きられる",
-        "起きさせる",
-        "起きよう"
-      ]
-    },
-    {
-      "id": "c011",
-      "dict": "待つ",
-      "group": "Nhóm 1 (Godan)",
-      "meaning": "chờ đợi",
-      "forms": [
-        "待つ",
-        "待ちます",
-        "待って",
-        "待った",
-        "待たない",
-        "待たなかった",
-        "待てる",
-        "待たれる",
-        "待たせる",
-        "待とう"
-      ]
-    },
-    {
-      "id": "c012",
-      "dict": "買う",
-      "group": "Nhóm 1 (Godan)",
-      "meaning": "mua",
-      "forms": [
-        "買う",
-        "買います",
-        "買って",
-        "買った",
-        "買わない",
-        "買わなかった",
-        "買える",
-        "買われる",
-        "買わせる",
-        "買おう"
-      ]
-    },
-    {
-      "id": "c013",
-      "dict": "寝る",
-      "group": "Nhóm 2 (Ichidan)",
-      "meaning": "ngủ",
-      "forms": [
-        "寝る",
-        "寝ます",
-        "寝て",
-        "寝た",
-        "寝ない",
-        "寝なかった",
-        "寝られる",
-        "寝られる",
-        "寝させる",
-        "寝よう"
-      ]
-    },
-    {
-      "id": "c014",
-      "dict": "帰る",
-      "group": "Nhóm 1 (Godan)",
-      "meaning": "về (nhà)",
-      "forms": [
-        "帰る",
-        "帰ります",
-        "帰って",
-        "帰った",
-        "帰らない",
-        "帰らなかった",
-        "帰れる",
-        "帰られる",
-        "帰らせる",
-        "帰ろう"
-      ]
-    },
-    {
-      "id": "c015",
-      "dict": "教える",
-      "group": "Nhóm 2 (Ichidan)",
-      "meaning": "dạy, chỉ",
-      "forms": [
-        "教える",
-        "教えます",
-        "教えて",
-        "教えた",
-        "教えない",
-        "教えなかった",
-        "教えられる",
-        "教えられる",
-        "教えさせる",
-        "教えよう"
-      ]
-    }
-  ]
-};
-export default CONJUGATION;
+const CONJUGATION_RULES = [
+  {
+    form: "Thể Te (て形) / Thể Ta (た形)",
+    description: "Dùng để nối câu, sai khiến (te), hoặc diễn tả quá khứ (ta).",
+    group1: [
+      { ending: "う・つ・る", change: "って / った" },
+      { ending: "ぬ・ぶ・む", change: "んで / んだ" },
+      { ending: "く", change: "いて / いた (Ngoại lệ: 行く → 行って / 行った)" },
+      { ending: "ぐ", change: "いで / いだ" },
+      { ending: "す", change: "して / した" }
+    ],
+    group2: "Bỏ る thêm て / た (Ví dụ: 食べる → 食べて / 食べた)",
+    group3: "する → して / した \nくる → きて / きた"
+  },
+  {
+    form: "Thể Phủ định (ない形)",
+    description: "Dùng để diễn tả phủ định ở hiện tại/tương lai.",
+    group1: [
+      { ending: "Cột U (う, く, す...)", change: "Chuyển sang Cột A (あ, か, さ...) + ない" },
+      { ending: "Lưu ý đuôi う", change: "う → わ + ない (Ví dụ: 買う → 買わない)" }
+    ],
+    group2: "Bỏ る thêm ない (Ví dụ: 見る → 見ない)",
+    group3: "する → しない \nくる → こない"
+  },
+  {
+    form: "Thể Khả năng (可能形)",
+    description: "Diễn tả khả năng làm được việc gì đó (Có thể...). Trợ từ を thường đổi thành が.",
+    group1: [
+      { ending: "Cột U (う, く, す...)", change: "Chuyển sang Cột E (え, け, せ...) + る" },
+      { ending: "Ví dụ", change: "書く → 書ける、話す → 話せる" }
+    ],
+    group2: "Bỏ る thêm られる (Ví dụ: 食べる → 食べられる)",
+    group3: "する → できる \nくる → こられる"
+  },
+  {
+    form: "Thể Bị động (受身形)",
+    description: "Bị / Được ai đó làm gì. Chủ thể bị tác động đi với が/は, người tác động đi với に.",
+    group1: [
+      { ending: "Cột U (う, く, す...)", change: "Chuyển sang Cột A (あ, か, さ...) + れる" },
+      { ending: "Ví dụ", change: "書く → 書かれる、呼ぶ → 呼ばれる" }
+    ],
+    group2: "Bỏ る thêm られる (Ví dụ: 褒める → 褒められる)",
+    group3: "する → される \nくる → こられる"
+  },
+  {
+    form: "Thể Sai khiến (使役形)",
+    description: "Bắt / Cho phép ai đó làm gì.",
+    group1: [
+      { ending: "Cột U (う, く, す...)", change: "Chuyển sang Cột A (あ, か, さ...) + せる" },
+      { ending: "Ví dụ", change: "書く → 書かせる、待つ → 待たせる" }
+    ],
+    group2: "Bỏ る thêm させる (Ví dụ: 食べる → 食べさせる)",
+    group3: "する → させる \nくる → こさせる"
+  },
+  {
+    form: "Thể Điều kiện (ば形)",
+    description: "Nếu... thì (Giả định).",
+    group1: [
+      { ending: "Cột U", change: "Chuyển sang Cột E + ば (Ví dụ: 行く → 行けば)" }
+    ],
+    group2: "Bỏ る thêm れば (Ví dụ: 見る → 見れば)",
+    group3: "する → すれば \nくる → くれば"
+  },
+  {
+    form: "Thể Ý chí (意向形)",
+    description: "Hãy cùng làm... / Định làm... (Văn nói của ましょう).",
+    group1: [
+      { ending: "Cột U", change: "Chuyển sang Cột O + う (Ví dụ: 行く → 行こう)" }
+    ],
+    group2: "Bỏ る thêm よう (Ví dụ: 食べる → 食べよう)",
+    group3: "する → しよう \nくる → こよう"
+  },
+  {
+    form: "Thể Mệnh lệnh (命令形)",
+    description: "Ra lệnh, sai bảo (Làm đi!). Thường dùng trong quân đội, cổ vũ, hoặc người lớn tuổi nói với người nhỏ.",
+    group1: [
+      { ending: "Cột U", change: "Chuyển sang Cột E (Ví dụ: 行く → 行け)" }
+    ],
+    group2: "Bỏ る thêm ろ (Ví dụ: 食べる → 食べろ)",
+    group3: "する → しろ / せよ \nくる → こい"
+  }
+];
+
+const IRREGULAR_VERBS = [
+  {
+    dict: "行く",
+    reading: "いく",
+    meaning: "Đi (Nhóm 1 nhưng chia Te/Ta bất quy tắc)",
+    forms: [
+      { label: "Thể て/た", value: "行って / 行った" },
+      { label: "Thể bị động", value: "行かれる" },
+      { label: "Thể sai khiến", value: "行かせる" },
+      { label: "Thể mệnh lệnh", value: "行け" }
+    ]
+  },
+  {
+    dict: "ある",
+    reading: "ある",
+    meaning: "Có (đồ vật) - Phủ định bất quy tắc",
+    forms: [
+      { label: "Thể ない", value: "ない (Không phải あらない)" },
+      { label: "Thể điều kiện", value: "あれば" },
+      { label: "Thể quá khứ", value: "あった" }
+    ]
+  },
+  {
+    dict: "くれる",
+    reading: "くれる",
+    meaning: "Cho tôi (Nhóm 2 nhưng Mệnh lệnh bất quy tắc)",
+    forms: [
+      { label: "Thể mệnh lệnh", value: "くれ (Không phải くれろ)" },
+      { label: "Thể て", value: "くれて" },
+      { label: "Thể ない", value: "くれない" }
+    ]
+  },
+  {
+    dict: "する",
+    reading: "する",
+    meaning: "Làm (Nhóm 3)",
+    forms: [
+      { label: "Thể bị động", value: "される" },
+      { label: "Thể sai khiến", value: "させる" },
+      { label: "Bị động sai khiến", value: "させられる" },
+      { label: "Khả năng", value: "できる" },
+      { label: "Ý chí", value: "しよう" }
+    ]
+  },
+  {
+    dict: "くる",
+    reading: "くる",
+    meaning: "Đến (Nhóm 3)",
+    forms: [
+      { label: "Thể bị động", value: "こられる" },
+      { label: "Thể sai khiến", value: "こさせる" },
+      { label: "Bị động sai khiến", value: "こさせられる" },
+      { label: "Mệnh lệnh", value: "こい" },
+      { label: "Nai", value: "こない" }
+    ]
+  },
+  {
+    dict: "問う",
+    reading: "とう",
+    meaning: "Hỏi (Đuôi う nhưng chia て bất quy tắc)",
+    forms: [
+      { label: "Thể て", value: "問うて (Không phải 問って)" },
+      { label: "Thể た", value: "問うた" }
+    ]
+  },
+  {
+    dict: "いらっしゃる",
+    reading: "いらっしゃる",
+    meaning: "Đi / Đến / Ở (Tôn kính ngữ)",
+    forms: [
+      { label: "Thể ます", value: "いらっしゃいます" },
+      { label: "Thể て", value: "いらっしゃって" },
+      { label: "Thể mệnh lệnh", value: "いらっしゃい" }
+    ]
+  },
+  {
+    dict: "おっしゃる",
+    reading: "おっしゃる",
+    meaning: "Nói (Tôn kính ngữ)",
+    forms: [
+      { label: "Thể ます", value: "おっしゃいます" },
+      { label: "Thể mệnh lệnh", value: "おっしゃい" }
+    ]
+  },
+  {
+    dict: "なさる",
+    reading: "なさる",
+    meaning: "Làm (Tôn kính ngữ)",
+    forms: [
+      { label: "Thể ます", value: "なさいます" },
+      { label: "Thể mệnh lệnh", value: "なさい" }
+    ]
+  },
+  {
+    dict: "くださる",
+    reading: "くださる",
+    meaning: "Cho tôi (Tôn kính ngữ)",
+    forms: [
+      { label: "Thể ます", value: "くださいます" },
+      { label: "Thể mệnh lệnh", value: "ください" }
+    ]
+  }
+];
+
+export { CONJUGATION_RULES, IRREGULAR_VERBS };
