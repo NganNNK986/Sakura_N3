@@ -1,23 +1,47 @@
-import { useState, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 const TIPS = {
-  '/': ['Xin chào! Hôm nay học gì nhé? 😊', 'Hãy bắt đầu với Từ Vựng nhé! 📚', 'Luyện tập mỗi ngày là chìa khóa thành công! 🗝️'],
-  '/vocab': ['Hãy lật thẻ để xem nghĩa! 🎴', 'Thử chế độ Quiz để kiểm tra nhé! 🧠', '880 từ vựng N3 đang chờ bạn! 💪'],
-  '/kanji': ['Click vào Kanji để xem chi tiết! 🔍', 'Hãy chú ý cả âm On và Kun nhé! 📖', '316 Kanji N3 — mỗi ngày một ít! ✨'],
-  '/grammar': ['Ngữ pháp N3 khá thú vị đấy! 😄', 'Hãy xem ví dụ để hiểu rõ hơn! 💡', 'Thử chế độ quiz ngữ pháp nhé! 🎯'],
-  '/mocktest': ['Cố lên! Bạn có thể làm được! 🌸', 'Bình tĩnh và đọc kỹ đề nhé! 🧘', 'Quản lý thời gian là quan trọng! ⏰'],
-  '/results': ['Đừng nản! Ôn lại điểm yếu nhé! 💪', 'Tiến bộ từng ngày là quan trọng! 📈', '頑張れ！(Ganbarre!) — Cố lên! 🌸'],
+  "/": [
+    "Xin chào! Hôm nay học gì nhé? 😊",
+    "Hãy bắt đầu với Từ Vựng nhé! 📚",
+    "Luyện tập mỗi ngày là chìa khóa thành công! 🗝️",
+  ],
+  "/vocab": [
+    "Hãy lật thẻ để xem nghĩa! 🎴",
+    "Thử chế độ Quiz để kiểm tra nhé! 🧠",
+    "880 từ vựng N3 đang chờ bạn! 💪",
+  ],
+  "/kanji": [
+    "Click vào Kanji để xem chi tiết! 🔍",
+    "Hãy chú ý cả âm On và Kun nhé! 📖",
+    "316 Kanji N3 — mỗi ngày một ít! ✨",
+  ],
+  "/grammar": [
+    "Ngữ pháp N3 khá thú vị đấy! 😄",
+    "Hãy xem ví dụ để hiểu rõ hơn! 💡",
+    "Thử chế độ quiz ngữ pháp nhé! 🎯",
+  ],
+  "/mocktest": [
+    "Cố lên! Bạn có thể làm được! 🌸",
+    "Bình tĩnh và đọc kỹ đề nhé! 🧘",
+    "Quản lý thời gian là quan trọng! ⏰",
+  ],
+  "/results": [
+    "Đừng nản! Ôn lại điểm yếu nhé! 💪",
+    "Tiến bộ từng ngày là quan trọng! 📈",
+    "頑張れ！(Ganbarre!) — Cố lên! 🌸",
+  ],
 };
 
 export default function Mascot() {
   const { pathname } = useLocation();
   const [visible, setVisible] = useState(true);
-  const [tip, setTip] = useState('');
-  const [mood, setMood] = useState('happy');
+  const [tip, setTip] = useState("");
+  const [mood, setMood] = useState("happy");
 
   useEffect(() => {
-    const tips = TIPS[pathname] || TIPS['/'];
+    const tips = TIPS[pathname] || TIPS["/"];
     setTip(tips[Math.floor(Math.random() * tips.length)]);
     setVisible(true);
     const t = setTimeout(() => setVisible(false), 8000);
@@ -29,12 +53,18 @@ export default function Mascot() {
       {visible && (
         <div className="mascot-bubble animate-slideUp">
           <p>{tip}</p>
-          <button className="bubble-close" onClick={() => setVisible(false)}>✕</button>
+          <button className="bubble-close" onClick={() => setVisible(false)}>
+            ✕
+          </button>
         </div>
       )}
-      <button className="mascot-btn animate-float" onClick={() => setVisible(v => !v)} title="Sakura-chan">
+      <button
+        className="mascot-btn animate-float"
+        onClick={() => setVisible((v) => !v)}
+        title="Sakura-chan"
+      >
         <div className="mascot-face">
-          {mood === 'happy' ? '🌸' : mood === 'celebrate' ? '🎉' : '💭'}
+          {mood === "happy" ? "🌸" : mood === "celebrate" ? "🎉" : "💭"}
         </div>
         <div className="mascot-name">さくら</div>
       </button>

@@ -1,24 +1,26 @@
-import { useEffect } from 'react';
+import { useEffect } from "react";
 
 export default function Modal({ isOpen, onClose, title, children }) {
   useEffect(() => {
-    if (isOpen) document.body.style.overflow = 'hidden';
-    else document.body.style.overflow = 'unset';
-    return () => { document.body.style.overflow = 'unset'; };
+    if (isOpen) document.body.style.overflow = "hidden";
+    else document.body.style.overflow = "unset";
+    return () => {
+      document.body.style.overflow = "unset";
+    };
   }, [isOpen]);
 
   if (!isOpen) return null;
 
   return (
     <div className="modal-overlay" onClick={onClose}>
-      <div className="modal-box" onClick={e => e.stopPropagation()}>
+      <div className="modal-box" onClick={(e) => e.stopPropagation()}>
         <div className="modal-header">
           <h3 className="text-xl">{title}</h3>
-          <button className="modal-close" onClick={onClose}>✕</button>
+          <button className="modal-close" onClick={onClose}>
+            ✕
+          </button>
         </div>
-        <div className="modal-body">
-          {children}
-        </div>
+        <div className="modal-body">{children}</div>
       </div>
     </div>
   );

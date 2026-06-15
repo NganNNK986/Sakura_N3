@@ -1,17 +1,21 @@
-import { useState, useEffect } from 'react';
-import { useStore } from '../store/useStore';
-import ADVERBS from '../data/adverbs';
-import FlashCard from '../components/ui/FlashCard';
+import { useState, useEffect } from "react";
+import { useStore } from "../store/useStore";
+import ADVERBS from "../data/adverbs";
+import FlashCard from "../components/ui/FlashCard";
 
 export default function Adverbs() {
   const { state, markSeen, markMastered, saveCurrentIndex } = useStore();
-  const progress = state.progress.adverbs || { seen: [], mastered: [], currentIndex: 0 };
-  
+  const progress = state.progress.adverbs || {
+    seen: [],
+    mastered: [],
+    currentIndex: 0,
+  };
+
   const [currentIndex, setCurrentIndex] = useState(progress.currentIndex || 0);
   const [isFlipped, setIsFlipped] = useState(false);
 
   useEffect(() => {
-    saveCurrentIndex('adverbs', currentIndex);
+    saveCurrentIndex("adverbs", currentIndex);
   }, [currentIndex, saveCurrentIndex]);
 
   const handleNext = () => {
@@ -23,14 +27,14 @@ export default function Adverbs() {
 
   const handleKnow = () => {
     const adv = ADVERBS[currentIndex];
-    markSeen('adverbs', adv.id);
-    markMastered('adverbs', adv.id);
+    markSeen("adverbs", adv.id);
+    markMastered("adverbs", adv.id);
     handleNext();
   };
 
   const handleReview = () => {
     const adv = ADVERBS[currentIndex];
-    markSeen('adverbs', adv.id);
+    markSeen("adverbs", adv.id);
     handleNext();
   };
 
@@ -48,10 +52,18 @@ export default function Adverbs() {
       <div className="card card-body mb-lg text-center">
         <div className="flex justify-between text-sm mb-sm font-medium">
           <span className="text-muted">Tiến độ Phó Từ</span>
-          <span className="text-sakura">{progress.mastered.length} / {ADVERBS.length} ({Math.round(progress.mastered.length/ADVERBS.length*100)}%)</span>
+          <span className="text-sakura">
+            {progress.mastered.length} / {ADVERBS.length} (
+            {Math.round((progress.mastered.length / ADVERBS.length) * 100)}%)
+          </span>
         </div>
         <div className="progress-bar-track">
-          <div className="progress-bar-fill" style={{ width: (progress.mastered.length/ADVERBS.length)*100 + '%' }}></div>
+          <div
+            className="progress-bar-fill"
+            style={{
+              width: (progress.mastered.length / ADVERBS.length) * 100 + "%",
+            }}
+          ></div>
         </div>
       </div>
 
@@ -59,30 +71,64 @@ export default function Adverbs() {
         <div className="flex-col items-center">
           <FlashCard
             front={currentAdv.word}
-            backHeader={<div className="text-center">{currentAdv.reading} ({currentAdv.romaji})</div>}
+            backHeader={
+              <div className="text-center">
+                {currentAdv.reading} ({currentAdv.romaji})
+              </div>
+            }
             backBody={
               <div>
-                <div className="text-xl font-bold mb-md text-sakura">{currentAdv.meaning}</div>
+                <div className="text-xl font-bold mb-md text-sakura">
+                  {currentAdv.meaning}
+                </div>
                 <div className="text-sm bg-sakura-50 p-md rounded-md">
                   <div className="jp mb-xs font-bold">{currentAdv.example}</div>
                   <div className="text-muted">{currentAdv.exMeaning}</div>
                 </div>
               </div>
             }
-            backFooter={<div className="text-xs text-muted text-center">Nhãn: {currentAdv.tags.join(', ')}</div>}
+            backFooter={
+              <div className="text-xs text-muted text-center">
+                Nhãn: {currentAdv.tags.join(", ")}
+              </div>
+            }
             isFlipped={isFlipped}
             setIsFlipped={setIsFlipped}
             onKnow={handleKnow}
             onReview={handleReview}
           />
-          <div className="flex items-center justify-between mt-lg w-full mx-auto" style={{maxWidth: '400px'}}>
-            <button className="btn btn-secondary" onClick={() => { setIsFlipped(false); setTimeout(() => setCurrentIndex(i => i > 0 ? i - 1 : ADVERBS.length - 1), 150); }}>
+          <div
+            className="flex items-center justify-between mt-lg w-full mx-auto"
+            style={{ maxWidth: "400px" }}
+          >
+            <button
+              className="btn btn-secondary"
+              onClick={() => {
+                setIsFlipped(false);
+                setTimeout(
+                  () =>
+                    setCurrentIndex((i) =>
+                      i > 0 ? i - 1 : ADVERBS.length - 1,
+                    ),
+                  150,
+                );
+              }}
+            >
               &larr; Trước
             </button>
             <div className="text-sm font-medium text-muted">
               {currentIndex + 1} / {ADVERBS.length}
             </div>
-            <button className="btn btn-secondary" onClick={() => { setIsFlipped(false); setTimeout(() => setCurrentIndex(i => (i + 1) % ADVERBS.length), 150); }}>
+            <button
+              className="btn btn-secondary"
+              onClick={() => {
+                setIsFlipped(false);
+                setTimeout(
+                  () => setCurrentIndex((i) => (i + 1) % ADVERBS.length),
+                  150,
+                );
+              }}
+            >
               Sau &rarr;
             </button>
           </div>

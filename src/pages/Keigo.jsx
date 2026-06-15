@@ -1,16 +1,16 @@
-import { useState } from 'react';
-import { useStore } from '../store/useStore';
-import KEIGO from '../data/keigo';
+import { useState } from "react";
+import { useStore } from "../store/useStore";
+import KEIGO from "../data/keigo";
 
 export default function Keigo() {
   const { state, markMastered } = useStore();
-  const [activeTab, setActiveTab] = useState('patterns'); // patterns, scenarios
+  const [activeTab, setActiveTab] = useState("patterns"); // patterns, scenarios
 
   const progress = state.progress.keigo || { seen: [], mastered: [] };
   const isMastered = (id) => progress.mastered.includes(id);
 
   const handleMaster = (id) => {
-    markMastered('keigo', id);
+    markMastered("keigo", id);
   };
 
   return (
@@ -22,7 +22,7 @@ export default function Keigo() {
 
       <div className="card card-body mb-lg">
         <div className="keigo-types-grid">
-          {KEIGO.types.map(t => (
+          {KEIGO.types.map((t) => (
             <div key={t.id} className="type-box">
               <div className="font-bold text-sakura mb-xs">{t.name}</div>
               <div className="text-sm text-muted">{t.desc}</div>
@@ -32,15 +32,21 @@ export default function Keigo() {
       </div>
 
       <div className="tabs mb-md">
-        <button className={`tab-btn ${activeTab === 'patterns' ? 'active' : ''}`} onClick={() => setActiveTab('patterns')}>
+        <button
+          className={`tab-btn ${activeTab === "patterns" ? "active" : ""}`}
+          onClick={() => setActiveTab("patterns")}
+        >
           Bảng Động Từ
         </button>
-        <button className={`tab-btn ${activeTab === 'scenarios' ? 'active' : ''}`} onClick={() => setActiveTab('scenarios')}>
+        <button
+          className={`tab-btn ${activeTab === "scenarios" ? "active" : ""}`}
+          onClick={() => setActiveTab("scenarios")}
+        >
           Tình Huống
         </button>
       </div>
 
-      {activeTab === 'patterns' && (
+      {activeTab === "patterns" && (
         <div className="card overflow-x-auto">
           <table className="keigo-table w-full">
             <thead>
@@ -54,19 +60,26 @@ export default function Keigo() {
               </tr>
             </thead>
             <tbody>
-              {KEIGO.patterns.map(p => (
-                <tr key={p.id} className={isMastered(p.id) ? 'bg-spring-light' : ''}>
+              {KEIGO.patterns.map((p) => (
+                <tr
+                  key={p.id}
+                  className={isMastered(p.id) ? "bg-spring-light" : ""}
+                >
                   <td className="font-bold jp">{p.plain}</td>
                   <td className="jp">{p.teineigo}</td>
-                  <td className="jp text-sakura font-medium">{p.sonkeigo || '-'}</td>
-                  <td className="jp text-blue font-medium">{p.kenjougo || '-'}</td>
+                  <td className="jp text-sakura font-medium">
+                    {p.sonkeigo || "-"}
+                  </td>
+                  <td className="jp text-blue font-medium">
+                    {p.kenjougo || "-"}
+                  </td>
                   <td>{p.meaning}</td>
                   <td className="text-center">
-                    <button 
-                      className={`btn btn-sm ${isMastered(p.id) ? 'btn-success' : 'btn-secondary'}`}
+                    <button
+                      className={`btn btn-sm ${isMastered(p.id) ? "btn-success" : "btn-secondary"}`}
                       onClick={() => handleMaster(p.id)}
                     >
-                      {isMastered(p.id) ? '✓' : 'Đánh dấu'}
+                      {isMastered(p.id) ? "✓" : "Đánh dấu"}
                     </button>
                   </td>
                 </tr>
@@ -76,12 +89,14 @@ export default function Keigo() {
         </div>
       )}
 
-      {activeTab === 'scenarios' && (
+      {activeTab === "scenarios" && (
         <div className="flex-col gap-md">
           {KEIGO.scenarios.map((s, i) => (
             <div key={s.id} className="card card-body">
               <div className="flex items-start justify-between mb-sm">
-                <div className="font-bold text-lg">Tình huống {i + 1}: {s.situation}</div>
+                <div className="font-bold text-lg">
+                  Tình huống {i + 1}: {s.situation}
+                </div>
                 <span className="badge badge-sakura">{s.tags[1]}</span>
               </div>
               <div className="scenario-grid mb-sm">
@@ -90,7 +105,9 @@ export default function Keigo() {
                   <div className="jp">{s.plain}</div>
                 </div>
                 <div className="p-sm bg-sakura-50 rounded border border-sakura-200">
-                  <div className="text-xs text-sakura mb-xs font-bold">Lịch sự (Keigo):</div>
+                  <div className="text-xs text-sakura mb-xs font-bold">
+                    Lịch sự (Keigo):
+                  </div>
                   <div className="jp text-lg font-bold">{s.polite}</div>
                 </div>
               </div>

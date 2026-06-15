@@ -1,17 +1,70 @@
-import { Link } from 'react-router-dom';
-import { useStore } from '../store/useStore';
-import { VOCAB } from '../data/vocab';
-import { KANJI } from '../data/kanji';
-import { GRAMMAR } from '../data/grammar';
-import { BookOpen, PenTool, FileText, RefreshCw, Briefcase, Sparkles, FileEdit, Flame, Star, CheckCircle } from 'lucide-react';
+import { Link } from "react-router-dom";
+import { useStore } from "../store/useStore";
+import { VOCAB } from "../data/vocab";
+import { KANJI } from "../data/kanji";
+import { GRAMMAR } from "../data/grammar";
+import {
+  BookOpen,
+  PenTool,
+  FileText,
+  RefreshCw,
+  Briefcase,
+  Sparkles,
+  FileEdit,
+  Flame,
+  Star,
+  CheckCircle,
+} from "lucide-react";
 
 const MODULES = [
-  { to: '/vocab', icon: <BookOpen size={24} />, label: 'Từ Vựng', key: 'vocab', total: VOCAB.length, color: '#E8809C' },
-  { to: '/kanji', icon: <PenTool size={24} />, label: 'Kanji', key: 'kanji', total: KANJI.length, color: '#87CEEB' },
-  { to: '/grammar', icon: <FileText size={24} />, label: 'Ngữ Pháp', key: 'grammar', total: GRAMMAR.length, color: '#7BC47F' },
-  { to: '/conjugation', icon: <RefreshCw size={24} />, label: 'Chia Động Từ', key: 'conjugation', total: 15, color: '#F0B429' },
-  { to: '/keigo', icon: <Briefcase size={24} />, label: 'Kính Ngữ', key: 'keigo', total: 18, color: '#B57FD4' },
-  { to: '/adverbs', icon: <Sparkles size={24} />, label: 'Phó Từ', key: 'adverbs', total: 30, color: '#F4A261' },
+  {
+    to: "/vocab",
+    icon: <BookOpen size={24} />,
+    label: "Từ Vựng",
+    key: "vocab",
+    total: VOCAB.length,
+    color: "#E8809C",
+  },
+  {
+    to: "/kanji",
+    icon: <PenTool size={24} />,
+    label: "Kanji",
+    key: "kanji",
+    total: KANJI.length,
+    color: "#87CEEB",
+  },
+  {
+    to: "/grammar",
+    icon: <FileText size={24} />,
+    label: "Ngữ Pháp",
+    key: "grammar",
+    total: GRAMMAR.length,
+    color: "#7BC47F",
+  },
+  {
+    to: "/conjugation",
+    icon: <RefreshCw size={24} />,
+    label: "Chia Động Từ",
+    key: "conjugation",
+    total: 15,
+    color: "#F0B429",
+  },
+  {
+    to: "/keigo",
+    icon: <Briefcase size={24} />,
+    label: "Kính Ngữ",
+    key: "keigo",
+    total: 18,
+    color: "#B57FD4",
+  },
+  {
+    to: "/adverbs",
+    icon: <Sparkles size={24} />,
+    label: "Phó Từ",
+    key: "adverbs",
+    total: 30,
+    color: "#F4A261",
+  },
 ];
 
 function ProgressRing({ pct, color, size = 70 }) {
@@ -19,11 +72,27 @@ function ProgressRing({ pct, color, size = 70 }) {
   const circ = 2 * Math.PI * r;
   const offset = circ - (pct / 100) * circ;
   return (
-    <svg width={size} height={size} style={{ transform: 'rotate(-90deg)' }}>
-      <circle cx={size/2} cy={size/2} r={r} fill="none" stroke="#EDE5F2" strokeWidth={8} />
-      <circle cx={size/2} cy={size/2} r={r} fill="none" stroke={color} strokeWidth={8}
-        strokeDasharray={circ} strokeDashoffset={offset} strokeLinecap="round"
-        style={{ transition: 'stroke-dashoffset 1s ease' }} />
+    <svg width={size} height={size} style={{ transform: "rotate(-90deg)" }}>
+      <circle
+        cx={size / 2}
+        cy={size / 2}
+        r={r}
+        fill="none"
+        stroke="#EDE5F2"
+        strokeWidth={8}
+      />
+      <circle
+        cx={size / 2}
+        cy={size / 2}
+        r={r}
+        fill="none"
+        stroke={color}
+        strokeWidth={8}
+        strokeDasharray={circ}
+        strokeDashoffset={offset}
+        strokeLinecap="round"
+        style={{ transition: "stroke-dashoffset 1s ease" }}
+      />
     </svg>
   );
 }
@@ -32,7 +101,10 @@ export default function Dashboard() {
   const { state } = useStore();
   const { progress, xp, streak, testHistory, profile } = state;
 
-  const totalMastered = Object.values(progress).reduce((a, m) => a + (m.mastered?.length || 0), 0);
+  const totalMastered = Object.values(progress).reduce(
+    (a, m) => a + (m.mastered?.length || 0),
+    0,
+  );
   const lastTest = testHistory[0];
 
   return (
@@ -41,28 +113,56 @@ export default function Dashboard() {
       <div className="dashboard-hero card card-body mb-xl">
         <div>
           <div className="text-muted text-sm">おかえり！</div>
-          <h2 style={{fontSize:'1.6rem', marginTop:'4px'}}>
-            こんにちは、<span className="text-sakura">{profile?.name || 'Bạn'}</span>さん！🌸
+          <h2 style={{ fontSize: "1.6rem", marginTop: "4px" }}>
+            こんにちは、
+            <span className="text-sakura">{profile?.name || "Bạn"}</span>
+            さん！🌸
           </h2>
-          <p className="text-muted mt-sm">Hãy tiếp tục luyện tập để đạt N3 nhé!</p>
+          <p className="text-muted mt-sm">
+            Hãy tiếp tục luyện tập để đạt N3 nhé!
+          </p>
           <div className="hero-stats mt-md">
-            <div className="hero-stat"><span className="stat-val flex items-center gap-xs"><Flame size={20} className="text-error" /> {streak}</span><span className="stat-label">ngày liên tiếp</span></div>
-            <div className="hero-stat"><span className="stat-val flex items-center gap-xs"><Star size={20} className="text-sakura-500" /> {xp}</span><span className="stat-label">điểm XP</span></div>
-            <div className="hero-stat"><span className="stat-val flex items-center gap-xs"><CheckCircle size={20} className="text-spring-green" /> {totalMastered}</span><span className="stat-label">đã thành thạo</span></div>
+            <div className="hero-stat">
+              <span className="stat-val flex items-center gap-xs">
+                <Flame size={20} className="text-error" /> {streak}
+              </span>
+              <span className="stat-label">ngày liên tiếp</span>
+            </div>
+            <div className="hero-stat">
+              <span className="stat-val flex items-center gap-xs">
+                <Star size={20} className="text-sakura-500" /> {xp}
+              </span>
+              <span className="stat-label">điểm XP</span>
+            </div>
+            <div className="hero-stat">
+              <span className="stat-val flex items-center gap-xs">
+                <CheckCircle size={20} className="text-spring-green" />{" "}
+                {totalMastered}
+              </span>
+              <span className="stat-label">đã thành thạo</span>
+            </div>
           </div>
         </div>
         <div className="hero-cta">
-          <Link to="/mocktest" className="btn btn-primary btn-lg flex items-center gap-sm justify-center"><FileEdit size={20} /> Thi Thử N3</Link>
-          <p className="text-xs text-muted mt-sm text-center">100 phút · Không có Nghe</p>
+          <Link
+            to="/mocktest"
+            className="btn btn-primary btn-lg flex items-center gap-sm justify-center"
+          >
+            <FileEdit size={20} /> Thi Thử N3
+          </Link>
+          <p className="text-xs text-muted mt-sm text-center">
+            100 phút · Không có Nghe
+          </p>
         </div>
       </div>
 
       {/* Module Progress Grid */}
       <h3 className="mb-md">Tiến Độ Học Tập</h3>
       <div className="module-grid mb-xl">
-        {MODULES.map(m => {
+        {MODULES.map((m) => {
           const mod = progress[m.key] || { mastered: [] };
-          const pct = m.total > 0 ? Math.round((mod.mastered.length / m.total) * 100) : 0;
+          const pct =
+            m.total > 0 ? Math.round((mod.mastered.length / m.total) * 100) : 0;
           return (
             <Link key={m.to} to={m.to} className="module-card card card-hover">
               <div className="module-ring">
@@ -71,8 +171,12 @@ export default function Dashboard() {
               </div>
               <div className="module-info">
                 <div className="module-label">{m.label}</div>
-                <div className="module-pct" style={{ color: m.color }}>{pct}%</div>
-                <div className="text-xs text-muted">{mod.mastered.length}/{m.total}</div>
+                <div className="module-pct" style={{ color: m.color }}>
+                  {pct}%
+                </div>
+                <div className="text-xs text-muted">
+                  {mod.mastered.length}/{m.total}
+                </div>
               </div>
             </Link>
           );
@@ -85,18 +189,35 @@ export default function Dashboard() {
           <h3 className="mb-md">Lịch Sử Thi Thử</h3>
           <div className="test-history">
             {testHistory.slice(0, 5).map((t, i) => (
-              <div key={i} className="test-row card card-sm card-body flex items-center justify-between mb-sm">
+              <div
+                key={i}
+                className="test-row card card-sm card-body flex items-center justify-between mb-sm"
+              >
                 <div>
-                  <div className="font-medium">Lần {testHistory.length - i}</div>
-                  <div className="text-xs text-muted">{new Date(t.date).toLocaleDateString('vi-VN')}</div>
+                  <div className="font-medium">
+                    Lần {testHistory.length - i}
+                  </div>
+                  <div className="text-xs text-muted">
+                    {new Date(t.date).toLocaleDateString("vi-VN")}
+                  </div>
                 </div>
                 <div className="flex gap-md items-center">
-                  <div className="text-2xl font-bold" style={{color: t.score >= 95 ? 'var(--spring-green)' : 'var(--sakura-700)'}}>
+                  <div
+                    className="text-2xl font-bold"
+                    style={{
+                      color:
+                        t.score >= 95
+                          ? "var(--spring-green)"
+                          : "var(--sakura-700)",
+                    }}
+                  >
                     {t.score}
                     <span className="text-sm text-muted">/120</span>
                   </div>
-                  <span className={`badge ${t.score >= 95 ? 'badge-green' : 'badge-sakura'}`}>
-                    {t.score >= 95 ? '✅ Đậu' : '❌ Trượt'}
+                  <span
+                    className={`badge ${t.score >= 95 ? "badge-green" : "badge-sakura"}`}
+                  >
+                    {t.score >= 95 ? "✅ Đậu" : "❌ Trượt"}
                   </span>
                 </div>
               </div>

@@ -1,20 +1,20 @@
-import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
-import { StoreProvider, useStore } from './store/useStore';
-import Sidebar from './components/layout/Sidebar';
-import Header from './components/layout/Header';
-import Mascot from './components/layout/Mascot';
-import PetalRain from './components/PetalRain';
-import Dashboard from './pages/Dashboard';
-import Vocab from './pages/Vocab';
-import Kanji from './pages/Kanji';
-import Grammar from './pages/Grammar';
-import Conjugation from './pages/Conjugation';
-import Keigo from './pages/Keigo';
-import Adverbs from './pages/Adverbs';
-import MockTest from './pages/MockTest';
-import Results from './pages/Results';
-import Profile from './pages/Profile';
-import './index.css';
+import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
+import { StoreProvider, useStore } from "./store/useStore";
+import Sidebar from "./components/layout/Sidebar";
+import Header from "./components/layout/Header";
+import Mascot from "./components/layout/Mascot";
+import PetalRain from "./components/PetalRain";
+import Dashboard from "./pages/Dashboard";
+import Vocab from "./pages/Vocab";
+import Kanji from "./pages/Kanji";
+import Grammar from "./pages/Grammar";
+import Conjugation from "./pages/Conjugation";
+import Keigo from "./pages/Keigo";
+import Adverbs from "./pages/Adverbs";
+import MockTest from "./pages/MockTest";
+import Results from "./pages/Results";
+import Profile from "./pages/Profile";
+import "./index.css";
 
 function Layout() {
   const { state } = useStore();

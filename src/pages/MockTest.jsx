@@ -1,7 +1,7 @@
-import { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { useStore } from '../store/useStore';
-import MOCKTEST from '../data/mocktest';
+import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import { useStore } from "../store/useStore";
+import MOCKTEST from "../data/mocktest";
 
 export default function MockTest() {
   const navigate = useNavigate();
@@ -12,12 +12,14 @@ export default function MockTest() {
   const [showConfirm, setShowConfirm] = useState(false);
 
   // All questions flattened
-  const allQuestions = MOCKTEST.sections.flatMap(s => s.questions.map(q => ({...q, sectionId: s.id})));
+  const allQuestions = MOCKTEST.sections.flatMap((s) =>
+    s.questions.map((q) => ({ ...q, sectionId: s.id })),
+  );
 
   useEffect(() => {
     let timer;
     if (started && timeLeft > 0) {
-      timer = setInterval(() => setTimeLeft(t => t - 1), 1000);
+      timer = setInterval(() => setTimeLeft((t) => t - 1), 1000);
     } else if (timeLeft === 0 && started) {
       handleSubmit();
     }
@@ -29,7 +31,7 @@ export default function MockTest() {
   };
 
   const handleSelect = (qId, optIdx) => {
-    setAnswers(prev => ({ ...prev, [qId]: optIdx }));
+    setAnswers((prev) => ({ ...prev, [qId]: optIdx }));
   };
 
   const handleSubmit = () => {
@@ -38,19 +40,20 @@ export default function MockTest() {
       score: 0,
       total: allQuestions.length,
       sections: {},
-      weaknesses: {}
+      weaknesses: {},
     };
 
-    allQuestions.forEach(q => {
-      if (!results.sections[q.sectionId]) results.sections[q.sectionId] = { correct: 0, total: 0 };
+    allQuestions.forEach((q) => {
+      if (!results.sections[q.sectionId])
+        results.sections[q.sectionId] = { correct: 0, total: 0 };
       results.sections[q.sectionId].total++;
-      
+
       const isCorrect = answers[q.id] === q.answer;
       if (isCorrect) {
         results.score++;
         results.sections[q.sectionId].correct++;
       } else {
-        q.tags.forEach(tag => {
+        q.tags.forEach((tag) => {
           results.weaknesses[tag] = (results.weaknesses[tag] || 0) + 1;
         });
       }
@@ -58,33 +61,38 @@ export default function MockTest() {
 
     // Scale score to 120 (since max score without listening is usually 120)
     results.scaledScore = Math.round((results.score / results.total) * 120);
-    
+
     setLastTestResult(results);
-    navigate('/results');
+    navigate("/results");
   };
 
   const formatTime = (sec) => {
     const m = Math.floor(sec / 60);
     const s = sec % 60;
-    return `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+    return `${m.toString().padStart(2, "0")}:${s.toString().padStart(2, "0")}`;
   };
 
   if (!started) {
     return (
-      <div className="page-container animate-fadeIn flex flex-col items-center justify-center text-center" style={{minHeight:'60vh'}}>
+      <div
+        className="page-container animate-fadeIn flex flex-col items-center justify-center text-center"
+        style={{ minHeight: "60vh" }}
+      >
         <div className="text-6xl mb-md"></div>
         <h2 className="mb-sm">Thi Thử JLPT N3</h2>
         <p className="text-muted mb-lg max-w-md mx-auto">
-          Bài thi mô phỏng JLPT N3 thực tế. 
-          Bao gồm phần Từ vựng, Chữ Hán, Ngữ pháp và Đọc hiểu. 
+          Bài thi mô phỏng JLPT N3 thực tế. Bao gồm phần Từ vựng, Chữ Hán, Ngữ
+          pháp và Đọc hiểu.
           <strong> Không bao gồm phần Nghe (Choukai) theo yêu cầu.</strong>
         </p>
-        
+
         <div className="card card-body text-left mb-xl max-w-md mx-auto w-full">
           <div className="font-bold mb-sm text-sakura">Cấu trúc đề thi:</div>
           <ul className="pl-md mb-md m-0">
-            {MOCKTEST.sections.map(s => (
-              <li key={s.id} className="mb-xs">{s.name} ({s.questions.length} câu)</li>
+            {MOCKTEST.sections.map((s) => (
+              <li key={s.id} className="mb-xs">
+                {s.name} ({s.questions.length} câu)
+              </li>
             ))}
           </ul>
           <div className="flex justify-between items-center pt-sm border-t border-pale">
@@ -102,12 +110,23 @@ export default function MockTest() {
 
   return (
     <div className="page-container animate-fadeIn relative">
-      <div className="mock-header flex items-center justify-between card card-body mb-lg sticky top-0" style={{zIndex:10, padding:'12px 24px'}}>
+      <div
+        className="mock-header flex items-center justify-between card card-body mb-lg sticky top-0"
+        style={{ zIndex: 10, padding: "12px 24px" }}
+      >
         <div className="font-bold">Thi Thử N3</div>
-        <div className="timer font-mono text-xl font-bold" style={{color: timeLeft < 300 ? 'var(--error)' : 'var(--ink)'}}>
+        <div
+          className="timer font-mono text-xl font-bold"
+          style={{ color: timeLeft < 300 ? "var(--error)" : "var(--ink)" }}
+        >
           {formatTime(timeLeft)}
         </div>
-        <button className="btn btn-secondary btn-sm" onClick={() => setShowConfirm(true)}>Nộp Bài</button>
+        <button
+          className="btn btn-secondary btn-sm"
+          onClick={() => setShowConfirm(true)}
+        >
+          Nộp Bài
+        </button>
       </div>
 
       <div className="flex-col gap-xl">
@@ -119,19 +138,26 @@ export default function MockTest() {
             <div className="flex-col gap-lg">
               {section.questions.map((q, qIdx) => (
                 <div key={q.id} className="question-card card card-body">
-                  <div className="q-number badge badge-sakura mb-sm inline-block">Câu {qIdx + 1}</div>
-                  {q.question.split('\n').map((line, i) => (
-                    <p key={i} className={`jp mb-sm ${line.startsWith('「') ? 'pl-md border-l-4 border-sakura-200 bg-sakura-50 p-sm' : 'font-medium text-lg'}`}>{line}</p>
+                  <div className="q-number badge badge-sakura mb-sm inline-block">
+                    Câu {qIdx + 1}
+                  </div>
+                  {q.question.split("\n").map((line, i) => (
+                    <p
+                      key={i}
+                      className={`jp mb-sm ${line.startsWith("「") ? "pl-md border-l-4 border-sakura-200 bg-sakura-50 p-sm" : "font-medium text-lg"}`}
+                    >
+                      {line}
+                    </p>
                   ))}
                   <div className="options-grid mt-md">
                     {q.options.map((opt, oIdx) => (
-                      <label 
-                        key={oIdx} 
-                        className={`option-label ${answers[q.id] === oIdx ? 'selected' : ''}`}
+                      <label
+                        key={oIdx}
+                        className={`option-label ${answers[q.id] === oIdx ? "selected" : ""}`}
                       >
-                        <input 
-                          type="radio" 
-                          name={q.id} 
+                        <input
+                          type="radio"
+                          name={q.id}
                           checked={answers[q.id] === oIdx}
                           onChange={() => handleSelect(q.id, oIdx)}
                           className="mr-sm hidden"
@@ -149,17 +175,31 @@ export default function MockTest() {
       </div>
 
       <div className="text-center mt-xl mb-xl">
-        <button className="btn btn-primary btn-lg" onClick={() => setShowConfirm(true)}>Nộp Bài</button>
+        <button
+          className="btn btn-primary btn-lg"
+          onClick={() => setShowConfirm(true)}
+        >
+          Nộp Bài
+        </button>
       </div>
 
       {showConfirm && (
         <div className="modal-overlay">
           <div className="modal-box text-center">
             <h3 className="mb-sm">Bạn muốn nộp bài?</h3>
-            <p className="mb-lg">Đã làm: {Object.keys(answers).length} / {allQuestions.length} câu</p>
+            <p className="mb-lg">
+              Đã làm: {Object.keys(answers).length} / {allQuestions.length} câu
+            </p>
             <div className="flex gap-md">
-              <button className="btn btn-secondary flex-1" onClick={() => setShowConfirm(false)}>Quay lại làm tiếp</button>
-              <button className="btn btn-primary flex-1" onClick={handleSubmit}>Chắc chắn nộp</button>
+              <button
+                className="btn btn-secondary flex-1"
+                onClick={() => setShowConfirm(false)}
+              >
+                Quay lại làm tiếp
+              </button>
+              <button className="btn btn-primary flex-1" onClick={handleSubmit}>
+                Chắc chắn nộp
+              </button>
             </div>
           </div>
         </div>
