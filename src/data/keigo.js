@@ -54,7 +54,22 @@ export const KEIGO = {
     { id: "s012", situation: "Nhờ sếp kiểm tra tài liệu giúp mình", plain: "これをチェックしてください", polite: "こちらをご確認いただけないでしょうか？", explain: "Dùng ご...いただけないでしょうか (Liệu tôi có thể nhận được việc sếp xác nhận giúp không) để nhờ vả lịch sự.", tags: ["request"] },
     { id: "s013", situation: "Khi tiếp nhận lời mời từ đối tác", plain: "喜んで行きます", polite: "喜んでお伺いいたします", explain: "お伺いする là dạng Khiêm nhường ngữ kép rất phổ biến khi nhận lời mời.", tags: ["business"] },
     { id: "s014", situation: "Khi gửi email đính kèm file", plain: "ファイルを送ります。見てください", polite: "ファイルを添付いたします。ご査収ください", explain: "ご査収ください (ごさしゅうください) là cụm từ chuyên dụng trong Email tiếng Nhật thay cho 見てください.", tags: ["email"] },
-    { id: "s015", situation: "Khi kết thúc Email", plain: "よろしくお願いします", polite: "よろしくお願い申し上げます", explain: "申し上げる là Khiêm nhường ngữ. Đây là câu chốt tiêu chuẩn cho mọi Email công việc.", tags: ["email"] }
+    { id: "s015", situation: "Khi kết thúc Email", plain: "よろしくお願いします", polite: "よろしくお願い申し上げます", explain: "申し上げる là Khiêm nhường ngữ. Đây là câu chốt tiêu chuẩn cho mọi Email công việc.", tags: ["email"] },
+    { id: "s016", situation: "Gửi lời chào đầu email công việc", plain: "いつもありがとう", polite: "いつもお世話になっております", explain: "Câu chào kinh điển nhất trong email tiếng Nhật, mang nghĩa 'Cảm ơn ngài đã luôn chiếu cố'.", tags: ["email", "business"] },
+    { id: "s017", situation: "Xin lỗi khách hàng/đối tác", plain: "ごめんなさい", polite: "申し訳ございません", explain: "Tuyệt đối không dùng ごめんなさい trong công việc. Phải dùng 申し訳ございません (もうしわけございません).", tags: ["apology", "business"] },
+    { id: "s018", situation: "Nhờ vả ai đó làm gì (Mở đầu câu)", plain: "すみませんが", polite: "恐れ入りますが", explain: "恐れ入りますが (おそれいりますが) dùng làm mào đầu trước khi nhờ vả, mang ý 'Thật ngại quá nhưng...'.", tags: ["request", "business"] },
+    { id: "s019", situation: "Chấp nhận yêu cầu / Đồng ý", plain: "いいですよ", polite: "承知いたしました", explain: "Dùng 承知いたしました (しょうちいたしました) để báo rằng mình đã hiểu và tiếp nhận yêu cầu.", tags: ["business"] },
+    { id: "s020", situation: "Từ chối khéo yêu cầu", plain: "できません", polite: "いたしかねます", explain: "いたしかねます là cách nói vòng vo lịch sự của できません (Tôi khó có thể làm được).", tags: ["refusal", "business"] },
+    { id: "s021", situation: "Hẹn gặp lại sau", plain: "また後で", polite: "後ほどご連絡いたします", explain: "後ほど (のちほど) nghĩa là 'sau đây', thường đi kèm với việc sẽ liên lạc lại.", tags: ["time", "business"] },
+    { id: "s022", situation: "Nhắc nhở nhẹ nhàng (Mở đầu)", plain: "言いにくいけど", polite: "申し上げにくいのですが", explain: "申し上げにくいのですが dùng khi sắp nói một tin xấu hoặc điều khó nói.", tags: ["communication", "business"] },
+    { id: "s023", situation: "Xác nhận lại một thông tin", plain: "確認してください", polite: "念のためご確認をお願いいたします", explain: "念のため (ねんのため) nghĩa là 'để chắc chắn/phòng hờ'. Rất hay dùng khi yêu cầu check lại.", tags: ["business"] },
+    { id: "s024", situation: "Bày tỏ sự cảm kích", plain: "助かりました", polite: "誠に感謝申し上げます", explain: "誠に (まことに) = 本当に (rất/thực sự). 感謝申し上げる là mức độ cảm ơn cao nhất.", tags: ["gratitude", "business"] },
+    { id: "s025", situation: "Hỏi xem khách có tiện nghe máy không", plain: "今、電話いいですか？", polite: "今、少しお時間よろしいでしょうか", explain: "Cách hỏi lịch sự nhất để đảm bảo không làm phiền đối phương khi gọi điện.", tags: ["phone", "business"] },
+    { id: "s026", situation: "Khi không nghe rõ đối tác nói gì", plain: "え？もう一回言って", polite: "恐れ入りますが、もう一度お願いできますでしょうか", explain: "Luôn dùng mào đầu 恐れ入りますが trước khi nhờ người khác lặp lại.", tags: ["phone", "business"] },
+    { id: "s027", situation: "Chuyển điện thoại cho người khác", plain: "Aさんに代わります", polite: "Aと代わりますので、少々お待ちください", explain: "Khi gọi người cùng công ty (A), không được gắn さん vào tên người đó khi nói với khách.", tags: ["phone", "business"] },
+    { id: "s028", situation: "Hỏi xem có ai có ý kiến khác không", plain: "ほかに意見はありますか？", polite: "ほかにご意見やご質問はございませんか？", explain: "ございませんか là thể lịch sự của ありませんか.", tags: ["meeting", "business"] },
+    { id: "s029", situation: "Mời đối tác ngồi", plain: "座ってください", polite: "どうぞお掛けください", explain: "お掛けになる (おかけになる) là Tôn kính ngữ của 座る (ngồi).", tags: ["action", "business"] },
+    { id: "s030", situation: "Gửi lời chúc/hy vọng ở cuối email", plain: "よろしくね", polite: "引き続きよろしくお願い申し上げます", explain: "引き続き (ひきつづき - tiếp tục) thường dùng để mong đối tác tiếp tục hợp tác.", tags: ["email", "business"] }
   ]
 };
 export default KEIGO;

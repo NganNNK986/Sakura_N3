@@ -84,6 +84,32 @@ export const ADVERBS = [
   { id: "a083", word: "直接", reading: "ちょくせつ", romaji: "chokusetsu", meaning: "trực tiếp", example: "直接彼に話す。", exMeaning: "Nói chuyện trực tiếp với anh ấy.", tags: ["adverb", "manner"] },
   { id: "a084", word: "再び", reading: "ふたたび", romaji: "futatabi", meaning: "lại một lần nữa", example: "再び会う日を楽しみにしている。", exMeaning: "Mong đến ngày được gặp lại lần nữa.", tags: ["adverb", "frequency"] },
   { id: "a085", word: "いかに", reading: "いかに", romaji: "ikani", meaning: "như thế nào, biết bao", example: "いかに努力したか。", exMeaning: "Đã nỗ lực biết bao.", tags: ["adverb", "question", "degree"] }
+  , { id: "a086", word: "じっと", reading: "じっと", romaji: "jitto", meaning: "chăm chú, yên lặng", example: "じっと見つめる。", exMeaning: "Nhìn chằm chằm.", tags: ["adverb", "onomatopoeia"] },
+  { id: "a087", word: "そっと", reading: "そっと", romaji: "sotto", meaning: "nhẹ nhàng, rón rén", example: "そっとドアを閉める。", exMeaning: "Nhẹ nhàng đóng cửa.", tags: ["adverb", "onomatopoeia"] },
+  { id: "a088", word: "ぼんやり", reading: "ぼんやり", romaji: "bonyari", meaning: "mờ ảo, lơ đãng", example: "ぼんやりと空を見る。", exMeaning: "Nhìn bầu trời lơ đãng.", tags: ["adverb", "onomatopoeia"] },
+  { id: "a089", word: "わくわく", reading: "わくわく", romaji: "wakuwaku", meaning: "hồi hộp, háo hức", example: "旅行が楽しみでわくわくする。", exMeaning: "Háo hức vì mong chờ chuyến du lịch.", tags: ["adverb", "onomatopoeia"] },
+  { id: "a090", word: "どきどき", reading: "どきどき", romaji: "dokidoki", meaning: "tim đập thình thịch", example: "面接でどきどきした。", exMeaning: "Tim đập thình thịch trong buổi phỏng vấn.", tags: ["adverb", "onomatopoeia"] },
+  { id: "a091", word: "いらいら", reading: "いらいら", romaji: "iraira", meaning: "sốt ruột, bực bội", example: "バスが来なくていらいらする。", exMeaning: "Xe buýt mãi không đến nên bực bội.", tags: ["adverb", "onomatopoeia"] },
+  { id: "a092", word: "すっきり", reading: "すっきり", romaji: "sukkiri", meaning: "sảng khoái, gọn gàng", example: "悩みが解決してすっきりした。", exMeaning: "Phiền não được giải quyết nên rất sảng khoái.", tags: ["adverb", "onomatopoeia"] },
+  { id: "a093", word: "ぐっすり", reading: "ぐっすり", romaji: "gussuri", meaning: "ngủ say", example: "疲れていたのでぐっすり眠った。", exMeaning: "Vì mệt nên đã ngủ rất say.", tags: ["adverb", "onomatopoeia"] },
+  { id: "a094", word: "にっこり", reading: "にっこり", romaji: "nikkori", meaning: "cười mỉm", example: "彼女はにっこり笑った。", exMeaning: "Cô ấy mỉm cười.", tags: ["adverb", "onomatopoeia"] },
+  { id: "a095", word: "のんびり", reading: "のんびり", romaji: "nonbiri", meaning: "thong thả", example: "休日は家でのんびりする。", exMeaning: "Ngày nghỉ tôi thong thả ở nhà.", tags: ["adverb", "onomatopoeia"] },
+  { id: "a096", word: "ばったり", reading: "ばったり", romaji: "battari", meaning: "tình cờ", example: "道でばったり友達に会った。", exMeaning: "Tình cờ gặp bạn trên đường.", tags: ["adverb", "onomatopoeia"] },
+  { id: "a097", word: "こっそり", reading: "こっそり", romaji: "kossori", meaning: "lén lút", example: "こっそりお菓子を食べる。", exMeaning: "Lén lút ăn kẹo.", tags: ["adverb", "onomatopoeia"] },
+  { id: "a098", word: "ぎりぎり", reading: "ぎりぎり", romaji: "girigiri", meaning: "sát nút", example: "締切ぎりぎりに提出した。", exMeaning: "Nộp bài sát nút giờ hạn.", tags: ["adverb", "onomatopoeia"] },
+  { id: "a099", word: "ぴったり", reading: "ぴったり", romaji: "pittari", meaning: "vừa khít", example: "サイズがぴったりだ。", exMeaning: "Kích cỡ vừa khít.", tags: ["adverb", "onomatopoeia"] },
+  { id: "a100", word: "ますます", reading: "ますます", romaji: "masumasu", meaning: "ngày càng", example: "雨はますます強くなった。", exMeaning: "Mưa ngày càng to.", tags: ["adverb", "degree"] },
+  { id: "a101", word: "めったに", reading: "めったに", romaji: "metta ni", meaning: "hiếm khi", example: "彼はめったに怒らない。", exMeaning: "Anh ấy hiếm khi tức giận.", tags: ["adverb", "frequency"] },
+  { id: "a102", word: "たまたま", reading: "たまたま", romaji: "tamatama", meaning: "tình cờ", example: "たまたま同じ本を読んでいた。", exMeaning: "Tình cờ đọc cùng một cuốn sách.", tags: ["adverb", "unexpected"] },
+  { id: "a103", word: "ちっとも", reading: "ちっとも", romaji: "chittomo", meaning: "một chút cũng không", example: "ちっとも寒くない。", exMeaning: "Một chút cũng không lạnh.", tags: ["adverb", "negation"] },
+  { id: "a104", word: "せめて", reading: "せめて", romaji: "semete", meaning: "ít nhất là", example: "せめて日曜日くらいは休みたい。", exMeaning: "Ít nhất là cũng muốn nghỉ ngày Chủ Nhật.", tags: ["adverb", "limit"] },
+  { id: "a105", word: "どうしても", reading: "どうしても", romaji: "doushitemo", meaning: "nhất định, dù thế nào cũng", example: "どうしても行きたい。", exMeaning: "Dù thế nào cũng muốn đi.", tags: ["adverb", "strong"] },
+  { id: "a106", word: "とりあえず", reading: "とりあえず", romaji: "toriaezu", meaning: "trước mắt, tạm thời", example: "とりあえずビールを注文しよう。", exMeaning: "Trước mắt cứ gọi bia đã.", tags: ["adverb", "time"] },
+  { id: "a107", word: "わざと", reading: "わざと", romaji: "wazato", meaning: "cố tình", example: "わざと負けた。", exMeaning: "Cố tình thua.", tags: ["adverb", "purpose"] },
+  { id: "a108", word: "わざわざ", reading: "わざわざ", romaji: "wazawaza", meaning: "cất công", example: "わざわざ来てくれてありがとう。", exMeaning: "Cảm ơn vì đã cất công đến.", tags: ["adverb", "purpose"] },
+  { id: "a109", word: "案外", reading: "あんがい", romaji: "angai", meaning: "không ngờ, ngoài dự tính", example: "今日のテストは案外簡単だった。", exMeaning: "Bài kiểm tra hôm nay dễ không ngờ.", tags: ["adverb", "unexpected"] },
+  { id: "a110", word: "思わず", reading: "おもわず", romaji: "omowazu", meaning: "bất giác, không kìm được", example: "痛くて思わず叫んだ。", exMeaning: "Đau quá nên bất giác hét lên.", tags: ["adverb", "action"] },
+  { id: "a111", word: "相変わらず", reading: "あいかわらず", romaji: "aikawarazu", meaning: "vẫn như mọi khi", example: "彼は相変わらず元気だ。", exMeaning: "Anh ấy vẫn khỏe như mọi khi.", tags: ["adverb", "state"] },
+  { id: "a112", word: "思い切り", reading: "おもいきり", romaji: "omoikiri", meaning: "hết sức, dứt khoát", example: "思い切り泣いた。", exMeaning: "Đã khóc hết sức.", tags: ["adverb", "degree"] }
 ];
-
 export default ADVERBS;
