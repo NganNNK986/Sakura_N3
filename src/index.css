@@ -537,3 +537,88 @@ input, select, textarea { font-family: var(--font-sans); }
   background: var(--sakura-200);
   color: var(--sakura-900);
 }
+
+/* ── Rich Aesthetics & Glassmorphism ──────────────────────── */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 32px rgba(180, 50, 90, 0.08);
+  border-radius: var(--radius-lg);
+}
+
+.glass-tab-container {
+  display: flex;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 6px;
+  border-radius: var(--radius-full);
+  backdrop-filter: blur(8px);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.02);
+  margin-bottom: var(--space-lg);
+  border: 1px solid rgba(255,255,255,0.8);
+}
+
+.glass-tab-btn {
+  flex: 1;
+  padding: 10px 16px;
+  border-radius: var(--radius-full);
+  font-weight: 700;
+  color: var(--ink-40);
+  background: transparent;
+  transition: all var(--trans-spring);
+  text-align: center;
+}
+
+.glass-tab-btn.active {
+  background: linear-gradient(135deg, var(--sakura-500), var(--sakura-400));
+  color: white;
+  box-shadow: 0 4px 12px rgba(212, 84, 122, 0.3);
+}
+
+.glass-tab-btn:not(.active):hover {
+  background: rgba(255, 255, 255, 0.5);
+  color: var(--sakura-700);
+}
+
+.hover-float {
+  transition: transform var(--trans-spring), box-shadow var(--trans-spring);
+}
+.hover-float:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--sakura-700), var(--sakura-400));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-border-card {
+  position: relative;
+  background: white;
+  border-radius: var(--radius-md);
+  z-index: 1;
+}
+.gradient-border-card::before {
+  content: "";
+  position: absolute;
+  top: -2px; left: -2px; right: -2px; bottom: -2px;
+  background: linear-gradient(135deg, var(--sakura-300), var(--spring-sky-light));
+  z-index: -1;
+  border-radius: calc(var(--radius-md) + 2px);
+  opacity: 0.5;
+  transition: opacity var(--trans-base);
+}
+.gradient-border-card:hover::before {
+  opacity: 1;
+}
+
+.pulse-glow {
+  animation: pulseGlow 3s infinite alternate;
+}
+@keyframes pulseGlow {
+  0% { box-shadow: 0 0 0 0 rgba(212, 84, 122, 0.4); }
+  100% { box-shadow: 0 0 20px 10px rgba(212, 84, 122, 0); }
+}

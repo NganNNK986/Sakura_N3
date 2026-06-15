@@ -83,8 +83,8 @@ export default function Vocab() {
     <div className="page-container animate-fadeIn">
       <div className="flex items-center justify-between mb-lg">
         <div>
-          <h2>Từ Vựng N3</h2>
-          <p className="text-muted mt-xs">Tổng hợp từ vựng ôn thi N3</p>
+          <h2 className="gradient-text">Từ Vựng N3</h2>
+          <p className="text-muted mt-xs font-medium">Sổ tay từ vựng & Flashcards</p>
         </div>
         <div className="flex gap-sm">
           <button className={`btn ${mode === 'flashcard' ? 'btn-primary' : 'btn-secondary'}`} onClick={() => setMode('flashcard')}>
@@ -96,23 +96,23 @@ export default function Vocab() {
         </div>
       </div>
 
-      <div className="flex border-b border-border mb-lg">
+      <div className="glass-tab-container mb-lg max-w-md mx-auto">
         <button 
-          className={`flex-1 p-sm font-bold border-b-2 transition-colors ${activeTab === 'soumatome' ? 'border-sakura text-sakura' : 'border-transparent text-muted hover:text-ink'}`}
+          className={`glass-tab-btn ${activeTab === 'soumatome' ? 'active' : ''}`}
           onClick={() => setActiveTab('soumatome')}
         >
-          880 Từ Vựng Soumatome
+          Soumatome (880 Từ)
         </button>
         <button 
-          className={`flex-1 p-sm font-bold border-b-2 transition-colors ${activeTab === 'frequent' ? 'border-sakura text-sakura' : 'border-transparent text-muted hover:text-ink'}`}
+          className={`glass-tab-btn ${activeTab === 'frequent' ? 'active' : ''}`}
           onClick={() => setActiveTab('frequent')}
         >
-          Từ Vựng Hay Thi JLPT
+          Hay Thi JLPT (50 Từ)
         </button>
       </div>
 
-      <div className="card card-body mb-lg text-center">
-        <div className="flex justify-between text-sm mb-sm font-medium">
+      <div className="glass-panel p-md mb-lg text-center hover-float">
+        <div className="flex justify-between text-sm mb-sm font-bold">
           <span className="text-muted">Tiến độ ({activeTab === 'soumatome' ? 'Soumatome' : 'JLPT N3'})</span>
           <span className="text-sakura">{progress.mastered.filter(id => activeVocabList.some(w => w.id === id)).length} / {activeVocabList.length}</span>
         </div>
@@ -122,7 +122,7 @@ export default function Vocab() {
       </div>
 
       {mode === 'flashcard' && currentWord && (
-        <div className="flex-col items-center">
+        <div className="flex-col items-center pulse-glow rounded-xl">
           <FlashCard
             front={currentWord.word}
             backHeader={<div className="text-center">{currentWord.reading} ({currentWord.romaji})</div>}

@@ -8,21 +8,21 @@ export default function Conjugation() {
     <div className="page-container animate-fadeIn">
       <div className="flex items-center justify-between mb-lg flex-wrap gap-md">
         <div>
-          <h2>Chia Động Từ</h2>
-          <p className="text-muted mt-xs">Sổ tay tra cứu quy tắc và ngoại lệ</p>
+          <h2 className="gradient-text">Chia Động Từ</h2>
+          <p className="text-muted mt-xs font-medium">Sổ tay tra cứu quy tắc và ngoại lệ</p>
         </div>
-        <div className="flex gap-sm">
+        <div className="glass-tab-container max-w-sm">
           <button 
-            className={`btn ${activeTab === 'rules' ? 'btn-primary' : 'btn-secondary'}`} 
+            className={`glass-tab-btn ${activeTab === 'rules' ? 'active' : ''}`} 
             onClick={() => setActiveTab('rules')}
           >
             Hướng Dẫn Chung
           </button>
           <button 
-            className={`btn ${activeTab === 'irregular' ? 'btn-primary' : 'btn-secondary'}`} 
+            className={`glass-tab-btn ${activeTab === 'irregular' ? 'active' : ''}`} 
             onClick={() => setActiveTab('irregular')}
           >
-            Động Từ Bất Quy Tắc
+            Bất Quy Tắc
           </button>
         </div>
       </div>
@@ -30,9 +30,9 @@ export default function Conjugation() {
       {activeTab === 'rules' && (
         <div className="rules-container animate-slideUp">
           {CONJUGATION_RULES.map((rule, idx) => (
-            <div key={idx} className="card card-body mb-lg">
-              <h3 className="text-2xl font-bold text-sakura mb-xs">{rule.form}</h3>
-              <p className="text-muted mb-md">{rule.description}</p>
+            <div key={idx} className="glass-panel p-lg mb-lg hover-float">
+              <h3 className="text-2xl font-bold gradient-text mb-xs">{rule.form}</h3>
+              <p className="text-muted mb-md font-medium">{rule.description}</p>
               
               <div className="grid-3col gap-md">
                 {/* Nhóm 1 */}
@@ -72,9 +72,9 @@ export default function Conjugation() {
         <div className="irregular-container animate-slideUp">
           <div className="grid-2col gap-md">
             {IRREGULAR_VERBS.map((verb, idx) => (
-              <div key={idx} className="card card-body card-hover flex-col gap-sm">
+              <div key={idx} className="glass-panel p-md hover-float flex-col gap-sm gradient-border-card">
                 <div className="flex items-center gap-md mb-xs">
-                  <div className="text-4xl font-bold jp text-sakura">{verb.dict}</div>
+                  <div className="text-4xl font-bold jp gradient-text">{verb.dict}</div>
                   <div>
                     <div className="text-lg jp font-medium">{verb.reading}</div>
                     <div className="text-sm text-muted">{verb.meaning}</div>
