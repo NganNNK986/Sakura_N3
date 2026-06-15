@@ -38,14 +38,14 @@ export default function Conjugation() {
               </h3>
               <p className="text-muted mb-md font-medium">{rule.description}</p>
 
-              <div className="grid-3col gap-md">
+              <div className="conj-grid-3col">
                 {/* Nhóm 1 */}
-                <div className="bg-sakura-50 p-md rounded-md flex flex-col h-full" style={{ wordBreak: "break-word" }}>
+                <div className="conj-cell conj-cell--pink">
                   <div className="font-bold mb-sm badge badge-sakura">
                     Nhóm 1 (Godan)
                   </div>
                   {Array.isArray(rule.group1) ? (
-                    <ul className="pl-md m-0 space-y-2">
+                    <ul className="conj-list">
                       {rule.group1.map((g1, i) => (
                         <li key={i}>
                           <span className="font-medium">{g1.ending}</span>{" "}
@@ -62,27 +62,21 @@ export default function Conjugation() {
                 </div>
 
                 {/* Nhóm 2 */}
-                <div className="bg-blue-50 p-md rounded-md flex flex-col h-full" style={{ wordBreak: "break-word" }}>
+                <div className="conj-cell conj-cell--blue">
                   <div className="font-bold mb-sm badge badge-blue">
                     Nhóm 2 (Ichidan)
                   </div>
-                  <div
-                    className="jp font-medium"
-                    style={{ whiteSpace: "pre-line" }}
-                  >
+                  <div className="jp font-medium conj-pre">
                     {rule.group2}
                   </div>
                 </div>
 
                 {/* Nhóm 3 */}
-                <div className="bg-green-50 p-md rounded-md flex flex-col h-full" style={{ wordBreak: "break-word" }}>
+                <div className="conj-cell conj-cell--green">
                   <div className="font-bold mb-sm badge badge-green">
                     Nhóm 3 (Bất quy tắc)
                   </div>
-                  <div
-                    className="jp font-medium"
-                    style={{ whiteSpace: "pre-line" }}
-                  >
+                  <div className="jp font-medium conj-pre">
                     {rule.group3}
                   </div>
                 </div>
@@ -94,7 +88,7 @@ export default function Conjugation() {
 
       {activeTab === "irregular" && (
         <div className="irregular-container animate-slideUp">
-          <div className="grid-2col gap-md">
+          <div className="conj-grid-2col">
             {IRREGULAR_VERBS.map((verb, idx) => (
               <div
                 key={idx}
@@ -133,13 +127,56 @@ export default function Conjugation() {
       )}
 
       <style>{`
-        .grid-3col { display: grid; grid-template-columns: 1fr; gap: var(--space-md); }
-        @media(min-width: 768px) { .grid-3col { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
-        .grid-2col { display: grid; grid-template-columns: 1fr; gap: var(--space-md); }
-        @media(min-width: 768px) { .grid-2col { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-        .space-y-2 > * + * { margin-top: 0.5rem; }
-        .bg-blue-50 { background: #e0f2fe; }
-        .bg-green-50 { background: #dcfce7; }
+        /* ── Conjugation 3-column grid ── */
+        .conj-grid-3col {
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: var(--space-md);
+          align-items: stretch;
+        }
+        @media (min-width: 768px) {
+          .conj-grid-3col {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+          }
+        }
+
+        /* ── Conjugation 2-column grid ── */
+        .conj-grid-2col {
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: var(--space-md);
+          align-items: stretch;
+        }
+        @media (min-width: 768px) {
+          .conj-grid-2col {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+          }
+        }
+
+        /* ── Grid cell shared ── */
+        .conj-cell {
+          display: flex;
+          flex-direction: column;
+          min-width: 0;
+          padding: var(--space-md);
+          border-radius: var(--radius-md);
+          overflow-wrap: break-word;
+          word-break: break-word;
+        }
+
+        .conj-cell--pink { background: var(--sakura-50); }
+        .conj-cell--blue { background: #e0f2fe; }
+        .conj-cell--green { background: #dcfce7; }
+
+        .conj-pre { white-space: pre-line; }
+
+        .conj-list {
+          list-style: disc;
+          padding-left: var(--space-md);
+          margin: 0;
+        }
+        .conj-list > * + * { margin-top: 0.5rem; }
+
         .badge-blue { background: #bae6fd; color: #0369a1; }
         .badge-green { background: #bbf7d0; color: #15803d; }
       `}</style>
