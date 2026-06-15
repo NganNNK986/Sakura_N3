@@ -1,395 +1,89 @@
-export const ADVERBS=[
-  {
-    "id": "a001",
-    "word": "だんだん",
-    "reading": "だんだん",
-    "romaji": "dandan",
-    "meaning": "dần dần, từ từ",
-    "example": "だんだん上手になってきた。",
-    "exMeaning": "Dần dần trở nên giỏi hơn.",
-    "tags": [
-      "adverb",
-      "change"
-    ]
-  },
-  {
-    "id": "a002",
-    "word": "もっと",
-    "reading": "もっと",
-    "romaji": "motto",
-    "meaning": "hơn nữa, nhiều hơn",
-    "example": "もっと練習しなければならない。",
-    "exMeaning": "Phải luyện tập nhiều hơn nữa.",
-    "tags": [
-      "adverb",
-      "degree"
-    ]
-  },
-  {
-    "id": "a003",
-    "word": "ずっと",
-    "reading": "ずっと",
-    "romaji": "zutto",
-    "meaning": "mãi mãi, suốt",
-    "example": "ずっと待っていた。",
-    "exMeaning": "Đã đợi mãi.",
-    "tags": [
-      "adverb",
-      "duration"
-    ]
-  },
-  {
-    "id": "a004",
-    "word": "やはり・やっぱり",
-    "reading": "やはり",
-    "romaji": "yahari",
-    "meaning": "vẫn là, đúng như vậy",
-    "example": "やはり日本語は難しい。",
-    "exMeaning": "Vẫn là tiếng Nhật khó.",
-    "tags": [
-      "adverb",
-      "expectation"
-    ]
-  },
-  {
-    "id": "a005",
-    "word": "なかなか",
-    "reading": "なかなか",
-    "romaji": "nakanaka",
-    "meaning": "khá là (khó) / mãi không",
-    "example": "なかなか眠れない。",
-    "exMeaning": "Mãi không ngủ được.",
-    "tags": [
-      "adverb",
-      "negation"
-    ]
-  },
-  {
-    "id": "a006",
-    "word": "あまり",
-    "reading": "あまり",
-    "romaji": "amari",
-    "meaning": "không mấy, không lắm (với phủ định)",
-    "example": "あまり好きではない。",
-    "exMeaning": "Không mấy thích.",
-    "tags": [
-      "adverb",
-      "degree",
-      "negation"
-    ]
-  },
-  {
-    "id": "a007",
-    "word": "けっこう",
-    "reading": "けっこう",
-    "romaji": "kekkou",
-    "meaning": "khá là, cũng được",
-    "example": "けっこう難しかった。",
-    "exMeaning": "Cũng khá khó đấy.",
-    "tags": [
-      "adverb",
-      "degree"
-    ]
-  },
-  {
-    "id": "a008",
-    "word": "ちっとも",
-    "reading": "ちっとも",
-    "romaji": "chittomo",
-    "meaning": "không chút nào (với phủ định)",
-    "example": "ちっとも分からない。",
-    "exMeaning": "Không hiểu chút nào.",
-    "tags": [
-      "adverb",
-      "negation"
-    ]
-  },
-  {
-    "id": "a009",
-    "word": "すっかり",
-    "reading": "すっかり",
-    "romaji": "sukkari",
-    "meaning": "hoàn toàn",
-    "example": "すっかり忘れてしまった。",
-    "exMeaning": "Đã quên hoàn toàn mất rồi.",
-    "tags": [
-      "adverb",
-      "completeness"
-    ]
-  },
-  {
-    "id": "a010",
-    "word": "たった",
-    "reading": "たった",
-    "romaji": "tatta",
-    "meaning": "chỉ, vỏn vẹn",
-    "example": "たった一人しかいない。",
-    "exMeaning": "Chỉ có một người thôi.",
-    "tags": [
-      "adverb",
-      "limit"
-    ]
-  },
-  {
-    "id": "a011",
-    "word": "ぜひ",
-    "reading": "ぜひ",
-    "romaji": "zehi",
-    "meaning": "nhất định, bằng mọi cách",
-    "example": "ぜひ来てください。",
-    "exMeaning": "Nhất định hãy đến.",
-    "tags": [
-      "adverb",
-      "request"
-    ]
-  },
-  {
-    "id": "a012",
-    "word": "きっと",
-    "reading": "きっと",
-    "romaji": "kitto",
-    "meaning": "chắc chắn",
-    "example": "きっと成功する。",
-    "exMeaning": "Chắc chắn sẽ thành công.",
-    "tags": [
-      "adverb",
-      "certainty"
-    ]
-  },
-  {
-    "id": "a013",
-    "word": "たぶん",
-    "reading": "たぶん",
-    "romaji": "tabun",
-    "meaning": "có lẽ, chắc là",
-    "example": "たぶん明日雨が降るでしょう。",
-    "exMeaning": "Chắc là ngày mai trời mưa.",
-    "tags": [
-      "adverb",
-      "conjecture"
-    ]
-  },
-  {
-    "id": "a014",
-    "word": "まさか",
-    "reading": "まさか",
-    "romaji": "masaka",
-    "meaning": "chẳng lẽ, không thể",
-    "example": "まさかこんなことになるとは。",
-    "exMeaning": "Chẳng lẽ lại xảy ra chuyện như thế này.",
-    "tags": [
-      "adverb",
-      "surprise"
-    ]
-  },
-  {
-    "id": "a015",
-    "word": "せっかく",
-    "reading": "せっかく",
-    "romaji": "sekkaku",
-    "meaning": "khó khăn lắm mới có được",
-    "example": "せっかくの機会を無駄にした。",
-    "exMeaning": "Đã lãng phí cơ hội khó có được.",
-    "tags": [
-      "adverb",
-      "effort"
-    ]
-  },
-  {
-    "id": "a016",
-    "word": "かなり",
-    "reading": "かなり",
-    "romaji": "kanari",
-    "meaning": "khá, đáng kể",
-    "example": "かなり疲れた。",
-    "exMeaning": "Khá mệt rồi.",
-    "tags": [
-      "adverb",
-      "degree"
-    ]
-  },
-  {
-    "id": "a017",
-    "word": "ほとんど",
-    "reading": "ほとんど",
-    "romaji": "hotondo",
-    "meaning": "gần như, hầu hết",
-    "example": "ほとんど終わった。",
-    "exMeaning": "Gần như xong rồi.",
-    "tags": [
-      "adverb",
-      "quantity"
-    ]
-  },
-  {
-    "id": "a018",
-    "word": "あいにく",
-    "reading": "あいにく",
-    "romaji": "ainiku",
-    "meaning": "đáng tiếc thay, không may",
-    "example": "あいにく今日は忙しい。",
-    "exMeaning": "Đáng tiếc thay hôm nay bận.",
-    "tags": [
-      "adverb",
-      "unfortunate"
-    ]
-  },
-  {
-    "id": "a019",
-    "word": "わざわざ",
-    "reading": "わざわざ",
-    "romaji": "wazawaza",
-    "meaning": "cố tình, đặc biệt",
-    "example": "わざわざ来てくれてありがとう。",
-    "exMeaning": "Cảm ơn bạn đã cố tình đến.",
-    "tags": [
-      "adverb",
-      "purpose"
-    ]
-  },
-  {
-    "id": "a020",
-    "word": "もともと",
-    "reading": "もともと",
-    "romaji": "motomoto",
-    "meaning": "vốn dĩ, ban đầu",
-    "example": "もともと得意ではなかった。",
-    "exMeaning": "Vốn dĩ không giỏi.",
-    "tags": [
-      "adverb",
-      "origin"
-    ]
-  },
-  {
-    "id": "a021",
-    "word": "いつも",
-    "reading": "いつも",
-    "romaji": "itsumo",
-    "meaning": "luôn luôn, mọi lúc",
-    "example": "いつも助かっています。",
-    "exMeaning": "Luôn luôn được giúp đỡ.",
-    "tags": [
-      "adverb",
-      "frequency"
-    ]
-  },
-  {
-    "id": "a022",
-    "word": "たまに",
-    "reading": "たまに",
-    "romaji": "tama ni",
-    "meaning": "thỉnh thoảng",
-    "example": "たまに映画を見る。",
-    "exMeaning": "Thỉnh thoảng xem phim.",
-    "tags": [
-      "adverb",
-      "frequency"
-    ]
-  },
-  {
-    "id": "a023",
-    "word": "めったに",
-    "reading": "めったに",
-    "romaji": "metta ni",
-    "meaning": "hiếm khi (với phủ định)",
-    "example": "めったに遅刻しない。",
-    "exMeaning": "Hiếm khi đến muộn.",
-    "tags": [
-      "adverb",
-      "frequency",
-      "negation"
-    ]
-  },
-  {
-    "id": "a024",
-    "word": "もうすぐ",
-    "reading": "もうすぐ",
-    "romaji": "mousugu",
-    "meaning": "sắp, chẳng mấy chốc",
-    "example": "もうすぐ春が来る。",
-    "exMeaning": "Sắp đến mùa xuân rồi.",
-    "tags": [
-      "adverb",
-      "time"
-    ]
-  },
-  {
-    "id": "a025",
-    "word": "急に",
-    "reading": "きゅうに",
-    "romaji": "kyuu ni",
-    "meaning": "đột nhiên, đột ngột",
-    "example": "急に雨が降ってきた。",
-    "exMeaning": "Đột nhiên trời mưa.",
-    "tags": [
-      "adverb",
-      "time"
-    ]
-  },
-  {
-    "id": "a026",
-    "word": "結局",
-    "reading": "けっきょく",
-    "romaji": "kekkyoku",
-    "meaning": "cuối cùng, rốt cục",
-    "example": "結局断った。",
-    "exMeaning": "Cuối cùng đã từ chối.",
-    "tags": [
-      "adverb",
-      "result"
-    ]
-  },
-  {
-    "id": "a027",
-    "word": "一体",
-    "reading": "いったい",
-    "romaji": "ittai",
-    "meaning": "rốt cuộc, đến cùng",
-    "example": "一体どうなっているの？",
-    "exMeaning": "Rốt cuộc chuyện gì đang xảy ra vậy?",
-    "tags": [
-      "adverb",
-      "question"
-    ]
-  },
-  {
-    "id": "a028",
-    "word": "なるべく",
-    "reading": "なるべく",
-    "romaji": "narubeku",
-    "meaning": "càng... càng tốt, nếu có thể",
-    "example": "なるべく早く来てください。",
-    "exMeaning": "Hãy đến sớm nhất có thể.",
-    "tags": [
-      "adverb",
-      "degree"
-    ]
-  },
-  {
-    "id": "a029",
-    "word": "とにかく",
-    "reading": "とにかく",
-    "romaji": "tonikaku",
-    "meaning": "dù sao đi nữa, thế nào đi nữa",
-    "example": "とにかくやってみよう。",
-    "exMeaning": "Dù sao đi nữa hãy thử đi.",
-    "tags": [
-      "adverb",
-      "emphasis"
-    ]
-  },
-  {
-    "id": "a030",
-    "word": "そもそも",
-    "reading": "そもそも",
-    "romaji": "somosomo",
-    "meaning": "vốn dĩ, ban đầu, căn bản",
-    "example": "そもそも問題の原因は何か。",
-    "exMeaning": "Căn bản thì nguyên nhân vấn đề là gì.",
-    "tags": [
-      "adverb",
-      "origin"
-    ]
-  }
+export const ADVERBS = [
+  { id: "a001", word: "だんだん", reading: "だんだん", romaji: "dandan", meaning: "dần dần, từ từ", example: "だんだん上手になってきた。", exMeaning: "Dần dần trở nên giỏi hơn.", tags: ["adverb", "change"] },
+  { id: "a002", word: "もっと", reading: "もっと", romaji: "motto", meaning: "hơn nữa, nhiều hơn", example: "もっと練習しなければならない。", exMeaning: "Phải luyện tập nhiều hơn nữa.", tags: ["adverb", "degree"] },
+  { id: "a003", word: "ずっと", reading: "ずっと", romaji: "zutto", meaning: "mãi mãi, suốt", example: "ずっと待っていた。", exMeaning: "Đã đợi mãi.", tags: ["adverb", "duration"] },
+  { id: "a004", word: "やはり・やっぱり", reading: "やはり", romaji: "yahari", meaning: "vẫn là, đúng như vậy", example: "やはり日本語は難しい。", exMeaning: "Vẫn là tiếng Nhật khó.", tags: ["adverb", "expectation"] },
+  { id: "a005", word: "なかなか", reading: "なかなか", romaji: "nakanaka", meaning: "khá là (khó) / mãi không", example: "なかなか眠れない。", exMeaning: "Mãi không ngủ được.", tags: ["adverb", "negation"] },
+  { id: "a006", word: "あまり", reading: "あまり", romaji: "amari", meaning: "không mấy, không lắm (với phủ định)", example: "あまり好きではない。", exMeaning: "Không mấy thích.", tags: ["adverb", "degree", "negation"] },
+  { id: "a007", word: "けっこう", reading: "けっこう", romaji: "kekkou", meaning: "khá là, cũng được", example: "けっこう難しかった。", exMeaning: "Cũng khá khó đấy.", tags: ["adverb", "degree"] },
+  { id: "a008", word: "ちっとも", reading: "ちっとも", romaji: "chittomo", meaning: "không chút nào (với phủ định)", example: "ちっとも分からない。", exMeaning: "Không hiểu chút nào.", tags: ["adverb", "negation"] },
+  { id: "a009", word: "すっかり", reading: "すっかり", romaji: "sukkari", meaning: "hoàn toàn", example: "すっかり忘れてしまった。", exMeaning: "Đã quên hoàn toàn mất rồi.", tags: ["adverb", "completeness"] },
+  { id: "a010", word: "たった", reading: "たった", romaji: "tatta", meaning: "chỉ, vỏn vẹn", example: "たった一人しかいない。", exMeaning: "Chỉ có một người thôi.", tags: ["adverb", "limit"] },
+  { id: "a011", word: "ぜひ", reading: "ぜひ", romaji: "zehi", meaning: "nhất định, bằng mọi cách", example: "ぜひ来てください。", exMeaning: "Nhất định hãy đến.", tags: ["adverb", "request"] },
+  { id: "a012", word: "きっと", reading: "きっと", romaji: "kitto", meaning: "chắc chắn", example: "きっと成功する。", exMeaning: "Chắc chắn sẽ thành công.", tags: ["adverb", "certainty"] },
+  { id: "a013", word: "たぶん", reading: "たぶん", romaji: "tabun", meaning: "có lẽ, chắc là", example: "たぶん明日雨が降るでしょう。", exMeaning: "Chắc là ngày mai trời mưa.", tags: ["adverb", "conjecture"] },
+  { id: "a014", word: "まさか", reading: "まさか", romaji: "masaka", meaning: "chẳng lẽ, không thể", example: "まさかこんなことになるとは。", exMeaning: "Chẳng lẽ lại xảy ra chuyện như thế này.", tags: ["adverb", "surprise"] },
+  { id: "a015", word: "せっかく", reading: "せっかく", romaji: "sekkaku", meaning: "khó khăn lắm mới có được", example: "せっかくの機会を無駄にした。", exMeaning: "Đã lãng phí cơ hội khó có được.", tags: ["adverb", "effort"] },
+  { id: "a016", word: "かなり", reading: "かなり", romaji: "kanari", meaning: "khá, đáng kể", example: "かなり疲れた。", exMeaning: "Khá mệt rồi.", tags: ["adverb", "degree"] },
+  { id: "a017", word: "ほとんど", reading: "ほとんど", romaji: "hotondo", meaning: "gần như, hầu hết", example: "ほとんど終わった。", exMeaning: "Gần như xong rồi.", tags: ["adverb", "quantity"] },
+  { id: "a018", word: "あいにく", reading: "あいにく", romaji: "ainiku", meaning: "đáng tiếc thay, không may", example: "あいにく今日は忙しい。", exMeaning: "Đáng tiếc thay hôm nay bận.", tags: ["adverb", "unfortunate"] },
+  { id: "a019", word: "わざわざ", reading: "わざわざ", romaji: "wazawaza", meaning: "cố tình, đặc biệt", example: "わざわざ来てくれてありがとう。", exMeaning: "Cảm ơn bạn đã cố tình đến.", tags: ["adverb", "purpose"] },
+  { id: "a020", word: "もともと", reading: "もともと", romaji: "motomoto", meaning: "vốn dĩ, ban đầu", example: "もともと得意ではなかった。", exMeaning: "Vốn dĩ không giỏi.", tags: ["adverb", "origin"] },
+  { id: "a021", word: "いつも", reading: "いつも", romaji: "itsumo", meaning: "luôn luôn, mọi lúc", example: "いつも助かっています。", exMeaning: "Luôn luôn được giúp đỡ.", tags: ["adverb", "frequency"] },
+  { id: "a022", word: "たまに", reading: "たまに", romaji: "tama ni", meaning: "thỉnh thoảng", example: "たまに映画を見る。", exMeaning: "Thỉnh thoảng xem phim.", tags: ["adverb", "frequency"] },
+  { id: "a023", word: "めったに", reading: "めったに", romaji: "metta ni", meaning: "hiếm khi (với phủ định)", example: "めったに遅刻しない。", exMeaning: "Hiếm khi đến muộn.", tags: ["adverb", "frequency", "negation"] },
+  { id: "a024", word: "もうすぐ", reading: "もうすぐ", romaji: "mousugu", meaning: "sắp, chẳng mấy chốc", example: "もうすぐ春が来る。", exMeaning: "Sắp đến mùa xuân rồi.", tags: ["adverb", "time"] },
+  { id: "a025", word: "急に", reading: "きゅうに", romaji: "kyuu ni", meaning: "đột nhiên, đột ngột", example: "急に雨が降ってきた。", exMeaning: "Đột nhiên trời mưa.", tags: ["adverb", "time"] },
+  { id: "a026", word: "結局", reading: "けっきょく", romaji: "kekkyoku", meaning: "cuối cùng, rốt cục", example: "結局断った。", exMeaning: "Cuối cùng đã từ chối.", tags: ["adverb", "result"] },
+  { id: "a027", word: "一体", reading: "いったい", romaji: "ittai", meaning: "rốt cuộc, đến cùng", example: "一体どうなっているの？", exMeaning: "Rốt cuộc chuyện gì đang xảy ra vậy?", tags: ["adverb", "question"] },
+  { id: "a028", word: "なるべく", reading: "なるべく", romaji: "narubeku", meaning: "càng... càng tốt, nếu có thể", example: "なるべく早く来てください。", exMeaning: "Hãy đến sớm nhất có thể.", tags: ["adverb", "degree"] },
+  { id: "a029", word: "とにかく", reading: "とにかく", romaji: "tonikaku", meaning: "dù sao đi nữa, thế nào đi nữa", example: "とにかくやってみよう。", exMeaning: "Dù sao đi nữa hãy thử đi.", tags: ["adverb", "emphasis"] },
+  { id: "a030", word: "そもそも", reading: "そもそも", romaji: "somosomo", meaning: "vốn dĩ, ban đầu, căn bản", example: "そもそも問題の原因は何か。", exMeaning: "Căn bản thì nguyên nhân vấn đề là gì.", tags: ["adverb", "origin"] },
+  { id: "a031", word: "ついに", reading: "ついに", romaji: "tsuini", meaning: "cuối cùng thì (mang ý thỏa mãn/đạt được)", example: "ついに夢が実現した。", exMeaning: "Cuối cùng thì giấc mơ đã thành hiện thực.", tags: ["adverb", "result"] },
+  { id: "a032", word: "とうとう", reading: "とうとう", romaji: "toutou", meaning: "cuối cùng thì (chờ đợi lâu)", example: "とうとう雨が降り出した。", exMeaning: "Cuối cùng thì trời cũng bắt đầu mưa.", tags: ["adverb", "result"] },
+  { id: "a033", word: "やっと", reading: "やっと", romaji: "yatto", meaning: "cuối cùng thì (vượt qua khó khăn)", example: "やっとレポートが終わった。", exMeaning: "Cuối cùng thì cũng xong báo cáo.", tags: ["adverb", "result"] },
+  { id: "a034", word: "いよいよ", reading: "いよいよ", romaji: "iyoiyo", meaning: "cuối cùng thì (sự kiện mong chờ sắp đến)", example: "いよいよ明日出発だ。", exMeaning: "Cuối cùng thì ngày mai sẽ xuất phát.", tags: ["adverb", "result"] },
+  { id: "a035", word: "うっかり", reading: "うっかり", romaji: "ukkari", meaning: "vô ý, lơ đễnh", example: "うっかりしてパスワードを忘れた。", exMeaning: "Lơ đễnh nên đã quên mất mật khẩu.", tags: ["adverb", "state"] },
+  { id: "a036", word: "がっかり", reading: "がっかり", romaji: "gakkari", meaning: "thất vọng", example: "試験に落ちてがっかりした。", exMeaning: "Thi trượt nên đã rất thất vọng.", tags: ["adverb", "emotion"] },
+  { id: "a037", word: "しっかり", reading: "しっかり", romaji: "shikkari", meaning: "chắc chắn, vững vàng", example: "しっかり持ってください。", exMeaning: "Hãy cầm cho chắc chắn vào.", tags: ["adverb", "state"] },
+  { id: "a038", word: "すっきり", reading: "すっきり", romaji: "sukkiri", meaning: "sảng khoái, gọn gàng", example: "部屋を掃除してすっきりした。", exMeaning: "Dọn phòng xong thấy thật sảng khoái.", tags: ["adverb", "emotion"] },
+  { id: "a039", word: "さっぱり", reading: "さっぱり", romaji: "sappari", meaning: "nhẹ nhõm / hoàn toàn không", example: "さっぱり分からない。", exMeaning: "Hoàn toàn không hiểu gì cả.", tags: ["adverb", "negation"] },
+  { id: "a040", word: "ぐっすり", reading: "ぐっすり", romaji: "gussuri", meaning: "ngủ say, ngủ ngon", example: "昨夜はぐっすり眠れた。", exMeaning: "Đêm qua đã ngủ rất ngon.", tags: ["adverb", "state"] },
+  { id: "a041", word: "にっこり", reading: "にっこり", romaji: "nikkori", meaning: "cười mỉm", example: "彼女はにっこり笑った。", exMeaning: "Cô ấy đã cười mỉm.", tags: ["adverb", "action"] },
+  { id: "a042", word: "のんびり", reading: "のんびり", romaji: "nonbiri", meaning: "thong thả, thong dong", example: "休日はのんびり過ごしたい。", exMeaning: "Ngày nghỉ tôi muốn dành thời gian thong thả.", tags: ["adverb", "state"] },
+  { id: "a043", word: "ばったり", reading: "ばったり", romaji: "battari", meaning: "đột nhiên (gặp), tình cờ", example: "道でばったり先生に会った。", exMeaning: "Tình cờ gặp thầy giáo trên đường.", tags: ["adverb", "unexpected"] },
+  { id: "a044", word: "ぴったり", reading: "ぴったり", romaji: "pittari", meaning: "vừa khít, vừa vặn", example: "この服はサイズがぴったりだ。", exMeaning: "Bộ quần áo này kích cỡ vừa khít.", tags: ["adverb", "state"] },
+  { id: "a045", word: "こっそり", reading: "こっそり", romaji: "kossori", meaning: "lén lút, giấu giếm", example: "こっそりお菓子を食べる。", exMeaning: "Lén lút ăn kẹo.", tags: ["adverb", "action"] },
+  { id: "a046", word: "そっと", reading: "そっと", romaji: "sotto", meaning: "rón rén, nhẹ nhàng", example: "そっとドアを閉めた。", exMeaning: "Đã rón rén đóng cửa lại.", tags: ["adverb", "action"] },
+  { id: "a047", word: "ぎりぎり", reading: "ぎりぎり", romaji: "girigiri", meaning: "sát nút, vừa sát", example: "時間にぎりぎり間に合った。", exMeaning: "Đã kịp thời gian sát nút.", tags: ["adverb", "limit"] },
+  { id: "a048", word: "ますます", reading: "ますます", romaji: "masumasu", meaning: "ngày càng", example: "ますます元気になった。", exMeaning: "Ngày càng trở nên khỏe mạnh.", tags: ["adverb", "change"] },
+  { id: "a049", word: "次々に", reading: "つぎつぎに", romaji: "tsugitsugi ni", meaning: "lần lượt, liên tiếp", example: "新しい問題が次々に起こる。", exMeaning: "Vấn đề mới liên tiếp xảy ra.", tags: ["adverb", "order"] },
+  { id: "a050", word: "常に", reading: "つねに", romaji: "tsune ni", meaning: "thường xuyên, luôn luôn", example: "常に努力することが大切だ。", exMeaning: "Việc luôn luôn nỗ lực là rất quan trọng.", tags: ["adverb", "frequency"] },
+  { id: "a051", word: "たまたま", reading: "たまたま", romaji: "tamatama", meaning: "tình cờ", example: "たまたま同じ駅で降りた。", exMeaning: "Tình cờ xuống cùng một ga.", tags: ["adverb", "unexpected"] },
+  { id: "a052", word: "ただ", reading: "ただ", romaji: "tada", meaning: "chỉ, đơn thuần", example: "ただ見てるだけです。", exMeaning: "Chỉ đang xem thôi.", tags: ["adverb", "limit"] },
+  { id: "a053", word: "さらに", reading: "さらに", romaji: "sarani", meaning: "hơn nữa, thêm nữa", example: "さらに詳しく説明してください。", exMeaning: "Hãy giải thích chi tiết hơn nữa.", tags: ["adverb", "addition"] },
+  { id: "a054", word: "決して", reading: "けっして", romaji: "kesshite", meaning: "quyết không, tuyệt đối không (với phủ định)", example: "決して諦めない。", exMeaning: "Quyết không bỏ cuộc.", tags: ["adverb", "negation", "strong"] },
+  { id: "a055", word: "全く", reading: "まったく", romaji: "mattaku", meaning: "hoàn toàn / thực sự", example: "全く問題ありません。", exMeaning: "Hoàn toàn không có vấn đề gì.", tags: ["adverb", "completeness"] },
+  { id: "a056", word: "少しも", reading: "すこしも", romaji: "sukoshi mo", meaning: "một chút cũng không (với phủ định)", example: "少しも疲れていない。", exMeaning: "Một chút cũng không mệt.", tags: ["adverb", "negation"] },
+  { id: "a057", word: "必ずしも", reading: "かならずしも", romaji: "kanarazushimo", meaning: "không hẳn là, không nhất thiết là (với phủ định)", example: "お金持ちが必ずしも幸せとは限らない。", exMeaning: "Người giàu không hẳn là đã hạnh phúc.", tags: ["adverb", "negation", "condition"] },
+  { id: "a058", word: "万一", reading: "まんいち", romaji: "man'ichi", meaning: "nhỡ đâu, vạn nhất (với điều kiện)", example: "万一雨が降ったら、中止します。", exMeaning: "Nhỡ đâu trời mưa thì sẽ hủy bỏ.", tags: ["adverb", "condition"] },
+  { id: "a059", word: "もし", reading: "もし", romaji: "moshi", meaning: "nếu", example: "もし時間があれば、手伝ってください。", exMeaning: "Nếu có thời gian hãy giúp tôi.", tags: ["adverb", "condition"] },
+  { id: "a060", word: "どうも", reading: "どうも", romaji: "doumo", meaning: "rất / có vẻ như", example: "どうも風邪を引いたようだ。", exMeaning: "Có vẻ như đã bị cảm rồi.", tags: ["adverb", "conjecture"] },
+  { id: "a061", word: "まるで", reading: "まるで", romaji: "marude", meaning: "hoàn toàn / cứ như thể là", example: "まるで夢のようだ。", exMeaning: "Cứ như thể là một giấc mơ.", tags: ["adverb", "comparison"] },
+  { id: "a062", word: "わざと", reading: "わざと", romaji: "wazato", meaning: "cố tình", example: "わざと負けた。", exMeaning: "Đã cố tình thua.", tags: ["adverb", "purpose"] },
+  { id: "a063", word: "せめて", reading: "せめて", romaji: "semete", meaning: "ít nhất là", example: "せめて声だけでも聞きたい。", exMeaning: "Ít nhất là cũng muốn nghe giọng nói.", tags: ["adverb", "limit"] },
+  { id: "a064", word: "たいてい", reading: "たいてい", romaji: "taitei", meaning: "đại khái, phần lớn, thường", example: "休日はたいてい家にいる。", exMeaning: "Ngày nghỉ thường ở nhà.", tags: ["adverb", "frequency"] },
+  { id: "a065", word: "やがて", reading: "やがて", romaji: "yagate", meaning: "chẳng mấy chốc, cuối cùng", example: "やがて冬が来る。", exMeaning: "Chẳng mấy chốc mùa đông sẽ đến.", tags: ["adverb", "time"] },
+  { id: "a066", word: "まもなく", reading: "まもなく", romaji: "mamonaku", meaning: "sắp sửa, chẳng bao lâu nữa", example: "まもなく電車が参ります。", exMeaning: "Tàu sắp sửa tới.", tags: ["adverb", "time"] },
+  { id: "a067", word: "直ちに", reading: "ただちに", romaji: "tadachini", meaning: "ngay lập tức", example: "直ちに出発しなさい。", exMeaning: "Hãy xuất phát ngay lập tức.", tags: ["adverb", "time"] },
+  { id: "a068", word: "たちまち", reading: "たちまち", romaji: "tachimachi", meaning: "thoáng chốc, trong chớp mắt", example: "たちまち雨が激しくなった。", exMeaning: "Thoáng chốc mưa đã trở nên dữ dội.", tags: ["adverb", "time"] },
+  { id: "a069", word: "あらかじめ", reading: "あらかじめ", romaji: "arakajime", meaning: "sẵn, trước", example: "あらかじめ準備しておく。", exMeaning: "Sẽ chuẩn bị sẵn từ trước.", tags: ["adverb", "preparation"] },
+  { id: "a070", word: "およそ", reading: "およそ", romaji: "oyoso", meaning: "khoảng, đại khái", example: "およそ1時間かかります。", exMeaning: "Mất khoảng 1 tiếng.", tags: ["adverb", "quantity"] },
+  { id: "a071", word: "ほぼ", reading: "ほぼ", romaji: "hobo", meaning: "gần như", example: "工事はほぼ終わった。", exMeaning: "Công trường gần như đã xong.", tags: ["adverb", "quantity"] },
+  { id: "a072", word: "かなり", reading: "かなり", romaji: "kanari", meaning: "tương đối, khá", example: "かなり時間がかかった。", exMeaning: "Đã mất khá nhiều thời gian.", tags: ["adverb", "degree"] },
+  { id: "a073", word: "ずいぶん", reading: "ずいぶん", romaji: "zuibun", meaning: "khá là, rất", example: "ずいぶん遠くまで来た。", exMeaning: "Đã đến một nơi khá là xa.", tags: ["adverb", "degree"] },
+  { id: "a074", word: "大いに", reading: "おおいに", romaji: "ooini", meaning: "rất, rất nhiều", example: "大いに楽しんだ。", exMeaning: "Đã tận hưởng rất nhiều.", tags: ["adverb", "degree"] },
+  { id: "a075", word: "いくら", reading: "いくら", romaji: "ikura", meaning: "dù thế nào, dù bao nhiêu (đi với ~ても)", example: "いくら食べても太らない。", exMeaning: "Dù ăn bao nhiêu cũng không béo.", tags: ["adverb", "condition"] },
+  { id: "a076", word: "たとえ", reading: "たとえ", romaji: "tatoe", meaning: "giả sử (đi với ~ても)", example: "たとえ失敗しても、また挑戦する。", exMeaning: "Giả sử có thất bại, tôi vẫn sẽ khiêu chiến lại.", tags: ["adverb", "condition"] },
+  { id: "a077", word: "どうしても", reading: "どうしても", romaji: "doushitemo", meaning: "nhất định, dù thế nào cũng", example: "どうしても思い出せない。", exMeaning: "Dù thế nào cũng không thể nhớ ra.", tags: ["adverb", "negation", "strong"] },
+  { id: "a078", word: "どうにか", reading: "どうにか", romaji: "dounika", meaning: "bằng cách nào đó, tàm tạm", example: "どうにか間に合った。", exMeaning: "Bằng cách nào đó đã kịp giờ.", tags: ["adverb", "manner"] },
+  { id: "a079", word: "なんとか", reading: "なんとか", romaji: "nantoka", meaning: "bằng cách nào đó", example: "なんとか解決できた。", exMeaning: "Bằng cách nào đó đã giải quyết xong.", tags: ["adverb", "manner"] },
+  { id: "a080", word: "お互いに", reading: "おたがいに", romaji: "otagaini", meaning: "lẫn nhau, cùng nhau", example: "お互いに助け合う。", exMeaning: "Cùng giúp đỡ lẫn nhau.", tags: ["adverb", "relation"] },
+  { id: "a081", word: "代わる代わる", reading: "かわるがわる", romaji: "kawarugawaru", meaning: "luân phiên, thay phiên", example: "代わる代わる運転する。", exMeaning: "Lái xe thay phiên nhau.", tags: ["adverb", "order"] },
+  { id: "a082", word: "順々に", reading: "じゅんじゅんに", romaji: "junjunni", meaning: "lần lượt, theo thứ tự", example: "順々に名前を呼ぶ。", exMeaning: "Gọi tên lần lượt theo thứ tự.", tags: ["adverb", "order"] },
+  { id: "a083", word: "直接", reading: "ちょくせつ", romaji: "chokusetsu", meaning: "trực tiếp", example: "直接彼に話す。", exMeaning: "Nói chuyện trực tiếp với anh ấy.", tags: ["adverb", "manner"] },
+  { id: "a084", word: "再び", reading: "ふたたび", romaji: "futatabi", meaning: "lại một lần nữa", example: "再び会う日を楽しみにしている。", exMeaning: "Mong đến ngày được gặp lại lần nữa.", tags: ["adverb", "frequency"] },
+  { id: "a085", word: "いかに", reading: "いかに", romaji: "ikani", meaning: "như thế nào, biết bao", example: "いかに努力したか。", exMeaning: "Đã nỗ lực biết bao.", tags: ["adverb", "question", "degree"] }
 ];
+
 export default ADVERBS;
