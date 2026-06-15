@@ -40,7 +40,7 @@ export default function Conjugation() {
 
               <div className="grid-3col gap-md">
                 {/* Nhóm 1 */}
-                <div className="bg-sakura-50 p-md rounded-md">
+                <div className="bg-sakura-50 p-md rounded-md flex flex-col h-full" style={{ wordBreak: "break-word" }}>
                   <div className="font-bold mb-sm badge badge-sakura">
                     Nhóm 1 (Godan)
                   </div>
@@ -62,7 +62,7 @@ export default function Conjugation() {
                 </div>
 
                 {/* Nhóm 2 */}
-                <div className="bg-blue-50 p-md rounded-md">
+                <div className="bg-blue-50 p-md rounded-md flex flex-col h-full" style={{ wordBreak: "break-word" }}>
                   <div className="font-bold mb-sm badge badge-blue">
                     Nhóm 2 (Ichidan)
                   </div>
@@ -75,7 +75,7 @@ export default function Conjugation() {
                 </div>
 
                 {/* Nhóm 3 */}
-                <div className="bg-green-50 p-md rounded-md">
+                <div className="bg-green-50 p-md rounded-md flex flex-col h-full" style={{ wordBreak: "break-word" }}>
                   <div className="font-bold mb-sm badge badge-green">
                     Nhóm 3 (Bất quy tắc)
                   </div>
