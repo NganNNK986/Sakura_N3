@@ -4,9 +4,11 @@ import KANJI from '../data/kanji';
 import Modal from '../components/ui/Modal';
 
 export default function Kanji() {
-  const { state, markMastered } = useStore();
+  const { state, markMastered, markSeen } = useStore();
   const [selectedKanji, setSelectedKanji] = useState(null);
   const [filter, setFilter] = useState('all'); // all, mastered, unmastered
+  const [mode, setMode] = useState('study');
+  const [quizState, setQuizState] = useState(null);
 
   const progress = state.progress.kanji || { seen: [], mastered: [] };
   const isMastered = (id) => progress.mastered.includes(id);
@@ -22,6 +24,31 @@ export default function Kanji() {
     setSelectedKanji(null);
   };
 
+  // Quiz Logic
+  const generateQuiz = () => {
+    const kanji = KANJI[Math.floor(Math.random() * KANJI.length)];
+    const others = [...KANJI].sort(() => 0.5 - Math.random()).filter(k => k.id !== kanji.id).slice(0, 3);
+    const options = [kanji, ...others].sort(() => 0.5 - Math.random());
+    setQuizState({ question: kanji, options, answer: kanji.id, selected: null });
+  };
+
+  const startQuiz = () => {
+    setMode('quiz');
+    generateQuiz();
+  };
+
+  const handleOptionClick = (id) => {
+    if (quizState.selected) return; // already answered
+    setQuizState({ ...quizState, selected: id });
+    if (id === quizState.answer) {
+      if (markSeen) markSeen('kanji', quizState.question.id);
+      markMastered('kanji', quizState.question.id);
+    }
+    setTimeout(() => {
+      generateQuiz();
+    }, 1500);
+  };
+
   return (
     <div className="page-container animate-fadeIn">
       <div className="flex items-center justify-between mb-lg flex-wrap gap-md">
@@ -30,16 +57,24 @@ export default function Kanji() {
           <p className="text-muted mt-xs">316 chữ Kanji thiết yếu</p>
         </div>
         <div className="flex gap-sm">
-          <select 
-            className="input-field" 
-            style={{ width: 'auto' }}
-            value={filter}
-            onChange={(e) => setFilter(e.target.value)}
-          >
-            <option value="all">Tất cả ({KANJI.length})</option>
-            <option value="mastered">Đã thuộc ({progress.mastered.length})</option>
-            <option value="unmastered">Chưa thuộc ({KANJI.length - progress.mastered.length})</option>
-          </select>
+          {mode === 'study' && (
+            <select 
+              className="input-field" 
+              style={{ width: 'auto' }}
+              value={filter}
+              onChange={(e) => setFilter(e.target.value)}
+            >
+              <option value="all">Tất cả ({KANJI.length})</option>
+              <option value="mastered">Đã thuộc ({progress.mastered.length})</option>
+              <option value="unmastered">Chưa thuộc ({KANJI.length - progress.mastered.length})</option>
+            </select>
+          )}
+          <button className={`btn ${mode === 'study' ? 'btn-primary' : 'btn-secondary'}`} onClick={() => setMode('study')}>
+            Học Tập
+          </button>
+          <button className={`btn ${mode === 'quiz' ? 'btn-primary' : 'btn-secondary'}`} onClick={startQuiz}>
+            Trắc Nghiệm
+          </button>
         </div>
       </div>
 
@@ -53,22 +88,61 @@ export default function Kanji() {
         </div>
       </div>
 
-      <div className="kanji-grid">
-        {filteredKanji.map(k => (
-          <div 
-            key={k.id} 
-            className={`kanji-cell ${isMastered(k.id) ? 'mastered' : ''}`}
-            onClick={() => setSelectedKanji(k)}
-          >
-            {k.char}
+      {mode === 'study' && (
+        <div className="kanji-grid">
+          {filteredKanji.map(k => (
+            <div 
+              key={k.id} 
+              className={`kanji-cell ${isMastered(k.id) ? 'mastered' : ''}`}
+              onClick={() => setSelectedKanji(k)}
+            >
+              {k.char}
+            </div>
+          ))}
+          {filteredKanji.length === 0 && (
+            <div className="text-center text-muted p-xl" style={{ gridColumn: '1 / -1' }}>
+              Không có Kanji nào trong mục này.
+            </div>
+          )}
+        </div>
+      )}
+
+      {mode === 'quiz' && quizState && (
+        <div className="quiz-container max-w-md mx-auto card card-body animate-slideUp">
+          <div className="text-center mb-xl">
+            <div className="text-sm text-muted mb-sm">Ý nghĩa của chữ Kanji này là gì?</div>
+            <div className="text-6xl font-bold jp text-sakura my-md">{quizState.question.char}</div>
+            <div className="text-md text-ink-40 mt-xs">{quizState.question.on ? quizState.question.on : quizState.question.kun}</div>
           </div>
-        ))}
-        {filteredKanji.length === 0 && (
-          <div className="text-center text-muted p-xl" style={{ gridColumn: '1 / -1' }}>
-            Không có Kanji nào trong mục này.
+          
+          <div className="flex-col gap-sm">
+            {quizState.options.map(opt => {
+              let btnClass = 'btn-secondary';
+              if (quizState.selected) {
+                if (opt.id === quizState.answer) btnClass = 'btn-success';
+                else if (opt.id === quizState.selected) btnClass = 'btn-secondary text-error border-error';
+              }
+              return (
+                <button 
+                  key={opt.id} 
+                  className={`btn w-full justify-center p-md text-lg ${btnClass}`}
+                  onClick={() => handleOptionClick(opt.id)}
+                  disabled={!!quizState.selected}
+                  style={{ whiteSpace: 'normal', height: 'auto' }}
+                >
+                  {opt.meaning}
+                </button>
+              );
+            })}
           </div>
-        )}
-      </div>
+          
+          {quizState.selected && (
+            <div className={`mt-lg text-center font-bold ${quizState.selected === quizState.answer ? 'text-green' : 'text-error'} animate-fadeIn`}>
+              {quizState.selected === quizState.answer ? 'Chính xác! (+5 XP)' : 'Sai rồi, thử lại nhé!'}
+            </div>
+          )}
+        </div>
+      )}
 
       <Modal isOpen={!!selectedKanji} onClose={() => setSelectedKanji(null)} title="Chi Tiết Kanji">
         {selectedKanji && (
