@@ -1,34 +1,37 @@
 import { useState } from "react";
 import { useStore } from "../store/useStore";
 import GRAMMAR from "../data/grammar";
+import CONNECTIVES from "../data/connectives";
 import Modal from "../components/ui/Modal";
 
 export default function Grammar() {
   const { state, markMastered, markSeen } = useStore();
-  const [selectedGrammar, setSelectedGrammar] = useState(null);
+  const [selectedItem, setSelectedItem] = useState(null);
   const [mode, setMode] = useState("study");
+  const [itemType, setItemType] = useState("grammar"); // "grammar" or "connectives"
   const [quizState, setQuizState] = useState(null);
 
-  const progress = state.progress.grammar || { seen: [], mastered: [] };
+  const currentData = itemType === "grammar" ? GRAMMAR : CONNECTIVES;
+  const progress = state.progress[itemType] || { seen: [], mastered: [] };
   const isMastered = (id) => progress.mastered.includes(id);
 
-  const handleMaster = (g) => {
-    markMastered("grammar", g.id);
-    setSelectedGrammar(null);
+  const handleMaster = (item) => {
+    markMastered(itemType, item.id);
+    setSelectedItem(null);
   };
 
   // Quiz Logic
   const generateQuiz = () => {
-    const grammar = GRAMMAR[Math.floor(Math.random() * GRAMMAR.length)];
-    const others = [...GRAMMAR]
+    const item = currentData[Math.floor(Math.random() * currentData.length)];
+    const others = [...currentData]
       .sort(() => 0.5 - Math.random())
-      .filter((g) => g.id !== grammar.id)
+      .filter((g) => g.id !== item.id)
       .slice(0, 3);
-    const options = [grammar, ...others].sort(() => 0.5 - Math.random());
+    const options = [item, ...others].sort(() => 0.5 - Math.random());
     setQuizState({
-      question: grammar,
+      question: item,
       options,
-      answer: grammar.id,
+      answer: item.id,
       selected: null,
     });
   };
@@ -42,8 +45,8 @@ export default function Grammar() {
     if (quizState.selected) return;
     setQuizState({ ...quizState, selected: id });
     if (id === quizState.answer) {
-      if (markSeen) markSeen("grammar", quizState.question.id);
-      markMastered("grammar", quizState.question.id);
+      if (markSeen) markSeen(itemType, quizState.question.id);
+      markMastered(itemType, quizState.question.id);
     }
     setTimeout(() => {
       generateQuiz();
@@ -55,7 +58,7 @@ export default function Grammar() {
       <div className="flex items-center justify-between mb-lg">
         <div>
           <h2>Ngữ Pháp N3</h2>
-          <p className="text-muted mt-xs">{GRAMMAR.length} mẫu câu ngữ pháp</p>
+          <p className="text-muted mt-xs">{currentData.length} mẫu</p>
         </div>
         <div className="flex gap-sm">
           <button
@@ -73,19 +76,45 @@ export default function Grammar() {
         </div>
       </div>
 
+      {/* Item Type Tabs */}
+      <div className="flex gap-sm mb-lg">
+        <button
+          className={`btn ${itemType === "grammar" ? "btn-primary" : "btn-secondary"}`}
+          onClick={() => {
+            setItemType("grammar");
+            setMode("study");
+            setSelectedItem(null);
+            setQuizState(null);
+          }}
+        >
+          Ngữ Pháp
+        </button>
+        <button
+          className={`btn ${itemType === "connectives" ? "btn-primary" : "btn-secondary"}`}
+          onClick={() => {
+            setItemType("connectives");
+            setMode("study");
+            setSelectedItem(null);
+            setQuizState(null);
+          }}
+        >
+          Liên Từ
+        </button>
+      </div>
+
       <div className="card card-body mb-lg text-center">
         <div className="flex justify-between text-sm mb-sm font-medium">
-          <span className="text-muted">Tiến độ Ngữ Pháp</span>
+          <span className="text-muted">Tiến độ {itemType === "grammar" ? "Ngữ Pháp" : "Liên Từ"}</span>
           <span className="text-sakura">
-            {progress.mastered.length} / {GRAMMAR.length} (
-            {Math.round((progress.mastered.length / GRAMMAR.length) * 100)}%)
+            {progress.mastered.length} / {currentData.length} (
+            {Math.round((progress.mastered.length / currentData.length) * 100)}%)
           </span>
         </div>
         <div className="progress-bar-track">
           <div
             className="progress-bar-fill"
             style={{
-              width: (progress.mastered.length / GRAMMAR.length) * 100 + "%",
+              width: (progress.mastered.length / currentData.length) * 100 + "%",
             }}
           ></div>
         </div>
@@ -93,22 +122,25 @@ export default function Grammar() {
 
       {mode === "study" && (
         <div className="grammar-list">
-          {GRAMMAR.map((g, i) => (
+          {currentData.map((item, i) => (
             <div
-              key={g.id}
-              className={`grammar-card card card-hover ${isMastered(g.id) ? "mastered" : ""}`}
-              onClick={() => setSelectedGrammar(g)}
+              key={item.id}
+              className={`grammar-card card card-hover ${isMastered(item.id) ? "mastered" : ""}`}
+              onClick={() => setSelectedItem(item)}
             >
               <div className="flex items-center gap-md">
                 <div className="grammar-num">{i + 1}</div>
                 <div className="flex-1">
                   <div className="text-lg font-bold jp text-sakura">
-                    {g.pattern}
+                    {item.pattern}
                   </div>
-                  <div className="text-sm text-muted">{g.meaning}</div>
+                  <div className="text-sm text-muted">{item.meaning}</div>
+                  {item.category && (
+                    <div className="text-xs text-pale mt-xs">{item.category}</div>
+                  )}
                 </div>
                 <div className="text-xl">
-                  {isMastered(g.id) ? "Đã thuộc" : "Chi tiết"}
+                  {isMastered(item.id) ? "Đã thuộc" : "Chi tiết"}
                 </div>
               </div>
             </div>
@@ -120,7 +152,7 @@ export default function Grammar() {
         <div className="quiz-container max-w-md mx-auto card card-body animate-slideUp">
           <div className="text-center mb-xl">
             <div className="text-sm text-muted mb-sm">
-              Ý nghĩa của cấu trúc ngữ pháp này là gì?
+              Ý nghĩa của {itemType === "grammar" ? "cấu trúc ngữ pháp" : "liên từ"} này là gì?
             </div>
             <div className="text-6xl font-bold jp text-sakura my-md">
               {quizState.question.pattern}
@@ -162,25 +194,39 @@ export default function Grammar() {
       )}
 
       <Modal
-        isOpen={!!selectedGrammar}
-        onClose={() => setSelectedGrammar(null)}
-        title="Chi Tiết Ngữ Pháp"
+        isOpen={!!selectedItem}
+        onClose={() => setSelectedItem(null)}
+        title={itemType === "grammar" ? "Chi Tiết Ngữ Pháp" : "Chi Tiết Liên Từ"}
       >
-        {selectedGrammar && (
+        {selectedItem && (
           <div>
             <div className="text-center mb-md">
               <h3 className="text-3xl font-bold jp text-sakura mb-sm">
-                {selectedGrammar.pattern}
+                {selectedItem.pattern}
               </h3>
               <div className="text-lg font-medium">
-                {selectedGrammar.meaning}
+                {selectedItem.meaning}
               </div>
+              {selectedItem.category && (
+                <div className="text-sm text-muted mt-xs">
+                  {selectedItem.category}
+                </div>
+              )}
             </div>
 
-            <div className="bg-sakura-50 p-md rounded-md mb-md">
-              <div className="font-bold text-sakura mb-xs">Cấu trúc:</div>
-              <div className="jp text-lg">{selectedGrammar.formation}</div>
-            </div>
+            {selectedItem.usage && (
+              <div className="bg-sakura-50 p-md rounded-md mb-md">
+                <div className="font-bold text-sakura mb-xs">Cách sử dụng:</div>
+                <div className="text-sm">{selectedItem.usage}</div>
+              </div>
+            )}
+
+            {selectedItem.formation && (
+              <div className="bg-sakura-50 p-md rounded-md mb-md">
+                <div className="font-bold text-sakura mb-xs">Cấu trúc:</div>
+                <div className="jp text-lg">{selectedItem.formation}</div>
+              </div>
+            )}
 
             <div className="mb-lg">
               <div className="font-bold text-sakura mb-sm">Ví dụ:</div>
@@ -193,8 +239,7 @@ export default function Grammar() {
                   gap: "12px",
                 }}
               >
-                {selectedGrammar.examples.map((ex, i) => {
-                  // Phân tách tiếng Nhật và nghĩa Việt. VD: 日本語を学ぶために、毎日練習します。(Để học tiếng Nhật, tôi luyện tập mỗi ngày.)
+                {selectedItem.examples.map((ex, i) => {
                   const match = ex.match(/^(.*?)\((.*?)\)$/);
                   const jp = match ? match[1] : ex;
                   const vn = match ? match[2] : "";
@@ -212,11 +257,11 @@ export default function Grammar() {
             </div>
 
             <button
-              className={`btn w-full justify-center ${isMastered(selectedGrammar.id) ? "btn-success" : "btn-primary"}`}
-              onClick={() => handleMaster(selectedGrammar)}
+              className={`btn w-full justify-center ${isMastered(selectedItem.id) ? "btn-success" : "btn-primary"}`}
+              onClick={() => handleMaster(selectedItem)}
             >
-              {isMastered(selectedGrammar.id)
-                ? "Đã thuộc Đã Thuộc"
+              {isMastered(selectedItem.id)
+                ? "Đã thuộc"
                 : "Đánh dấu Đã Thuộc (+5 XP)"}
             </button>
           </div>
