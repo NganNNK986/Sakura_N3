@@ -13,6 +13,7 @@ import {
   User,
   Flame,
   Star,
+  Volume2,
 } from "lucide-react";
 
 const NAV = [
@@ -23,6 +24,7 @@ const NAV = [
   { to: "/conjugation", icon: <RefreshCw size={18} />, label: "Chia Động Từ" },
   { to: "/keigo", icon: <Briefcase size={18} />, label: "Kính Ngữ" },
   { to: "/adverbs", icon: <Sparkles size={18} />, label: "Phó Từ" },
+  { to: "/tulays", icon: <Volume2 size={18} />, label: "Từ Láy" },
   { to: "/mocktest", icon: <FileEdit size={18} />, label: "Thi Thử" },
   { to: "/profile", icon: <User size={18} />, label: "Hồ Sơ" },
 ];

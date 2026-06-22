@@ -14,6 +14,7 @@ const DEFAULT_STATE = {
     conjugation: { seen: [], mastered: [] },
     keigo: { seen: [], mastered: [] },
     adverbs: { seen: [], mastered: [] },
+    tulays: { seen: [], mastered: [] },
   },
   testHistory: [],
   lastTestResult: null,
