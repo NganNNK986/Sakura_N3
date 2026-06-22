@@ -1,8 +1,8 @@
-// Liên từ (Từ nối) - Connectives in Japanese
+// Liên từ (Từ nối) - Connectives in Japanese (62+ connectives)
 // Used to connect sentences and clarify relationships between ideas
 
 export const CONNECTIVES = [
-  // Category 1: Adding Information (Thêm thông tin)
+  // Category 1: Adding Information (Thêm thông tin) - 13 connectives
   {
     id: "c01",
     pattern: "および",
@@ -11,7 +11,7 @@ export const CONNECTIVES = [
     usage: "Dùng để kết nối danh sách hoặc thêm thông tin",
     formation: "N + および + N",
     examples: [
-      "社長および副社長が出席します。(Chủ tịch và phó chủ tịch sẽ dự hội.",
+      "社長および副社長が出席します。(Chủ tịch và phó chủ tịch sẽ dự hội.)",
       "スポーツおよび文化活動を支援しています。(Hỗ trợ các hoạt động thể thao và văn hóa.)",
     ],
   },
@@ -19,7 +19,7 @@ export const CONNECTIVES = [
     id: "c02",
     pattern: "おまけに",
     category: "Thêm thông tin",
-    meaning: "Hơn nữa, vả lại, ngoài ra",
+    meaning: "Hơn nữa, vả lại, ngoài ra, thêm vào đó",
     usage: "Thêm một thông tin bổ sung, thường là tiêu cực",
     formation: "Câu + おまけに + Câu",
     examples: [
@@ -29,6 +29,18 @@ export const CONNECTIVES = [
   },
   {
     id: "c03",
+    pattern: "かつ",
+    category: "Thêm thông tin",
+    meaning: "Đồng thời, hơn nữa",
+    usage: "Thêm thông tin song song, kết nối hai ý cùng mức độ",
+    formation: "Câu + かつ + Câu",
+    examples: [
+      "安い価格かつ高品質です。(Giá rẻ và đồng thời chất lượng cao.)",
+      "彼は頭がいいかつ努力家だ。(Anh ấy thông minh và cũng ch勤奋.)",
+    ],
+  },
+  {
+    id: "c04",
     pattern: "さらに",
     category: "Thêm thông tin",
     meaning: "Hơn nữa, vả lại, ngoài ra",
@@ -40,10 +52,10 @@ export const CONNECTIVES = [
     ],
   },
   {
-    id: "c04",
+    id: "c05",
     pattern: "それに",
     category: "Thêm thông tin",
-    meaning: "Bên cạnh đó, hơn thế nữa",
+    meaning: "Bên cạnh đó, hơn thế nữa, vả lại",
     usage: "Thêm thông tin hoặc lý do bổ sung",
     formation: "Câu + それに + Câu",
     examples: [
@@ -52,7 +64,19 @@ export const CONNECTIVES = [
     ],
   },
   {
-    id: "c05",
+    id: "c06",
+    pattern: "そのうえ",
+    category: "Thêm thông tin",
+    meaning: "Bên cạnh đó, ngoài ra, hơn thế nữa",
+    usage: "Thêm thông tin bổ sung, nâng cao mức độ",
+    formation: "Câu + そのうえ + Câu",
+    examples: [
+      "このパソコンは安い。そのうえ、性能も良い。(Máy tính này rẻ. Bên cạnh đó, hiệu năng cũng tốt.)",
+      "仕事は給料がいい。そのうえ、環境も良い。(Công việc có lương cao. Ngoài ra, môi trường cũng tốt.)",
+    ],
+  },
+  {
+    id: "c07",
     pattern: "しかも",
     category: "Thêm thông tin",
     meaning: "Hơn nữa, mà lại",
@@ -64,10 +88,10 @@ export const CONNECTIVES = [
     ],
   },
   {
-    id: "c06",
+    id: "c08",
     pattern: "また",
     category: "Thêm thông tin",
-    meaning: "Lại còn, hơn nữa, ngoài ra",
+    meaning: "Lại còn, hơn nữa, ngoài ra, bên cạnh đó",
     usage: "Thêm một thông tin, hành động hoặc lý do khác",
     formation: "Câu + また + Câu",
     examples: [
@@ -75,10 +99,70 @@ export const CONNECTIVES = [
       "りんごは甘い。また、栄養も豊富だ。(Táo ngon. Ngoài ra, dinh dưỡng cũng dồi dào.)",
     ],
   },
-
-  // Category 2: Selection/Choice (Lựa chọn)
   {
-    id: "c07",
+    id: "c09",
+    pattern: "ひいては",
+    category: "Thêm thông tin",
+    meaning: "Với lại, mà còn, kế đó",
+    usage: "Kết nối hai hành động hoặc kết quả liên tiếp",
+    formation: "Câu + ひいては + Câu",
+    examples: [
+      "勉強を頑張ります。ひいては、成績が上がります。(Tôi sẽ học hành chăm chỉ. Với lại, điểm số sẽ tăng.)",
+      "彼の指導で上達した。ひいては、全国大会に出場できた。(Cải thiện nhờ hướng dẫn của anh ấy. Kế đó, được tham dự giải vô địch toàn quốc.)",
+    ],
+  },
+  {
+    id: "c10",
+    pattern: "それから",
+    category: "Thêm thông tin",
+    meaning: "Sau đó, từ sau đó, do đó, tiếp đó nữa",
+    usage: "Kết nối thêm thông tin hoặc sự kiện xảy ra sau",
+    formation: "Câu + それから + Câu",
+    examples: [
+      "学校に行きました。それから、友達と遊びました。(Tôi đi học. Sau đó, chơi với bạn.)",
+      "仕事を終わりました。それから、家に帰りました。(Tôi hoàn thành công việc. Từ sau đó, tôi về nhà.)",
+    ],
+  },
+  {
+    id: "c11",
+    pattern: "なお",
+    category: "Thêm thông tin",
+    meaning: "Vẫn còn, vả lại, thêm nữa",
+    usage: "Thêm thông tin bổ sung, thường trong văn bản chính thức",
+    formation: "Câu + なお + Câu",
+    examples: [
+      "これはサンプルです。なお、他の商品も利用できます。(Đây là mẫu. Vẫn còn, cũng có thể sử dụng các sản phẩm khác.)",
+      "会議は明日です。なお、資料は事前に送ります。(Họp vào ngày mai. Thêm nữa, tôi sẽ gửi tài liệu trước.)",
+    ],
+  },
+  {
+    id: "c12",
+    pattern: "ならびに",
+    category: "Thêm thông tin",
+    meaning: "Và, cũng như, song với",
+    usage: "Kết nối hai danh sách hoặc hai ý bình đẳng",
+    formation: "N + ならびに + N",
+    examples: [
+      "田中さんならびに佐藤さんが来ました。(Tanaka và cũng như Satou đã đến.)",
+      "経営陣ならびに従業員が協力しました。(Ban quản lý và nhân viên đã hợp tác.)",
+    ],
+  },
+  {
+    id: "c13",
+    pattern: "そうでなければ",
+    category: "Thêm thông tin",
+    meaning: "Nếu không như thế",
+    usage: "Giới thiệu điều kiện hoặc lựa chọn khác",
+    formation: "Câu + そうでなければ + Câu (lựa chọn khác)",
+    examples: [
+      "急いで行きましょう。そうでなければ、間に合いません。(Hãy đi nhanh. Nếu không như thế, sẽ không kịp.)",
+      "医者に行った方がいいです。そうでなければ、悪くなります。(Bạn nên đi khám bác sĩ. Nếu không như thế, tình hình sẽ xấu đi.)",
+    ],
+  },
+
+  // Category 2: Selection/Choice (Lựa chọn) - 4 connectives
+  {
+    id: "c14",
     pattern: "あるいは",
     category: "Lựa chọn",
     meaning: "Hoặc, hay là",
@@ -90,10 +174,10 @@ export const CONNECTIVES = [
     ],
   },
   {
-    id: "c08",
+    id: "c15",
     pattern: "または",
     category: "Lựa chọn",
-    meaning: "Hoặc, hay là",
+    meaning: "Hoặc, hay là, nếu không thì",
     usage: "Chính thức hơn あるいは, thường dùng trong văn bản chính thức",
     formation: "N + または + N",
     examples: [
@@ -102,7 +186,7 @@ export const CONNECTIVES = [
     ],
   },
   {
-    id: "c09",
+    id: "c16",
     pattern: "それとも",
     category: "Lựa chọn",
     meaning: "Hay, hoặc là",
@@ -113,10 +197,22 @@ export const CONNECTIVES = [
       "今週行きますか。それとも来週に行きますか。(Bạn đi tuần này hay tuần tới?)",
     ],
   },
-
-  // Category 3: Explanation (Giải thích)
   {
-    id: "c10",
+    id: "c17",
+    pattern: "もしくは",
+    category: "Lựa chọn",
+    meaning: "Hoặc là, hay là",
+    usage: "Giống với または, mang tính trung lập",
+    formation: "N + もしくは + N",
+    examples: [
+      "この問題は難しい、もしくは簡単です。(Vấn đề này khó, hoặc là dễ.)",
+      "プランAもしくはプランBをお選びください。(Vui lòng chọn Kế hoạch A hay Kế hoạch B.)",
+    ],
+  },
+
+  // Category 3: Explanation (Giải thích) - 4 connectives
+  {
+    id: "c18",
     pattern: "つまり",
     category: "Giải thích",
     meaning: "Tóm lại, tức là, cũng chính là",
@@ -128,7 +224,7 @@ export const CONNECTIVES = [
     ],
   },
   {
-    id: "c11",
+    id: "c19",
     pattern: "すなわち",
     category: "Giải thích",
     meaning: "Tức là, cũng chính là, cụ thể là",
@@ -140,24 +236,36 @@ export const CONNECTIVES = [
     ],
   },
   {
-    id: "c12",
-    pattern: "なぜなら(ば)",
+    id: "c20",
+    pattern: "なぜなら",
     category: "Giải thích",
     meaning: "Bởi vì, vì thế là",
     usage: "Giải thích lý do cho câu trước",
-    formation: "Câu + なぜなら(ば) + Câu (lý do)",
+    formation: "Câu + なぜなら + Câu (lý do)",
     examples: [
       "野菜をたくさん食べるべきだ。なぜなら、栄養が必要だからだ。(Nên ăn nhiều rau. Bởi vì cần dinh dưỡng.)",
       "日本語を勉強しています。なぜなら、日本の文化に興味があるからです。(Tôi đang học tiếng Nhật. Vì tôi quan tâm đến văn hóa Nhật Bản.)",
     ],
   },
-
-  // Category 4: Topic Transition (Chuyển đổi chủ đề)
   {
-    id: "c13",
+    id: "c21",
+    pattern: "よいするに",
+    category: "Giải thích",
+    meaning: "Tóm lại là, chung quy lại là, đơn giản mà nói",
+    usage: "Kết luận hoặc tóm tắt lại một vấn đề phức tạp",
+    formation: "Câu + よいするに + Câu (kết luận)",
+    examples: [
+      "色々なことが起きました。よいするに、全部失敗しました。(Xảy ra nhiều chuyện. Chung quy lại là, tất cả đều thất bại.)",
+      "彼の意見、提案、そして経験。よいするに、彼が一番詳しい。(Ý kiến, đề xuất và kinh nghiệm của anh ấy. Đơn giản mà nói, anh ấy biết nhiều nhất.)",
+    ],
+  },
+
+  // Category 4: Topic Transition (Chuyển đổi chủ đề) - 6 connectives
+  {
+    id: "c22",
     pattern: "ところで",
     category: "Chuyển đổi chủ đề",
-    meaning: "Nhân tiện, mà nói đến đó, có điều là",
+    meaning: "Nhân tiện, mà nói đến đó, có điều là, thế còn",
     usage: "Chuyển sang chủ đề mới hoặc hỏi một điều liên quan",
     formation: "Câu (kết thúc) + ところで + Câu (chủ đề mới)",
     examples: [
@@ -166,7 +274,7 @@ export const CONNECTIVES = [
     ],
   },
   {
-    id: "c14",
+    id: "c23",
     pattern: "さて",
     category: "Chuyển đổi chủ đề",
     meaning: "Nào, và bây giờ, vậy thì",
@@ -178,7 +286,7 @@ export const CONNECTIVES = [
     ],
   },
   {
-    id: "c15",
+    id: "c24",
     pattern: "では",
     category: "Chuyển đổi chủ đề",
     meaning: "Vậy thì, thế là",
@@ -189,11 +297,34 @@ export const CONNECTIVES = [
       "では、明日の打ち合わせの時間を決めましょう。(Thế là, hãy xác định thời gian họp ngày mai.)",
     ],
   },
-
-  // Category 5: Consequence/Condition (Hệ quả/Điều kiện)
-  // 5a: Forward relationship (Thuận)
   {
-    id: "c16",
+    id: "c25",
+    pattern: "そもそも",
+    category: "Chuyển đổi chủ đề",
+    meaning: "Trước tiên, trước hết, ngay từ ban đầu, vốn dĩ",
+    usage: "Quay lại nguồn gốc vấn đề hoặc điểm bắt đầu",
+    formation: "そもそも + Câu (trở lại vấn đề gốc)",
+    examples: [
+      "そもそも、なぜこんなことになったんですか。(Trước tiên, tại sao lại xảy ra chuyện này?)",
+      "そもそも、この計画は無理だと思いました。(Vốn dĩ, tôi nghĩ kế hoạch này là không thể.)",
+    ],
+  },
+  {
+    id: "c26",
+    pattern: "ときに",
+    category: "Chuyển đổi chủ đề",
+    meaning: "Thỉnh thoảng, đôi lúc, có lúc",
+    usage: "Giới thiệu một tình huống hoặc chủ đề phụ",
+    formation: "ときに + Câu (tình huống phụ)",
+    examples: [
+      "彼はよく笑います。ときに、本気で怒ることもあります。(Anh ấy thường cười. Đôi lúc, cũng thực sự tức giận.)",
+      "会社は忙しいです。ときに、少し休むこともできます。(Công ty bận rộn. Có lúc, cũng có thể nghỉ chút.)",
+    ],
+  },
+
+  // Category 5a: Consequence/Forward Relationship (Hệ quả Thuận) - 14 connectives
+  {
+    id: "c27",
     pattern: "したがって",
     category: "Hệ quả (Thuận)",
     meaning: "Vì vậy, do đó, sở dĩ",
@@ -205,7 +336,7 @@ export const CONNECTIVES = [
     ],
   },
   {
-    id: "c17",
+    id: "c28",
     pattern: "そこで",
     category: "Hệ quả (Thuận)",
     meaning: "Vì vậy, do đó, vậy nên",
@@ -217,19 +348,31 @@ export const CONNECTIVES = [
     ],
   },
   {
-    id: "c18",
+    id: "c29",
     pattern: "すると",
     category: "Hệ quả (Thuận)",
     meaning: "Do đó, lập tức thì, kế đó",
     usage: "Diễn tả một kết quả xảy ra nhanh chóng sau hành động trước",
     formation: "Câu + すると + Câu (kết quả)",
     examples: [
-      "私が部屋に入ると、猫がいた。(Khi tôi bước vào phòng, có một con mèo. / Lập tức thì tôi thấy có con mèo.)",
-      "ボタンを押すと、ドアが開いた。(Khi tôi nhấn nút, cửa mở ra. / Lập tức cửa mở ra.)",
+      "私が部屋に入ると、猫がいた。(Khi tôi bước vào phòng, có một con mèo.)",
+      "ボタンを押すと、ドアが開いた。(Khi tôi nhấn nút, cửa mở ra.)",
     ],
   },
   {
-    id: "c19",
+    id: "c30",
+    pattern: "そして",
+    category: "Hệ quả (Thuận)",
+    meaning: "Và sau đó, với lại, hơn nữa",
+    usage: "Kết nối hành động hoặc sự kiện liên tiếp",
+    formation: "Câu + そして + Câu",
+    examples: [
+      "朝ご飯を食べました。そして、学校に行きました。(Tôi ăn sáng. Và sau đó, tôi đi học.)",
+      "彼が来ました。そして、私たちは一緒に遊びました。(Anh ấy đến. Và rồi, chúng tôi chơi cùng nhau.)",
+    ],
+  },
+  {
+    id: "c31",
     pattern: "それで",
     category: "Hệ quả (Thuận)",
     meaning: "Vì vậy, cho nên, do đó",
@@ -241,7 +384,79 @@ export const CONNECTIVES = [
     ],
   },
   {
-    id: "c20",
+    id: "c32",
+    pattern: "それでは",
+    category: "Hệ quả (Thuận)",
+    meaning: "Trong trường hợp đó, sau đó, vậy thì",
+    usage: "Kết nối với một hành động hoặc kết quả tiếp theo",
+    formation: "Câu + それでは + Câu",
+    examples: [
+      "明日来られないなら、それでは今日来てください。(Nếu ngày mai không được thì vậy hãy đến hôm nay.)",
+      "これ以上待つのは無理です。それでは、先に行きましょう。(Không thể chờ lâu hơn nữa. Vậy thì, hãy đi trước.)",
+    ],
+  },
+  {
+    id: "c33",
+    pattern: "それなら",
+    category: "Hệ quả (Thuận)",
+    meaning: "Nếu như thế, trong trường hợp đó thì",
+    usage: "Giới thiệu hành động hoặc giải pháp cho tình huống",
+    formation: "Câu + それなら + Câu",
+    examples: [
+      "そんなに難しいなら、それなら別の方法を考えましょう。(Nếu khó như vậy, vậy thì hãy nghĩ cách khác.)",
+      "時間がないなら、それなら明日でいいです。(Nếu không có thời gian, vậy thì ngày mai được.)",
+    ],
+  },
+  {
+    id: "c34",
+    pattern: "それだから",
+    category: "Hệ quả (Thuận)",
+    meaning: "Bởi thế, cho nên",
+    usage: "Giải thích lý do cho một hành động hoặc kết luận",
+    formation: "Câu (lý do) + それだから + Câu (hành động/kết luận)",
+    examples: [
+      "彼は努力家です。それだから、成功したんです。(Anh ấy ch勤奋. Cho nên, anh ấy mới thành công.)",
+      "このプロジェクトは重要です。それだから、慎重に進めるべきです。(Dự án này quan trọng. Cho nên, nên thực hiện cẩn thận.)",
+    ],
+  },
+  {
+    id: "c35",
+    pattern: "それゆえ",
+    category: "Hệ quả (Thuận)",
+    meaning: "Vì thế, vì vậy, thế nên",
+    usage: "Diễn tả hệ quả logic, thường trong văn bản chính thức",
+    formation: "Câu + それゆえ + Câu",
+    examples: [
+      "売上が減少した。それゆえ、コスト削減が必要になった。(Doanh số giảm. Vì thế, cần cắt giảm chi phí.)",
+      "人口が増えた。それゆえ、新しい学校が建てられました。(Dân số tăng. Vì vậy, xây dựng trường học mới.)",
+    ],
+  },
+  {
+    id: "c36",
+    pattern: "そうすると",
+    category: "Hệ quả (Thuận)",
+    meaning: "Nếu như vậy, nếu làm như vậy thì",
+    usage: "Giới thiệu kết quả có thể xảy ra",
+    formation: "Câu + そうすると + Câu (kết quả)",
+    examples: [
+      "このまま進むと、そうするとどうなりますか。(Nếu tiếp tục như vậy, sẽ thế nào?)",
+      "計画通りに進むなら、そうするとうまくいくはずです。(Nếu tiến hành theo kế hoạch, kết quả sẽ tốt.)",
+    ],
+  },
+  {
+    id: "c37",
+    pattern: "そうすれば",
+    category: "Hệ quả (Thuận)",
+    meaning: "Nếu như vậy, nếu làm như vậy thì",
+    usage: "Giới thiệu điều kiện và kết quả",
+    formation: "Câu + そうすれば + Câu (kết quả)",
+    examples: [
+      "もっと勉強すれば、そうすれば合格できます。(Nếu học nhiều hơn, như vậy sẽ đỗ.)",
+      "早く寝れば、そうすれば体が元気になります。(Nếu ngủ sớm, như vậy cơ thể sẽ khỏe.)",
+    ],
+  },
+  {
+    id: "c38",
     pattern: "ですから",
     category: "Hệ quả (Thuận)",
     meaning: "Vì vậy, thế nên, do đó",
@@ -252,10 +467,34 @@ export const CONNECTIVES = [
       "毎日学習することは大切です。ですから、習慣をつけましょう。(Học tập mỗi ngày rất quan trọng. Thế nên, hãy tạo thói quen.)",
     ],
   },
-
-  // 5b: Reverse relationship (Nghịch)
   {
-    id: "c21",
+    id: "c39",
+    pattern: "ゆえに",
+    category: "Hệ quả (Thuận)",
+    meaning: "Do đó, kết quả là, vì thế",
+    usage: "Diễn tả kết quả logic cuối cùng, thường trong văn bản chính thức",
+    formation: "Câu + ゆえに + Câu",
+    examples: [
+      "計画が失敗した。ゆえに、新しい戦略を立てる必要があります。(Kế hoạch thất bại. Do đó, cần lập chiến lược mới.)",
+      "技術が進化した。ゆえに、生活の質が向上した。(Công nghệ tiến bộ. Kết quả là, chất lượng cuộc sống cải thiện.)",
+    ],
+  },
+  {
+    id: "c40",
+    pattern: "因って",
+    category: "Hệ quả (Thuận)",
+    meaning: "Sở dĩ, vì vậy, do đó",
+    usage: "Diễn tả nguyên nhân và hệ quả, thường trong văn bản cổ điển",
+    formation: "Câu + 因って + Câu",
+    examples: [
+      "天候が悪い。因って、イベントは中止になりました。(Thời tiết xấu. Vì vậy, sự kiện bị hủy.)",
+      "経験が豊富だ。因って、良い判断ができます。(Kinh nghiệm phong phú. Do đó, có thể đưa ra quyết định tốt.)",
+    ],
+  },
+
+  // Category 5b: Reverse Relationship (Hệ quả Nghịch) - 16 connectives
+  {
+    id: "c41",
     pattern: "しかし",
     category: "Hệ quả (Nghịch)",
     meaning: "Nhưng, tuy nhiên",
@@ -267,10 +506,10 @@ export const CONNECTIVES = [
     ],
   },
   {
-    id: "c22",
+    id: "c42",
     pattern: "けれども",
     category: "Hệ quả (Nghịch)",
-    meaning: "Nhưng, tuy nhiên",
+    meaning: "Nhưng, tuy nhiên, thế mà, song",
     usage: "Giống しかし, nhưng trang trọng hơn",
     formation: "Câu A + けれども + Câu B (trái ngược)",
     examples: [
@@ -279,7 +518,7 @@ export const CONNECTIVES = [
     ],
   },
   {
-    id: "c23",
+    id: "c43",
     pattern: "だが",
     category: "Hệ quả (Nghịch)",
     meaning: "Nhưng, tuy nhiên",
@@ -291,7 +530,19 @@ export const CONNECTIVES = [
     ],
   },
   {
-    id: "c24",
+    id: "c44",
+    pattern: "しかしながら",
+    category: "Hệ quả (Nghịch)",
+    meaning: "Tuy nhiên, thế nhưng, mặc dù vậy",
+    usage: "Trang trọng hơn しかし, thường trong văn bản chính thức",
+    formation: "Câu A + しかしながら + Câu B (trái ngược)",
+    examples: [
+      "計画は周到でした。しかしながら、失敗してしまいました。(Kế hoạch kĩ lưỡng. Tuy nhiên, vẫn thất bại.)",
+      "多くの人が支持しました。しかしながら、少数意見もあります。(Nhiều người ủng hộ. Mặc dù vậy, vẫn có ý kiến thiểu số.)",
+    ],
+  },
+  {
+    id: "c45",
     pattern: "それでも",
     category: "Hệ quả (Nghịch)",
     meaning: "Dù vậy, nhưng vẫn, cho dù..., tuy vậy",
@@ -303,7 +554,43 @@ export const CONNECTIVES = [
     ],
   },
   {
-    id: "c25",
+    id: "c46",
+    pattern: "それなのに",
+    category: "Hệ quả (Nghịch)",
+    meaning: "Cho dù thế nào vẫn, cho dù như thế thì",
+    usage: "Nhấn mạnh sự trái ngược bất ngờ",
+    formation: "Câu A + それなのに + Câu B (trái ngược)",
+    examples: [
+      "一生懸命勉強した。それなのに、試験に落ちた。(Tôi học hành chăm chỉ. Cho dù vậy vẫn thi rớt.)",
+      "彼は金持ちだ。それなのに、幸せではない。(Anh ấy giàu. Cho dù vậy vẫn không hạnh phúc.)",
+    ],
+  },
+  {
+    id: "c47",
+    pattern: "それにしても",
+    category: "Hệ quả (Nghịch)",
+    meaning: "Dù sao đi nữa, trong bất cứ trường hợp nào, cho dù...",
+    usage: "Chỉ ra rằng một sự kiện vẫn xảy ra bất kể điều kiện",
+    formation: "Câu A + それにしても + Câu B",
+    examples: [
+      "どう説明しても、それにしても信じてくれない。(Dù giải thích cách nào đi nữa, anh ấy vẫn không tin.)",
+      "いくら努力しても、それにしても成功しません。(Dù cố gắng bao nhiêu, vẫn không thành công.)",
+    ],
+  },
+  {
+    id: "c48",
+    pattern: "だけど",
+    category: "Hệ quả (Nghịch)",
+    meaning: "Tuy nhiên, tuy thế, song",
+    usage: "Phiên bản thân mật của けれども",
+    formation: "Câu A + だけど + Câu B (trái ngược)",
+    examples: [
+      "好きだけど、今は時間がない。(Tôi thích. Tuy nhiên, bây giờ không có thời gian.)",
+      "安いだけど、品質は良い。(Rẻ. Tuy thế, chất lượng tốt.)",
+    ],
+  },
+  {
+    id: "c49",
     pattern: "でも",
     category: "Hệ quả (Nghịch)",
     meaning: "Nhưng, tuy nhiên",
@@ -315,10 +602,70 @@ export const CONNECTIVES = [
     ],
   },
   {
-    id: "c26",
+    id: "c50",
+    pattern: "ですけれども",
+    category: "Hệ quả (Nghịch)",
+    meaning: "Mặc dù như thế, dù như thế thì",
+    usage: "Trang trọng hơn でも hoặc だけど",
+    formation: "Câu A + ですけれども + Câu B (trái ngược)",
+    examples: [
+      "時間がありますですけれども、忙しいです。(Có thời gian. Dù như thế thì vẫn bận.)",
+      "安いですけれども、品質も良い。(Rẻ. Mặc dù như thế, chất lượng cũng tốt.)",
+    ],
+  },
+  {
+    id: "c51",
+    pattern: "さりながら",
+    category: "Hệ quả (Nghịch)",
+    meaning: "Mặc dù như thế, dù như thế thì, nhưng vẫn",
+    usage: "Diễn tả sự tiếp tục mặc dù có trở ngại",
+    formation: "Câu A + さりながら + Câu B",
+    examples: [
+      "反対者も多いさりながら、プロジェクトは進みます。(Có nhiều người phản đối. Dù như thế, dự án vẫn tiếp tục.)",
+      "困難さりながら、頑張る。(Khó khăn. Nhưng vẫn cố gắng.)",
+    ],
+  },
+  {
+    id: "c52",
+    pattern: "もっとも",
+    category: "Hệ quả (Nghịch)",
+    meaning: "Mặc dù, nhưng, tuy...",
+    usage: "Thêm một điều kiện hoặc hạn chế",
+    formation: "Câu A + もっとも + Câu B",
+    examples: [
+      "案は良い。もっとも、実行は難しい。(Ý tưởng tốt. Tuy nhiên, thực hiện khó.)",
+      "彼は能力がある。もっとも、経験がない。(Anh ấy có năng lực. Nhưng không có kinh nghiệm.)",
+    ],
+  },
+  {
+    id: "c53",
+    pattern: "ところが",
+    category: "Hệ quả (Nghịch)",
+    meaning: "Dù sao thì, thế còn, dù..., thế mà",
+    usage: "Giới thiệu một kết quả bất ngờ hoặc mâu thuẫn",
+    formation: "Câu A + ところが + Câu B (bất ngờ)",
+    examples: [
+      "彼は来ると約束しました。ところが、来ませんでした。(Anh ấy hứa sẽ đến. Thế mà, anh ấy không đến.)",
+      "天気が良くなると言っていました。ところが、雨が降りました。(Nói trời sẽ đẹp. Dù vậy, trời lại mưa.)",
+    ],
+  },
+  {
+    id: "c54",
+    pattern: "だって",
+    category: "Hệ quả (Nghịch)",
+    meaning: "Vì, chả là, dù là, ngay cả",
+    usage: "Giải thích lý do hoặc chứng minh một điểm",
+    formation: "Câu + だって + Câu (giải thích)",
+    examples: [
+      "行きたくない。だって、疲れているから。(Tôi không muốn đi. Vì, tôi mệt mà.)",
+      "できません。だって、時間がないんです。(Không thể làm. Chả là, không có thời gian.)",
+    ],
+  },
+  {
+    id: "c55",
     pattern: "ただし",
     category: "Hệ quả (Nghịch)",
-    meaning: "Tuy nhiên, nhưng (bổ sung điều kiện)",
+    meaning: "Tuy nhiên, nhưng, nhưng mà",
     usage: "Thêm một điều kiện hoặc hạn chế vào câu trước",
     formation: "Câu A + ただし + Câu B (điều kiện)",
     examples: [
