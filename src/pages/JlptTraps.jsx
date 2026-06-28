@@ -4,6 +4,77 @@ import JLPT_TRAPS, { getAllTrapItems } from "../data/jlptTraps";
 
 const isJapanese = (str) => /[\u3040-\u309F\u30A0-\u30FF\u4E00-\u9FAF]/.test(str);
 
+function formatText(text) {
+  if (typeof text !== "string") return text;
+  
+  // Split on quotes 「...」
+  const parts = text.split(/(「.*?」)/g);
+  return parts.map((part, idx) => {
+    if (part.startsWith("「") && part.endsWith("」")) {
+      return (
+        <strong key={idx} className="font-jp text-sakura-700 font-bold" style={{ fontSize: "1.08em" }}>
+          {part}
+        </strong>
+      );
+    }
+    
+    // Bold labels like Chú ý:, Lưu ý:, Mẹo:, Ví dụ:
+    const labelRegex = /^(Chú ý:|Lưu ý:|Mẹo:|Ví dụ:)(.*)$/i;
+    const labelMatch = part.match(labelRegex);
+    if (labelMatch) {
+      return (
+        <span key={idx}>
+          <strong className="text-sakura-900 font-bold">{labelMatch[1]}</strong>
+          {labelMatch[2]}
+        </span>
+      );
+    }
+    
+    return part;
+  });
+}
+
+function TrapCell({ content }) {
+  const [show, setShow] = useState(false);
+  
+  const formattedContent = useMemo(() => {
+    if (typeof content !== "string") return content;
+    if (content.startsWith("❌")) {
+      const textPart = content.replace(/^❌\s*/, "");
+      return (
+        <span className="trap-wrong-badge text-strike">
+          ❌ <del>{textPart}</del>
+        </span>
+      );
+    }
+    if (content.startsWith("⚠️")) {
+      const textPart = content.replace(/^⚠️\s*/, "");
+      return (
+        <span className="trap-warning-badge text-strike">
+          ⚠️ <del>{textPart}</del>
+        </span>
+      );
+    }
+    return <del>{content}</del>;
+  }, [content]);
+
+  return (
+    <div 
+      className={`trap-cell-interactive ${show ? "revealed" : ""}`}
+      onClick={() => setShow(!show)}
+      title="Click để ẩn/hiển thị bẫy học tập"
+    >
+      {show ? (
+        formattedContent
+      ) : (
+        <span className="trap-reveal-placeholder">
+          👁️ Xem bẫy thi
+        </span>
+      )}
+    </div>
+  );
+}
+
 function formatCellContent(cell, isFirst) {
   if (typeof cell !== "string") return cell;
   
@@ -12,117 +83,73 @@ function formatCellContent(cell, isFirst) {
     if (match) {
       return (
         <span className="cell-jp">
-          <strong className="font-jp text-base text-sakura-900">{match[1]}</strong>
-          <span className="reading text-muted text-xs block font-jp">（{match[2]}）</span>
+          <strong className="font-jp text-sakura-900 font-bold" style={{ fontSize: "1.15rem" }}>{match[1]}</strong>
+          <span className="correct-reading-badge font-jp">👉 {match[2]}</span>
         </span>
       );
     }
-    return <strong className="font-jp text-base text-sakura-900">{cell}</strong>;
+    return <strong className="font-jp text-sakura-900 font-bold" style={{ fontSize: "1.15rem" }}>{cell}</strong>;
   }
 
   if (cell.startsWith("❌")) {
-    return <span className="text-error font-medium">{cell}</span>;
+    return <span className="trap-wrong-badge">{cell}</span>;
   }
   if (cell.startsWith("⚠️")) {
-    return <span className="text-warning font-medium">{cell}</span>;
+    return <span className="trap-warning-badge">{cell}</span>;
   }
   if (cell.startsWith("✅")) {
-    return <span className="text-success font-medium">{cell}</span>;
+    return <span className="trap-success-badge">{cell}</span>;
   }
 
-  // Format inline items like 「う」 or 「い」
-  if (cell.includes("「") && cell.includes("」")) {
-    return (
-      <span>
-        {cell.split(/(「.*?」)/g).map((part, i) => {
-          if (part.startsWith("「") && part.endsWith("」")) {
-            return (
-              <code key={i} className="inline-code bg-sakura-100 text-sakura-700 px-xs py-xxs rounded font-jp">
-                {part}
-              </code>
-            );
-          }
-          return part;
-        })}
-      </span>
-    );
-  }
-
-  return cell;
+  return formatText(cell);
 }
 
 function renderBlock(block, idx) {
   switch (block.type) {
     case "h1":
       return (
-        <h3 key={idx} className="trap-h1 mt-xl mb-md pb-xs border-b border-sakura-200 text-sakura-700 font-bold flex items-center gap-xs">
-          <span>{block.text}</span>
+        <h3 key={idx} className="trap-h1 mt-xl mb-md pb-xs border-b border-sakura-200 text-sakura-900 font-bold flex items-center gap-xs">
+          <span>{formatText(block.text)}</span>
         </h3>
       );
     case "h2":
       return (
-        <h4 key={idx} className="trap-h2 mt-lg mb-sm text-ink-70 font-semibold flex items-center gap-xs">
-          <span>{block.text}</span>
+        <h4 key={idx} className="trap-h2 mt-lg mb-sm text-sakura-700 font-bold flex items-center gap-xs">
+          <span>{formatText(block.text)}</span>
         </h4>
       );
     case "h3":
       return (
-        <h5 key={idx} className="trap-h3 mt-md mb-xs text-ink font-medium">
-          {block.text}
+        <h5 key={idx} className="trap-h3 mt-md mb-xs text-ink font-bold">
+          {formatText(block.text)}
         </h5>
       );
     case "p":
       return (
-        <p key={idx} className="trap-p text-muted mb-md leading-relaxed text-sm">
-          {block.text.split(/(「.*?」)/g).map((part, i) => {
-            if (part.startsWith("「") && part.endsWith("」")) {
-              return (
-                <code key={i} className="inline-code bg-sakura-100 text-sakura-700 px-xs py-xxs rounded font-jp">
-                  {part}
-                </code>
-              );
-            }
-            return part;
-          })}
+        <p key={idx} className="trap-p text-ink-70 mb-md leading-relaxed">
+          {formatText(block.text)}
         </p>
       );
     case "list":
       return (
-        <ul key={idx} className={`trap-list mb-md ${block.ordered ? "list-decimal" : "list-disc"} pl-lg text-sm text-muted`}>
+        <ul key={idx} className={`trap-list mb-md ${block.ordered ? "list-decimal" : "list-disc"} pl-lg text-ink-70`}>
           {block.items.map((item, lidx) => (
             <li key={lidx} className="mb-xs leading-relaxed">
-              {item.split(/(「.*?」)/g).map((part, i) => {
-                if (part.startsWith("「") && part.endsWith("」")) {
-                  return (
-                    <code key={i} className="inline-code bg-sakura-100 text-sakura-700 px-xs py-xxs rounded font-jp">
-                      {part}
-                    </code>
-                  );
-                }
-                return part;
-              })}
+              {formatText(item)}
             </li>
           ))}
         </ul>
       );
     case "note":
       return (
-        <div key={idx} className="trap-note card card-sm card-body bg-sakura-50 border border-sakura-200 mb-md p-md rounded-md">
-          <span className="text-sm text-sakura-900 leading-relaxed font-medium">
-            {block.text.split(/(「.*?」)/g).map((part, i) => {
-              if (part.startsWith("「") && part.endsWith("」")) {
-                return (
-                  <code key={i} className="inline-code bg-sakura-200 text-sakura-700 px-xs py-xxs rounded font-jp">
-                    {part}
-                  </code>
-                );
-              }
-              return part;
-            })}
-          </span>
+        <div key={idx} className="trap-note mb-md">
+          {formatText(block.text)}
         </div>
       );
-    case "table":
+    case "table": {
+      const headers = block.headers.map((h) => h.toLowerCase());
+      const trapColIdx = headers.findIndex((h) => h.includes("bẫy") || h.includes("nhầm") || h.includes("sai"));
+      
       return (
         <div key={idx} className="trap-table-wrap mb-lg">
           <table className="trap-table">
@@ -138,7 +165,11 @@ function renderBlock(block, idx) {
                 <tr key={ridx}>
                   {row.map((cell, cidx) => (
                     <td key={cidx}>
-                      {formatCellContent(cell, cidx === 0)}
+                      {cidx === trapColIdx ? (
+                        <TrapCell content={cell} />
+                      ) : (
+                        formatCellContent(cell, cidx === 0)
+                      )}
                     </td>
                   ))}
                 </tr>
@@ -147,6 +178,7 @@ function renderBlock(block, idx) {
           </table>
         </div>
       );
+    }
     default:
       return null;
   }
@@ -388,7 +420,7 @@ export default function JlptTraps() {
                   )}
                   {quizState.item.trap && (
                     <p className="mt-xs text-muted">
-                      💡 <strong>Bẫy đề thi:</strong> Cảnh giác đọc nhầm thành ❌ <span className="text-error font-jp font-bold">{quizState.item.trap}</span>
+                      💡 <strong>Cảnh giác bẫy:</strong> Không đọc nhầm thành <span className="text-error font-jp font-bold" style={{ textDecoration: "line-through", textDecorationThickness: "2px" }}>❌ {quizState.item.trap}</span>
                     </p>
                   )}
                 </div>
@@ -489,7 +521,7 @@ export default function JlptTraps() {
       <style>{`
         /* Design System Styles */
         .page-container {
-          max-width: 900px;
+          max-width: 960px;
           margin: 0 auto;
           padding-bottom: var(--space-3xl);
         }
@@ -497,66 +529,153 @@ export default function JlptTraps() {
         /* Study Tabs */
         .tabs-bar {
           display: flex;
-          gap: var(--space-sm);
+          gap: var(--space-md);
           overflow-x: auto;
           scrollbar-width: none;
           -webkit-overflow-scrolling: touch;
-          padding-bottom: 4px;
-          border-bottom: 2px solid var(--sakura-100);
+          padding: 8px 4px var(--space-md) 4px;
+          border-bottom: 2px solid var(--sakura-200);
         }
         .tabs-bar::-webkit-scrollbar {
           display: none;
         }
         .tab-btn {
           white-space: nowrap;
-          padding: 8px 16px;
-          border: none;
-          background: none;
-          border-bottom: 3px solid transparent;
-          color: var(--ink-40);
-          font-weight: 500;
-          font-size: 0.9rem;
-          transition: all var(--trans-fast);
+          padding: 10px 20px;
+          border: 1px solid var(--sakura-200);
+          background: white;
+          border-radius: var(--radius-full);
+          color: var(--ink-70);
+          font-weight: 600;
+          font-size: 0.95rem;
+          transition: all var(--trans-spring);
+          box-shadow: var(--shadow-sm);
         }
         .tab-btn:hover {
           color: var(--sakura-700);
-          background: var(--sakura-50);
-          border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+          border-color: var(--sakura-400);
+          transform: translateY(-2px);
+          box-shadow: var(--shadow-md);
         }
         .tab-btn.active {
-          color: var(--sakura-700);
-          border-bottom-color: var(--sakura-500);
-          font-weight: 700;
+          color: white;
+          background: linear-gradient(135deg, var(--sakura-500), var(--sakura-700));
+          border-color: transparent;
+          box-shadow: 0 4px 12px rgba(180, 50, 90, 0.2);
         }
 
         /* Block Elements */
+        .active-section-card {
+          padding: var(--space-xl) !important;
+          background: var(--bg-card);
+        }
+        .section-header {
+          border-bottom: 2px dashed var(--sakura-200);
+          padding-bottom: var(--space-md);
+          margin-bottom: var(--space-lg);
+        }
+        .section-title {
+          font-size: 1.6rem;
+          font-weight: 800;
+          background: linear-gradient(120deg, var(--sakura-900), var(--sakura-700));
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        
         .trap-h1 {
-          font-size: 1.3rem;
-          padding-bottom: 6px;
+          font-size: 1.4rem;
+          font-weight: 800;
+          padding-bottom: 8px;
+          color: var(--sakura-800) !important;
         }
         .trap-h2 {
-          font-size: 1.1rem;
+          font-size: 1.2rem;
+          font-weight: 700;
+          margin-top: var(--space-xl) !important;
+          color: var(--sakura-700) !important;
         }
         .trap-h3 {
-          font-size: 0.98rem;
+          font-size: 1.05rem;
+          font-weight: 700;
+          color: var(--ink) !important;
+          margin-top: var(--space-lg) !important;
         }
         .trap-p {
-          font-size: 0.88rem;
+          font-size: 1rem;
+          color: var(--ink-70);
+          line-height: 1.7;
+          margin-bottom: var(--space-md);
+        }
+
+        /* List Cards styling */
+        .trap-list {
+          list-style: none;
+          padding-left: 0;
+        }
+        .trap-list li {
+          position: relative;
+          padding: 14px 16px 14px 40px;
+          background: white;
+          border-radius: var(--radius-md);
+          margin-bottom: var(--space-sm);
+          box-shadow: var(--shadow-sm);
+          border-left: 4px solid var(--sakura-300);
+          transition: all var(--trans-spring);
+          font-size: 0.95rem;
+          color: var(--ink-70);
+          line-height: 1.6;
+        }
+        .trap-list li:hover {
+          transform: translateX(4px);
+          box-shadow: var(--shadow-md);
+          border-left-color: var(--sakura-500);
+          background: var(--sakura-50);
+        }
+        .trap-list li::before {
+          content: "🌸";
+          position: absolute;
+          left: 14px;
+          top: 15px;
+          font-size: 0.9rem;
+          line-height: 1;
+        }
+
+        /* Note callout styling */
+        .trap-note {
+          background: linear-gradient(135deg, var(--sakura-50), rgba(255, 255, 255, 0.9));
+          border: 1px solid var(--sakura-200);
+          border-left: 5px solid var(--sakura-500);
+          padding: var(--space-md) var(--space-lg);
+          border-radius: var(--radius-md);
+          margin-bottom: var(--space-md);
+          font-size: 1rem;
+          color: var(--sakura-900);
+          line-height: 1.65;
+          box-shadow: var(--shadow-sm);
+          font-weight: 500;
         }
 
         /* Search input styling */
+        .search-wrap {
+          border: 2px solid var(--sakura-100);
+          transition: border-color var(--trans-fast);
+        }
+        .search-wrap:focus-within {
+          border-color: var(--sakura-300);
+        }
         .search-input {
           border: none;
           background: transparent;
           outline: none;
-          font-size: 0.95rem;
+          font-size: 1rem;
           color: var(--ink);
+          font-weight: 500;
         }
         .search-clear-btn {
           background: none;
           color: var(--ink-40);
-          font-size: 0.9rem;
-          padding: 4px;
+          font-size: 1rem;
+          padding: 6px;
         }
         .search-clear-btn:hover {
           color: var(--sakura-700);
@@ -569,28 +688,33 @@ export default function JlptTraps() {
           border-radius: var(--radius-md);
           background: white;
           box-shadow: var(--shadow-sm);
+          margin-bottom: var(--space-xl);
         }
         .trap-table {
           width: 100%;
           border-collapse: collapse;
-          font-size: 0.85rem;
+          font-size: 0.95rem;
         }
         .trap-table th {
           background: var(--sakura-100);
           color: var(--sakura-900);
-          font-weight: 600;
+          font-weight: 700;
           text-align: left;
-          padding: 12px var(--space-md);
+          padding: 14px var(--space-md);
           border-bottom: 2px solid var(--sakura-200);
         }
         .trap-table td {
-          padding: 10px var(--space-md);
+          padding: 14px var(--space-md);
           border-bottom: 1px solid var(--sakura-100);
           color: var(--ink-70);
           vertical-align: middle;
+          line-height: 1.6;
         }
         .trap-table tr:last-child td {
           border-bottom: none;
+        }
+        .trap-table tr:nth-child(even) td {
+          background-color: var(--sakura-50) / 10%;
         }
         .trap-table tr:hover td {
           background: var(--sakura-50);
@@ -600,17 +724,104 @@ export default function JlptTraps() {
           flex-direction: column;
         }
         .reading {
-          margin-top: 1px;
+          margin-top: 2px;
+          font-size: 0.8rem;
+          color: var(--ink-40);
         }
-        .trap-wrong {
+
+        /* Interactive Reveal Trap Cell */
+        .trap-cell-interactive {
+          display: inline-block;
+          cursor: pointer;
+        }
+        .trap-reveal-placeholder {
+          display: inline-flex;
+          align-items: center;
+          gap: 6px;
+          background: #f8fafc;
+          color: var(--ink-40);
+          border: 1px dashed var(--sakura-300);
+          padding: 6px 12px;
+          border-radius: var(--radius-sm);
+          font-size: 0.85rem;
+          font-weight: 600;
+          transition: all var(--trans-fast);
+        }
+        .trap-reveal-placeholder:hover {
+          background: var(--sakura-50);
+          color: var(--sakura-700);
+          border-color: var(--sakura-500);
+        }
+        .text-strike del {
+          text-decoration: line-through;
+          opacity: 0.75;
+          text-decoration-color: var(--error);
+          text-decoration-thickness: 2px;
+        }
+
+        /* Correct Reading Badge */
+        .correct-reading-badge {
+          display: inline-block;
+          margin-top: 4px;
+          background: var(--spring-green-light);
+          color: var(--spring-green);
+          border: 1px solid #c8edd7;
+          padding: 3px 10px;
+          border-radius: var(--radius-sm);
+          font-size: 0.88rem;
+          font-weight: 700;
+        }
+
+        /* Trap Badges */
+        .trap-wrong-badge {
+          display: inline-flex;
+          align-items: center;
+          gap: 4px;
+          background: var(--error-light);
           color: var(--error);
-          font-weight: 500;
+          border: 1px solid #fee2e2;
+          padding: 6px 12px;
+          border-radius: var(--radius-sm);
+          font-size: 0.9rem;
+          font-weight: 700;
+          font-family: var(--font-jp);
+        }
+        .trap-warning-badge {
+          display: inline-flex;
+          align-items: center;
+          gap: 4px;
+          background: var(--gold-light);
+          color: #b7791f;
+          border: 1px solid #fef3c7;
+          padding: 6px 12px;
+          border-radius: var(--radius-sm);
+          font-size: 0.9rem;
+          font-weight: 700;
+          font-family: var(--font-jp);
+        }
+        .trap-success-badge {
+          display: inline-flex;
+          align-items: center;
+          gap: 4px;
+          background: var(--spring-green-light);
+          color: var(--spring-green);
+          border: 1px solid #c8edd7;
+          padding: 6px 12px;
+          border-radius: var(--radius-sm);
+          font-size: 0.9rem;
+          font-weight: 700;
+          font-family: var(--font-jp);
         }
 
         /* Tips Card */
         .tips-card {
           background: linear-gradient(135deg, var(--sakura-50), white);
           border: 1px solid var(--sakura-200);
+          padding: var(--space-xl) !important;
+        }
+        .tips-card h3 {
+          font-size: 1.25rem;
+          font-weight: 700;
         }
         .tips-list {
           list-style: none;
@@ -622,38 +833,41 @@ export default function JlptTraps() {
         .tips-list li {
           background: var(--sakura-100);
           color: var(--sakura-700);
-          padding: 6px 14px;
+          padding: 8px 16px;
           border-radius: var(--radius-full);
-          font-size: 0.8rem;
-          font-weight: 500;
+          font-size: 0.88rem;
+          font-weight: 600;
         }
 
         /* Quiz Panel */
         .quiz-panel {
-          max-width: 520px;
-          margin: var(--space-lg) auto;
-          padding: var(--space-xl);
+          max-width: 560px;
+          margin: var(--space-xl) auto;
+          padding: var(--space-2xl);
           border: 1px solid var(--sakura-200);
           box-shadow: var(--shadow-lg);
+          background: white;
+          border-radius: var(--radius-lg);
         }
         .quiz-progress-bar-wrap {
           width: 100%;
-          height: 6px;
+          height: 8px;
           background: var(--pale);
           border-radius: var(--radius-full);
           overflow: hidden;
         }
         .quiz-progress-bar {
           height: 100%;
-          background: var(--sakura-400);
+          background: linear-gradient(90deg, var(--sakura-400), var(--sakura-500));
           border-radius: var(--radius-full);
           transition: width 0.3s ease;
         }
         .quiz-word {
-          font-size: 2.8rem;
-          font-weight: 700;
+          font-size: 3.2rem;
+          font-weight: 800;
           color: var(--sakura-700);
           text-align: center;
+          text-shadow: 0 2px 4px rgba(180, 50, 90, 0.05);
         }
         .quiz-options {
           display: grid;
@@ -667,23 +881,23 @@ export default function JlptTraps() {
           }
         }
         .quiz-opt {
-          padding: 16px;
+          padding: 18px;
           border: 2px solid var(--sakura-200);
           border-radius: var(--radius-md);
           background: white;
           font-family: var(--font-jp);
-          font-size: 1.05rem;
+          font-size: 1.1rem;
           color: var(--ink);
-          font-weight: 500;
+          font-weight: 600;
           cursor: pointer;
-          transition: all var(--trans-fast);
+          transition: all var(--trans-spring);
           box-shadow: var(--shadow-sm);
           text-align: center;
         }
         .quiz-opt:hover:not(:disabled) {
-          border-color: var(--sakura-400);
+          border-color: var(--sakura-500);
           background: var(--sakura-50);
-          transform: translateY(-2px);
+          transform: translateY(-3px);
           box-shadow: var(--shadow-md);
         }
         .quiz-opt.correct {
@@ -691,45 +905,52 @@ export default function JlptTraps() {
           background: var(--spring-green-light);
           color: var(--spring-green);
           font-weight: 700;
+          box-shadow: 0 4px 10px rgba(91, 173, 122, 0.15);
         }
         .quiz-opt.wrong {
           border-color: var(--error);
           background: var(--error-light);
           color: var(--error);
+          box-shadow: 0 4px 10px rgba(224, 82, 82, 0.15);
         }
         .quiz-feedback-box {
           text-align: left;
+          font-size: 0.95rem;
+          line-height: 1.6;
+          border-left: 4px solid var(--sakura-500);
         }
 
         /* Score Card */
         .quiz-score-card {
-          max-width: 540px;
-          margin: var(--space-lg) auto;
+          max-width: 580px;
+          margin: var(--space-xl) auto;
           text-align: center;
-          padding: var(--space-2xl) var(--space-xl);
+          padding: var(--space-3xl) var(--space-xl);
           border: 1px solid var(--sakura-200);
           box-shadow: var(--shadow-lg);
+          background: white;
+          border-radius: var(--radius-lg);
         }
         .trophy-icon {
-          font-size: 3.5rem;
+          font-size: 4rem;
           display: block;
           margin-bottom: var(--space-md);
-          animation: float 2s infinite ease-in-out;
+          animation: float 2.5s infinite ease-in-out;
         }
         .score-text {
-          font-size: 1.25rem;
+          font-size: 1.4rem;
           color: var(--ink-70);
           margin-top: var(--space-sm);
         }
         .score-text strong {
-          font-size: 2rem;
+          font-size: 2.4rem;
           color: var(--sakura-700);
         }
         .xp-text {
-          font-size: 0.95rem;
+          font-size: 1.05rem;
         }
         .review-scroll {
-          max-height: 250px;
+          max-height: 280px;
           overflow-y: auto;
           padding-right: var(--space-xs);
         }
