@@ -10,11 +10,21 @@ import {
   Briefcase,
   Sparkles,
   FileEdit,
+  AlertTriangle,
   User,
   Flame,
   Star,
   Volume2,
 } from "lucide-react";
+
+const MOBILE_NAV = [
+  { to: "/", icon: <Home size={18} />, label: "Trang Chủ" },
+  { to: "/vocab", icon: <BookOpen size={18} />, label: "Từ Vựng" },
+  { to: "/kanji", icon: <PenTool size={18} />, label: "Kanji" },
+  { to: "/grammar", icon: <FileText size={18} />, label: "Ngữ Pháp" },
+  { to: "/traps", icon: <AlertTriangle size={18} />, label: "Bẫy Đọc" },
+  { to: "/mocktest", icon: <FileEdit size={18} />, label: "Thi Thử" },
+];
 
 const NAV = [
   { to: "/", icon: <Home size={18} />, label: "Trang Chủ" },
@@ -25,6 +35,7 @@ const NAV = [
   { to: "/keigo", icon: <Briefcase size={18} />, label: "Kính Ngữ" },
   { to: "/adverbs", icon: <Sparkles size={18} />, label: "Phó Từ" },
   { to: "/tulays", icon: <Volume2 size={18} />, label: "Từ Láy" },
+  { to: "/traps", icon: <AlertTriangle size={18} />, label: "Bẫy Đọc" },
   { to: "/mocktest", icon: <FileEdit size={18} />, label: "Thi Thử" },
   { to: "/profile", icon: <User size={18} />, label: "Hồ Sơ" },
 ];
@@ -78,7 +89,7 @@ export default function Sidebar() {
 
       {/* Mobile Bottom Nav */}
       <nav className="bottom-nav show-mobile">
-        {NAV.slice(0, 6).map(({ to, icon, label }) => (
+        {MOBILE_NAV.map(({ to, icon, label }) => (
           <NavLink
             key={to}
             to={to}

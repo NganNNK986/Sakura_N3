@@ -3,6 +3,7 @@ import { useStore } from "../store/useStore";
 import VOCAB from "../data/vocab";
 import KANJI from "../data/kanji";
 import GRAMMAR from "../data/grammar";
+import { getAllTrapItems } from "../data/jlptTraps";
 import {
   BookOpen,
   PenTool,
@@ -11,6 +12,7 @@ import {
   Briefcase,
   Sparkles,
   FileEdit,
+  AlertTriangle,
   Flame,
   Star,
   CheckCircle,
@@ -64,6 +66,14 @@ const MODULES = [
     key: "adverbs",
     total: 30,
     color: "#F4A261",
+  },
+  {
+    to: "/traps",
+    icon: <AlertTriangle size={24} />,
+    label: "Bẫy Đọc",
+    key: "traps",
+    total: getAllTrapItems().length,
+    color: "#E05252",
   },
 ];
 

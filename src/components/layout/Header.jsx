@@ -8,6 +8,7 @@ const TITLES = {
   "/conjugation": "Chia Động Từ",
   "/keigo": "Kính Ngữ",
   "/adverbs": "Phó Từ N3",
+  "/traps": "Bẫy Đọc N3",
   "/mocktest": "Thi Thử N3",
   "/results": "📊 Kết Quả",
   "/profile": "Hồ Sơ",

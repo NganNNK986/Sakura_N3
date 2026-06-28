@@ -22,6 +22,11 @@ const TIPS = {
     "Hãy xem ví dụ để hiểu rõ hơn! 💡",
     "Thử chế độ quiz ngữ pháp nhé! 🎯",
   ],
+  "/traps": [
+    "Chú ý trường âm う và い nhé! 👂",
+    "Dấu ゛ và っ hay là bẫy đề thi! ⚠️",
+    "Highlight từ khó khi học nhé! ✏️",
+  ],
   "/mocktest": [
     "Cố lên! Bạn có thể làm được! 🌸",
     "Bình tĩnh và đọc kỹ đề nhé! 🧘",
