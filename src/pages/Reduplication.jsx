@@ -3,6 +3,21 @@ import { useStore } from "../store/useStore";
 import TULAYS from "../data/reduplication";
 import FlashCard from "../components/ui/FlashCard";
 
+function getTulaysQuizQuestion(filteredList) {
+  const item = filteredList[Math.floor(Math.random() * filteredList.length)];
+  const others = [...filteredList]
+    .filter((w) => w.id !== item.id)
+    .sort(() => 0.5 - Math.random())
+    .slice(0, 3);
+  const options = [item, ...others].sort(() => 0.5 - Math.random());
+  return {
+    question: item,
+    options,
+    answer: item.id,
+    selected: null,
+  };
+}
+
 export default function Tulays() {
   const { state, markSeen, markMastered, saveCurrentIndex } = useStore();
   const progress = state.progress.tulays || {
@@ -65,13 +80,8 @@ export default function Tulays() {
 
   // Quiz Logic
   const generateQuiz = () => {
-    const item = filteredList[Math.floor(Math.random() * filteredList.length)];
-    const others = [...filteredList]
-      .sort(() => 0.5 - Math.random())
-      .filter((w) => w.id !== item.id)
-      .slice(0, 3);
-    const options = [item, ...others].sort(() => 0.5 - Math.random());
-    setQuizState({ question: item, options, answer: item.id, selected: null });
+    const nextQuestion = getTulaysQuizQuestion(filteredList);
+    setQuizState(nextQuestion);
   };
 
   const startQuiz = () => {
@@ -88,7 +98,7 @@ export default function Tulays() {
     }
     setTimeout(() => {
       generateQuiz();
-    }, 1500);
+    }, 1800);
   };
 
   if (filteredList.length === 0) {
@@ -247,39 +257,51 @@ export default function Tulays() {
       )}
 
       {mode === "quiz" && quizState && (
-        <div className="mb-lg">
-          <div className="glass-panel p-lg">
-            <div className="text-center mb-lg">
-              <div className="text-5xl font-bold mb-md text-sakura jp">
-                {quizState.question.japanese}
-              </div>
-              <div className="text-md text-muted mb-sm">
-                {quizState.question.romaji}
-              </div>
-              <div className="text-sm text-muted italic">
-                {quizState.question.category}
-              </div>
+        <div className="quiz-container max-w-md mx-auto card card-body animate-slideUp">
+          <div className="text-center mb-xl">
+            <div className="text-sm text-muted mb-sm">
+              Nghĩa của từ láy này là gì?
             </div>
-
-            <div className="grid grid-cols-1 gap-md">
-              {quizState.options.map((option) => (
-                <button
-                  key={option.id}
-                  className={`quiz-option ${
-                    quizState.selected === option.id
-                      ? option.id === quizState.answer
-                        ? "correct"
-                        : "incorrect"
-                      : ""
-                  }`}
-                  onClick={() => handleOptionClick(option.id)}
-                  disabled={quizState.selected !== null}
-                >
-                  {option.meaning}
-                </button>
-              ))}
+            <div className="text-6xl font-bold jp text-sakura mt-sm mb-xs">
+              {quizState.question.japanese}
+            </div>
+            <div className="text-md text-ink-40 mt-xs">
+              {quizState.question.romaji} ({quizState.question.category})
             </div>
           </div>
+
+          <div className="flex-col gap-sm">
+            {quizState.options.map((opt) => {
+              let btnClass = "btn-secondary";
+              if (quizState.selected) {
+                if (opt.id === quizState.answer)
+                  btnClass = "btn-success";
+                else if (opt.id === quizState.selected)
+                  btnClass = "btn-secondary text-error border-error";
+              }
+              return (
+                <button
+                  key={opt.id}
+                  className={`btn w-full justify-center p-md text-lg ${btnClass}`}
+                  onClick={() => handleOptionClick(opt.id)}
+                  disabled={!!quizState.selected}
+                  style={{ whiteSpace: "normal", height: "auto" }}
+                >
+                  {opt.meaning}
+                </button>
+              );
+            })}
+          </div>
+
+          {quizState.selected && (
+            <div
+              className={`mt-lg text-center font-bold ${quizState.selected === quizState.answer ? "text-green" : "text-error"} animate-fadeIn`}
+            >
+              {quizState.selected === quizState.answer
+                ? "Chính xác! (+5 XP)"
+                : "Sai rồi, thử lại nhé!"}
+            </div>
+          )}
         </div>
       )}
     </div>

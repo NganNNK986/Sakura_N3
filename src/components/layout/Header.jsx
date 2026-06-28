@@ -1,4 +1,4 @@
-import { useLocation, Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const TITLES = {
   "/": "Trang Chủ",
@@ -9,8 +9,6 @@ const TITLES = {
   "/keigo": "Kính Ngữ",
   "/adverbs": "Phó Từ N3",
   "/traps": "Bẫy Đọc N3",
-  "/mocktest": "Thi Thử N3",
-  "/results": "📊 Kết Quả",
   "/profile": "Hồ Sơ",
 };
 
@@ -21,9 +19,6 @@ export default function Header() {
   return (
     <header className="app-header hide-mobile">
       <h1 className="header-title">{title}</h1>
-      <Link to="/mocktest" className="btn btn-primary btn-sm">
-        Thi Thử Ngay
-      </Link>
       <style>{`
         .app-header {
           position: sticky;

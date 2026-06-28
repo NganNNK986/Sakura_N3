@@ -13,8 +13,6 @@ import Keigo from "./pages/Keigo";
 import Adverbs from "./pages/Adverbs";
 import Tulays from "./pages/Reduplication";
 import JlptTraps from "./pages/JlptTraps";
-import MockTest from "./pages/MockTest";
-import Results from "./pages/Results";
 import Profile from "./pages/Profile";
 import "./index.css";
 
@@ -37,8 +35,6 @@ function Layout() {
           <Route path="/adverbs" element={<Adverbs />} />
           <Route path="/tulays" element={<Tulays />} />
           <Route path="/traps" element={<JlptTraps />} />
-          <Route path="/mocktest" element={<MockTest />} />
-          <Route path="/results" element={<Results />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>

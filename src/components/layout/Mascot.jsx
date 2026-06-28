@@ -27,16 +27,6 @@ const TIPS = {
     "Dấu ゛ và っ hay là bẫy đề thi! ⚠️",
     "Highlight từ khó khi học nhé! ✏️",
   ],
-  "/mocktest": [
-    "Cố lên! Bạn có thể làm được! 🌸",
-    "Bình tĩnh và đọc kỹ đề nhé! 🧘",
-    "Quản lý thời gian là quan trọng! ⏰",
-  ],
-  "/results": [
-    "Đừng nản! Ôn lại điểm yếu nhé! 💪",
-    "Tiến bộ từng ngày là quan trọng! 📈",
-    "頑張れ！(Ganbarre!) — Cố lên! 🌸",
-  ],
 };
 
 export default function Mascot() {

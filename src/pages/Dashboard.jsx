@@ -11,7 +11,6 @@ import {
   RefreshCw,
   Briefcase,
   Sparkles,
-  FileEdit,
   AlertTriangle,
   Flame,
   Star,
@@ -115,7 +114,6 @@ export default function Dashboard() {
     (a, m) => a + (m.mastered?.length || 0),
     0,
   );
-  const lastTest = testHistory[0];
 
   return (
     <div className="page-container animate-fadeIn">
@@ -155,13 +153,13 @@ export default function Dashboard() {
         </div>
         <div className="hero-cta">
           <Link
-            to="/mocktest"
+            to="/traps"
             className="btn btn-primary btn-lg flex items-center gap-sm justify-center"
           >
-            <FileEdit size={20} /> Thi Thử N3
+            <AlertTriangle size={20} /> Luyện Bẫy Đọc N3
           </Link>
           <p className="text-xs text-muted mt-sm text-center">
-            100 phút · Không có Nghe
+            Tránh bẫy đề thi N3 phổ biến
           </p>
         </div>
       </div>

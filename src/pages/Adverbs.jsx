@@ -3,6 +3,21 @@ import { useStore } from "../store/useStore";
 import ADVERBS from "../data/adverbs";
 import FlashCard from "../components/ui/FlashCard";
 
+function getAdverbsQuizQuestion(adverbs) {
+  const item = adverbs[Math.floor(Math.random() * adverbs.length)];
+  const others = [...adverbs]
+    .filter((w) => w.id !== item.id)
+    .sort(() => 0.5 - Math.random())
+    .slice(0, 3);
+  const options = [item, ...others].sort(() => 0.5 - Math.random());
+  return {
+    question: item,
+    options,
+    answer: item.id,
+    selected: null,
+  };
+}
+
 export default function Adverbs() {
   const { state, markSeen, markMastered, saveCurrentIndex } = useStore();
   const progress = state.progress.adverbs || {
@@ -11,8 +26,10 @@ export default function Adverbs() {
     currentIndex: 0,
   };
 
+  const [mode, setMode] = useState("flashcard");
   const [currentIndex, setCurrentIndex] = useState(progress.currentIndex || 0);
   const [isFlipped, setIsFlipped] = useState(false);
+  const [quizState, setQuizState] = useState(null);
 
   useEffect(() => {
     saveCurrentIndex("adverbs", currentIndex);
@@ -38,6 +55,28 @@ export default function Adverbs() {
     handleNext();
   };
 
+  const generateQuiz = () => {
+    const nextQuestion = getAdverbsQuizQuestion(ADVERBS);
+    setQuizState(nextQuestion);
+  };
+
+  const startQuiz = () => {
+    setMode("quiz");
+    generateQuiz();
+  };
+
+  const handleOptionClick = (id) => {
+    if (quizState.selected) return;
+    setQuizState({ ...quizState, selected: id });
+    if (id === quizState.answer) {
+      markSeen("adverbs", quizState.question.id);
+      markMastered("adverbs", quizState.question.id);
+    }
+    setTimeout(() => {
+      generateQuiz();
+    }, 1800);
+  };
+
   const currentAdv = ADVERBS[currentIndex];
 
   return (
@@ -46,6 +85,20 @@ export default function Adverbs() {
         <div>
           <h2>Phó Từ (Fukushi)</h2>
           <p className="text-muted mt-xs">30 phó từ N3 thường gặp nhất</p>
+        </div>
+        <div className="flex gap-sm">
+          <button
+            className={`btn ${mode === "flashcard" ? "btn-primary" : "btn-secondary"}`}
+            onClick={() => setMode("flashcard")}
+          >
+            Thẻ Ghi Nhớ
+          </button>
+          <button
+            className={`btn ${mode === "quiz" ? "btn-primary" : "btn-secondary"}`}
+            onClick={startQuiz}
+          >
+            Trắc Nghiệm
+          </button>
         </div>
       </div>
 
@@ -67,7 +120,7 @@ export default function Adverbs() {
         </div>
       </div>
 
-      {currentAdv && (
+      {mode === "flashcard" && currentAdv && (
         <div className="flex-col items-center">
           <FlashCard
             front={currentAdv.word}
@@ -132,6 +185,55 @@ export default function Adverbs() {
               Sau &rarr;
             </button>
           </div>
+        </div>
+      )}
+
+      {mode === "quiz" && quizState && (
+        <div className="quiz-container max-w-md mx-auto card card-body animate-slideUp">
+          <div className="text-center mb-xl">
+            <div className="text-sm text-muted mb-sm">
+              Nghĩa của phó từ này là gì?
+            </div>
+            <div className="text-6xl font-bold jp text-sakura mt-sm mb-xs">
+              {quizState.question.word}
+            </div>
+            <div className="text-md text-ink-40 mt-xs">
+              {quizState.question.reading} ({quizState.question.romaji})
+            </div>
+          </div>
+
+          <div className="flex-col gap-sm">
+            {quizState.options.map((opt) => {
+              let btnClass = "btn-secondary";
+              if (quizState.selected) {
+                if (opt.id === quizState.answer)
+                  btnClass = "btn-success";
+                else if (opt.id === quizState.selected)
+                  btnClass = "btn-secondary text-error border-error";
+              }
+              return (
+                <button
+                  key={opt.id}
+                  className={`btn w-full justify-center p-md text-lg ${btnClass}`}
+                  onClick={() => handleOptionClick(opt.id)}
+                  disabled={!!quizState.selected}
+                  style={{ whiteSpace: "normal", height: "auto" }}
+                >
+                  {opt.meaning}
+                </button>
+              );
+            })}
+          </div>
+
+          {quizState.selected && (
+            <div
+              className={`mt-lg text-center font-bold ${quizState.selected === quizState.answer ? "text-green" : "text-error"} animate-fadeIn`}
+            >
+              {quizState.selected === quizState.answer
+                ? "Chính xác! (+5 XP)"
+                : "Sai rồi, thử lại nhé!"}
+            </div>
+          )}
         </div>
       )}
     </div>

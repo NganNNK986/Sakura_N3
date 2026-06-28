@@ -1,4 +1,4 @@
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useStore } from "../../store/useStore";
 
 import {
@@ -9,7 +9,6 @@ import {
   RefreshCw,
   Briefcase,
   Sparkles,
-  FileEdit,
   AlertTriangle,
   User,
   Flame,
@@ -27,7 +26,6 @@ const NAV = [
   { to: "/adverbs", icon: <Sparkles size={18} />, label: "Phó Từ" },
   { to: "/tulays", icon: <Volume2 size={18} />, label: "Từ Láy" },
   { to: "/traps", icon: <AlertTriangle size={18} />, label: "Bẫy Đọc" },
-  { to: "/mocktest", icon: <FileEdit size={18} />, label: "Thi Thử" },
   { to: "/profile", icon: <User size={18} />, label: "Hồ Sơ" },
 ];
 
