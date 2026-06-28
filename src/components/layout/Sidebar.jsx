@@ -17,15 +17,6 @@ import {
   Volume2,
 } from "lucide-react";
 
-const MOBILE_NAV = [
-  { to: "/", icon: <Home size={18} />, label: "Trang Chủ" },
-  { to: "/vocab", icon: <BookOpen size={18} />, label: "Từ Vựng" },
-  { to: "/kanji", icon: <PenTool size={18} />, label: "Kanji" },
-  { to: "/grammar", icon: <FileText size={18} />, label: "Ngữ Pháp" },
-  { to: "/traps", icon: <AlertTriangle size={18} />, label: "Bẫy Đọc" },
-  { to: "/mocktest", icon: <FileEdit size={18} />, label: "Thi Thử" },
-];
-
 const NAV = [
   { to: "/", icon: <Home size={18} />, label: "Trang Chủ" },
   { to: "/vocab", icon: <BookOpen size={18} />, label: "Từ Vựng" },
@@ -39,6 +30,8 @@ const NAV = [
   { to: "/mocktest", icon: <FileEdit size={18} />, label: "Thi Thử" },
   { to: "/profile", icon: <User size={18} />, label: "Hồ Sơ" },
 ];
+
+const MOBILE_NAV = NAV;
 
 export default function Sidebar() {
   const { state } = useStore();
@@ -88,7 +81,7 @@ export default function Sidebar() {
       </aside>
 
       {/* Mobile Bottom Nav */}
-      <nav className="bottom-nav show-mobile">
+      <nav className="bottom-nav show-mobile" aria-label="Điều hướng mobile">
         {MOBILE_NAV.map(({ to, icon, label }) => (
           <NavLink
             key={to}
@@ -99,7 +92,7 @@ export default function Sidebar() {
             }
           >
             <span className="nav-icon">{icon}</span>
-            <span>{label.split(" ")[0]}</span>
+            <span className="bottom-nav-label">{label}</span>
           </NavLink>
         ))}
       </nav>
@@ -186,9 +179,13 @@ export default function Sidebar() {
           display: flex;
           z-index: 100;
           box-shadow: 0 -4px 20px rgba(180,50,90,0.1);
+          overflow-x: auto;
+          -webkit-overflow-scrolling: touch;
+          scrollbar-width: none;
         }
+        .bottom-nav::-webkit-scrollbar { display: none; }
         .bottom-nav-item {
-          flex: 1;
+          flex: 0 0 74px;
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -199,8 +196,15 @@ export default function Sidebar() {
           font-weight: 500;
           text-decoration: none;
           transition: color var(--trans-fast);
+          min-width: 74px;
         }
         .bottom-nav-item .nav-icon { font-size: 1.2rem; width: auto; }
+        .bottom-nav-label {
+          white-space: nowrap;
+          max-width: 100%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
         .bottom-nav-item.active { color: var(--sakura-700); }
       `}</style>
     </>

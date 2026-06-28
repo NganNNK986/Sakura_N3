@@ -15,6 +15,7 @@ const DEFAULT_STATE = {
     keigo: { seen: [], mastered: [] },
     adverbs: { seen: [], mastered: [] },
     tulays: { seen: [], mastered: [] },
+    traps: { seen: [], mastered: [] },
   },
   testHistory: [],
   lastTestResult: null,

@@ -1,0 +1,7834 @@
+[
+  {
+    "title": "Mục tiêu",
+    "id": "muc-tieu",
+    "blocks": [
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Phân nhánh 1.1 - Bẫy Trường âm, Biến âm đục (゛) & Âm On/Kun",
+          "Nhóm 3 - Bẫy \"Nghĩa tiếng Việt\" & Ngữ cảnh văn hóa (Collocation)",
+          "Nhóm 2 - Phó từ & Từ chỉ trạng thái (Cơ thể, Mức độ, Từ láy)",
+          "Phân nhánh 1.2 - Kanji \"Sinh đôi\" (Phân biệt bằng bộ thủ)",
+          "Nhóm 4,5 - Từ đồng nghĩa & Phó từ"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Bẫy 1.1: Trường âm & Âm On/Kun",
+    "id": "bay-1-1-truong-am-am-on-kun",
+    "blocks": [
+      {
+        "type": "h1",
+        "text": "Bẫy 1.1: Trường âm & Âm On/Kun"
+      },
+      {
+        "type": "h2",
+        "text": "🛑 1. Bẫy trường âm (長音)"
+      },
+      {
+        "type": "p",
+        "text": "Trong đề thi JLPT N3, các đáp án thường chỉ khác nhau ở một trường âm (ー). Vì vậy, hãy đặc biệt chú ý xem từ có kéo dài âm hay không và kéo dài ở vị trí nào."
+      },
+      {
+        "type": "h3",
+        "text": "A. Nhóm không có trường âm"
+      },
+      {
+        "type": "p",
+        "text": "Đề thi thường thêm 「う」 hoặc 「い」 để đánh lừa."
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Từ vựng",
+          "Nghĩa",
+          "Bẫy thường gặp"
+        ],
+        "rows": [
+          [
+            "努力（どりょく）",
+            "Nỗ lực",
+            "❌ どうりょく"
+          ],
+          [
+            "手術（しゅじゅつ）",
+            "Phẫu thuật",
+            "❌ しゅうじゅつ / しゅじゅうつ"
+          ],
+          [
+            "知識（ちしき）",
+            "Kiến thức",
+            "❌ ちいしき"
+          ],
+          [
+            "資格（しかく）",
+            "Bằng cấp, tư cách",
+            "❌ しいかく"
+          ],
+          [
+            "記録（きろく）",
+            "Ghi chép, kỷ lục",
+            "❌ きいろく"
+          ],
+          [
+            "価格（かかく）",
+            "Giá cả",
+            "❌ かあかく"
+          ],
+          [
+            "食塩（しょくえん）",
+            "Muối ăn",
+            "❌ しょうくえん"
+          ],
+          [
+            "徹夜（てつや）",
+            "Thức trắng đêm",
+            "❌ てえつや"
+          ]
+        ]
+      },
+      {
+        "type": "h3",
+        "text": "B. Nhóm chỉ có một trường âm"
+      },
+      {
+        "type": "p",
+        "text": "Dễ bị kéo dài nhầm ở âm còn lại."
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Từ vựng",
+          "Nghĩa",
+          "Bẫy thường gặp"
+        ],
+        "rows": [
+          [
+            "故郷（こきょう）",
+            "Quê hương",
+            "❌ こうきょう"
+          ],
+          [
+            "呼吸（こきゅう）",
+            "Hô hấp",
+            "❌ こうきゅう"
+          ],
+          [
+            "時計（とけい）",
+            "Đồng hồ",
+            "❌ とうけい"
+          ]
+        ]
+      },
+      {
+        "type": "h3",
+        "text": "C. Nhóm có trường âm ở cả hai chữ"
+      },
+      {
+        "type": "p",
+        "text": "Đề thi thường bỏ mất một trường âm để đánh lừa."
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Từ vựng",
+          "Nghĩa",
+          "Bẫy thường gặp"
+        ],
+        "rows": [
+          [
+            "流行（りゅうこう）",
+            "Thịnh hành",
+            "❌ りゅこう"
+          ],
+          [
+            "渋滞（じゅうたい）",
+            "Tắc nghẽn",
+            "❌ じゅたい"
+          ],
+          [
+            "影響（えいきょう）",
+            "Ảnh hưởng",
+            "❌ えいきょ"
+          ],
+          [
+            "連休（れんきゅう）",
+            "Kỳ nghỉ dài",
+            "❌ れんきゅ"
+          ]
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "🎭 2. Bẫy âm On/Kun & cách đọc đặc biệt"
+      },
+      {
+        "type": "p",
+        "text": "Đây là nhóm từ không đọc hoàn toàn theo quy luật On-yomi hoặc Kun-yomi, rất dễ nhầm nếu chỉ học theo từng chữ Hán."
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Từ vựng",
+          "Nghĩa",
+          "Bẫy thường gặp"
+        ],
+        "rows": [
+          [
+            "小型（こがた）",
+            "Cỡ nhỏ",
+            "❌ しょうがた"
+          ],
+          [
+            "大型（おおがた）",
+            "Cỡ lớn",
+            "(so sánh)"
+          ],
+          [
+            "新型（しんがた）",
+            "Kiểu mới",
+            "(so sánh)"
+          ],
+          [
+            "留守（るす）",
+            "Vắng nhà",
+            "❌ りゅうしゅ"
+          ],
+          [
+            "二十歳（はたち）",
+            "20 tuổi",
+            "❌ にじゅうさい / にじゅっさい"
+          ],
+          [
+            "口紅（くちべに）",
+            "Son môi",
+            "❌ くちこう"
+          ],
+          [
+            "半額（はんがく）",
+            "Nửa giá",
+            "⚠ Dễ nhầm với 5割引（ごわりびき） về ý nghĩa"
+          ],
+          [
+            "自然（しぜん）",
+            "Tự nhiên, thiên nhiên",
+            "❌ じぜん"
+          ],
+          [
+            "増減（ぞうげん）",
+            "Tăng giảm",
+            "❌ じょうげん"
+          ],
+          [
+            "通知（つうち）",
+            "Thông báo",
+            "❌ つうし"
+          ],
+          [
+            "郵送（ゆうそう）",
+            "Gửi bưu điện",
+            "❌ ほうそう"
+          ],
+          [
+            "秒（びょう）",
+            "Giây (thời gian)",
+            "❌ しょう"
+          ]
+        ]
+      },
+      {
+        "type": "h3",
+        "text": "Ghi nhớ nhanh các lỗi dễ mắc"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "自然（しぜん）: Tự nhiên, thiên nhiên→ Lỗi từng mắc: nhầm thành じぜん (có biến âm đục \"ji\", thường dùng trong 事前 - trước đó).",
+          "増減（ぞうげん）: Tăng giảm→ Lỗi từng mắc: nhầm thành じょうげん (jougen, thường là chữ 上限 - giới hạn trên).",
+          "通知（つうち）: Thông báo→ Lỗi từng mắc: đọc nhầm âm \"chi\" thành \"shi\" (つうし).",
+          "郵送（ゆうそう）: Gửi bưu điện→ Lỗi từng mắc: nhầm âm đầu thành ほうそう (housou, thường là chữ 放送 - phát sóng hoặc 包装 - đóng gói).",
+          "秒（びょう）: Giây (thời gian)→ Lỗi từng mắc: nhầm thành しょう (shou, thường là chữ 小 hoặc 少)."
+        ]
+      },
+      {
+        "type": "h1",
+        "text": "💥 3. Bẫy biến âm đục (゛) & âm ngắt (っ)"
+      },
+      {
+        "type": "p",
+        "text": "Đây là dạng xuất hiện rất nhiều trong Mondai 1 của JLPT N3. Đề thường kiểm tra xem bạn có nhớ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Có thêm dấu ゛ (Tenten) hay không.",
+          "Có xuất hiện っ (âm ngắt) khi ghép Kanji hay không."
+        ]
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Từ vựng",
+          "Nghĩa",
+          "Bẫy thường gặp"
+        ],
+        "rows": [
+          [
+            "代引き（だいびき）",
+            "Thanh toán khi nhận hàng (COD)",
+            "❌ だいひき"
+          ],
+          [
+            "割引（わりびき）",
+            "Giảm giá",
+            "❌ わりひき"
+          ],
+          [
+            "薬局（やっきょく）",
+            "Hiệu thuốc",
+            "❌ やくきょく"
+          ],
+          [
+            "発見（はっけん）",
+            "Phát hiện",
+            "❌ はつけん"
+          ],
+          [
+            "発明（はつめい）",
+            "Phát minh",
+            "⚠ Dễ nhầm với 発見"
+          ],
+          [
+            "直接（ちょくせつ）",
+            "Trực tiếp",
+            "❌ ちょっくせつ"
+          ],
+          [
+            "絶対（ぜったい）",
+            "Tuyệt đối",
+            "❌ ぜつたい"
+          ]
+        ]
+      },
+      {
+        "type": "h1",
+        "text": "💡 Mẹo ghi nhớ nhanh"
+      },
+      {
+        "type": "note",
+        "text": "✅ Khi học từ vựng, hãy dùng highlight để đánh dấu:",
+        "noteType": "success"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Trường âm 「う」",
+          "Trường âm 「い」",
+          "Dấu ゛ (Tenten)",
+          "Âm ngắt 「っ」"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Khi vào phòng thi, nếu bốn đáp án chỉ khác nhau ở 「う」, 「い」, dấu ゛ hoặc 「っ」, hãy nhớ lại vị trí bạn đã highlight trong lúc học. Đây là cách rất hiệu quả để tránh những lỗi mất điểm đáng tiếc ở phần Nghe và Từ vựng."
+      }
+    ]
+  },
+  {
+    "title": "Bẫy 1.2: Kanji Sinh đôi",
+    "id": "bay-1-2-kanji-sinh-doi",
+    "blocks": [
+      {
+        "type": "h1",
+        "text": "Bẫy 1.2: Kanji \"Sinh đôi\" (Phân biệt bằng bộ thủ & hình dáng)"
+      },
+      {
+        "type": "p",
+        "text": "Trong JLPT N3, nhiều chữ Kanji có hình dáng gần giống nhau hoặc cùng cách đọc nhưng khác bộ thủ và ý nghĩa. Đây là một trong những dạng bẫy xuất hiện rất thường xuyên ở phần Từ vựng."
+      },
+      {
+        "type": "h1",
+        "text": "👯 Nhóm 1. Cùng lõi âm thanh – Khác bộ thủ"
+      },
+      {
+        "type": "p",
+        "text": "Các chữ dưới đây có phần thân (lõi) giống nhau, nhưng bộ thủ khác nhau sẽ quyết định ý nghĩa của từ."
+      },
+      {
+        "type": "h2",
+        "text": "📦 Lõi 包"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Từ vựng",
+          "Nghĩa",
+          "Cách ghi nhớ"
+        ],
+        "rows": [
+          [
+            "抱く（だく）",
+            "Ôm",
+            "🤲 Bộ Thủ 扌 → dùng tay để ôm"
+          ],
+          [
+            "泡（あわ）",
+            "Bong bóng, bọt",
+            "💧 Bộ Thủy 氵 → liên quan đến nước"
+          ]
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "📄 Lõi 皮"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Từ vựng",
+          "Nghĩa",
+          "Cách ghi nhớ"
+        ],
+        "rows": [
+          [
+            "破る（やぶる）",
+            "Xé rách",
+            "🪨 Bộ Thạch 石 → dùng vật cứng làm rách"
+          ],
+          [
+            "波（なみ）",
+            "Con sóng",
+            "💧 Bộ Thủy 氵 → sóng thuộc về nước"
+          ]
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "🪙 Lõi 戔"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Từ vựng",
+          "Nghĩa",
+          "Cách ghi nhớ"
+        ],
+        "rows": [
+          [
+            "残る（のこる）",
+            "Còn sót lại",
+            "☠ Bộ Đãi 歹 → phần còn lại, tàn dư"
+          ],
+          [
+            "浅い（あさい）",
+            "Nông",
+            "💧 Bộ Thủy 氵 → nước nông"
+          ],
+          [
+            "小銭（こぜに）",
+            "Tiền lẻ",
+            "🪙 Bộ Kim 金 → tiền kim loại"
+          ]
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "✂️ Lõi 斤"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Từ vựng",
+          "Nghĩa",
+          "Cách ghi nhớ"
+        ],
+        "rows": [
+          [
+            "折る（おる）",
+            "Bẻ gãy",
+            "🤲 Bộ Thủ 扌 → dùng tay bẻ"
+          ],
+          [
+            "祈る（いのる）",
+            "Cầu nguyện",
+            "⛩ Bộ Thị 礻 → liên quan thần linh"
+          ]
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "👋 Lõi 召"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Từ vựng",
+          "Nghĩa",
+          "Cách ghi nhớ"
+        ],
+        "rows": [
+          [
+            "招く（まねく）",
+            "Mời, vẫy gọi",
+            "🤲 Bộ Thủ 扌 → dùng tay vẫy"
+          ],
+          [
+            "紹介（しょうかい）",
+            "Giới thiệu",
+            "🧵 Bộ Mịch 糸 → kết nối mối quan hệ"
+          ]
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "🎯 Lõi 甫"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Từ vựng",
+          "Nghĩa",
+          "Cách ghi nhớ"
+        ],
+        "rows": [
+          [
+            "捕まる（つかまる）",
+            "Bị bắt",
+            "🤲 Bộ Thủ 扌 → dùng tay bắt"
+          ],
+          [
+            "補う（おぎなう）",
+            "Bổ sung",
+            "👕 Bộ Y 衤 → vá áo, bổ sung phần thiếu"
+          ]
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "😠 Lõi 奴"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Từ vựng",
+          "Nghĩa",
+          "Cách ghi nhớ"
+        ],
+        "rows": [
+          [
+            "怒る（おこる）",
+            "Tức giận",
+            "❤️ Bộ Tâm 心 → cảm xúc"
+          ],
+          [
+            "努力（どりょく）",
+            "Nỗ lực",
+            "💪 Bộ Lực 力 → dùng sức lực"
+          ]
+        ]
+      },
+      {
+        "type": "h1",
+        "text": "👁️ Nhóm 2. Kanji dễ nhầm vì hình dáng"
+      },
+      {
+        "type": "p",
+        "text": "Các chữ dưới đây không cùng bộ thủ, nhưng hình dạng rất giống nhau. Chỉ cần nhìn sai 1 nét là chọn nhầm đáp án."
+      },
+      {
+        "type": "h2",
+        "text": "未 ↔ 末"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Chữ",
+          "Nghĩa",
+          "Mẹo nhớ"
+        ],
+        "rows": [
+          [
+            "未（み）",
+            "Chưa",
+            "Nét ngang trên ngắn"
+          ],
+          [
+            "末（まつ）",
+            "Cuối",
+            "Nét ngang trên dài"
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "未来（みらい）→ Tương lai",
+          "週末（しゅうまつ）→ Cuối tuần"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "鳥 ↔ 島"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Chữ",
+          "Nghĩa",
+          "Mẹo nhớ"
+        ],
+        "rows": [
+          [
+            "鳥",
+            "Chim",
+            "Có 4 chấm 灬 phía dưới"
+          ],
+          [
+            "島",
+            "Đảo",
+            "Có 山 (núi) ở giữa"
+          ]
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "若 ↔ 苦"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Chữ",
+          "Nghĩa",
+          "Mẹo nhớ"
+        ],
+        "rows": [
+          [
+            "若",
+            "Trẻ",
+            "Nét bên phải khác chữ 古"
+          ],
+          [
+            "苦",
+            "Khổ",
+            "Phía dưới là chữ 古"
+          ]
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "勉 ↔ 晩"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Chữ",
+          "Nghĩa",
+          "Mẹo nhớ"
+        ],
+        "rows": [
+          [
+            "勉",
+            "Cố gắng",
+            "Có bộ Lực 力"
+          ],
+          [
+            "晩",
+            "Buổi tối",
+            "Có bộ Nhật 日"
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "勉強（べんきょう）→ Học tập",
+          "今晩（こんばん）→ Tối nay"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "皿 ↔ 血"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Chữ",
+          "Nghĩa",
+          "Mẹo nhớ"
+        ],
+        "rows": [
+          [
+            "皿",
+            "Cái đĩa",
+            "Không có nét chấm trên"
+          ],
+          [
+            "血",
+            "Máu",
+            "Có thêm một nét phẩy nhỏ phía trên"
+          ]
+        ]
+      },
+      {
+        "type": "h1",
+        "text": "🗣️ Nhóm 3. \"Sinh đôi\" đồng âm khác nghĩa"
+      },
+      {
+        "type": "p",
+        "text": "Đây là dạng rất hay xuất hiện trong JLPT N3."
+      },
+      {
+        "type": "note",
+        "text": "👉 Cùng cách đọc nhưng khác Kanji, phải dựa vào ngữ cảnh để chọn đúng.",
+        "noteType": "info"
+      },
+      {
+        "type": "h2",
+        "text": "かわく"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Kanji",
+          "Dùng khi",
+          "Gợi nhớ"
+        ],
+        "rows": [
+          [
+            "渇く",
+            "Khát nước",
+            "💧 Bộ Thủy → cổ họng khát"
+          ],
+          [
+            "乾く",
+            "Khô",
+            "🌤 Đồ vật khô"
+          ]
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "なおす"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Kanji",
+          "Dùng khi"
+        ],
+        "rows": [
+          [
+            "治す",
+            "Chữa bệnh"
+          ],
+          [
+            "直す",
+            "Sửa đồ vật, sửa lỗi"
+          ]
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "とまる"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Kanji",
+          "Dùng khi"
+        ],
+        "rows": [
+          [
+            "泊まる",
+            "Nghỉ lại, ở trọ qua đêm"
+          ],
+          [
+            "止まる / 停まる",
+            "Xe cộ, người dừng lại"
+          ]
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "あつい"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Kanji",
+          "Dùng khi"
+        ],
+        "rows": [
+          [
+            "暑い",
+            "Thời tiết nóng"
+          ],
+          [
+            "熱い",
+            "Đồ vật nóng, nước nóng, sốt"
+          ],
+          [
+            "厚い",
+            "Dày (sách, áo, tài liệu...)"
+          ]
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "かわる"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Kanji",
+          "Dùng khi"
+        ],
+        "rows": [
+          [
+            "変わる",
+            "Tự thay đổi (thời tiết, tính cách...)"
+          ],
+          [
+            "代わる",
+            "Thay thế người khác"
+          ]
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "なく"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Kanji",
+          "Dùng khi",
+          "Gợi nhớ"
+        ],
+        "rows": [
+          [
+            "泣く",
+            "Con người khóc",
+            "💧 Nước mắt"
+          ],
+          [
+            "鳴く",
+            "Động vật kêu, chim hót",
+            "🗣 Âm thanh phát ra"
+          ]
+        ]
+      },
+      {
+        "type": "h1",
+        "text": "💴 Nhóm 4. Từ dễ nhầm vì nghĩa gần nhau hoặc mặt chữ dễ gây lẫn"
+      },
+      {
+        "type": "p",
+        "text": "Đây là nhóm rất dễ bị chọn sai nếu chỉ nhìn lướt qua nghĩa tiếng Việt."
+      },
+      {
+        "type": "h2",
+        "text": "高価（こうか）"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Đắt tiền, giá trị cao."
+      },
+      {
+        "type": "p",
+        "text": "Lỗi từng mắc: Nhầm với 高値（たかね） - mức giá cao trên thị trường."
+      },
+      {
+        "type": "note",
+        "text": "👉 Cao giá (đắt) phải dùng 高価.",
+        "noteType": "info"
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "この時計は高価だ。",
+          "高価なプレゼントをもらった。"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "高値（たかね）"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Giá cao, mức giá cao trên thị trường."
+      },
+      {
+        "type": "note",
+        "text": "Lưu ý: Từ này thường dùng trong ngữ cảnh:",
+        "noteType": "info"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Giá cả",
+          "Thị trường",
+          "Mua bán"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "野菜の値段が高値になった。",
+          "株が高値で売れた。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Phân biệt nhanh:",
+        "noteType": "info"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "高価 = đắt, có giá trị cao",
+          "高値 = giá cao trên thị trường"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "預ける（あずける）"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Gửi, gửi giữ, giao phó."
+      },
+      {
+        "type": "p",
+        "text": "Dùng khi:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Gửi tiền",
+          "Gửi đồ đạc",
+          "Gửi hành lý",
+          "Giao con cho người khác trông"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Lỗi từng mắc: Không nhận diện được chữ 預 (Dự) và chọn nhầm đáp án sai mặt chữ."
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "銀行にお金を預ける。",
+          "荷物をホテルに預ける。",
+          "子どもを友だちに預ける。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Hãy nhớ:",
+        "noteType": "info"
+      },
+      {
+        "type": "p",
+        "text": "預ける = Gửi để người khác giữ hộ."
+      },
+      {
+        "type": "h1",
+        "text": "💡 Mẹo ghi nhớ"
+      },
+      {
+        "type": "p",
+        "text": "Thay vì học từng chữ riêng lẻ, hãy học theo cặp hoặc nhóm."
+      },
+      {
+        "type": "note",
+        "text": "✅ Luôn nhìn bộ thủ trước tiên vì đó là phần gợi ý nghĩa.",
+        "noteType": "success"
+      },
+      {
+        "type": "p",
+        "text": "Một số quy tắc ghi nhớ nhanh:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "💧 氵 (Bộ Thủy) → nước, chất lỏng, nước mắt, sóng, khát, ở trọ...",
+          "🤲 扌 (Bộ Thủ) → hành động bằng tay (ôm, bắt, bẻ, vẫy...)",
+          "👕 衤 (Bộ Y) → quần áo, vá, bổ sung.",
+          "❤️ 心 / 忄 (Bộ Tâm) → cảm xúc.",
+          "💪 力 (Bộ Lực) → sức mạnh, nỗ lực.",
+          "🧵 糸 (Bộ Mịch) → kết nối, liên hệ.",
+          "⛩ 礻 (Bộ Thị) → thần linh, cầu nguyện."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Mẹo ôn thi: Khi gặp hai Kanji giống nhau đến 90%, đừng nhìn toàn bộ chữ. Hãy nhìn bộ thủ trước, sau đó mới đọc phần còn lại. Đây là cách giúp giảm đáng kể lỗi chọn nhầm Kanji trong JLPT N3.Ngoài ra, với những từ dễ nhầm như 高価 / 高値 hoặc 預ける, hãy kiểm tra luôn ngữ cảnh sử dụng: nói về đắt tiền, giá thị trường, hay gửi giữ đồ đạc."
+      }
+    ]
+  },
+  {
+    "title": "Bẫy 2.1: Từ đồng nghĩa/Cách diễn đạt tương đương",
+    "id": "bay-2-1-tu-dong-nghia-cach-dien-dat-tuong-duong",
+    "blocks": [
+      {
+        "type": "h1",
+        "text": "Bẫy 2.1: Từ đồng nghĩa & Cách diễn đạt tương đương"
+      },
+      {
+        "type": "p",
+        "text": "Trong JLPT N3 (đặc biệt là Mondai 4), đề thi rất hay thay từ gốc bằng một cách diễn đạt khác nhưng vẫn giữ nguyên ý nghĩa."
+      },
+      {
+        "type": "note",
+        "text": "👉 Thay vì hỏi trực tiếp nghĩa của từ, đề sẽ yêu cầu bạn chọn từ hoặc cụm từ đồng nghĩa.",
+        "noteType": "info"
+      },
+      {
+        "type": "h1",
+        "text": "🏃 1. Nhóm động từ (Diễn đạt lại hành động)"
+      },
+      {
+        "type": "p",
+        "text": "Đề thường dùng một cụm từ dài để giải thích cho một động từ hoặc thay bằng một động từ quen thuộc hơn."
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Từ gốc",
+          "Cách diễn đạt tương đương",
+          "Nghĩa"
+        ],
+        "rows": [
+          [
+            "暗記する",
+            "覚える",
+            "Học thuộc, ghi nhớ"
+          ],
+          [
+            "報告する",
+            "知らせる",
+            "Báo cáo, thông báo"
+          ],
+          [
+            "怒鳴る",
+            "大声で怒る",
+            "Quát lớn, nổi giận to tiếng"
+          ],
+          [
+            "サボる",
+            "休む",
+            "Trốn học, nghỉ làm"
+          ],
+          [
+            "確かめる",
+            "確認する / チェックする",
+            "Xác nhận, kiểm tra lại"
+          ],
+          [
+            "試す",
+            "やってみる",
+            "Thử làm"
+          ],
+          [
+            "くたびれる",
+            "とても疲れる",
+            "Rất mệt, kiệt sức"
+          ],
+          [
+            "おごる",
+            "ごちそうする",
+            "Mời ăn, khao"
+          ],
+          [
+            "やり直す",
+            "もう一度する",
+            "Làm lại"
+          ]
+        ]
+      },
+      {
+        "type": "h1",
+        "text": "🎭 2. Nhóm tính từ & danh từ"
+      },
+      {
+        "type": "p",
+        "text": "Đây là nhóm kiểm tra khả năng hiểu nghĩa của từ thông qua cách diễn đạt quen thuộc hơn."
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Từ gốc",
+          "Từ đồng nghĩa",
+          "Nghĩa"
+        ],
+        "rows": [
+          [
+            "得意な",
+            "とても上手な",
+            "Rất giỏi, sở trường"
+          ],
+          [
+            "欠点",
+            "よくないところ",
+            "Điểm yếu, khuyết điểm"
+          ],
+          [
+            "親しい",
+            "仲がいい",
+            "Thân thiết"
+          ],
+          [
+            "怪しい",
+            "不審な",
+            "Đáng ngờ"
+          ],
+          [
+            "退屈な",
+            "つまらない",
+            "Nhàm chán"
+          ],
+          [
+            "くだらない",
+            "意味がない / つまらない",
+            "Vô vị, không đáng quan tâm"
+          ],
+          [
+            "異常",
+            "おかしい",
+            "Bất thường"
+          ],
+          [
+            "サイズ",
+            "大きさ",
+            "Kích cỡ"
+          ],
+          [
+            "おしまい",
+            "終わり",
+            "Kết thúc"
+          ],
+          [
+            "夏休み明け",
+            "夏休みが終わった直後",
+            "Ngay sau kỳ nghỉ hè"
+          ]
+        ]
+      },
+      {
+        "type": "h1",
+        "text": "🌪️ 3. Nhóm phó từ (Trọng điểm Mondai 4)"
+      },
+      {
+        "type": "p",
+        "text": "Đây là nhóm xuất hiện rất thường xuyên trong JLPT N3. Chỉ cần nhớ được các cặp dưới đây là đã có lợi thế rất lớn."
+      },
+      {
+        "type": "h2",
+        "text": "⭐ Chắc chắn"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Từ",
+          "Đồng nghĩa",
+          "Nghĩa"
+        ],
+        "rows": [
+          [
+            "絶対",
+            "必ず / きっと",
+            "Chắc chắn, nhất định"
+          ]
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "⭐ Cuối cùng"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Từ",
+          "Đồng nghĩa",
+          "Nghĩa"
+        ],
+        "rows": [
+          [
+            "ようやく",
+            "やっと / ついに",
+            "Cuối cùng cũng..."
+          ]
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "⭐ Tất cả"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Từ",
+          "Đồng nghĩa",
+          "Nghĩa"
+        ],
+        "rows": [
+          [
+            "すべて",
+            "ぜんぶ / 全部",
+            "Toàn bộ"
+          ]
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "⭐ Mỗi người, mỗi cái"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Từ",
+          "Đồng nghĩa",
+          "Nghĩa"
+        ],
+        "rows": [
+          [
+            "おのおの（各々）",
+            "それぞれ",
+            "Mỗi, từng"
+          ]
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "⭐ Ngay lập tức"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Từ",
+          "Đồng nghĩa",
+          "Nghĩa"
+        ],
+        "rows": [
+          [
+            "たちまち",
+            "すぐに / あっという間に",
+            "Ngay lập tức"
+          ]
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "⭐ Dần dần"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Từ",
+          "Đồng nghĩa",
+          "Nghĩa"
+        ],
+        "rows": [
+          [
+            "徐々に（じょじょに）",
+            "だんだん / 少しずつ",
+            "Từng chút một"
+          ]
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "⭐ Cố gắng hết sức / Càng nhiều càng tốt"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Từ",
+          "Đồng nghĩa",
+          "Nghĩa"
+        ],
+        "rows": [
+          [
+            "なるべく",
+            "できるだけ",
+            "Càng... càng tốt / Hết mức có thể"
+          ]
+        ]
+      },
+      {
+        "type": "note",
+        "text": "⚠️ Bẫy ngữ cảnh:Từ này không phải lúc nào cũng mang nghĩa “cố gắng hết sức” theo kiểu nỗ lực mạnh mẽ, mà thường là:",
+        "noteType": "warning"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Trong phạm vi có thể",
+          "Càng nhiều càng tốt",
+          "Cố gắng làm ở mức tối đa"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "なるべくたくさんお寺を見たい。→ Muốn đi thăm càng nhiều chùa càng tốt."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "⭐ Không ngờ"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Từ",
+          "Đồng nghĩa",
+          "Nghĩa"
+        ],
+        "rows": [
+          [
+            "案外",
+            "思ったより",
+            "Ngoài dự đoán"
+          ]
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "⭐ Có lẽ"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Từ",
+          "Đồng nghĩa",
+          "Nghĩa"
+        ],
+        "rows": [
+          [
+            "もしかすると",
+            "たぶん / かもしれない",
+            "Có lẽ"
+          ]
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "⭐ Hoàn toàn không"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Từ",
+          "Đồng nghĩa",
+          "Nghĩa"
+        ],
+        "rows": [
+          [
+            "ちっとも",
+            "全く～ない / 少しも～ない",
+            "Không... chút nào"
+          ]
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "⭐ Thường, hầu hết"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Từ",
+          "Đồng nghĩa",
+          "Nghĩa"
+        ],
+        "rows": [
+          [
+            "たいてい",
+            "だいたい / ほとんど",
+            "Thường, phần lớn"
+          ]
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "⭐ Chỉ"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Từ",
+          "Đồng nghĩa",
+          "Nghĩa"
+        ],
+        "rows": [
+          [
+            "たった",
+            "ほんの / ～だけ / しか～ない",
+            "Chỉ, vỏn vẹn"
+          ]
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "⭐ Hoặc"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Từ",
+          "Đồng nghĩa",
+          "Nghĩa"
+        ],
+        "rows": [
+          [
+            "または",
+            "それとも / あるいは",
+            "Hoặc là"
+          ]
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "⭐ Chia rẽ, lộn xộn, không thống nhất"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Từ",
+          "Đồng nghĩa",
+          "Nghĩa"
+        ],
+        "rows": [
+          [
+            "ばらばら",
+            "まとまらない / 統一されていない",
+            "Chia rẽ, lộn xộn, không thống nhất"
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "意見がばらばらだ。→ Ý kiến chia rẽ, không thống nhất."
+        ]
+      },
+      {
+        "type": "note",
+        "text": "⚠️ Bẫy ngữ cảnh:Từ này không chỉ mang nghĩa “rời rạc” về mặt vật lý, mà còn rất hay dùng cho:",
+        "noteType": "warning"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Ý kiến",
+          "Quan điểm",
+          "Tổ chức",
+          "Nhóm người"
+        ]
+      },
+      {
+        "type": "h1",
+        "text": "🔡 4. Nhóm từ Katakana đồng nghĩa"
+      },
+      {
+        "type": "p",
+        "text": "Đề thi rất thích đưa một từ Katakana rồi yêu cầu chọn từ Kanji hoặc từ thuần Nhật có cùng nghĩa."
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Katakana",
+          "Từ tương đương",
+          "Nghĩa"
+        ],
+        "rows": [
+          [
+            "アドバイス",
+            "助言",
+            "Lời khuyên"
+          ],
+          [
+            "スケジュール",
+            "予定 / 計画",
+            "Lịch trình, kế hoạch"
+          ],
+          [
+            "メッセージ",
+            "伝言",
+            "Lời nhắn"
+          ],
+          [
+            "アイデア",
+            "考え",
+            "Ý tưởng"
+          ]
+        ]
+      },
+      {
+        "type": "h1",
+        "text": "💡 Mẹo làm Mondai 4"
+      },
+      {
+        "type": "p",
+        "text": "Khi đọc câu hỏi, đừng nhìn đáp án ngay."
+      },
+      {
+        "type": "p",
+        "text": "Thay vào đó hãy thực hiện theo 3 bước:"
+      },
+      {
+        "type": "list",
+        "ordered": true,
+        "items": [
+          "Đọc từ được gạch chân.",
+          "Tự nghĩ trong đầu một từ đồng nghĩa hoặc dịch nhanh sang tiếng Việt.",
+          "Sau đó mới nhìn 4 đáp án để tìm từ có nghĩa gần nhất."
+        ]
+      },
+      {
+        "type": "note",
+        "text": "⚠️ Đề thi thường cài các phương án nhiễu bằng cách:",
+        "noteType": "warning"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Dùng từ có hình thức giống nhau nhưng nghĩa khác.",
+          "Dùng từ cùng chủ đề nhưng không phải từ đồng nghĩa.",
+          "Dùng từ trái nghĩa hoặc gần nghĩa để đánh lừa."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "異常 → đáp án đúng là おかしい",
+          "Đáp án nhiễu có thể là 晴れだ, 元気だ hoặc các từ hoàn toàn không liên quan."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Mẹo ghi nhớ: Thay vì học từng từ riêng lẻ, hãy học theo cặp đồng nghĩa (A = B). Mỗi khi gặp một từ mới, hãy tự hỏi: \"Nếu đề không dùng từ này thì sẽ diễn đạt bằng cách nào?\" Đây chính là tư duy giúp bạn xử lý nhanh phần Mondai 4 trong JLPT N3."
+      }
+    ]
+  },
+  {
+    "title": "Bẫy 2.2: Bẫy trạng thái",
+    "id": "bay-2-2-bay-trang-thai",
+    "blocks": [
+      {
+        "type": "h1",
+        "text": "Bẫy 2.2: Trạng thái (Con người vs. Máy móc/Đồ vật)"
+      },
+      {
+        "type": "p",
+        "text": "Đây là một trong những dạng bẫy xuất hiện rất nhiều trong Mondai 3 và Mondai 4 của JLPT N3."
+      },
+      {
+        "type": "note",
+        "text": "⚠️ Tiếng Việt thường dịch chung là \"bình thường\", \"hỏng\", \"sửa\", \"hoạt động\"..., nhưng trong tiếng Nhật, mỗi từ chỉ dùng cho một đối tượng nhất định.",
+        "noteType": "warning"
+      },
+      {
+        "type": "h1",
+        "text": "🎭 1. Trạng thái \"Bình thường / Ổn\""
+      },
+      {
+        "type": "p",
+        "text": "Ba từ dưới đây đều có thể hiểu là \"ổn, bình thường\", nhưng cách dùng hoàn toàn khác nhau."
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Từ vựng",
+          "Dùng cho",
+          "Nghĩa"
+        ],
+        "rows": [
+          [
+            "平気（へいき）",
+            "👤 Con người",
+            "Bình thản, không sao, không ngại"
+          ],
+          [
+            "正常（せいじょう）",
+            "⚙️ Máy móc, hệ thống, chỉ số",
+            "Hoạt động bình thường"
+          ],
+          [
+            "健康（けんこう）",
+            "👤 Con người",
+            "Khỏe mạnh"
+          ]
+        ]
+      },
+      {
+        "type": "h3",
+        "text": "✅ 平気（へいき）"
+      },
+      {
+        "type": "p",
+        "text": "Dùng khi nói về:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Cảm xúc",
+          "Tâm lý",
+          "Khả năng chịu đựng"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "平気です。→ Tôi không sao.",
+          "一人でも平気です。→ Một mình cũng không sao.",
+          "悪口を言われても平気だ。→ Bị nói xấu cũng không sao."
+        ]
+      },
+      {
+        "type": "note",
+        "text": "❌ Không dùng cho máy móc.",
+        "noteType": "danger"
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ sai:"
+      },
+      {
+        "type": "note",
+        "text": "❌ パソコンは平気です。",
+        "noteType": "danger"
+      },
+      {
+        "type": "h3",
+        "text": "✅ 正常（せいじょう）"
+      },
+      {
+        "type": "p",
+        "text": "Dùng cho:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Máy móc",
+          "Hệ thống",
+          "Thiết bị",
+          "Chỉ số cơ thể"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "エアコンは正常に動いています。",
+          "心臓は正常です。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "❌ Không dùng để nói cảm xúc của con người.",
+        "noteType": "danger"
+      },
+      {
+        "type": "h3",
+        "text": "✅ 健康（けんこう）"
+      },
+      {
+        "type": "p",
+        "text": "Chỉ dùng cho sức khỏe con người."
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "健康な人",
+          "健康を守る"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "❌ Không dùng cho máy móc.",
+        "noteType": "danger"
+      },
+      {
+        "type": "h1",
+        "text": "🛠️ 2. Động từ \"Sửa chữa\" & \"Chữa bệnh\""
+      },
+      {
+        "type": "p",
+        "text": "Đây là cặp Kanji đọc giống hệt nhau (なおす / なおる) nhưng khác hoàn toàn về đối tượng."
+      },
+      {
+        "type": "h2",
+        "text": "👤 Dùng cho con người, bệnh tật"
+      },
+      {
+        "type": "note",
+        "text": "👉 Chữ 治",
+        "noteType": "info"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Từ",
+          "Loại",
+          "Nghĩa"
+        ],
+        "rows": [
+          [
+            "治る",
+            "Tự động từ",
+            "Khỏi bệnh"
+          ],
+          [
+            "治す",
+            "Tha động từ",
+            "Chữa bệnh"
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "病気が治った。",
+          "医者が病気を治した。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Hãy nhớ:",
+        "noteType": "info"
+      },
+      {
+        "type": "p",
+        "text": "治 = Điều trị (Treatment)"
+      },
+      {
+        "type": "h2",
+        "text": "⚙️ Dùng cho máy móc, đồ vật"
+      },
+      {
+        "type": "note",
+        "text": "👉 Chữ 直",
+        "noteType": "info"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Từ",
+          "Loại",
+          "Nghĩa"
+        ],
+        "rows": [
+          [
+            "直る",
+            "Tự động từ",
+            "Được sửa xong"
+          ],
+          [
+            "直す",
+            "Tha động từ",
+            "Sửa chữa"
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "パソコンが直った。",
+          "父が車を直した。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Hãy nhớ:",
+        "noteType": "info"
+      },
+      {
+        "type": "p",
+        "text": "直 = Sửa đồ vật"
+      },
+      {
+        "type": "h1",
+        "text": "⚙️ 3. Trạng thái \"Hỏng\" & \"Mệt\""
+      },
+      {
+        "type": "p",
+        "text": "Đừng để tiếng Việt đánh lừa. Con người và máy móc sử dụng từ hoàn toàn khác nhau."
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Từ vựng",
+          "Dùng cho",
+          "Nghĩa"
+        ],
+        "rows": [
+          [
+            "疲れる",
+            "👤 Con người",
+            "Mệt"
+          ],
+          [
+            "だるい",
+            "👤 Con người",
+            "Uể oải, mệt mỏi trong người"
+          ],
+          [
+            "故障",
+            "⚙️ Máy móc",
+            "Trục trặc"
+          ],
+          [
+            "壊れる",
+            "📦 Đồ vật, máy móc",
+            "Bị hỏng"
+          ]
+        ]
+      },
+      {
+        "type": "h3",
+        "text": "👤 疲れる"
+      },
+      {
+        "type": "p",
+        "text": "Chỉ dùng cho người hoặc động vật."
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "とても疲れました。",
+          "仕事で疲れた。"
+        ]
+      },
+      {
+        "type": "h3",
+        "text": "👤 だるい"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Uể oải, mệt mỏi trong người, cảm giác nặng nề không muốn cử động."
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "今日は体がだるい。",
+          "熱があって、だるい。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Đây là tính từ chỉ trạng thái cơ thể không thể dậy nổi, rất dễ bị nhầm với 疲れる.",
+        "noteType": "info"
+      },
+      {
+        "type": "note",
+        "text": "⚠️ Lỗi từng mắc: Bỏ trống câu hỏi vì không nhận ra đây là từ chỉ trạng thái cơ thể.Khi gặp だるい, hãy nghĩ ngay đến:",
+        "noteType": "warning"
+      },
+      {
+        "type": "p",
+        "text": "\"Người mệt rũ, uể oải, không muốn làm gì.\""
+      },
+      {
+        "type": "h3",
+        "text": "⚙️ 故障"
+      },
+      {
+        "type": "p",
+        "text": "Chỉ dùng cho:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Máy tính",
+          "Xe",
+          "Máy giặt",
+          "Điều hòa",
+          "Thiết bị điện tử"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "車が故障した。",
+          "洗濯機が故障した。"
+        ]
+      },
+      {
+        "type": "h3",
+        "text": "📦 壊れる"
+      },
+      {
+        "type": "p",
+        "text": "Mang nghĩa:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Bị hỏng",
+          "Bị vỡ",
+          "Bị phá"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Có thể dùng cho:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Máy móc",
+          "Điện thoại",
+          "Nhà cửa",
+          "Cốc chén",
+          "Đồ dùng"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "時計が壊れた。",
+          "ドアが壊れた。"
+        ]
+      },
+      {
+        "type": "h1",
+        "text": "🏃 4. Động từ \"Hoạt động\""
+      },
+      {
+        "type": "p",
+        "text": "Hai từ dưới đây đều có thể dịch là \"hoạt động\", nhưng đối tượng hoàn toàn khác nhau."
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Từ",
+          "Dùng cho",
+          "Nghĩa"
+        ],
+        "rows": [
+          [
+            "働く",
+            "👤 Con người",
+            "Làm việc"
+          ],
+          [
+            "動く",
+            "⚙️ Máy móc, đồ vật",
+            "Chạy, hoạt động, di chuyển"
+          ]
+        ]
+      },
+      {
+        "type": "h3",
+        "text": "👤 働く"
+      },
+      {
+        "type": "p",
+        "text": "Dùng khi:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Con người đi làm",
+          "Các cơ quan trong cơ thể hoạt động"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "母は銀行で働いています。",
+          "心臓が働く。"
+        ]
+      },
+      {
+        "type": "h3",
+        "text": "⚙️ 動く"
+      },
+      {
+        "type": "p",
+        "text": "Dùng khi:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Máy đang chạy",
+          "Xe đang chạy",
+          "Robot hoạt động",
+          "Đồ vật chuyển động"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "この時計は動かない。",
+          "車が動き始めた。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "❌ Không dùng 働く cho máy móc.",
+        "noteType": "danger"
+      },
+      {
+        "type": "p",
+        "text": "Sai:"
+      },
+      {
+        "type": "note",
+        "text": "❌ パソコンが働かない。",
+        "noteType": "danger"
+      },
+      {
+        "type": "p",
+        "text": "Đúng:"
+      },
+      {
+        "type": "note",
+        "text": "✅ パソコンが動かない。",
+        "noteType": "success"
+      },
+      {
+        "type": "h1",
+        "text": "🌡️ 5. Từ chỉ \"Tình trạng\""
+      },
+      {
+        "type": "p",
+        "text": "Hai từ dưới đây đều dịch là \"tình trạng\", nhưng phạm vi sử dụng khác nhau."
+      },
+      {
+        "type": "h2",
+        "text": "調子（ちょうし）"
+      },
+      {
+        "type": "p",
+        "text": "Là từ rất thông dụng."
+      },
+      {
+        "type": "p",
+        "text": "Có thể dùng cho:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Con người",
+          "Máy móc",
+          "Cơ thể"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "体の調子がいい。",
+          "パソコンの調子が悪い。",
+          "今日、調子がいいね。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Mang nghĩa:",
+        "noteType": "info"
+      },
+      {
+        "type": "p",
+        "text": "Hoạt động có trơn tru hay không."
+      },
+      {
+        "type": "h2",
+        "text": "状態（じょうたい）"
+      },
+      {
+        "type": "p",
+        "text": "Mang tính khái quát và khách quan hơn."
+      },
+      {
+        "type": "p",
+        "text": "Thường dùng cho:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Tình trạng công ty",
+          "Hoàn cảnh",
+          "Hiện trường",
+          "Tình trạng bệnh",
+          "Tình hình kinh doanh"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "経営の状態",
+          "事故の状態",
+          "病人の状態"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Ít dùng để nói:",
+        "noteType": "info"
+      },
+      {
+        "type": "p",
+        "text": "\"Chiếc máy tính này đang bị lỗi.\""
+      },
+      {
+        "type": "h1",
+        "text": "⏰ 6. Bẫy từ chỉ thời gian"
+      },
+      {
+        "type": "p",
+        "text": "Ngoài trạng thái, JLPT N3 còn rất hay bẫy bằng các từ chỉ thời gian có vẻ quen nhưng sắc thái khác nhau."
+      },
+      {
+        "type": "h2",
+        "text": "このあいだ（この間）"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Hôm nọ, dạo gần đây, lần trước."
+      },
+      {
+        "type": "p",
+        "text": "Dùng khi nói về:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Một việc vừa xảy ra gần đây",
+          "Một lần nhắc lại trong quá khứ gần"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "このあいだ、電話でお願いしました。",
+          "このあいだ会ったばかりです。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "⚠️ Bẫy: Dễ nhầm với các từ chỉ thời gian khác như:",
+        "noteType": "warning"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "先日（せんじつ）",
+          "先週",
+          "先月",
+          "先ほど"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Khi kể về một việc vừa xảy ra, đặc biệt là việc đã nhờ qua điện thoại, rất dễ chọn nhầm từ nếu không nhìn kỹ ngữ cảnh."
+      },
+      {
+        "type": "h2",
+        "text": "翌日（よくじつ）"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Ngày hôm sau."
+      },
+      {
+        "type": "p",
+        "text": "Dùng để chỉ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Ngày kế tiếp sau một sự việc nào đó",
+          "Thường xuất hiện trong văn viết hoặc ngữ cảnh trang trọng hơn"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "日本に着いた翌日、観光しました。",
+          "試験の翌日、休みました。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "⚠️ Bẫy ngữ cảnh thời gian:Nếu câu có mốc như \"sau khi đến Nhật\", hãy nghĩ ngay đến:",
+        "noteType": "warning"
+      },
+      {
+        "type": "p",
+        "text": "翌日 = ngày hôm sau"
+      },
+      {
+        "type": "p",
+        "text": "Đừng nhầm với:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "次の日",
+          "翌朝",
+          "その日"
+        ]
+      },
+      {
+        "type": "h1",
+        "text": "📌 Tổng kết nhanh"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Ý nghĩa",
+          "Con người 👤",
+          "Máy móc / Đồ vật ⚙️"
+        ],
+        "rows": [
+          [
+            "Bình thường",
+            "平気・健康",
+            "正常"
+          ],
+          [
+            "Mệt / Uể oải",
+            "疲れる・だるい",
+            "故障・壊れる"
+          ],
+          [
+            "Chữa / Sửa",
+            "治す・治る",
+            "直す・直る"
+          ],
+          [
+            "Hoạt động",
+            "働く",
+            "動く"
+          ],
+          [
+            "Tình trạng",
+            "調子",
+            "調子・状態"
+          ]
+        ]
+      },
+      {
+        "type": "h1",
+        "text": "💡 Mẹo làm bài JLPT"
+      },
+      {
+        "type": "p",
+        "text": "Trước khi chọn đáp án, hãy xác định chủ ngữ của câu."
+      },
+      {
+        "type": "h3",
+        "text": "Nếu chủ ngữ là con người 👤"
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "私",
+          "彼",
+          "山田さん",
+          "子ども"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Ưu tiên các từ như:",
+        "noteType": "info"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "平気",
+          "健康",
+          "疲れる",
+          "だるい",
+          "治す",
+          "治る",
+          "働く"
+        ]
+      },
+      {
+        "type": "h3",
+        "text": "Nếu chủ ngữ là máy móc hoặc đồ vật ⚙️"
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "パソコン",
+          "車",
+          "機械",
+          "時計",
+          "エアコン"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Ưu tiên các từ như:",
+        "noteType": "info"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "正常",
+          "故障",
+          "壊れる",
+          "直す",
+          "直る",
+          "動く"
+        ]
+      },
+      {
+        "type": "h3",
+        "text": "Nếu câu có mốc thời gian gần đây"
+      },
+      {
+        "type": "p",
+        "text": "Hãy chú ý các từ như:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "このあいだ",
+          "翌日",
+          "先日",
+          "その翌日"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Đừng chọn theo cảm tính, mà hãy xác định rõ:",
+        "noteType": "info"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Việc vừa xảy ra gần đây → このあいだ",
+          "Ngày hôm sau → 翌日"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Mẹo ghi nhớ: Khi gặp câu hỏi trong Mondai 3 hoặc Mondai 4, hãy nhìn chủ ngữ trước, từ vựng sau. Chỉ cần xác định được đối tượng là con người hay máy móc/đồ vật, bạn có thể loại ngay một nửa số đáp án và tăng đáng kể khả năng chọn đúng. Đồng thời, với các từ chỉ thời gian như このあいだ và 翌日, hãy luôn kiểm tra mốc thời gian trong câu để tránh bẫy ngữ cảnh."
+      }
+    ]
+  },
+  {
+    "title": "Bẫy 3.1: Giao thông vs. Công việc",
+    "id": "bay-3-1-giao-thong-vs-cong-viec",
+    "blocks": [
+      {
+        "type": "h1",
+        "text": "Bẫy 3.1: Giao thông vs. Công việc"
+      },
+      {
+        "type": "p",
+        "text": "Trong JLPT N3, rất nhiều từ có thể dịch sang tiếng Việt là \"trễ\", \"tắc\", \"chạy\", \"dừng\", \"đi\".... Tuy nhiên, tiếng Nhật phân biệt rất rõ ngữ cảnh giao thông và ngữ cảnh công việc."
+      },
+      {
+        "type": "note",
+        "text": "👉 Chỉ cần dùng sai đối tượng là sẽ mất điểm ngay.",
+        "noteType": "info"
+      },
+      {
+        "type": "h1",
+        "text": "🚫 1. Bẫy \"Tắc nghẽn / Trì trệ\""
+      },
+      {
+        "type": "p",
+        "text": "Đây là nhóm xuất hiện rất nhiều trong Mondai 3 và Mondai 5."
+      },
+      {
+        "type": "h2",
+        "text": "🚗 渋滞（じゅうたい）"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Kẹt xe, tắc nghẽn giao thông."
+      },
+      {
+        "type": "note",
+        "text": "✅ Dùng cho:",
+        "noteType": "success"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Đường sá",
+          "Xe cộ",
+          "Giao thông"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "道路が渋滞している。",
+          "高速道路が渋滞した。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "❌ Không dùng cho:",
+        "noteType": "danger"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Công việc tồn đọng",
+          "Tiến độ dự án",
+          "Áp lực công việc"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "⏰ 遅れ（おくれ）・遅れる"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Bị chậm, bị trễ."
+      },
+      {
+        "type": "p",
+        "text": "Có thể dùng cho cả:"
+      },
+      {
+        "type": "h3",
+        "text": "🚆 Giao thông"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "電車が遅れた。",
+          "飛行機が遅れている。"
+        ]
+      },
+      {
+        "type": "h3",
+        "text": "💼 Công việc"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "仕事が遅れている。",
+          "計画が遅れた。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Đây là từ mang tính trung lập, dùng được trong nhiều tình huống.",
+        "noteType": "info"
+      },
+      {
+        "type": "h2",
+        "text": "🙋 遅刻（ちこく）"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Đến muộn."
+      },
+      {
+        "type": "note",
+        "text": "⚠️ Chỉ dùng cho con người.",
+        "noteType": "warning"
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "学校に遅刻する。",
+          "会議に遅刻した。",
+          "会社に遅刻した。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "❌ Không dùng cho tàu xe.",
+        "noteType": "danger"
+      },
+      {
+        "type": "p",
+        "text": "Sai:"
+      },
+      {
+        "type": "note",
+        "text": "❌ 電車が遅刻した。",
+        "noteType": "danger"
+      },
+      {
+        "type": "p",
+        "text": "Đúng:"
+      },
+      {
+        "type": "note",
+        "text": "✅ 電車が遅れた。",
+        "noteType": "success"
+      },
+      {
+        "type": "h2",
+        "text": "🚶 混雑（こんざつ）"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Đông đúc, chen chúc."
+      },
+      {
+        "type": "p",
+        "text": "Dùng cho:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Nhà ga",
+          "Trung tâm thương mại",
+          "Đường phố",
+          "Xe điện"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "駅が混雑している。",
+          "デパートは人で混雑している。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "❌ Không dùng để nói:",
+        "noteType": "danger"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Công việc lộn xộn",
+          "Công việc quá nhiều"
+        ]
+      },
+      {
+        "type": "h1",
+        "text": "🚀 2. Bẫy \"Tiến triển / Hoạt động\""
+      },
+      {
+        "type": "h2",
+        "text": "📈 進む（すすむ）"
+      },
+      {
+        "type": "p",
+        "text": "Mang nghĩa:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Tiến lên",
+          "Tiến triển"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Có thể dùng cho cả:"
+      },
+      {
+        "type": "h3",
+        "text": "🚶 Di chuyển"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "前へ進む。",
+          "出口へ進む。"
+        ]
+      },
+      {
+        "type": "h3",
+        "text": "💼 Công việc"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "仕事が進む。",
+          "計画が順調に進む。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Chỉ cần hiểu là mọi thứ đang tiến về phía trước.",
+        "noteType": "info"
+      },
+      {
+        "type": "h2",
+        "text": "⚙️ 動く vs. 👤 働く"
+      },
+      {
+        "type": "p",
+        "text": "Đây là cặp rất dễ nhầm."
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Từ",
+          "Dùng cho",
+          "Nghĩa"
+        ],
+        "rows": [
+          [
+            "動く",
+            "Máy móc, xe cộ, đồ vật",
+            "Hoạt động, chuyển động"
+          ],
+          [
+            "働く",
+            "Con người",
+            "Làm việc"
+          ]
+        ]
+      },
+      {
+        "type": "h3",
+        "text": "動く"
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "車が動く。",
+          "エレベーターが動かない。",
+          "ロボットが動いている。"
+        ]
+      },
+      {
+        "type": "h3",
+        "text": "働く"
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "父は銀行で働いている。",
+          "日本で働きたい。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "❌ Không dùng cho máy móc.",
+        "noteType": "danger"
+      },
+      {
+        "type": "h2",
+        "text": "🌡️ 調子（ちょうし）"
+      },
+      {
+        "type": "p",
+        "text": "Đây là từ rất đa năng."
+      },
+      {
+        "type": "p",
+        "text": "Có thể dùng cho:"
+      },
+      {
+        "type": "h3",
+        "text": "👤 Con người"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "体の調子がいい。",
+          "今日は調子が悪い。"
+        ]
+      },
+      {
+        "type": "h3",
+        "text": "⚙️ Máy móc"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "パソコンの調子が悪い。",
+          "車の調子がいい。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "⚠️ Không dùng để nói:",
+        "noteType": "warning"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Tình trạng kinh doanh",
+          "Tình hình của công ty"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Trong trường hợp đó dùng:"
+      },
+      {
+        "type": "p",
+        "text": "状態（じょうたい）"
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "会社の経営状態"
+        ]
+      },
+      {
+        "type": "h1",
+        "text": "🛑 3. Bẫy \"Dừng lại / Kết thúc\""
+      },
+      {
+        "type": "h2",
+        "text": "🚗 止まる・停まる"
+      },
+      {
+        "type": "p",
+        "text": "Mang nghĩa:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Dừng lại"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Dùng cho:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Xe",
+          "Tàu",
+          "Đồ vật"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "車が止まった。",
+          "バスが停まる。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "❌ Không dùng để nói:",
+        "noteType": "danger"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Nghỉ làm",
+          "Hoàn thành công việc"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "✅ 済む・済ませる"
+      },
+      {
+        "type": "p",
+        "text": "Mang nghĩa:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Hoàn tất",
+          "Giải quyết xong"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "宿題が済んだ。",
+          "仕事が済んだら帰ります。",
+          "手続きを済ませた。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Đây là từ dùng rất nhiều trong công việc và thủ tục.",
+        "noteType": "info"
+      },
+      {
+        "type": "h2",
+        "text": "☕ 休憩 vs. 🚉 停車"
+      },
+      {
+        "type": "p",
+        "text": "Đây là cặp dễ nhầm vì đều mang ý \"dừng\"."
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Từ",
+          "Dùng cho",
+          "Nghĩa"
+        ],
+        "rows": [
+          [
+            "休憩",
+            "Con người",
+            "Nghỉ giải lao"
+          ],
+          [
+            "停車",
+            "Xe cộ",
+            "Dừng xe"
+          ]
+        ]
+      },
+      {
+        "type": "h3",
+        "text": "休憩"
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "10分休憩します。",
+          "昼休憩。"
+        ]
+      },
+      {
+        "type": "h3",
+        "text": "停車"
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "次の駅で停車します。",
+          "バスが停車した。"
+        ]
+      },
+      {
+        "type": "h1",
+        "text": "🚶 4. Bẫy \"Đi lại / Di chuyển\""
+      },
+      {
+        "type": "h2",
+        "text": "🚆 通勤（つうきん）"
+      },
+      {
+        "type": "p",
+        "text": "Mang nghĩa:"
+      },
+      {
+        "type": "p",
+        "text": "Đi làm (từ nhà đến nơi làm việc)."
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "毎日電車で通勤している。",
+          "通勤時間は一時間です。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Chỉ nói về việc đi làm hằng ngày.",
+        "noteType": "info"
+      },
+      {
+        "type": "h2",
+        "text": "🚶 通う（かよう）"
+      },
+      {
+        "type": "p",
+        "text": "Mang nghĩa:"
+      },
+      {
+        "type": "p",
+        "text": "Đi đi về về thường xuyên."
+      },
+      {
+        "type": "p",
+        "text": "Có thể dùng cho:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Đi học",
+          "Đi làm",
+          "Đi bệnh viện",
+          "Đi phòng gym"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "学校に通う。",
+          "病院に通う。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Nhấn mạnh việc lui tới lặp đi lặp lại.",
+        "noteType": "info"
+      },
+      {
+        "type": "h2",
+        "text": "💼 出張"
+      },
+      {
+        "type": "p",
+        "text": "Mang nghĩa:"
+      },
+      {
+        "type": "p",
+        "text": "Đi công tác."
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "東京へ出張する。",
+          "出張で大阪へ行った。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "⚠️ Khác với:",
+        "noteType": "warning"
+      },
+      {
+        "type": "p",
+        "text": "観光（かんこう）"
+      },
+      {
+        "type": "p",
+        "text": "→ Đi tham quan, du lịch."
+      },
+      {
+        "type": "h1",
+        "text": "🏠 5. Bẫy bổ sung: Từ dễ nhầm trong mua bán và dự đoán"
+      },
+      {
+        "type": "p",
+        "text": "Ngoài nhóm từ về giao thông và công việc, JLPT N3 còn hay gài những từ nhìn quen nhưng dùng sai ngữ cảnh là mất điểm ngay."
+      },
+      {
+        "type": "h2",
+        "text": "🌍 土地（とち）"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Đất đai, mảnh đất, khu đất."
+      },
+      {
+        "type": "p",
+        "text": "Dùng khi nói về:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Đất để xây nhà",
+          "Đất để mua bán",
+          "Khu đất, thửa đất"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "土地を買う。",
+          "この土地は広い。",
+          "土地の値段が上がった。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Đây là thứ có thể giao dịch mua bán.",
+        "noteType": "info"
+      },
+      {
+        "type": "h2",
+        "text": "🏘️ 近所（きんじょ）"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Hàng xóm, khu vực lân cận."
+      },
+      {
+        "type": "p",
+        "text": "Dùng khi nói về:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Người sống gần nhà",
+          "Khu phố xung quanh",
+          "Vùng lân cận"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "近所の人。",
+          "近所を散歩する。",
+          "近所づきあいが大切だ。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "❌ Không dùng để chỉ thứ có thể mua bán.",
+        "noteType": "danger"
+      },
+      {
+        "type": "p",
+        "text": "Sai:"
+      },
+      {
+        "type": "note",
+        "text": "❌ 近所を買う。",
+        "noteType": "danger"
+      },
+      {
+        "type": "p",
+        "text": "Đúng:"
+      },
+      {
+        "type": "note",
+        "text": "✅ 土地を買う。",
+        "noteType": "success"
+      },
+      {
+        "type": "note",
+        "text": "👉 Lỗi từng mắc: Chọn “mua hàng xóm” thay vì “mua đất”.Đất đai mới là thứ có thể giao dịch mua bán.",
+        "noteType": "info"
+      },
+      {
+        "type": "h2",
+        "text": "🔮 予想（よそう）"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Dự đoán, kỳ vọng."
+      },
+      {
+        "type": "p",
+        "text": "Dùng khi:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Ước đoán kết quả",
+          "Mong đợi điều gì đó sẽ xảy ra",
+          "So sánh với thực tế"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "予想より早く終わった。",
+          "予想以上に難しかった。",
+          "その結果は予想できなかった。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Rất hay đi với:",
+        "noteType": "info"
+      },
+      {
+        "type": "p",
+        "text": "予想以上（vượt quá kỳ vọng）"
+      },
+      {
+        "type": "h2",
+        "text": "📚 予習（よしゅう）"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Chuẩn bị bài trước."
+      },
+      {
+        "type": "p",
+        "text": "Dùng khi:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Học trước nội dung sẽ học trên lớp",
+          "Ôn trước bài mới"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "明日の授業の予習をする。",
+          "予習してから授業に出る。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Không liên quan đến dự đoán kết quả.",
+        "noteType": "info"
+      },
+      {
+        "type": "h2",
+        "text": "📊 予測（よそく）"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Ước tính, dự báo."
+      },
+      {
+        "type": "p",
+        "text": "Dùng khi:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Dự báo thời tiết",
+          "Dự báo xu hướng",
+          "Ước tính số lượng, mức độ"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "売上を予測する。",
+          "天気を予測する。",
+          "事故の発生を予測できない。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Mang tính phân tích và dự báo, không phải kỳ vọng cảm tính như 予想.",
+        "noteType": "info"
+      },
+      {
+        "type": "h3",
+        "text": "Phân biệt nhanh"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Từ",
+          "Nghĩa",
+          "Dùng khi"
+        ],
+        "rows": [
+          [
+            "予想",
+            "Dự đoán, kỳ vọng",
+            "Nói về kết quả mong đợi"
+          ],
+          [
+            "予習",
+            "Chuẩn bị bài",
+            "Học trước bài mới"
+          ],
+          [
+            "予測",
+            "Ước tính, dự báo",
+            "Phân tích, dự báo số liệu hoặc tình hình"
+          ]
+        ]
+      },
+      {
+        "type": "h1",
+        "text": "📌 Tổng kết nhanh"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Chủ đề",
+          "Giao thông 🚗",
+          "Công việc 💼"
+        ],
+        "rows": [
+          [
+            "Tắc nghẽn",
+            "渋滞",
+            "❌"
+          ],
+          [
+            "Bị chậm",
+            "遅れる",
+            "遅れる"
+          ],
+          [
+            "Đến muộn",
+            "❌",
+            "遅刻"
+          ],
+          [
+            "Đông đúc",
+            "混雑",
+            "❌"
+          ],
+          [
+            "Tiến triển",
+            "進む",
+            "進む"
+          ],
+          [
+            "Hoạt động",
+            "動く",
+            "働く"
+          ],
+          [
+            "Dừng lại",
+            "止まる・停まる",
+            "❌"
+          ],
+          [
+            "Hoàn tất",
+            "❌",
+            "済む"
+          ],
+          [
+            "Nghỉ",
+            "停車",
+            "休憩"
+          ],
+          [
+            "Đi làm",
+            "通勤",
+            "✔"
+          ],
+          [
+            "Đi công tác",
+            "—",
+            "出張"
+          ]
+        ]
+      },
+      {
+        "type": "h1",
+        "text": "💡 Mẹo làm JLPT"
+      },
+      {
+        "type": "p",
+        "text": "Khi gặp các câu hỏi ở Mondai 3 hoặc Mondai 5, hãy xác định từ khóa chính trong câu trước khi nhìn đáp án."
+      },
+      {
+        "type": "h3",
+        "text": "🚗 Nếu câu có các từ như:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "車",
+          "電車",
+          "バス",
+          "道路",
+          "駅",
+          "高速道路"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Hãy nghĩ ngay đến các từ:",
+        "noteType": "info"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "渋滞",
+          "混雑",
+          "動く",
+          "停車",
+          "遅れる"
+        ]
+      },
+      {
+        "type": "h3",
+        "text": "💼 Nếu câu có các từ như:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "仕事",
+          "会議",
+          "会社",
+          "宿題",
+          "計画"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Hãy ưu tiên:",
+        "noteType": "info"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "遅れる",
+          "遅刻（chỉ dùng cho người）",
+          "進む",
+          "済む",
+          "働く",
+          "出張"
+        ]
+      },
+      {
+        "type": "h3",
+        "text": "🏠 Nếu câu có các từ như:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "土地",
+          "近所",
+          "予想",
+          "予習",
+          "予測"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Hãy tự hỏi:",
+        "noteType": "info"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Đây là đất đai hay khu hàng xóm?",
+          "Đây là dự đoán, chuẩn bị bài, hay dự báo?",
+          "Câu đang nói về mua bán, học tập, hay kết quả vượt kỳ vọng?"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Mẹo ghi nhớ: Nếu chưa chắc đáp án, hãy tự hỏi: \"Đối tượng trong câu là xe cộ hay con người?\", \"Câu đang nói về việc di chuyển hay công việc?\", và \"Từ này là dự đoán, chuẩn bị bài hay dự báo?\". Chỉ cần xác định đúng ngữ cảnh, bạn sẽ loại được rất nhiều đáp án nhiễu trong JLPT N3."
+      }
+    ]
+  },
+  {
+    "title": "Bẫy 3.2: Mối quan hệ vs. Kỹ năng",
+    "id": "bay-3-2-moi-quan-he-vs-ky-nang",
+    "blocks": [
+      {
+        "type": "h1",
+        "text": "Bẫy 3.2: Mối quan hệ vs. Kỹ năng"
+      },
+      {
+        "type": "p",
+        "text": "Trong JLPT N3, rất nhiều từ có thể dịch sang tiếng Việt là \"thân\", \"quen\", \"giỏi\", \"biết rõ\"..., nhưng tiếng Nhật lại chia theo đối tượng:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "👤 Con người, mối quan hệ",
+          "🎯 Kỹ năng, môn học, kiến thức",
+          "🌍 Môi trường sống, công việc",
+          "🎨 Sở thích, ước mơ",
+          "🗣️ Giao tiếp, báo cáo, ứng xử hằng ngày",
+          "💥 Hành động tác động lên vật / bị tác động"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Đây là dạng bẫy xuất hiện khá nhiều trong Mondai 3 và Mondai 5."
+      },
+      {
+        "type": "h1",
+        "text": "🤝 1. Bẫy \"Thân thiết\" vs. \"Giỏi / Kém\""
+      },
+      {
+        "type": "p",
+        "text": "Đây là nhóm dễ nhầm nhất vì tiếng Việt đều có thể diễn đạt là \"quen\", \"thân\", \"giỏi\"."
+      },
+      {
+        "type": "h2",
+        "text": "❤️ 親しい（したしい）"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Thân thiết, gần gũi."
+      },
+      {
+        "type": "note",
+        "text": "✅ Chỉ dùng cho mối quan hệ giữa người với người.",
+        "noteType": "success"
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "私は田中さんと親しい。",
+          "彼とは親しい友達だ。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Luôn đi với:",
+        "noteType": "info"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Người",
+          "Bạn bè",
+          "Đồng nghiệp",
+          "Hàng xóm"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "❌ Không dùng với:",
+        "noteType": "danger"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Môn học",
+          "Công việc",
+          "Kỹ năng"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Sai:"
+      },
+      {
+        "type": "note",
+        "text": "❌ 数学と親しい。",
+        "noteType": "danger"
+      },
+      {
+        "type": "h2",
+        "text": "🏆 得意（とくい）"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Giỏi, sở trường."
+      },
+      {
+        "type": "p",
+        "text": "Dùng khi nói về:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Môn học",
+          "Ngoại ngữ",
+          "Thể thao",
+          "Nhạc cụ",
+          "Kỹ năng"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "数学が得意です。",
+          "ギターが得意です。",
+          "料理が得意です。"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "📉 苦手（にがて）"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Kém, không giỏi, không thích ứng tốt."
+      },
+      {
+        "type": "p",
+        "text": "Có thể dùng cho:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Môn học",
+          "Kỹ năng",
+          "Đồ ăn",
+          "Con vật",
+          "Kiểu người"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "英語が苦手です。",
+          "計算が苦手です。",
+          "犬が苦手です。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Không chỉ mang nghĩa \"kém\", mà còn có thể là \"không thích, sợ hoặc không hợp\".",
+        "noteType": "info"
+      },
+      {
+        "type": "h1",
+        "text": "🧠 2. Bẫy \"Quan hệ tốt\" vs. \"Am hiểu\""
+      },
+      {
+        "type": "p",
+        "text": "Tiếng Việt đều có thể dịch là \"biết rõ\", nhưng tiếng Nhật dùng hai nhóm từ khác nhau."
+      },
+      {
+        "type": "h2",
+        "text": "👥 仲がいい"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Có quan hệ tốt."
+      },
+      {
+        "type": "p",
+        "text": "Chỉ dùng cho:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Bạn bè",
+          "Gia đình",
+          "Đồng nghiệp",
+          "Vợ chồng"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "山本さんと仲がいい。",
+          "家族は仲がいい。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Chỉ nói về mối quan hệ.",
+        "noteType": "info"
+      },
+      {
+        "type": "h2",
+        "text": "📚 詳しい（くわしい）"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Am hiểu, hiểu rất rõ."
+      },
+      {
+        "type": "p",
+        "text": "Dùng khi nói về:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Lĩnh vực",
+          "Kiến thức",
+          "Địa điểm",
+          "Bản đồ",
+          "Máy móc"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "日本の歴史に詳しい。",
+          "パソコンに詳しい。",
+          "この地図は詳しい。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Không dùng để nói:",
+        "noteType": "info"
+      },
+      {
+        "type": "p",
+        "text": "Quan hệ thân thiết."
+      },
+      {
+        "type": "h1",
+        "text": "🔄 3. Bẫy \"Giao du\" vs. \"Thích nghi\""
+      },
+      {
+        "type": "h2",
+        "text": "💑 付き合う"
+      },
+      {
+        "type": "p",
+        "text": "Mang nghĩa:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Hẹn hò",
+          "Giao lưu",
+          "Đi cùng",
+          "Quan hệ xã hội"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "彼と付き合っている。",
+          "友達と付き合う。",
+          "近所の人と付き合う。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Đối tượng luôn là con người.",
+        "noteType": "info"
+      },
+      {
+        "type": "h2",
+        "text": "💞 交際する"
+      },
+      {
+        "type": "p",
+        "text": "Mang nghĩa:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Hẹn hò",
+          "Qua lại",
+          "Giao thiệp"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "二人は交際している。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Thường trang trọng hơn 付き合う.",
+        "noteType": "info"
+      },
+      {
+        "type": "h2",
+        "text": "🌱 慣れる（なれる）"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Quen với, thích nghi."
+      },
+      {
+        "type": "p",
+        "text": "Dùng với:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Công việc",
+          "Cuộc sống",
+          "Môi trường",
+          "Khí hậu",
+          "Văn hóa"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "日本の生活に慣れた。",
+          "新しい仕事に慣れた。",
+          "この生活に慣れた。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "⚠️ Không dùng với:",
+        "noteType": "warning"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Người yêu",
+          "Bạn bè",
+          "Quan hệ xã hội"
+        ]
+      },
+      {
+        "type": "h1",
+        "text": "🎭 4. Bẫy \"Say mê\" vs. \"Ước mơ\""
+      },
+      {
+        "type": "h2",
+        "text": "🤩 夢中（むちゅう）"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Say mê, mải mê."
+      },
+      {
+        "type": "p",
+        "text": "Dùng khi quá tập trung vào:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Game",
+          "Truyện tranh",
+          "Âm nhạc",
+          "Thể thao",
+          "Sở thích"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "漫画に夢中だ。",
+          "ゲームに夢中になった。",
+          "サッカーに夢中だ。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Mang nghĩa:",
+        "noteType": "info"
+      },
+      {
+        "type": "p",
+        "text": "Quá tập trung đến mức quên mọi thứ xung quanh."
+      },
+      {
+        "type": "h2",
+        "text": "🌟 夢（ゆめ）"
+      },
+      {
+        "type": "p",
+        "text": "Có hai nghĩa:"
+      },
+      {
+        "type": "h3",
+        "text": "😴 Giấc mơ"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "昨日、変な夢を見た。"
+        ]
+      },
+      {
+        "type": "h3",
+        "text": "🎯 Ước mơ"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "医者になるのが夢です。",
+          "将来の夢。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Chỉ mục tiêu hoặc ước mơ trong tương lai.",
+        "noteType": "info"
+      },
+      {
+        "type": "h1",
+        "text": "🗣️ 5. Bẫy giao tiếp hằng ngày và báo cáo"
+      },
+      {
+        "type": "p",
+        "text": "Ngoài các nhóm trên, JLPT N3 còn rất hay kiểm tra những từ tưởng như đơn giản nhưng lại dễ nhầm vì ngữ cảnh giao tiếp."
+      },
+      {
+        "type": "h2",
+        "text": "🙇 おつかれさま"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Chào đồng nghiệp khi ra về / Cảm ơn vì đã vất vả."
+      },
+      {
+        "type": "p",
+        "text": "Dùng rất phổ biến trong môi trường công sở, khi:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Gặp đồng nghiệp sau giờ làm",
+          "Chào nhau lúc tan ca",
+          "Cảm ơn người khác vì đã làm việc vất vả"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "おつかれさまでした。",
+          "今日はおつかれさま。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Đây là câu chào rất tự nhiên giữa đồng nghiệp.",
+        "noteType": "info"
+      },
+      {
+        "type": "note",
+        "text": "⚠️ Lỗi từng mắc:",
+        "noteType": "warning"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Nhầm với おまちどおさま"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "⏳ おまちどおさま"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Xin lỗi vì để đợi lâu / Cảm ơn vì đã chờ."
+      },
+      {
+        "type": "p",
+        "text": "Dùng khi:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Giao đồ ăn",
+          "Mang đồ đến",
+          "Làm ai đó phải chờ"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "お待ちどおさまでした。料理ができました。",
+          "お待ちどおさま。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Dùng trong tình huống người kia đã chờ đợi.",
+        "noteType": "info"
+      },
+      {
+        "type": "note",
+        "text": "⚠️ Không dùng thay cho おつかれさま.",
+        "noteType": "warning"
+      },
+      {
+        "type": "h2",
+        "text": "📢 報告（ほうこく）"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Báo cáo, trình báo, thông báo lại kết quả."
+      },
+      {
+        "type": "p",
+        "text": "Dùng khi:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Đi công tác về",
+          "Làm xong việc",
+          "Trình bày kết quả cho cấp trên",
+          "Báo lại tình hình"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "出張から帰ったら、すぐ報告する。",
+          "仕事の結果を報告してください。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Đi công tác về phải làm 報告.",
+        "noteType": "info"
+      },
+      {
+        "type": "note",
+        "text": "⚠️ Không dùng các từ như:",
+        "noteType": "warning"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "演説（えんぜつ）: diễn thuyết",
+          "発言（はつげん）: phát ngôn",
+          "話す: nói chuyện chung chung"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Vì 報告 là hành động trình bày lại thông tin một cách có mục đích, thường với cấp trên hoặc người có trách nhiệm."
+      },
+      {
+        "type": "h1",
+        "text": "💥 6. Bẫy hướng tác động: 当たる vs. 打つ"
+      },
+      {
+        "type": "p",
+        "text": "Đây là một bẫy rất hay gặp vì tiếng Việt đều có thể hiểu là \"đánh\", \"trúng\", nhưng tiếng Nhật phân biệt rất rõ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Bị tác động → 当たる",
+          "Chủ động tác động → 打つ"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "🎯 当たる（あたる）"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Bị trúng, bị đập vào, chạm vào."
+      },
+      {
+        "type": "p",
+        "text": "Dùng khi:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Vật gì đó tự chạm vào",
+          "Bị bóng, đá, gió, ánh nắng, vật khác tác động vào"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "ボールが体に当たった。",
+          "日が当たる。",
+          "壁に当たる。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Nhấn mạnh vào kết quả bị trúng.",
+        "noteType": "info"
+      },
+      {
+        "type": "note",
+        "text": "⚠️ Lỗi từng mắc:",
+        "noteType": "warning"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Bị bóng bay trúng người phải dùng あたった"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "👊 打つ（うつ）"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Đánh, gõ, đập, đánh bóng."
+      },
+      {
+        "type": "p",
+        "text": "Dùng khi:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Chủ động dùng tay, vợt, gậy, búa...",
+          "Đánh bóng trong thể thao",
+          "Gõ bàn phím, gõ cửa"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "ボールを打つ。",
+          "机を打つ。",
+          "キーボードを打つ。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Nhấn mạnh vào hành động chủ động.",
+        "noteType": "info"
+      },
+      {
+        "type": "note",
+        "text": "⚠️ Lỗi từng mắc:",
+        "noteType": "warning"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Chủ động đánh bóng mới dùng うった"
+        ]
+      },
+      {
+        "type": "h1",
+        "text": "📌 Tổng kết nhanh"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Chủ đề",
+          "Dùng cho người 👤",
+          "Dùng cho kỹ năng / kiến thức 🎯",
+          "Dùng cho giao tiếp 🗣️",
+          "Dùng cho tác động 💥"
+        ],
+        "rows": [
+          [
+            "Thân thiết",
+            "親しい・仲がいい",
+            "❌",
+            "❌",
+            "❌"
+          ],
+          [
+            "Giỏi",
+            "❌",
+            "得意",
+            "❌",
+            "❌"
+          ],
+          [
+            "Kém",
+            "❌",
+            "苦手",
+            "❌",
+            "❌"
+          ],
+          [
+            "Am hiểu",
+            "❌",
+            "詳しい",
+            "❌",
+            "❌"
+          ],
+          [
+            "Hẹn hò, giao du",
+            "付き合う・交際する",
+            "❌",
+            "❌",
+            "❌"
+          ],
+          [
+            "Thích nghi",
+            "❌",
+            "慣れる",
+            "❌",
+            "❌"
+          ],
+          [
+            "Say mê",
+            "夢中",
+            "✔ (sở thích, hoạt động)",
+            "❌",
+            "❌"
+          ],
+          [
+            "Ước mơ",
+            "夢",
+            "✔ (mục tiêu tương lai)",
+            "❌",
+            "❌"
+          ],
+          [
+            "Chào đồng nghiệp",
+            "おつかれさま",
+            "❌",
+            "✔",
+            "❌"
+          ],
+          [
+            "Xin lỗi vì để đợi lâu",
+            "おまちどおさま",
+            "❌",
+            "✔",
+            "❌"
+          ],
+          [
+            "Báo cáo",
+            "報告",
+            "❌",
+            "✔",
+            "❌"
+          ],
+          [
+            "Bị trúng",
+            "当たる",
+            "❌",
+            "❌",
+            "✔"
+          ],
+          [
+            "Chủ động đánh",
+            "打つ",
+            "❌",
+            "❌",
+            "✔"
+          ]
+        ]
+      },
+      {
+        "type": "h1",
+        "text": "💡 Mẹo làm JLPT"
+      },
+      {
+        "type": "p",
+        "text": "Khi gặp các câu hỏi ở Mondai 3 hoặc Mondai 5, hãy xác định đối tượng được nói đến trước khi chọn đáp án."
+      },
+      {
+        "type": "h3",
+        "text": "👤 Nếu câu có các từ như:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "人",
+          "友達",
+          "彼",
+          "先生",
+          "家族"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Hãy ưu tiên:",
+        "noteType": "info"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "親しい",
+          "仲がいい",
+          "付き合う",
+          "交際する"
+        ]
+      },
+      {
+        "type": "h3",
+        "text": "🎯 Nếu câu có các từ như:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "数学",
+          "英語",
+          "ピアノ",
+          "スポーツ",
+          "料理"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Hãy nghĩ ngay đến:",
+        "noteType": "info"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "得意",
+          "苦手"
+        ]
+      },
+      {
+        "type": "h3",
+        "text": "📚 Nếu câu có các từ như:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "歴史",
+          "地図",
+          "パソコン",
+          "日本文化"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Đáp án thường là:",
+        "noteType": "info"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "詳しい"
+        ]
+      },
+      {
+        "type": "h3",
+        "text": "🌍 Nếu câu có các từ như:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "生活",
+          "仕事",
+          "新しい会社",
+          "日本"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Hãy chọn:",
+        "noteType": "info"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "慣れる"
+        ]
+      },
+      {
+        "type": "h3",
+        "text": "🎮 Nếu câu có:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "ゲーム",
+          "漫画",
+          "アニメ",
+          "趣味"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Thường đi với:",
+        "noteType": "info"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "夢中"
+        ]
+      },
+      {
+        "type": "h3",
+        "text": "🌟 Nếu câu có:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "将来",
+          "なりたい",
+          "目標"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Đáp án thường là:",
+        "noteType": "info"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "夢"
+        ]
+      },
+      {
+        "type": "h3",
+        "text": "🗣️ Nếu câu có tình huống:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Tan làm",
+          "Gặp đồng nghiệp",
+          "Đi công tác về",
+          "Làm ai đó phải chờ"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Hãy phân biệt:",
+        "noteType": "info"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "おつかれさま → chào / cảm ơn vì đã vất vả",
+          "おまちどおさま → xin lỗi vì để đợi lâu",
+          "報告 → báo cáo kết quả"
+        ]
+      },
+      {
+        "type": "h3",
+        "text": "💥 Nếu câu có:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "ボール",
+          "体",
+          "壁",
+          "日"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Hãy phân biệt:",
+        "noteType": "info"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "当たる → bị trúng, bị chạm vào",
+          "打つ → chủ động đánh, gõ, đập"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Mẹo ghi nhớ: Đừng chỉ nhìn nghĩa tiếng Việt. Hãy tự hỏi: \"Từ này đang nói về con người, mối quan hệ, kỹ năng, giao tiếp hay hành động tác động?\". Chỉ cần xác định đúng đối tượng và ngữ cảnh, bạn sẽ loại được hầu hết các đáp án nhiễu trong phần Từ vựng JLPT N3."
+      }
+    ]
+  },
+  {
+    "title": "Bẫy 3.3: Kích thước & Vật lý",
+    "id": "bay-3-3-kich-thuoc-vat-ly",
+    "blocks": [
+      {
+        "type": "h1",
+        "text": "Bẫy 3.3: Kích thước & Vật lý"
+      },
+      {
+        "type": "p",
+        "text": "Trong JLPT N3, rất nhiều từ đều được dịch là \"nhỏ\", \"mỏng\", \"vỡ\", \"hỏng\", \"gãy\"..., nhưng tiếng Nhật phân biệt rất rõ dựa trên:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "📐 Hình dạng của vật",
+          "🧱 Chất liệu của vật",
+          "📦 Kích thước hay không gian",
+          "💥 Kiểu hư hỏng"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Đây là nhóm bẫy xuất hiện rất nhiều trong Mondai 3, Mondai 4 và đặc biệt là Mondai 5."
+      },
+      {
+        "type": "h1",
+        "text": "📏 1. Bẫy \"Hẹp - Mỏng - Mảnh - Bé\""
+      },
+      {
+        "type": "p",
+        "text": "Tiếng Việt thường dùng chung từ \"nhỏ\", nhưng tiếng Nhật chia thành nhiều trường hợp khác nhau."
+      },
+      {
+        "type": "h2",
+        "text": "🚪 狭い（せまい）"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Hẹp, chật."
+      },
+      {
+        "type": "p",
+        "text": "Dùng khi nói về:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Không gian",
+          "Diện tích",
+          "Chiều rộng của khu vực"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "部屋が狭い。",
+          "この道は狭い。",
+          "駐車場が狭い。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Hãy nhớ:",
+        "noteType": "info"
+      },
+      {
+        "type": "p",
+        "text": "狭い = Không gian hẹp."
+      },
+      {
+        "type": "h2",
+        "text": "🪢 細い（ほそい）"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Mảnh, nhỏ về bề ngang."
+      },
+      {
+        "type": "p",
+        "text": "Dùng cho những vật có hình dạng dài và thon."
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "細い道",
+          "細い指",
+          "細い糸",
+          "足が細い。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Không nói về diện tích.",
+        "noteType": "info"
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "❌ 部屋が細い。",
+          "✅ 部屋が狭い。"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "🔍 細かい（こまかい）"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Nhỏ, li ti, chi tiết."
+      },
+      {
+        "type": "p",
+        "text": "Dùng cho:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Chữ viết nhỏ",
+          "Tiền lẻ",
+          "Chi tiết nhỏ",
+          "Người quá soi tiểu tiết"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "字が細かい。",
+          "細かいお金。",
+          "細かい説明。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Không mang nghĩa \"thon\" như 細い.",
+        "noteType": "info"
+      },
+      {
+        "type": "h2",
+        "text": "📖 薄い（うすい）"
+      },
+      {
+        "type": "p",
+        "text": "Có hai nghĩa phổ biến:"
+      },
+      {
+        "type": "h3",
+        "text": "📚 Mỏng"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "薄い本",
+          "薄い紙"
+        ]
+      },
+      {
+        "type": "h3",
+        "text": "🎨 Nhạt"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "色が薄い。",
+          "味が薄い。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Trái nghĩa với:",
+        "noteType": "info"
+      },
+      {
+        "type": "p",
+        "text": "濃い（Đậm / Đặc）"
+      },
+      {
+        "type": "h1",
+        "text": "💔 2. Bẫy \"Khuyết điểm\" vs. \"Vết xước\""
+      },
+      {
+        "type": "p",
+        "text": "Đây là bẫy rất hay gặp trong Mondai 5."
+      },
+      {
+        "type": "h2",
+        "text": "👤 欠点（けってん）"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Khuyết điểm, điểm yếu."
+      },
+      {
+        "type": "p",
+        "text": "Dùng cho:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Con người",
+          "Tính cách",
+          "Kế hoạch",
+          "Phương án",
+          "Hệ thống"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "私の欠点。",
+          "この計画には欠点がある。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Mang nghĩa nhược điểm, không phải hư hỏng vật lý.",
+        "noteType": "info"
+      },
+      {
+        "type": "h2",
+        "text": "🚗 傷（きず）"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Vết xước, vết trầy."
+      },
+      {
+        "type": "p",
+        "text": "Dùng cho:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Xe",
+          "Điện thoại",
+          "Bàn ghế",
+          "Da"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "車に傷がある。",
+          "携帯に傷がついた。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Luôn là tổn thương vật lý.",
+        "noteType": "info"
+      },
+      {
+        "type": "h2",
+        "text": "🤕けが"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Bị thương."
+      },
+      {
+        "type": "p",
+        "text": "Chỉ dùng cho cơ thể con người."
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "足をけがした。",
+          "小さなけが。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Không dùng cho đồ vật.",
+        "noteType": "info"
+      },
+      {
+        "type": "h1",
+        "text": "💥 3. Bẫy \"Hỏng - Vỡ - Gãy - Rách\""
+      },
+      {
+        "type": "p",
+        "text": "Tiếng Nhật chọn động từ theo chất liệu của vật."
+      },
+      {
+        "type": "h2",
+        "text": "⚙️ 壊れる・壊す"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Hỏng / Làm hỏng."
+      },
+      {
+        "type": "p",
+        "text": "Dùng cho:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Máy móc",
+          "Nhà cửa",
+          "Thiết bị điện",
+          "Xe"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "パソコンが壊れた。",
+          "エアコンを壊した。",
+          "家が壊れた。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Hãy nghĩ:",
+        "noteType": "info"
+      },
+      {
+        "type": "p",
+        "text": "Máy móc → 壊れる"
+      },
+      {
+        "type": "h2",
+        "text": "🥛 割れる・割る"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Vỡ / Làm vỡ."
+      },
+      {
+        "type": "p",
+        "text": "Dùng cho đồ vật:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Thủy tinh",
+          "Ly",
+          "Bát",
+          "Đĩa",
+          "Gương",
+          "Trứng"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "コップが割れた。",
+          "ガラスを割った。",
+          "卵を割る。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Hãy nhớ:",
+        "noteType": "info"
+      },
+      {
+        "type": "p",
+        "text": "Đồ giòn → 割る"
+      },
+      {
+        "type": "h2",
+        "text": "🌳 折れる・折る"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Gãy / Bẻ gãy."
+      },
+      {
+        "type": "p",
+        "text": "Dùng cho vật dài:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Cành cây",
+          "Xương",
+          "Bút chì",
+          "Que"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "骨が折れた。",
+          "木の枝が折れた。",
+          "鉛筆を折った。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Hãy nghĩ:",
+        "noteType": "info"
+      },
+      {
+        "type": "p",
+        "text": "Dài → 折る"
+      },
+      {
+        "type": "h2",
+        "text": "📄 破れる・破る"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Rách / Xé."
+      },
+      {
+        "type": "p",
+        "text": "Dùng cho:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Giấy",
+          "Quần áo",
+          "Vải",
+          "Túi"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "紙が破れた。",
+          "シャツを破った。"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ngoài ra còn dùng theo nghĩa trừu tượng:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "約束を破る。",
+          "記録を破る。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Có thể hiểu là:",
+        "noteType": "info"
+      },
+      {
+        "type": "p",
+        "text": "\"Phá vỡ\" lời hứa hoặc kỷ lục."
+      },
+      {
+        "type": "h1",
+        "text": "🌡️ 4. Bẫy trạng thái vật lý"
+      },
+      {
+        "type": "h2",
+        "text": "🪨 固い・硬い（かたい）"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Cứng."
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "パンが固い。",
+          "石が硬い。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Đều đọc là かたい, nhưng Kanji khác nhau tùy ngữ cảnh.",
+        "noteType": "info"
+      },
+      {
+        "type": "h2",
+        "text": "🎨 濃い（こい）"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Đậm",
+          "Đặc"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "色が濃い。",
+          "味が濃い。",
+          "コーヒーが濃い。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Trái nghĩa với:",
+        "noteType": "info"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "薄い"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "🌊 浅い（あさい）"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Nông, cạn."
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "川が浅い。",
+          "知識が浅い。",
+          "経験が浅い。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Có thể dùng cả nghĩa đen và nghĩa bóng.",
+        "noteType": "info"
+      },
+      {
+        "type": "h2",
+        "text": "☕ぬるい"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Âm ấm, không đủ nóng hoặc không đủ lạnh."
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "コーヒーがぬるい。",
+          "ビールがぬるい。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Không phải:",
+        "noteType": "info"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "熱い (quá nóng)",
+          "冷たい (lạnh)"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Mà là:"
+      },
+      {
+        "type": "p",
+        "text": "Nhiệt độ \"lưng chừng\"."
+      },
+      {
+        "type": "h1",
+        "text": "⚖️ 5. Bẫy kích thước & quy mô"
+      },
+      {
+        "type": "h2",
+        "text": "📦 サイズ vs. 大きさ"
+      },
+      {
+        "type": "p",
+        "text": "Hai từ này gần như đồng nghĩa."
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Từ",
+          "Nghĩa"
+        ],
+        "rows": [
+          [
+            "サイズ",
+            "Kích cỡ"
+          ],
+          [
+            "大きさ",
+            "Độ lớn"
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "サイズが合わない。",
+          "大きさを比べる。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "⚠️ Không nhầm với:",
+        "noteType": "warning"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "重さ（Trọng lượng）"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "🚚 大型・小型・新型"
+      },
+      {
+        "type": "p",
+        "text": "Đây là nhóm từ rất hay xuất hiện trong đề."
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Từ",
+          "Nghĩa"
+        ],
+        "rows": [
+          [
+            "大型",
+            "Cỡ lớn"
+          ],
+          [
+            "小型",
+            "Cỡ nhỏ"
+          ],
+          [
+            "新型",
+            "Kiểu mới"
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "大型バス",
+          "小型犬",
+          "新型スマホ"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "⚠️ Lưu ý cách đọc:",
+        "noteType": "warning"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "小型 → こがた"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Không đọc là:"
+      },
+      {
+        "type": "note",
+        "text": "❌ しょうがた",
+        "noteType": "danger"
+      },
+      {
+        "type": "h1",
+        "text": "📌 Tổng kết nhanh"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Đối tượng",
+          "Từ nên dùng"
+        ],
+        "rows": [
+          [
+            "Không gian hẹp",
+            "狭い"
+          ],
+          [
+            "Vật dài, mảnh",
+            "細い"
+          ],
+          [
+            "Chữ nhỏ, chi tiết",
+            "細かい"
+          ],
+          [
+            "Mỏng, nhạt",
+            "薄い"
+          ],
+          [
+            "Đậm, đặc",
+            "濃い"
+          ],
+          [
+            "Khuyết điểm",
+            "欠点"
+          ],
+          [
+            "Vết xước",
+            "傷"
+          ],
+          [
+            "Bị thương",
+            "けが"
+          ],
+          [
+            "Máy móc hỏng",
+            "壊れる"
+          ],
+          [
+            "Thủy tinh vỡ",
+            "割れる"
+          ],
+          [
+            "Cành cây gãy",
+            "折れる"
+          ],
+          [
+            "Giấy rách",
+            "破れる"
+          ],
+          [
+            "Nông",
+            "浅い"
+          ],
+          [
+            "Âm ấm",
+            "ぬるい"
+          ],
+          [
+            "Kích cỡ",
+            "サイズ・大きさ"
+          ],
+          [
+            "Quy mô",
+            "大型・小型・新型"
+          ]
+        ]
+      },
+      {
+        "type": "h1",
+        "text": "💡 Mẹo làm JLPT"
+      },
+      {
+        "type": "p",
+        "text": "Khi làm Mondai 3 hoặc Mondai 5, hãy nhìn danh từ đứng trước rồi mới chọn động từ hoặc tính từ."
+      },
+      {
+        "type": "h3",
+        "text": "🥛 Nếu thấy:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "ガラス",
+          "コップ",
+          "茶わん",
+          "卵"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Hãy nghĩ ngay đến:",
+        "noteType": "info"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "割る・割れる"
+        ]
+      },
+      {
+        "type": "h3",
+        "text": "🌳 Nếu thấy:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "骨",
+          "枝",
+          "木",
+          "鉛筆"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Chọn:",
+        "noteType": "info"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "折る・折れる"
+        ]
+      },
+      {
+        "type": "h3",
+        "text": "⚙️ Nếu thấy:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "パソコン",
+          "車",
+          "エアコン",
+          "テレビ",
+          "家"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Chọn:",
+        "noteType": "info"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "壊す・壊れる"
+        ]
+      },
+      {
+        "type": "h3",
+        "text": "📄 Nếu thấy:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "紙",
+          "シャツ",
+          "服",
+          "布"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Chọn:",
+        "noteType": "info"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "破る・破れる"
+        ]
+      },
+      {
+        "type": "h3",
+        "text": "📐 Nếu thấy:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "部屋",
+          "道路",
+          "駐車場"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Hãy phân biệt:",
+        "noteType": "info"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "狭い → Không gian chật, diện tích hẹp.",
+          "細い → Vật dài, nhỏ về bề ngang (đường nhỏ, sợi dây, ngón tay...)."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Mẹo ghi nhớ: Hãy luôn quan sát chất liệu và hình dạng của vật trước khi chọn từ. Trong JLPT N3, tiếng Nhật không dùng chung một động từ cho mọi kiểu \"hỏng\" hay \"vỡ\" như tiếng Việt. Chỉ cần xác định đúng vật gì bị tác động, bạn sẽ loại được phần lớn đáp án nhiễu."
+      }
+    ]
+  },
+  {
+    "title": "Bẫy 4: Phó từ",
+    "id": "bay-4-pho-tu",
+    "blocks": [
+      {
+        "type": "h1",
+        "text": "Bẫy 4: Phó từ (副詞)"
+      },
+      {
+        "type": "p",
+        "text": "Phó từ là một trong những phần dễ mất điểm nhất của JLPT N3, đặc biệt ở Mondai 4 (Tìm từ đồng nghĩa) và Mondai 5 (Cách dùng từ)."
+      },
+      {
+        "type": "p",
+        "text": "Điểm khó là nhiều phó từ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Có hình thức rất giống nhau.",
+          "Đều dịch sang tiếng Việt bằng một nghĩa tương tự.",
+          "Chỉ khác nhau ở sắc thái, ngữ cảnh hoặc kết quả."
+        ]
+      },
+      {
+        "type": "h1",
+        "text": "🌪️ 1. Nhóm kết thúc bằng 〜っかり"
+      },
+      {
+        "type": "p",
+        "text": "Đây là nhóm bẫy thị giác kinh điển. Chỉ cần nhìn lướt là rất dễ chọn nhầm."
+      },
+      {
+        "type": "h2",
+        "text": "😵 うっかり"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Lơ đãng, vô ý."
+      },
+      {
+        "type": "p",
+        "text": "Dùng khi:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Quên",
+          "Làm sai do bất cẩn"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "うっかり忘れた。",
+          "うっかり財布を家に忘れた。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Luôn mang ý:",
+        "noteType": "info"
+      },
+      {
+        "type": "p",
+        "text": "Không cố ý."
+      },
+      {
+        "type": "h2",
+        "text": "💪 しっかり"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Chắc chắn",
+          "Đáng tin",
+          "Vững vàng"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "しっかり勉強する。",
+          "しっかりした人。",
+          "子どもなのにしっかりしている。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Mang ý:",
+        "noteType": "info"
+      },
+      {
+        "type": "p",
+        "text": "Làm việc cẩn thận và có trách nhiệm."
+      },
+      {
+        "type": "h2",
+        "text": "✅ すっかり"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Hoàn toàn, hết sạch."
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "すっかり忘れた。",
+          "病気はすっかり治った。",
+          "春になって景色がすっかり変わった。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Diễn tả sự thay đổi 100%.",
+        "noteType": "info"
+      },
+      {
+        "type": "h2",
+        "text": "😞 がっかり"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Thất vọng."
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "試験に落ちてがっかりした。",
+          "がっかりさせないで。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Luôn đi với cảm xúc tiêu cực.",
+        "noteType": "info"
+      },
+      {
+        "type": "h2",
+        "text": "✨ すっきり"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Sảng khoái",
+          "Gọn gàng",
+          "Thoải mái"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "部屋がすっきりした。",
+          "気分がすっきりした。"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "🚿 さっぱり"
+      },
+      {
+        "type": "p",
+        "text": "Có hai nghĩa phổ biến."
+      },
+      {
+        "type": "h3",
+        "text": "Sau khi tắm"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "さっぱりした。"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "→ Cảm giác sạch sẽ, dễ chịu."
+      },
+      {
+        "type": "h3",
+        "text": "Đi với phủ định"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "さっぱり分からない。"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "→ Hoàn toàn không hiểu."
+      },
+      {
+        "type": "h2",
+        "text": "👀 はっきり"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Rõ ràng."
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "はっきり見える。",
+          "はっきり言う。",
+          "はっきり覚えている。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Dùng cho:",
+        "noteType": "info"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Nhìn rõ",
+          "Nghe rõ",
+          "Nói rõ"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "📏 ぴったり"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Vừa khít",
+          "Chính xác"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "サイズがぴったり。",
+          "7時ぴったり。"
+        ]
+      },
+      {
+        "type": "h1",
+        "text": "🤫 2. Nhóm kết thúc bằng 〜っと"
+      },
+      {
+        "type": "p",
+        "text": "Nhóm này thường diễn tả một trạng thái hoặc hành động diễn ra trong khoảnh khắc."
+      },
+      {
+        "type": "h2",
+        "text": "😌 ほっと"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Thở phào nhẹ nhõm."
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "試験が終わってほっとした。",
+          "安全だと聞いてほっとした。"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "🧍 じっと"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Đứng yên",
+          "Nhìn chằm chằm",
+          "Kiên nhẫn chịu đựng"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "じっと待つ。",
+          "じっと見つめる。"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "🤫 そっと"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Nhẹ nhàng",
+          "Rón rén",
+          "Âm thầm"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "ドアをそっと閉める。",
+          "子どもをそっと起こす。"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "📋 ざっと"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Đại khái, sơ qua."
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "ざっと読む。",
+          "ざっと掃除する。"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "💡 ふと"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Chợt, bất chợt."
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "ふと思い出した。",
+          "ふと空を見た。"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "🎭 わざと"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Cố ý."
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "わざと負けた。",
+          "わざと遅れた。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Trái nghĩa với:",
+        "noteType": "info"
+      },
+      {
+        "type": "p",
+        "text": "うっかり（Vô ý）"
+      },
+      {
+        "type": "h1",
+        "text": "👯 3. Nhóm từ láy tượng thanh - tượng hình"
+      },
+      {
+        "type": "p",
+        "text": "Đây là nhóm xuất hiện rất nhiều trong JLPT."
+      },
+      {
+        "type": "h2",
+        "text": "😤 いらいら"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Bực bội, sốt ruột."
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "バスが来なくていらいらする。",
+          "渋滞でいらいらした。"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "❤️ どきどき"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Hồi hộp."
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "面接でどきどきした。",
+          "試験の前はどきどきする。"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "🚶 うろうろ"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Đi lòng vòng không mục đích."
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "駅でうろうろする。",
+          "道に迷ってうろうろした。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Thường mang nghĩa:",
+        "noteType": "info"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Bị lạc",
+          "Không biết đi đâu"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "🌳 ぶらぶら"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Đi dạo thong thả."
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "公園をぶらぶら歩く。",
+          "町をぶらぶらする。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Không mang cảm giác \"lạc đường\".",
+        "noteType": "info"
+      },
+      {
+        "type": "h2",
+        "text": "🌸 のんびり"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Thong thả, thư thái."
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "温泉でのんびりする。",
+          "のんびり暮らしたい。"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "🗣️ はきはき"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Rõ ràng, dõng dạc."
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "はきはき答える。",
+          "はきはき話す。"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "😒 ぶつぶつ"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Lầm bầm, càu nhàu."
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "一人でぶつぶつ言う。"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "😊 にこにこ・にっこり"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Mỉm cười."
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "にこにこ笑う。",
+          "にっこり笑った。"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "🗣️ ぺらぺら"
+      },
+      {
+        "type": "p",
+        "text": "Có hai nghĩa."
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Nói lưu loát.",
+          "Mỏng."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "日本語がぺらぺら。",
+          "紙がぺらぺら。"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "🍚 ぺこぺこ"
+      },
+      {
+        "type": "p",
+        "text": "Có hai nghĩa."
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Đói meo.",
+          "Khúm núm cúi chào."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "おなかがぺこぺこ。",
+          "社長にぺこぺこする。"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "🐢 のろのろ"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Chậm chạp."
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "車がのろのろ進む。",
+          "のろのろ歩く。"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "⏰ ぎりぎり"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Sát nút."
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "ぎりぎり間に合った。",
+          "締め切りぎりぎり。"
+        ]
+      },
+      {
+        "type": "h1",
+        "text": "📈 4. Nhóm chỉ mức độ & sự thay đổi"
+      },
+      {
+        "type": "h2",
+        "text": "🚀 どんどん"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Nhanh chóng, liên tục."
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "日本語がどんどん上手になる。",
+          "仕事がどんどん進む。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Mang cảm giác tiến triển nhanh.",
+        "noteType": "info"
+      },
+      {
+        "type": "h2",
+        "text": "🌱 だんだん"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Dần dần."
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "だんだん寒くなる。",
+          "空がだんだん暗くなった。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Biến đổi từ từ theo thời gian.",
+        "noteType": "info"
+      },
+      {
+        "type": "h2",
+        "text": "📈 ますます"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Ngày càng."
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "ますます便利になる。",
+          "日本語がますます好きになった。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Mức độ tăng mạnh hơn trước.",
+        "noteType": "info"
+      },
+      {
+        "type": "h2",
+        "text": "👍 かなり"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Khá là."
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "かなり難しい。",
+          "かなり疲れた。"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "😲 ずいぶん"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Khá, đáng kể (hơn mong đợi)."
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "ずいぶん大きい。",
+          "ずいぶん上手になった。"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "🙂 けっこう"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Khá là."
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "けっこう難しい。",
+          "けっこう時間がかかった。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Mang sắc thái:",
+        "noteType": "info"
+      },
+      {
+        "type": "p",
+        "text": "Khác với tưởng tượng ban đầu."
+      },
+      {
+        "type": "h2",
+        "text": "🤔 案外（あんがい）"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Không ngờ."
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "案外簡単だった。",
+          "案外おいしかった。"
+        ]
+      },
+      {
+        "type": "h1",
+        "text": "🏁 5. Nhóm \"Cuối cùng thì...\""
+      },
+      {
+        "type": "p",
+        "text": "Ba từ này rất hay bị đánh tráo trong đề thi."
+      },
+      {
+        "type": "h2",
+        "text": "🎉 やっと"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Cuối cùng cũng..."
+      },
+      {
+        "type": "note",
+        "text": "👉 Sau nhiều nỗ lực.",
+        "noteType": "info"
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "やっと合格した。",
+          "やっと終わった。"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "💥 とうとう"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Cuối cùng thì..."
+      },
+      {
+        "type": "note",
+        "text": "👉 Thường đi với kết quả:",
+        "noteType": "info"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Tiêu cực",
+          "Hoặc trung tính"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "とうとう壊れた。",
+          "とうとう雨が降った。"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "🏆 ついに"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Cuối cùng..."
+      },
+      {
+        "type": "note",
+        "text": "👉 Trang trọng hơn やっと, thường dùng khi đạt được thành quả lớn.",
+        "noteType": "info"
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "ついに夢がかなった。",
+          "ついに優勝した。"
+        ]
+      },
+      {
+        "type": "h1",
+        "text": "🚫 6. Nhóm bắt buộc đi với phủ định"
+      },
+      {
+        "type": "p",
+        "text": "Đây là nhóm cực kỳ quan trọng."
+      },
+      {
+        "type": "note",
+        "text": "👉 Khi thấy những từ này ở đầu câu, hãy kiểm tra ngay xem cuối câu có 〜ない hay không.",
+        "noteType": "info"
+      },
+      {
+        "type": "h2",
+        "text": "❌ 決して"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Tuyệt đối không."
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "決して忘れない。"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "❌ 少しも"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Một chút cũng không."
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "少しも分からない。"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "❌ ちっとも"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Hoàn toàn không."
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "ちっとも面白くない。"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "❌ 全く"
+      },
+      {
+        "type": "p",
+        "text": "Nghĩa: Hoàn toàn không."
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "全く知らない。",
+          "全く食べない。"
+        ]
+      },
+      {
+        "type": "h1",
+        "text": "📌 Tổng kết nhanh"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Nhóm",
+          "Phó từ",
+          "Ý nghĩa"
+        ],
+        "rows": [
+          [
+            "Vô ý",
+            "うっかり",
+            "Lỡ, bất cẩn"
+          ],
+          [
+            "Chắc chắn",
+            "しっかり",
+            "Vững vàng, đáng tin"
+          ],
+          [
+            "Hoàn toàn",
+            "すっかり",
+            "Hết sạch, hoàn toàn"
+          ],
+          [
+            "Thất vọng",
+            "がっかり",
+            "Chán nản"
+          ],
+          [
+            "Gọn gàng",
+            "すっきり",
+            "Sảng khoái"
+          ],
+          [
+            "Sạch sẽ",
+            "さっぱり",
+            "Dễ chịu, hoàn toàn không (với phủ định)"
+          ],
+          [
+            "Rõ ràng",
+            "はっきり",
+            "Rõ"
+          ],
+          [
+            "Vừa khít",
+            "ぴったり",
+            "Chính xác"
+          ],
+          [
+            "Thở phào",
+            "ほっと",
+            "Nhẹ nhõm"
+          ],
+          [
+            "Đứng yên",
+            "じっと",
+            "Kiên nhẫn, bất động"
+          ],
+          [
+            "Nhẹ nhàng",
+            "そっと",
+            "Rón rén"
+          ],
+          [
+            "Chợt",
+            "ふと",
+            "Bất chợt"
+          ],
+          [
+            "Cố ý",
+            "わざと",
+            "Cố tình"
+          ],
+          [
+            "Đi lòng vòng",
+            "うろうろ",
+            "Lạc hướng"
+          ],
+          [
+            "Đi dạo",
+            "ぶらぶら",
+            "Thong dong"
+          ],
+          [
+            "Hồi hộp",
+            "どきどき",
+            "Tim đập mạnh"
+          ],
+          [
+            "Bực bội",
+            "いらいら",
+            "Cáu gắt"
+          ],
+          [
+            "Dần dần",
+            "だんだん",
+            "Từ từ"
+          ],
+          [
+            "Tiến nhanh",
+            "どんどん",
+            "Liên tục"
+          ],
+          [
+            "Ngày càng",
+            "ますます",
+            "Mức độ tăng lên"
+          ],
+          [
+            "Cuối cùng cũng",
+            "やっと",
+            "Sau nỗ lực"
+          ],
+          [
+            "Cuối cùng thì",
+            "とうとう",
+            "Thường kết quả xấu"
+          ],
+          [
+            "Cuối cùng",
+            "ついに",
+            "Thành tựu lớn"
+          ]
+        ]
+      },
+      {
+        "type": "h1",
+        "text": "💡 Mẹo làm JLPT"
+      },
+      {
+        "type": "p",
+        "text": "Khi gặp câu hỏi về phó từ, đừng dịch từng từ sang tiếng Việt rồi chọn đáp án. Hãy quan sát sắc thái của câu."
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Nếu hành động xảy ra do bất cẩn → うっかり",
+          "Nếu là cố ý → わざと",
+          "Nếu đi lạc, đi lòng vòng → うろうろ",
+          "Nếu đi dạo thư giãn → ぶらぶら",
+          "Nếu đạt kết quả sau nhiều cố gắng → やっと",
+          "Nếu kết quả cuối cùng mang tính tiêu cực → とうとう",
+          "Nếu đạt thành tựu lớn hoặc mang tính trang trọng → ついに"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Mẹo ghi nhớ: Trong Mondai 4 và Mondai 5, hội đồng thi rất thích đưa các phó từ có hình thức gần giống nhau (うっかり・しっかり・すっかり hoặc うろうろ・ぶらぶら) để đánh lừa thí sinh. Hãy nhớ bối cảnh sử dụng thay vì chỉ học nghĩa tiếng Việt."
+      }
+    ]
+  },
+  {
+    "title": "Bẫy 5: Từ đồng nghĩa",
+    "id": "bay-5-tu-dong-nghia",
+    "blocks": [
+      {
+        "type": "h1",
+        "text": "Bẫy 5: Mondai 4 – Từ đồng nghĩa & Cách diễn đạt tương đương"
+      },
+      {
+        "type": "p",
+        "text": "Mondai 4 (言い換え) là phần kiểm tra khả năng hiểu nghĩa của từ vựng, chứ không phải nhớ cách đọc."
+      },
+      {
+        "type": "p",
+        "text": "Đề thi thường sử dụng các cách \"đánh lừa\" sau:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Dùng từ Hán Nhật (Kango) rồi yêu cầu chọn từ thuần Nhật (Wago) có cùng nghĩa.",
+          "Dùng một cụm diễn đạt dài để thay thế cho một từ ngắn.",
+          "Đưa ra nhiều từ gần nghĩa nhưng chỉ có một từ phù hợp với ngữ cảnh.",
+          "Kiểm tra các phó từ có sắc thái tương đương."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Nếu nắm chắc các nhóm dưới đây, bạn có thể xử lý phần lớn câu hỏi Mondai 4."
+      },
+      {
+        "type": "h1",
+        "text": "🏃 1. Nhóm động từ đồng nghĩa"
+      },
+      {
+        "type": "p",
+        "text": "Đây là nhóm xuất hiện nhiều nhất trong Mondai 4."
+      },
+      {
+        "type": "h2",
+        "text": "🧠 暗記する ⇔ 覚える"
+      },
+      {
+        "type": "p",
+        "text": "Ý nghĩa"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "暗記する：Học thuộc lòng.",
+          "覚える：Ghi nhớ."
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Trong nhiều trường hợp, hai từ này có thể thay thế cho nhau.",
+        "noteType": "info"
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "漢字を暗記する。",
+          "漢字を覚える。"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "📢 報告する ⇔ 知らせる"
+      },
+      {
+        "type": "p",
+        "text": "Ý nghĩa"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "報告する：Báo cáo.",
+          "知らせる：Thông báo."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "結果を報告する。",
+          "結果を知らせる。"
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Cùng mang ý \"cho người khác biết\".",
+        "noteType": "info"
+      },
+      {
+        "type": "h2",
+        "text": "😡 怒鳴る ⇔ 大声で怒る"
+      },
+      {
+        "type": "p",
+        "text": "Ý nghĩa"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "怒鳴る：Quát lớn.",
+          "大声で怒る：Nổi giận và nói to."
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Hai cách diễn đạt có ý nghĩa gần như giống nhau.",
+        "noteType": "info"
+      },
+      {
+        "type": "h2",
+        "text": "😴 サボる ⇔ 休む"
+      },
+      {
+        "type": "p",
+        "text": "Ý nghĩa"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "サボる：Trốn học, trốn làm.",
+          "休む：Nghỉ."
+        ]
+      },
+      {
+        "type": "note",
+        "text": "⚠️ Khác sắc thái:",
+        "noteType": "warning"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "サボる mang nghĩa tiêu cực.",
+          "休む là cách nói trung tính."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "✅ 確かめる ⇔ 確認する ⇔ チェックする"
+      },
+      {
+        "type": "p",
+        "text": "Đều mang nghĩa:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Kiểm tra",
+          "Xác nhận"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "名前を確かめる。",
+          "名前を確認する。",
+          "名前をチェックする。"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "🧪 試す ⇔ やってみる"
+      },
+      {
+        "type": "p",
+        "text": "Đều có nghĩa:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Thử làm."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "新しい方法を試す。",
+          "新しい方法をやってみる。"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "😩 くたびれる ⇔ とても疲れる"
+      },
+      {
+        "type": "p",
+        "text": "Đều diễn tả:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Rất mệt.",
+          "Kiệt sức."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "🍽️ おごる ⇔ ごちそうする"
+      },
+      {
+        "type": "p",
+        "text": "Đều mang nghĩa:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Khao.",
+          "Bao ăn."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "今日は私がおごる。",
+          "今日は私がごちそうする。"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "🔄 やり直す ⇔ もう一度する"
+      },
+      {
+        "type": "p",
+        "text": "Đều có nghĩa:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Làm lại."
+        ]
+      },
+      {
+        "type": "h1",
+        "text": "🎭 2. Nhóm tính từ & danh từ đồng nghĩa"
+      },
+      {
+        "type": "h2",
+        "text": "🏆 得意な ⇔ とても上手な"
+      },
+      {
+        "type": "p",
+        "text": "Đều mang nghĩa:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Rất giỏi.",
+          "Có sở trường."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "⚠️ 欠点 ⇔ よくないところ"
+      },
+      {
+        "type": "p",
+        "text": "Đều có nghĩa:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Khuyết điểm.",
+          "Điểm chưa tốt."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "🤝 親しい ⇔ 仲がいい"
+      },
+      {
+        "type": "p",
+        "text": "Đều chỉ:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Quan hệ thân thiết.",
+          "Hòa thuận."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "🕵️ 怪しい ⇔ 不審な"
+      },
+      {
+        "type": "p",
+        "text": "Đều có nghĩa:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Đáng ngờ.",
+          "Khả nghi."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "😴 退屈な ⇔ つまらない"
+      },
+      {
+        "type": "p",
+        "text": "Đều mang nghĩa:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Chán.",
+          "Tẻ nhạt."
+        ]
+      },
+      {
+        "type": "h3",
+        "text": "🎭 Phân nhánh 4.1: Bẫy chọn nhầm \"Từ trái nghĩa\""
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "退屈 (たいくつ) ＝ つまらなかった: Chán ngắt, tẻ nhạt.",
+          "Lỗi từng mắc: Đề bài yêu cầu tìm từ đồng nghĩa, nhưng lại chọn từ trái nghĩa là おもしろかった (thú vị)."
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Khi gặp nhóm từ này, hãy nhớ:",
+        "noteType": "info"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "退屈 / つまらない = chán, không hấp dẫn.",
+          "おもしろい = thú vị, hấp dẫn.",
+          "Hai từ này là trái nghĩa, không được nhầm lẫn trong Mondai 4."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "❤️ Phân nhánh 4.2: Cặp từ cảm xúc"
+      },
+      {
+        "type": "h3",
+        "text": "恋しい (こいしい) ⇔ 懐かしい (なつかしい)"
+      },
+      {
+        "type": "p",
+        "text": "Đều mang sắc thái:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Nhớ nhung",
+          "Hoài niệm"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ví dụ sử dụng"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Nhớ hương vị món ăn quê nhà.",
+          "Nhớ quê hương khi sống ở nước ngoài.",
+          "Nhớ lại những kỷ niệm cũ với cảm giác ấm áp, bâng khuâng."
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Đây là nhóm từ rất dễ xuất hiện trong các câu hỏi về cảm xúc hoặc hồi tưởng.",
+        "noteType": "info"
+      },
+      {
+        "type": "h2",
+        "text": "🙄 くだらない ⇔ 意味がない ⇔ つまらない"
+      },
+      {
+        "type": "p",
+        "text": "Đều diễn tả:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Vô vị.",
+          "Không có ý nghĩa."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "⚠️ 異常 ⇔ おかしい"
+      },
+      {
+        "type": "p",
+        "text": "Đều mang nghĩa:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Bất thường.",
+          "Kỳ lạ."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "📏 サイズ ⇔ 大きさ"
+      },
+      {
+        "type": "p",
+        "text": "Đều có nghĩa:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Kích thước.",
+          "Độ lớn."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "🏁 おしまい ⇔ 終わり"
+      },
+      {
+        "type": "p",
+        "text": "Đều mang nghĩa:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Kết thúc.",
+          "Xong."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "🌞 夏休み明け ⇔ 夏休みが終わった直後"
+      },
+      {
+        "type": "p",
+        "text": "Đều diễn tả:"
+      },
+      {
+        "type": "p",
+        "text": "Ngay sau khi kỳ nghỉ hè kết thúc."
+      },
+      {
+        "type": "h1",
+        "text": "🌪️ 3. Nhóm phó từ đồng nghĩa"
+      },
+      {
+        "type": "p",
+        "text": "Đây là nhóm rất hay xuất hiện trong Mondai 4."
+      },
+      {
+        "type": "h2",
+        "text": "✔️ 絶対 ⇔ 必ず ⇔ きっと"
+      },
+      {
+        "type": "p",
+        "text": "Đều mang nghĩa:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Chắc chắn.",
+          "Nhất định."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "🎉 ようやく ⇔ やっと ⇔ ついに"
+      },
+      {
+        "type": "p",
+        "text": "Đều mang ý:"
+      },
+      {
+        "type": "p",
+        "text": "Cuối cùng cũng..."
+      },
+      {
+        "type": "note",
+        "text": "⚠️ Tuy nhiên sắc thái vẫn có chút khác nhau.",
+        "noteType": "warning"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "やっと → sau nhiều cố gắng.",
+          "ついに → trang trọng hơn.",
+          "ようやく → cuối cùng cũng."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "📦 すべて ⇔ 全部 ⇔ ぜんぶ"
+      },
+      {
+        "type": "p",
+        "text": "Đều có nghĩa:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Tất cả."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "👥 おのおの ⇔ それぞれ"
+      },
+      {
+        "type": "p",
+        "text": "Đều có nghĩa:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Mỗi.",
+          "Từng."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "⚡ たちまち ⇔ すぐに ⇔ あっという間に"
+      },
+      {
+        "type": "p",
+        "text": "Đều diễn tả:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Ngay lập tức.",
+          "Trong chớp mắt."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "🌱 徐々に ⇔ だんだん ⇔ 少しずつ"
+      },
+      {
+        "type": "p",
+        "text": "Đều có nghĩa:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Dần dần."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "💪 なるべく ⇔ できるだけ"
+      },
+      {
+        "type": "p",
+        "text": "Đều mang nghĩa:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Cố gắng hết sức.",
+          "Càng... càng tốt."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "😲 案外 ⇔ 思ったより"
+      },
+      {
+        "type": "p",
+        "text": "Đều diễn tả:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Không ngờ.",
+          "Khác với tưởng tượng."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "🤔 もしかすると ⇔ たぶん ⇔ かもしれない"
+      },
+      {
+        "type": "p",
+        "text": "Đều mang ý:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Có lẽ.",
+          "Có khả năng."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "🚫 ちっとも ⇔ 全く～ない ⇔ 少しも～ない"
+      },
+      {
+        "type": "p",
+        "text": "Đều có nghĩa:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Hoàn toàn không.",
+          "Một chút cũng không."
+        ]
+      },
+      {
+        "type": "note",
+        "text": "👉 Luôn đi với câu phủ định.",
+        "noteType": "info"
+      },
+      {
+        "type": "h2",
+        "text": "📊 たいてい ⇔ だいたい ⇔ ほとんど"
+      },
+      {
+        "type": "p",
+        "text": "Đều diễn tả:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Thường.",
+          "Hầu hết.",
+          "Đại khái."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "🔹 たった ⇔ ほんの ⇔ ～だけ ⇔ ～しかない"
+      },
+      {
+        "type": "p",
+        "text": "Đều mang nghĩa:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Chỉ.",
+          "Vỏn vẹn."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "🔀 または ⇔ それとも ⇔ あるいは"
+      },
+      {
+        "type": "p",
+        "text": "Đều có nghĩa:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Hoặc.",
+          "Hay là."
+        ]
+      },
+      {
+        "type": "h1",
+        "text": "🔤 4. Nhóm từ Katakana đồng nghĩa"
+      },
+      {
+        "type": "p",
+        "text": "Đề thi rất thích dùng từ Katakana rồi yêu cầu chọn từ Hán tự tương ứng."
+      },
+      {
+        "type": "h2",
+        "text": "💡 アドバイス ⇔ 助言"
+      },
+      {
+        "type": "p",
+        "text": "Đều có nghĩa:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Lời khuyên."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "📅 スケジュール ⇔ 予定 ⇔ 計画"
+      },
+      {
+        "type": "p",
+        "text": "Đều diễn tả:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Lịch trình.",
+          "Kế hoạch."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "💬 メッセージ ⇔ 伝言"
+      },
+      {
+        "type": "p",
+        "text": "Đều mang nghĩa:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Lời nhắn.",
+          "Tin nhắn."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "💭 アイデア ⇔ 考え"
+      },
+      {
+        "type": "p",
+        "text": "Đều có nghĩa:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Ý tưởng.",
+          "Suy nghĩ."
+        ]
+      },
+      {
+        "type": "h1",
+        "text": "📌 Tổng hợp nhanh"
+      },
+      {
+        "type": "table",
+        "headers": [
+          "Nhóm",
+          "Từ đồng nghĩa"
+        ],
+        "rows": [
+          [
+            "Học thuộc",
+            "暗記する ⇔ 覚える"
+          ],
+          [
+            "Báo cáo",
+            "報告する ⇔ 知らせる"
+          ],
+          [
+            "Quát",
+            "怒鳴る ⇔ 大声で怒る"
+          ],
+          [
+            "Kiểm tra",
+            "確かめる ⇔ 確認する ⇔ チェックする"
+          ],
+          [
+            "Thử",
+            "試す ⇔ やってみる"
+          ],
+          [
+            "Mệt",
+            "くたびれる ⇔ とても疲れる"
+          ],
+          [
+            "Khao",
+            "おごる ⇔ ごちそうする"
+          ],
+          [
+            "Làm lại",
+            "やり直す ⇔ もう一度する"
+          ],
+          [
+            "Thân thiết",
+            "親しい ⇔ 仲がいい"
+          ],
+          [
+            "Khuyết điểm",
+            "欠点 ⇔ よくないところ"
+          ],
+          [
+            "Đáng ngờ",
+            "怪しい ⇔ 不審な"
+          ],
+          [
+            "Chán",
+            "退屈な ⇔ つまらない"
+          ],
+          [
+            "Vô vị",
+            "くだらない ⇔ 意味がない"
+          ],
+          [
+            "Bất thường",
+            "異常 ⇔ おかしい"
+          ],
+          [
+            "Kích cỡ",
+            "サイズ ⇔ 大きさ"
+          ],
+          [
+            "Kết thúc",
+            "おしまい ⇔ 終わり"
+          ],
+          [
+            "Chắc chắn",
+            "絶対 ⇔ 必ず ⇔ きっと"
+          ],
+          [
+            "Dần dần",
+            "徐々に ⇔ だんだん ⇔ 少しずつ"
+          ],
+          [
+            "Cố gắng",
+            "なるべく ⇔ できるだけ"
+          ],
+          [
+            "Không ngờ",
+            "案外 ⇔ 思ったより"
+          ],
+          [
+            "Có lẽ",
+            "もしかすると ⇔ たぶん ⇔ かもしれない"
+          ],
+          [
+            "Hoàn toàn không",
+            "ちっとも ⇔ 全く～ない ⇔ 少しも～ない"
+          ],
+          [
+            "Lời khuyên",
+            "アドバイス ⇔ 助言"
+          ],
+          [
+            "Lịch trình",
+            "スケジュール ⇔ 予定 ⇔ 計画"
+          ],
+          [
+            "Tin nhắn",
+            "メッセージ ⇔ 伝言"
+          ],
+          [
+            "Ý tưởng",
+            "アイデア ⇔ 考え"
+          ],
+          [
+            "Nhớ nhung, hoài niệm",
+            "恋しい ⇔ 懐かしい"
+          ]
+        ]
+      },
+      {
+        "type": "h1",
+        "text": "💡 Mẹo chinh phục Mondai 4"
+      },
+      {
+        "type": "p",
+        "text": "Khi đọc câu hỏi, đừng nhìn ngay bốn đáp án."
+      },
+      {
+        "type": "p",
+        "text": "Hãy làm theo trình tự sau:"
+      },
+      {
+        "type": "list",
+        "ordered": true,
+        "items": [
+          "Đọc từ được gạch chân.",
+          "Tự dịch nghĩa hoặc nghĩ ngay đến một từ đồng nghĩa trong đầu.",
+          "Sau đó mới nhìn bốn đáp án để tìm từ có nghĩa tương đương."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ngoài ra, hãy chú ý một số \"bẫy\" thường gặp:"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Đề rất thích đổi giữa Kango (漢語) và Wago (和語), ví dụ: 報告する → 知らせる, 暗記する → 覚える.",
+          "Nhiều đáp án có hình thức gần giống nhau nhưng nghĩa hoàn toàn khác, chẳng hạn 異常 (bất thường) dễ bị đánh lừa bằng 晴れ (trời quang).",
+          "Với phó từ, đừng chỉ học nghĩa tiếng Việt. Hãy nhớ sắc thái và ngữ cảnh sử dụng, vì đây là phần thường chiếm từ 2–3 câu trong Mondai 4.",
+          "Với các cặp từ cảm xúc như 恋しい và 懐かしい, hãy liên tưởng đến cảm giác nhớ quê hương, nhớ món ăn cũ, nhớ kỷ niệm xưa để tránh nhầm với các từ chỉ \"thích\" hoặc \"buồn\"."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Mẹo ghi nhớ: Nếu thuộc được khoảng 40–50 cặp từ đồng nghĩa phổ biến ở trên, bạn sẽ xử lý phần lớn câu hỏi Mondai 4 chỉ bằng cách nhận diện nghĩa, thay vì phải dịch toàn bộ câu."
+      }
+    ]
+  }
+]
