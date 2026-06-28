@@ -228,7 +228,8 @@ export default function JlptTraps() {
   const [quizState, setQuizState] = useState(null);
   const [quizScore, setQuizScore] = useState(0);
   const [quizHistory, setQuizHistory] = useState([]);
-  const [quizIndex, setQuizIndex] = useState(0); // 1 to 10
+  const [quizIndex, setQuizIndex] = useState(0); // 1 to quizLength
+  const [quizLength, setQuizLength] = useState(10);
   const [showScoreCard, setShowScoreCard] = useState(false);
 
   const allItems = useMemo(() => getAllTrapItems(), []);
@@ -261,8 +262,8 @@ export default function JlptTraps() {
   }, [searchQuery]);
 
   // Generate a quiz question
-  const generateQuizQuestion = (currentIndex, scoreSoFar, historySoFar) => {
-    if (currentIndex >= 10) {
+  const generateQuizQuestion = (currentIndex, scoreSoFar, historySoFar, length = quizLength) => {
+    if (currentIndex >= length) {
       setShowScoreCard(true);
       return;
     }
@@ -276,12 +277,19 @@ export default function JlptTraps() {
     setQuizIndex(currentIndex + 1);
   };
 
-  const startQuiz = () => {
+  const prepareQuiz = () => {
     setMode("quiz");
+    setQuizState(null);
+    setShowScoreCard(false);
+  };
+
+  const startQuiz = (length = 10) => {
+    setMode("quiz");
+    setQuizLength(length);
     setQuizScore(0);
     setQuizHistory([]);
     setShowScoreCard(false);
-    generateQuizQuestion(0, 0, []);
+    generateQuizQuestion(0, 0, [], length);
   };
 
   const handleOptionClick = (opt) => {
@@ -300,7 +308,7 @@ export default function JlptTraps() {
     }
 
     setTimeout(() => {
-      generateQuizQuestion(quizIndex, newScore, newHistory);
+      generateQuizQuestion(quizIndex, newScore, newHistory, quizLength);
     }, 1800);
   };
 
@@ -325,7 +333,7 @@ export default function JlptTraps() {
           </button>
           <button
             className={`btn ${mode === "quiz" ? "btn-primary" : "btn-secondary"}`}
-            onClick={startQuiz}
+            onClick={prepareQuiz}
           >
             Trắc Nghiệm
           </button>
@@ -333,13 +341,42 @@ export default function JlptTraps() {
       </div>
 
       {mode === "quiz" ? (
-        showScoreCard ? (
+        !quizState && !showScoreCard ? (
+          /* Quiz Start Screen */
+          <div className="card card-body quiz-start-card text-center animate-scaleUp max-w-md mx-auto my-xl p-xl border border-sakura-200 shadow-lg" style={{ background: "white", borderRadius: "var(--radius-lg)" }}>
+            <span style={{ fontSize: "3.5rem", display: "block", marginBottom: "var(--space-md)" }}>🎯</span>
+            <h3 className="mb-sm text-sakura-900 font-bold" style={{ fontSize: "1.4rem" }}>Luyện Tập Trắc Nghiệm N3</h3>
+            <p className="text-muted text-sm mb-lg">
+              Ngân hàng từ vựng hiện có <strong>{totalItems}</strong> từ bẫy đọc độc bản từ tất cả các chương. Bạn muốn luyện tập bao nhiêu câu hỏi?
+            </p>
+            
+            <div className="mb-xl max-w-xs mx-auto text-left">
+              <label className="block text-sm font-semibold text-ink-70 mb-xs">Số lượng câu hỏi:</label>
+              <select
+                value={quizLength}
+                onChange={(e) => setQuizLength(Number(e.target.value))}
+                className="form-select w-full p-sm border rounded bg-white text-ink font-medium"
+                style={{ borderColor: "var(--sakura-200)", color: "var(--sakura-800)", height: "42px" }}
+              >
+                <option value={10}>10 câu hỏi</option>
+                <option value={20}>20 câu hỏi</option>
+                <option value={30}>30 câu hỏi</option>
+                <option value={50}>50 câu hỏi</option>
+                <option value={totalItems}>Tất cả ({totalItems} câu)</option>
+              </select>
+            </div>
+            
+            <button className="btn btn-primary w-full" onClick={() => startQuiz(quizLength)}>
+              Bắt Đầu Làm Bài
+            </button>
+          </div>
+        ) : showScoreCard ? (
           /* Score Card */
           <div className="card card-body quiz-score-card animate-scaleUp">
             <span className="trophy-icon">🏆</span>
             <h3>Hoàn thành bài luyện tập!</h3>
             <p className="score-text">
-              Bạn trả lời đúng <strong>{quizScore}</strong> / 10 câu
+              Bạn trả lời đúng <strong>{quizScore}</strong> / {quizLength} câu
             </p>
             <p className="xp-text text-success font-medium mb-lg">
               +{quizScore * 5} XP đã được cộng vào tài khoản!
@@ -355,7 +392,11 @@ export default function JlptTraps() {
                       <span className="text-muted text-xs ml-sm">({h.item.meaning})</span>
                     </div>
                     <div className="flex items-center gap-sm">
-                      <span className="text-xs text-muted">Bẫy: <span className="text-error font-jp">{h.item.trap}</span></span>
+                      {h.item.trap && (
+                        <span className="text-xs text-muted">
+                          Bẫy: <span className="text-error font-jp" style={{ textDecoration: "line-through" }}>{h.item.trap}</span>
+                        </span>
+                      )}
                       <span className={`badge ${h.correct ? "badge-green" : "badge-sakura"}`}>
                         {h.correct ? `Đúng: ${h.item.reading}` : `Chọn: ${h.selected}`}
                       </span>
@@ -366,7 +407,7 @@ export default function JlptTraps() {
             </div>
 
             <div className="flex gap-md justify-center">
-              <button className="btn btn-primary" onClick={startQuiz}>
+              <button className="btn btn-primary" onClick={() => startQuiz(quizLength)}>
                 Luyện Tập Lại
               </button>
               <button className="btn btn-secondary" onClick={() => setMode("study")}>
@@ -379,11 +420,11 @@ export default function JlptTraps() {
           quizState && (
             <div className="card card-body quiz-panel animate-scaleUp">
               <div className="flex justify-between items-center mb-md text-sm text-muted">
-                <span>Câu hỏi {quizIndex} / 10</span>
+                <span>Câu hỏi {quizIndex} / {quizLength}</span>
                 <span>Đúng: {quizScore}</span>
               </div>
               <div className="quiz-progress-bar-wrap mb-lg">
-                <div className="quiz-progress-bar" style={{ width: `${(quizIndex / 10) * 100}%` }}></div>
+                <div className="quiz-progress-bar" style={{ width: `${(quizIndex / quizLength) * 100}%` }}></div>
               </div>
               <p className="text-muted text-sm mb-xs">Chọn cách đọc Hiragana đúng cho từ:</p>
               <div className="quiz-word font-jp mb-xxs">{quizState.item.word}</div>
