@@ -418,7 +418,7 @@ export default function JlptTraps() {
         ) : (
           /* Quiz Question */
           quizState && (
-            <div className="card card-body quiz-panel animate-scaleUp">
+            <div className="quiz-container max-w-md mx-auto card card-body animate-slideUp">
               <div className="flex justify-between items-center mb-md text-sm text-muted">
                 <span>Câu hỏi {quizIndex} / {quizLength}</span>
                 <span>Đúng: {quizScore}</span>
@@ -426,25 +426,35 @@ export default function JlptTraps() {
               <div className="quiz-progress-bar-wrap mb-lg">
                 <div className="quiz-progress-bar" style={{ width: `${(quizIndex / quizLength) * 100}%` }}></div>
               </div>
-              <p className="text-muted text-sm mb-xs">Chọn cách đọc Hiragana đúng cho từ:</p>
-              <div className="quiz-word font-jp mb-xxs">{quizState.item.word}</div>
-              <p className="text-muted text-base mb-xl">Ý nghĩa: {quizState.item.meaning}</p>
               
-              <div className="quiz-options mb-lg">
+              <div className="text-center mb-xl">
+                <div className="text-sm text-muted mb-sm">
+                  Chọn cách đọc Hiragana đúng cho từ:
+                </div>
+                <div className="text-6xl font-bold jp text-sakura mt-sm mb-xs text-center">
+                  {quizState.item.word}
+                </div>
+                <div className="text-md text-ink-70 mt-xs">
+                  Ý nghĩa: {quizState.item.meaning}
+                </div>
+              </div>
+              
+              <div className="flex-col gap-sm mb-lg">
                 {quizState.options.map((opt) => {
-                  const isCorrect = opt === quizState.answer;
-                  const isSelected = opt === quizState.selected;
-                  let cls = "quiz-opt";
+                  let btnClass = "btn-secondary";
                   if (quizState.selected) {
-                    if (isCorrect) cls += " correct animate-pulse";
-                    else if (isSelected) cls += " wrong";
+                    if (opt === quizState.answer)
+                      btnClass = "btn-success";
+                    else if (opt === quizState.selected)
+                      btnClass = "btn-secondary text-error border-error";
                   }
                   return (
                     <button
                       key={opt}
-                      className={cls}
+                      className={`btn w-full justify-center p-md text-lg ${btnClass}`}
                       onClick={() => handleOptionClick(opt)}
                       disabled={!!quizState.selected}
+                      style={{ whiteSpace: "normal", height: "auto" }}
                     >
                       {opt}
                     </button>
